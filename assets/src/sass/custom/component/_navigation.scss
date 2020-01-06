@@ -1,0 +1,47 @@
+
+.dfn {
+  $dfnnavclassname: &;
+
+  &-nav{}
+
+  &-menu {
+
+    &-megadropdown{}
+
+    &-dropdownmenu{
+
+      &.show{}
+
+      &.dropdown-menu.show[aria-labelledby="DropdownMenu"] {
+        height: 148px !important;
+      }
+
+      ul.dropdownsubmenu{}
+
+      &-list{
+        &-item{}
+      }
+
+    }
+
+    &-headnav{
+      #{$dfnnavclassname}-menu{
+
+        &-list {
+          &-item {
+          }
+        }
+      }
+    }
+
+
+    &-mobilemenu{
+
+      &-header{}
+
+      &-btn{}
+
+    }
+  }
+
+}

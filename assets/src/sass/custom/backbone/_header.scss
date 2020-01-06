@@ -1,0 +1,12 @@
+.header{
+  $headerclassname: &;
+
+  &.navscroll{
+    #{$headerclassname}-web{}
+    #{$headerclassname}-navigation{}
+  }
+
+  &-web{}
+
+  &-navigation{}
+}

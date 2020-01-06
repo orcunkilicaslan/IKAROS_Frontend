@@ -1,0 +1,42 @@
+.sitetable{
+  color: $global-clr-text-dark-gray;
+  margin: 0;
+
+  thead tr th, tbody tr td{
+    border-color: $global-border-light-gray;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0 5px;
+
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+
+  thead{
+    tr{
+      th{
+        font-size: 17px;
+        border-top-width: 0;
+        border-bottom-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+
+  tbody{
+    tr{
+      td{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 1;
+      }
+    }
+  }
+}
