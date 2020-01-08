@@ -1,7 +1,7 @@
 # IKAROS AND PARTNERS
 
 #### Web Public Area Frontend List
- - [01_Ikaros_Home_Page](https://orcunkilicaslan.github.io/IKAROS_Frontend/html/01_Ikaros_Home_Page.html)
+ - [01_Ikaros_Home_Page](https://orcunkilicaslan.github.io/IKAROS_Frontend/01_Ikaros_Home_Page.html)
    
 
 # NodeJS Kurulumu
