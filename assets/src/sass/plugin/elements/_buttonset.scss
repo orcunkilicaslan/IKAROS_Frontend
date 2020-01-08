@@ -1,11 +1,11 @@
 .btn{
-  color: $global-clr-white !important;
+  color: $global-clr-white;
   font-size: 16px;
   font-weight: normal;
   height: 40px;
   border-width: 2px;
   @include border-radius(6px);
-  @include transition-multiple(background 0.3s ease-in-out, border 0.3s ease-in-out, opacity 0.3s ease-in-out);
+  @include transition-multiple(background 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out);
 
   &-lg{
     font-size: 16px;
@@ -96,5 +96,74 @@
 
   &[class*="outline"]{
     background-color: transparent !important;
+
+    &:hover,
+    &.active{
+      color: $global-clr-white !important;
+
+      i{
+        @include svg-filter(0%, 1, 0, 100%);
+      }
+    }
   }
+
+  &-outline{
+
+    &-primary{
+      color: $global-clr-dark-blue !important;
+      border-color: $global-clr-dark-blue !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-dark-blue !important;
+      }
+    }
+    &-secondary{
+      color: $global-clr-soft-gray !important;
+      border-color: $global-clr-soft-gray !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-soft-gray !important;
+      }
+    }
+    &-success{
+      color: $global-clr-green !important;
+      border-color: $global-clr-green !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-green !important;
+      }
+    }
+    &-danger{
+      color: $global-clr-red !important;
+      border-color: $global-clr-red !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-red !important;
+      }
+    }
+    &-info{
+      color: $global-clr-soft-blue !important;
+      border-color: $global-clr-soft-blue !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-soft-blue !important;
+      }
+    }
+    &-warning{
+      color: $global-clr-orange !important;
+      border-color: $global-clr-orange !important;
+
+      &:hover,
+      &.active{
+        background-color: $global-clr-orange !important;
+      }
+    }
+
+  }
+
 }

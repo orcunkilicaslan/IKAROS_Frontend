@@ -29,7 +29,7 @@
   }
 
   label{
-    color: $global-clr-text-dark-gray;
+    color: $global-clr-text-dark;
     font-size: 18px;
     font-weight: normal;
     line-height: 1.11;
@@ -42,7 +42,7 @@
   }
 
   .form-control{
-    color: $global-clr-text-dark-gray;
+    color: $global-clr-text-dark;
     font-size: 18px;
     font-weight: normal;
     height: 40px;
@@ -155,7 +155,7 @@
   }
 
   .custom-control-label{
-    color: $global-clr-text-dark-gray;
+    color: $global-clr-text-dark;
     font-size: 15px;
     font-weight: normal;
     line-height: 1.35;
@@ -213,6 +213,36 @@
   @include placeholder{
     color: transparentize($global-clr-soft-gray, 0.50);
     opacity: 1;
+  }
+
+  .recaptcha{
+
+    &-area{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+    }
+
+    &-check{
+      position:relative;
+      width:20px;
+      height:20px;
+      overflow: hidden;
+      margin-right: 6px;
+      border: 1px solid $global-border-light-gray;
+      @include border-radius(3px);
+
+      .g-recaptcha{
+        position:absolute;
+        top: -27px;
+        left: -43px;
+        @include scale(0.8);
+      }
+    }
+
+    label{
+      &::before,
+      &::after{display: none !important;}
+    }
   }
 
 }
