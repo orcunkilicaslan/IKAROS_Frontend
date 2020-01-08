@@ -1,0 +1,14 @@
+<svg id="icons_spite_12_dark" xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12">
+  <g id="Plus" transform="translate(0 -12)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="12" height="12" transform="translate(0 12)" fill="#eee" opacity="0"/>
+    <g id="plus-sign" transform="translate(0 12)">
+      <path id="Path_681" data-name="Path 681" d="M11.062,5.062H6.937V.938a.938.938,0,1,0-1.875,0V5.062H.937a.938.938,0,0,0,0,1.875H5.062v4.125a.938.938,0,0,0,1.875,0V6.938h4.125a.938.938,0,1,0,0-1.875Z" fill="#0d78c4"/>
+    </g>
+  </g>
+  <g id="Arrow" transform="translate(12 -12)">
+    <rect id="Rectangle_1-2" data-name="Rectangle 1" width="12" height="12" transform="translate(0 12)" fill="#eee" opacity="0"/>
+    <g id="Arrow-2" data-name="Arrow" transform="translate(10.551 -81.139) rotate(90)">
+      <path id="Path_692" data-name="Path 692" d="M102.509,5.248l-4.2,4.107a.7.7,0,0,1-.968,0,.658.658,0,0,1,0-.946l3.719-3.634L97.339,1.142a.658.658,0,0,1,0-.946.7.7,0,0,1,.968,0l4.2,4.107a.658.658,0,0,1,0,.946Z" transform="translate(0 0)" fill="#0d78c4"/>
+    </g>
+  </g>
+</svg>

@@ -3,11 +3,12 @@
   font-size: 16px;
   font-weight: normal;
   height: 40px;
+  border-width: 2px;
   @include border-radius(6px);
   @include transition-multiple(background 0.3s ease-in-out, border 0.3s ease-in-out, opacity 0.3s ease-in-out);
 
   &-lg{
-    font-size: 20px;
+    font-size: 16px;
     height: 50px;
     line-height: 1.6;
   }
@@ -91,5 +92,9 @@
       background-color: lighten($global-clr-orange, 10%) !important;
       border-color: lighten($global-clr-orange, 10%) !important;
     }
+  }
+
+  &[class*="outline"]{
+    background-color: transparent !important;
   }
 }

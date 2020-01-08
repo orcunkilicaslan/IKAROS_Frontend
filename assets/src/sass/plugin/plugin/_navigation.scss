@@ -62,39 +62,9 @@
           white-space: nowrap;
           @include transition-multiple(color 0.3s ease-in-out, padding 0.3s ease-in-out);
 
-
-          &::after {
-            content: '';
-            position: absolute;
-            background-color: #FFFFFF;
-            width: 0;
-            height: 2px;
-            display: block;
-            left: 0;
-            @include transition(width, 250ms, ease-in-out);
-
-            @include ReSassMaxWidthResponsive(992){
-              height: 1px;
-            }
-          }
-
           @include ReSassMaxWidthResponsive(992){
             margin: 0;
             padding: 10px 0;
-          }
-        }
-
-        &.show > a[data-toggle^="dropdown"]{
-          &::after {
-            width: 200px !important;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            left: 10px;
-            z-index: 1;
           }
         }
 
@@ -221,41 +191,11 @@
     #{$dfnnavclassname}-menu{
 
       &-list{
-        &-item{
-
-          > a{
-            &::after {
-              bottom: 0;
-            }
-
-            @include ReSassMaxWidthResponsive(992){
-              &::after{
-                bottom: -1px;
-              }
-            }
-          }
-
-          &:hover{
-            > a{
-              &::after {
-                width: 100%;
-              }
-            }
-          }
-
-          &.show > a[data-toggle^="dropdown"]{
-            &::before {
-              border-left: 8px solid transparent;
-              border-right: 8px solid transparent;
-              border-bottom: 8px solid #FFFFFF;
-              bottom: 0;
-            }
-          }
-        }
+        &-item{}
       }
 
       &-dropdownmenu{
-        top: 47px !important;
+        top: 38px !important;
         @include border-radii(0, 0, 4px, 4px);
       }
     }
@@ -264,28 +204,7 @@
   &-footnav{
     #{$dfnnavclassname}-menu{
       &-list{
-        &-item{
-          > a{
-            &::after {
-              top: 0;
-            }
-
-            @include ReSassMaxWidthResponsive(992){
-              &::after{
-                top: -1px;
-              }
-            }
-          }
-
-          &.show > a[data-toggle^="dropdown"]{
-            &::before {
-              border-left: 8px solid transparent;
-              border-right: 8px solid transparent;
-              border-bottom: 8px solid #FFFFFF;
-              top: -6px;
-            }
-          }
-        }
+        &-item{}
       }
 
       &-dropdownmenu{
@@ -342,12 +261,6 @@
               &::before{
                 @include rotate(-45);
               }
-            }
-          }
-
-          &.show > a[data-toggle^="dropdown"]{
-            &::after {
-              width: 100%;
             }
           }
         }

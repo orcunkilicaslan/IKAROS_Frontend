@@ -2,7 +2,7 @@
 
   .nav{
     &-center{
-      @include flex-justify-content(center);
+      @include flexbox-justify-content(center);
     }
     &-btn{
       .nav{

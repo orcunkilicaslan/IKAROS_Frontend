@@ -52,7 +52,7 @@ jQuery(function($) {
         }).on("load resize",function(e){
 
             var headerHeight = $("header.header");
-            $(".headtitle-background").css("padding-top", headerHeight.height() + "px");
+            $(".headtitle-bg").css("padding-top", headerHeight.height() + "px");
             $(".headtitle").css("min-height", headerHeight.height() + "px");
 
         });
