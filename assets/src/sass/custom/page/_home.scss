@@ -1,9 +1,123 @@
 
 .homepage{
 
-  #{$headerclassname}-web{
-    background-color: transparentize(#001730, 0.75);
-    @include backdrop-filter-multiple(blur(5px));
+  #{$headerclassname}{
+
+    &-web{
+      background-color: transparentize(darken($global-sitebg-darkblue01, 7%), 0.75);
+      @include backdrop-filter-multiple(blur(5px));
+    }
+
+    &.navscroll{
+      #{$headerclassname}-web{
+        @include backdrop-filter-multiple(blur(0px));
+      }
+    }
+
+  }
+
+  &-bigtitle{
+    padding-bottom: 120px;
+  }
+
+  &-register{
+    //background-color: $global-clr-soft-gray;
+    background-color: $global-clr-white;
+    height: 615px;
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include background-linear(#3A1197, #246D97, -45);
+      opacity: 0.05;
+    }
+
+    > .container{
+      height: 100%;
+      .row{height: 100%;}
+    }
+
+    .bgandicon{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+
+      &::before{
+        content: "";
+        background-image: url(#{$global-img-path-svg}/ikaros_andicon_white.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 950px;
+        height: 1030px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include transform-multiple(translateX(calc(1030px/2)) translateY(calc(-1030px/2)));
+      }
+    }
+
+    &-titlearea{
+      padding-top: 160px;
+      max-width: 480px;
+
+      &-btngroup{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+        margin-top: 30px;
+
+        .btn{
+          @include flexbox-flex-basis(0);
+          @include flexbox-flex-grow(1);
+          max-width: 100%;
+          margin: 0 5px;
+          text-align: left;
+          display: block;
+
+          &:first-child{
+            margin-left: 0;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &-formarea{
+      position: relative;
+    }
+
+    .siteformbox{
+      background-color: $global-clr-dark-blue;
+      width: 100%;
+      min-height: 700px;
+      padding: 40px;
+      position: absolute;
+      top: -40px;
+      @include border-radius(14px);
+
+      &-head{
+        @include flexbox-display-flex();
+        @include flexbox-flex-direction(row);
+        @include flexbox-justify-content(space-between);
+
+        .sitetitle{margin: 0;}
+        i[class*="icons"]{
+          @include svg-filter(0%, 1, 0, 100%);
+        }
+      }
+
+    }
+
   }
 
 }

@@ -49,6 +49,20 @@
       }
     }
 
+    &.sprite-60-dark{
+      background-image: url(#{$global-img-path-icons}/icons_spite_60_dark.svg);
+      background-position: 0 0;
+      width: 60px;
+      height: 60px;
+
+      &.icons-blue-building{
+        background-position: 0 0;
+      }
+      &.icons-blue-employee{
+        background-position: -60px 0;
+      }
+    }
+
   }
 
 }

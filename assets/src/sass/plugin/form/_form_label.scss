@@ -70,7 +70,7 @@
     }
 
     .form-control{
-      color: $global-clr-text-dark-gray;
+      color: $global-clr-text-dark;
       background-color: transparent;
       border-top-width: 0;
       border-right-width: 0;
@@ -149,7 +149,7 @@
       &.disabled,
       &:disabled,
       &[readonly] {
-        color: $global-clr-text-dark-gray !important;
+        color: $global-clr-text-dark !important;
         background-color: transparent !important;
         border-bottom-color: $global-clr-red !important;
       }

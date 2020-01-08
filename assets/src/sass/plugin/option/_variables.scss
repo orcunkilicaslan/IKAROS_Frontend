@@ -11,14 +11,14 @@ $global-clr-red: #E92E18;
 $global-clr-orange: #ff9900;
 $global-clr-soft-blue: #0D78C4;
 $global-clr-dark-blue: #12407D;
-$global-clr-soft-gray: #758ca3;
+$global-clr-soft-gray: #f3f7fa;
 $global-clr-light-gray: #F1F7FC;
 $global-clr-dark-black: #232323;
 /* Color Settings */
 
 /* Text Color Settings */
-$global-clr-text-light-gray: #737373;
-$global-clr-text-dark-gray: #3c3c3c;
+$global-clr-text-light:   $global-clr-soft-blue;
+$global-clr-text-dark:    $global-clr-dark-blue;
 /* Text Color Settings */
 
 /* Site Background Color */

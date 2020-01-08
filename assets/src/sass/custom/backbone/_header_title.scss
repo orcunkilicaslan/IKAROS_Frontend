@@ -57,6 +57,7 @@
         text-align: center;
 
         .btn{
+          color: $global-clr-white !important;
           background-color: transparentize($global-sitebg-darkblue01, 0.5) !important;
         }
       }
