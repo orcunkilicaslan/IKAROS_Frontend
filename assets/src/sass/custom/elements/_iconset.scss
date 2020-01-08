@@ -13,44 +13,42 @@
     background-size: contain;
     overflow: hidden;
     display: inline-block;
+    position: relative;
   }
 
   &-sprite{
     background-repeat: no-repeat;
     display: inline-block;
+    position: relative;
 
-    &.sprite-45{
-      background-image: url(#{$global-img-path-icons}/icons_spite_45.svg);
-      background-position: 0 -45px;
-      width: 45px;
-      height: 45px;
-      @include transition(background, 0.15s, ease-in-out);
+    &.sprite-12-dark{
+      background-image: url(#{$global-img-path-icons}/icons_spite_12_dark.svg);
+      background-position: 0 0;
+      width: 12px;
+      height: 12px;
 
-      &.icons-01{
-        background-position: 0 -45px;
-        &:hover{
-          background-position: 0 0;
-        }
+      &.icons-blue-plus{
+        background-position: 0 0;
       }
-      &.icons-02{
-        background-position: -50px -45px;
-        &:hover{
-          background-position: -50px 0;
-        }
-      }
-      &.icons-03{
-        background-position: -100px -45px;
-        &:hover{
-          background-position: -100px 0;
-        }
-      }
-      &.icons-04{
-        background-position: -150px -45px;
-        &:hover{
-          background-position: -150px 0;
-        }
+      &.icons-blue-arrow{
+        background-position: -12px 0;
       }
     }
+
+    &.sprite-20-dark{
+      background-image: url(#{$global-img-path-icons}/icons_spite_20_dark.svg);
+      background-position: 0 0;
+      width: 20px;
+      height: 20px;
+
+      &.icons-green-password{
+        background-position: 0 0;
+      }
+      &.icons-blue-enter{
+        background-position: -20px 0;
+      }
+    }
+
   }
 
 }

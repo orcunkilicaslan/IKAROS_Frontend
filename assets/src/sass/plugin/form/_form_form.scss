@@ -8,7 +8,7 @@
     @include flexbox-flex-wrap(wrap);
 
     &.form-row-center{
-      @include flex-justify-content(center);
+      @include flexbox-justify-content(center);
     }
 
     > .col,

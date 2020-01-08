@@ -21,14 +21,14 @@
       &.show{
         height: 100%;
         @include flexbox-display-flex-imp();
-        @include flex-align-items(center);
+        @include flexbox-align-items(center);
       }
 
       &-dialog{
         height: 100%;
         margin: auto;
         @include flexbox-display-flex();
-        @include flex-align-items(center);
+        @include flexbox-align-items(center);
       }
 
       &-content{

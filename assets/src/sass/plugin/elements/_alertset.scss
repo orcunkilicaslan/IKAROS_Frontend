@@ -179,7 +179,7 @@
 
   &-flex{
     @include flexbox-display-flex();
-    @include flex-align-items(center);
+    @include flexbox-align-items(center);
   }
 
   &-big{

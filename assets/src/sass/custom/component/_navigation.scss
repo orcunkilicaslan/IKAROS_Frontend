@@ -2,9 +2,45 @@
 .dfn {
   $dfnnavclassname: &;
 
-  &-nav{}
+  &-nav{
+    background-color: transparent;
+  }
 
   &-menu {
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: -0.16px;
+
+    &-list{
+      min-height: 38px;
+
+      &-item{
+
+        > a{}
+
+        > a[data-toggle="dropdown"]{
+          &::before{
+            content: "";
+            display: inline-block;
+            background-image: url(#{$global-img-path-icons}/icons_spite_12_dark.svg);
+            background-position: 0 0;
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+            position: relative;
+            @include transition-multiple(transform 0.3s ease-in-out, filter 0.3s ease-in-out);
+          }
+        }
+
+        > a[aria-expanded="true"]{
+          &::before{
+            @include rotate(90);
+            @include svg-filter(0%, 1, 0, 100%);
+          }
+        }
+
+      }
+    }
 
     &-megadropdown{}
 
@@ -16,22 +52,10 @@
         height: 148px !important;
       }
 
-      ul.dropdownsubmenu{}
-
-      &-list{
-        &-item{}
+      ul.dropdownsubmenu{
+        background-color: $global-sitebg-darkblue01;
       }
 
-    }
-
-    &-headnav{
-      #{$dfnnavclassname}-menu{
-
-        &-list {
-          &-item {
-          }
-        }
-      }
     }
 
 
@@ -41,6 +65,19 @@
 
       &-btn{}
 
+    }
+  }
+
+  &-headnav{
+    #{$dfnnavclassname}-menu{
+
+      &-list{
+        &-item{}
+      }
+
+      &-dropdownmenu{
+        top: 63px !important;
+      }
     }
   }
 

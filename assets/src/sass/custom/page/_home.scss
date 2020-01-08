@@ -1,2 +1,9 @@
 
-.home{}
+.homepage{
+
+  #{$headerclassname}-web{
+    background-color: transparentize(#001730, 0.75);
+    @include backdrop-filter-multiple(blur(5px));
+  }
+
+}

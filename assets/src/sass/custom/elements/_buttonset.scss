@@ -1,23 +1,25 @@
 .btn{
-  @include border-radius(25px);
+
+  &-rounded{
+    @include border-radius(50px);
+  }
 
   &-lg{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: .55rem;
-    padding-bottom: .55rem;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 
-    @include ReSassMaxWidthResponsive(1366){
-      height: 48px;
-      padding-top: .46rem;
-      padding-bottom: .46rem;
+    &[class*="rounded"]{
+      padding-left: 25px !important;
+      padding-right: 35px !important;
+
+      > i[class*="sprite-20"]{
+        top: 4px;
+        margin-right: 3px;
+      }
     }
   }
 
-  &-gradient{
-    &-red{
-      border: none;
-      @include background-gradient($global-grdint-red01, $global-grdint-red02);
-    }
-  }
 }
