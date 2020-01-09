@@ -18,24 +18,14 @@
 
   &-bigtitle{
     padding-bottom: 120px;
+    position: relative;
+    top: -1px;
   }
 
   &-register{
-    //background-color: $global-clr-soft-gray;
-    background-color: $global-clr-white;
+    background-color: $global-clr-soft-gray;
     height: 615px;
     position: relative;
-
-    &::before{
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      @include background-linear(#3A1197, #246D97, -45);
-      opacity: 0.05;
-    }
 
     > .container{
       height: 100%;
@@ -44,7 +34,7 @@
 
     .bgandicon{
       position: absolute;
-      width: 100%;
+      width: calc(50% + 15px);
       height: 100%;
       left: 0;
       top: 0;
@@ -59,9 +49,9 @@
         width: 950px;
         height: 1030px;
         position: absolute;
-        left: 0;
+        right: 0;
         top: 50%;
-        @include transform-multiple(translateX(calc(1030px/2)) translateY(calc(-1030px/2)));
+        @include transform-multiple(translateX(calc(50%/2)) translateY(calc(-1030px/2)));
       }
     }
 
