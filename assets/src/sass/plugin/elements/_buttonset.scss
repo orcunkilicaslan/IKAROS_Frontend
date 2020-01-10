@@ -27,16 +27,16 @@
   }
 
   &:focus{
-    box-shadow: none !important;
+    @include box-shadow-none-imp();
   }
 
   &:hover{
-    box-shadow: none !important;
+    @include box-shadow-none-imp();
   }
 
   &:not(:disabled):not(.disabled).active:focus,
   &:not(:disabled):not(.disabled):active:focus{
-    box-shadow: none !important;
+    @include box-shadow-none-imp();
   }
 
   &-primary{

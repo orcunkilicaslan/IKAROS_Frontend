@@ -1,277 +1,365 @@
 /* Form UI New */
 .formuinew{
 
-  .form-row{
-    margin-right: -15px;
-    margin-left: -15px;
-    @include flexbox-display-flex();
-    @include flexbox-flex-wrap(wrap);
+  form{
+    position: relative;
+    z-index: 1;
 
-    &.form-row-center{
-      @include flexbox-justify-content(center);
-    }
+    > *:last-child{margin-bottom: 0;}
 
-    > .col,
-    > [class*="col-"] {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-    &:last-child{
-      .form-group{
-        margin-bottom: 0 !important;
-      }
-    }
-  }
-
-  .form-group{
-    margin-bottom: 10px;
   }
 
   label{
     color: $global-clr-text-dark;
-    font-size: 16px;
+    font-size: $global-font-size * 0.875;
     font-weight: normal;
-    line-height: 1.11;
-    letter-spacing: -0.54px;
-    margin-bottom: 6px;
-
-    @include ReSassMaxWidthResponsive(480){
-      font-size: 15px;
-    }
+    margin-bottom: 0;
   }
 
-  .form-control{
-    color: $global-clr-text-dark;
-    font-size: 16px;
-    font-weight: normal;
-    height: 40px;
-    padding: 4px 10px;
-    background-clip: inherit !important;
-    @include box-shadow(0,0,0,transparent);
-    @include border-radius(0);
+  .form{
 
-    &[rows]{
-      min-height: 100px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
+    &-row{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+      margin-right: -10px;
+      margin-left: -10px;
 
-    &:focus{
-      border-color:transparentize($global-clr-soft-gray, 0.40);
-      box-shadow:none;
-    }
+      &:last-child{
+        #{$formclassname}-group{margin-bottom: 0;}
+      }
 
-    &.disabled,
-    &:disabled,
-    &[readonly] {
-      color: $global-clr-soft-gray !important;
-      background-color: $global-clr-light-gray !important;
-      border-color: $global-clr-light-gray !important;
-    }
-  }
+      &-center{
+        @include flexbox-justify-content(center);
+      }
 
-  .custom-select{
-    font-size: 16px;
-    height: 40px;
-    padding: 2px 10px 4px;
-    background: $global-clr-white url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS41IiBoZWlnaHQ9IjYuODExIiB2aWV3Qm94PSIwIDAgMTEuNSA2LjgxMSI+CiAgICA8ZGVmcz4KICAgICAgICA8c3R5bGU+CiAgICAgICAgICAgIC5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDQzNzg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjEuNXB4fQogICAgICAgIDwvc3R5bGU+CiAgICA8L2RlZnM+CiAgICA8cGF0aCBpZD0iQXJyb3ciIGQ9Ik0xMCAwTDUuMDA2IDUgMCAwIiBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC43NSAuNzUpIi8+Cjwvc3ZnPgo=") no-repeat right 12px center;
-    cursor: pointer;
-    @include box-shadow(0,0,0,transparent);
-    @include border-radius(0);
-
-    &:focus{
-      border-color:transparentize($global-clr-soft-gray, 0.40);
-      box-shadow:none;
-    }
-
-    &:disabled{
-      background-color: $global-clr-soft-gray;
-    }
-  }
-
-  .input-group{
-
-    *{@include transition(border-color, 0.15s, ease-in-out);}
-
-    &:focus-within{
-      .input-group-append{
-        border-color:transparentize($global-clr-soft-gray, 0.40);
+      [class*="col"] {
+        padding-right: 10px;
+        padding-left: 10px;
       }
     }
 
-    .form-control{
-      border-right: none;
-      padding-right: 0;
-    }
+    &-group{
+      margin-bottom: 15px;
 
-    .input-group-append{
-      border: 1px solid $global-border-light-gray;
-      border-left: none;
 
-      &.selectbox{
-        position: relative;
-
-        &::before{
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: calc(100% + 2px);
-          left: 0;
-          top: -1px;
+      &.colorset{
+        &disabled{
+          #{$formclassname}-control{
+            background-color: $global-clr-light-gray;
+            border-color: $global-clr-light-gray;
+          }
+          #{$forminputclassname}-group{
+            &:focus-within{
+              #{$forminputclassname}-group-append{
+                border-color: $global-clr-light-gray;
+              }
+            }
+            &-append{border-color: $global-clr-light-gray;}
+            &-text{background-color: $global-clr-light-gray;}
+          }
+        }
+        &red{
+          #{$formclassname}-control{
+            color: $global-clr-red;
+          }
+          #{$forminputclassname}-group{
+            &-text{color: $global-clr-red;}
+          }
+          @include placeholder{
+            color: transparentize($global-clr-red, 0.50);
+          }
         }
       }
-
-      select.form-control{
-        border: none;
-        height: 38px;
-        min-width: 65px;
-        padding-left: 8px;
-        background-position: right 8px center;
-      }
     }
 
-    .input-group-text{
-      color: $global-clr-dark-blue;
-      font-size: 16px;
-      font-weight: 500;
-      padding: 2px 10px 2px;
-      background-color: $global-clr-white;
-      border: none;
+    &-control{
+      color: $global-clr-text-dark;
+      font-size: $global-font-size;
+      background-clip: inherit;
+      height: 40px;
+      padding: 0.45rem 0.75rem;
+      border-color: $global-border-light-gray;
+      @include box-shadow-none-imp();
       @include border-radius(0);
+
+      &[rows]{
+        min-height: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      &:focus{
+        border-color:darken($global-border-light-gray, 5%);
+        @include box-shadow-none-imp();
+      }
+
+      &.disabled,
+      &:disabled,
+      &[readonly]{
+        background-color: $global-clr-light-gray;
+        border-color: $global-clr-light-gray;
+      }
+
+      &-plaintext{
+        color: $global-clr-text-dark;
+        font-size: $global-font-size;
+        background-clip: inherit;
+        height: 40px;
+        padding: 0.45rem 0;
+        border-width: 0;
+      }
     }
   }
 
-  .custom-control{
-    padding-left: 26px;
-    min-height: 20px;
+  .input{
 
-    .form-check-input{
-      margin-top: 0;
-      margin-left: -26px;
-      width: 20px;
-      height: 20px;
+    &-group{
+
+      *{@include transition-multiple(border-color 0.15s ease-in-out);}
+
+      &:focus-within{
+        .input-group-append{
+          border-color:darken($global-border-light-gray, 5%);
+        }
+      }
+
+      &-append{
+        border: 1px solid $global-border-light-gray;
+        border-left: none;
+
+        &.selectbox{
+          position: relative;
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: calc(100% + 2px);
+            left: 0;
+            top: -1px;
+          }
+        }
+
+        select#{$formclassname}-control{
+          border: none;
+          height: 38px;
+          min-width: 65px;
+          padding-left: 8px;
+          background-position: right 8px center;
+        }
+      }
+
+      &-text{
+        color: $global-clr-dark-blue;
+        background-color: transparent;
+        font-size: $global-font-size;
+        border: none;
+        @include border-radius(0);
+      }
+
+      #{$formclassname}-control{
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+    &-message{
+      color: $global-clr-text-dark;
+      font-size: $global-font-size * 0.750;
+      font-weight: normal;
+      margin-bottom: 0;
+
+      &-list{}
     }
   }
 
-  .custom-control-label{
-    color: $global-clr-text-dark;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.35;
-    letter-spacing: -.45px;
-    margin: 0;
+  .custom{
 
-    &::before,
-    &::after{
-      width: 20px;
-      height: 20px;
-      top: -0.03rem;
-      left: -26px;
-      border-color: $global-border-light-gray;
-    }
-  }
+    &-select{
+      font-size: $global-font-size;
+      background: $global-clr-white url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS41IiBoZWlnaHQ9IjYuODExIiB2aWV3Qm94PSIwIDAgMTEuNSA2LjgxMSI+CiAgICA8ZGVmcz4KICAgICAgICA8c3R5bGU+CiAgICAgICAgICAgIC5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDQzNzg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjEuNXB4fQogICAgICAgIDwvc3R5bGU+CiAgICA8L2RlZnM+CiAgICA8cGF0aCBpZD0iQXJyb3ciIGQ9Ik0xMCAwTDUuMDA2IDUgMCAwIiBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC43NSAuNzUpIi8+Cjwvc3ZnPgo=") no-repeat right 12px center;
+      cursor: pointer;
+      @include box-shadow-none-imp();
+      @include border-radius(0);
 
-  .custom-control-input:checked ~ .custom-control-label {
-    &::after {
-      background-image: none;
-      content:"";
-      position:absolute;
-      width: 13px;
-      height: 7px;
-      top: 5px;
-      left: -22px;
-      border-bottom:2px solid $global-clr-red;
-      border-left:2px solid $global-clr-red;
-      @include rotate(-50);
-    }
-  }
+      &:focus{
+        border-color:darken($global-border-light-gray, 5%);
+        box-shadow:none;
+      }
 
-  .custom-control-input{
-    &:checked ~ .custom-control-label::before {
-      background-color: $global-clr-white;
-      border-color: $global-border-light-gray;
+      &:disabled{
+        background-color: $global-clr-soft-gray;
+      }
     }
-    &:focus:not(:checked) ~ .custom-control-label::before {
-      border-color: $global-border-light-gray;
-    }
-    &:not(:disabled):active ~ .custom-control-label::before {
-      background-color: $global-clr-light-gray;
-      border-color: $global-border-light-gray;
-    }
-    &:disabled {
-      ~ .custom-control-label {
-        color: $global-clr-soft-gray;
 
-        &::before {
-          background-color: $global-clr-light-gray;
+    &-control{
+      padding-left: 25px;
+      min-height: 20px;
+
+      &-label{
+        color: $global-clr-text-dark;
+        font-size: $global-font-size * 0.875;
+        margin: 0;
+
+        &::before,
+        &::after{
+          width: 20px;
+          height: 20px;
+          top: 0;
+          left: -25px;
+          border-color: $global-border-light-gray;
+          @include box-shadow-none-imp();
+        }
+      }
+
+      &-input{
+        width: 20px;
+        height: 20px;
+        top: 0;
+
+        &:checked{
+          ~ #{$formcustomclassname}-control-label{
+            &::before{
+              background-color: $global-clr-white;
+              border-color: $global-border-light-gray;
+            }
+            &::after{
+              content:"";
+              background-image: none;
+              position:absolute;
+            }
+          }
+        }
+        &:focus:not(:checked){
+          ~ #{$formcustomclassname}-control-label{
+            &::before{
+              border-color: $global-border-light-gray;
+            }
+          }
+        }
+
+        &:not(:disabled):active{
+          ~ #{$formcustomclassname}-control-label{
+            &::before{
+              background-color: $global-clr-light-gray;
+              border-color: $global-border-light-gray;
+            }
+          }
+        }
+        &:disabled{
+          ~ #{$formcustomclassname}-control-label{
+            color: transparentize($global-clr-dark-blue, 0.5);
+
+            &::before{
+              background-color: $global-clr-light-gray;
+            }
+          }
+        }
+      }
+
+      #{$formclassname}-check-input{
+        margin-top: 0;
+        margin-left: -25px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &-group{
+
+        &-vertical{
+
+          #{$formcustomclassname}-control{
+            margin-bottom: 5px;
+
+            &:last-child{margin-bottom: 0}
+          }
+
+        }
+
+        &-horizontal{}
+
+      }
+    }
+
+    &-checkbox{
+      #{$formcustomclassname}-control-label{
+        &::before{
+          @include border-radius(2px);
+        }
+      }
+      #{$formcustomclassname}-control-input{
+        &:checked{
+          ~ #{$formcustomclassname}-control-label{
+            &::after {
+              width: 10px;
+              height: 5px;
+              top: 7px;
+              left: -20px;
+              border-bottom:2px solid $global-clr-dark-blue;
+              border-left:2px solid $global-clr-dark-blue;
+              @include rotate(-50);
+            }
+          }
         }
       }
     }
+
+    &-radio{
+      #{$formcustomclassname}-control-input{
+        &:checked{
+          ~ #{$formcustomclassname}-control-label{
+            &::after {
+              background-color: $global-clr-dark-blue;
+              width: 8px;
+              height: 8px;
+              top: 6px;
+              left: -19px;
+              @include border-radius(10px);
+            }
+          }
+        }
+      }
+    }
+
   }
 
   @include placeholder{
-    color: transparentize($global-clr-soft-gray, 0.50);
+    color: transparentize($global-clr-text-dark, 0.50);
     opacity: 1;
   }
 
-  .disabledautofillinput{
+  .autofill{
     &.disabled,
     &:disabled,
     &[readonly] {
-      color: $global-clr-text-dark !important;
-      background-color: transparent !important;
+      color: $global-clr-text-dark;
+      background-color: transparent;
+      border-color: $global-border-light-gray;
     }
   }
 
-  .recaptcha{
+  .inputerrormessage{
+    display: none;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    color: $global-clr-red;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.11;
+    letter-spacing: -0.54px;
+    z-index: -1;
+    @include transition(all, 0.3s, ease-in-out);
 
-    &-area{
-      @include flexbox-display-flex();
-      @include flexbox-align-items(center);
-    }
-
-    &-check{
-      position:relative;
-      width:20px;
-      height:20px;
-      overflow: hidden;
-      margin-right: 6px;
-      border: 1px solid $global-border-light-gray;
-      @include border-radius(3px);
-
-      .g-recaptcha{
-        position:absolute;
-        top: -27px;
-        left: -43px;
-        @include scale(0.8);
-      }
-    }
-
-    label{
-      &::before,
-      &::after{display: none !important;}
+    &.error{
+      display: block;
+      font-size: 12px;
+      top: -3px;
     }
   }
 
   // Dark Bg
   &.formuidarkbg{
-
-    label{
-      color: $global-clr-white !important;
-    }
-
-    .form-control{
-      color: $global-clr-white !important;
-    }
-
-    .disabledautofillinput{
-      &.disabled,
-      &:disabled,
-      &[readonly] {
-        color: $global-clr-white !important;
-      }
-    }
   }
 
 }

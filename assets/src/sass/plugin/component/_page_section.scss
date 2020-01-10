@@ -8,14 +8,14 @@
   &-box{
 
     &-headtitle{
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       h3{
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 
     &-content{
-      border: 1px solid $global-clr-light-gray;
+      border: 1px solid lighten($global-border-light-gray, 15%);
       padding: 25px 30px 30px;
       margin-bottom: 20px;
     }
