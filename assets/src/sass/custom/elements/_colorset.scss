@@ -29,7 +29,7 @@
     &gray{
       background-color: $global-clr-soft-gray !important;
       &light{
-        background-color: $global-clr-light-gray !important;
+        background-color: $global-clr-soft-gray !important;
       }
     }
   }
@@ -60,7 +60,7 @@
     &gray{
       color: $global-clr-soft-gray !important;
       &light{
-        color: transparentize($global-clr-soft-gray, 0.7) !important;
+        color: $global-clr-soft-gray !important;
       }
     }
   }

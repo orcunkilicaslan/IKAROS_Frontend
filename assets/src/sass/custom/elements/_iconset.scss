@@ -66,3 +66,59 @@
   }
 
 }
+
+.siteicons{
+
+  &dropdown{
+    background-color: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border:1px solid $global-border-light-gray;
+    position: relative;
+
+    &::after{
+      display: none;
+    }
+
+    &::before{
+      content: "";
+      position:absolute;
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border-top: 2px solid $global-clr-soft-blue;
+      border-right: 2px solid $global-clr-soft-blue;
+    }
+
+    &.updirection{
+      &::before{
+        top: calc(50% - 2px);
+        left: calc(50% - 4px);
+        @include rotate(315);
+      }
+    }
+    &.downdirection{
+      &::before{
+        top: calc(50% - 6px);
+        left: calc(50% - 4px);
+        @include rotate(135);
+      }
+    }
+    &.leftdirection{
+      &::before{
+        top: calc(50% - 4px);
+        left: calc(50% - 2px);
+        @include rotate(225);
+      }
+    }
+    &.rightdirection{
+      &::before{
+        top: calc(50% - 4px);
+        left: calc(50% - 5px);
+        @include rotate(45);
+      }
+    }
+  }
+
+}

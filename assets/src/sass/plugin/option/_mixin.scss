@@ -169,13 +169,22 @@
   -khtml-border-bottom-left-radius: $bottomleft;
 }
 
-@mixin box-shadow($left, $top, $radius, $color) {
+@mixin box-shadow($left, $top, $radius, $color: transparent) {
   box-shadow: $left $top $radius $color;
   -o-box-shadow: $left $top $radius $color;
   -ms-box-shadow: $left $top $radius $color;
   -moz-box-shadow: $left $top $radius $color;
   -webkit-box-shadow: $left $top $radius $color;
   -khtml-box-shadow: $left $top $radius $color;
+}
+
+@mixin box-shadow-none-imp() {
+  box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -khtml-box-shadow: none !important;
 }
 /* Border End */
 

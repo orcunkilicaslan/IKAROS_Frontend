@@ -6,10 +6,10 @@
     &-dropdown{
       color: $global-clr-dark-blue !important;
       background-color: $global-clr-white !important;
-      border-color: lighten($global-clr-soft-gray, 25%) !important;
+      border-color: $global-border-light-gray !important;
 
       &::before{
-        border-bottom-color: lighten($global-clr-soft-gray, 25%) !important;
+        border-bottom-color: $global-border-light-gray !important;
       }
 
       &::after{
@@ -22,7 +22,7 @@
         tr{
           td{
             &.cw{
-              background-color: transparentize($global-clr-light-gray, 0.7) !important;
+              background-color: $global-border-light-gray !important;
               color: $global-clr-dark-blue !important;
             }
           }
@@ -32,7 +32,7 @@
 
     .prev,
     .next{
-      border-color: $global-clr-light-gray !important;
+      border-color: $global-border-light-gray !important;
 
       &::before{
         border-top-color: $global-clr-dark-blue !important;
@@ -48,7 +48,7 @@
     &-days{
       table{
         tbody{
-          border-color: $global-clr-light-gray !important;
+          border-color: transparentize($global-border-light-gray, 0.75) !important;
 
           tr{
             td{
@@ -81,7 +81,7 @@
 
     .old,
     .new{
-      color: lighten($global-clr-soft-gray, 15%) !important;
+      color: lighten($global-border-light-gray, 15%) !important;
     }
 
     span.month,

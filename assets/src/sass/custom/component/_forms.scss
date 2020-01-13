@@ -1,4 +1,38 @@
 
+.formuinew{
+
+  .recaptcha{
+
+    &-area{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+    }
+
+    &-check{
+      position:relative;
+      width:20px;
+      height:20px;
+      overflow: hidden;
+      margin-right: 6px;
+      border: 1px solid $global-border-light-gray;
+      @include border-radius(3px);
+
+      .g-recaptcha{
+        position:absolute;
+        top: -27px;
+        left: -43px;
+        @include scale(0.8);
+      }
+    }
+
+    label{
+      &::before,
+      &::after{display: none;}
+    }
+  }
+
+}
+
 .siteformbox{
 
   &-form{}

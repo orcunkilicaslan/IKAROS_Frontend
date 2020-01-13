@@ -1,0 +1,29 @@
+
+.sitecomponents{
+  padding: 70px 0;
+
+  .compbgsoft{background-color: $global-clr-white;}
+  .compbgdark{background-color: $global-clr-dark-blue;}
+
+  &-box{
+
+    &-headtitle{
+      margin-bottom: 5px;
+      h3{
+        font-size: 20px;
+      }
+    }
+
+    &-content{
+      border: 1px solid $global-border-light-gray;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+
+  &-formui{
+
+  }
+
+}

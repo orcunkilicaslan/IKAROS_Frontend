@@ -26,14 +26,14 @@
     }
   }
   &-secondary{
-    color: $global-clr-soft-gray !important;
-    background-color: transparentize($global-clr-soft-gray, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    color: $global-clr-dark-gray !important;
+    background-color: $global-clr-soft-gray !important;
+    border-color: $global-border-light-gray !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
         &::after{
-          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+          background-color: $global-clr-soft-gray !important;
         }
       }
     }
@@ -91,27 +91,27 @@
     }
   }
   &-light{
-    color: $global-clr-soft-gray !important;
+    color: $global-clr-dark-gray !important;
     background-color: transparentize($global-clr-white, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    border-color: $global-clr-dark-gray !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
         &::after{
-          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+          background-color: $global-clr-soft-gray !important;
         }
       }
     }
   }
   &-dark{
-    color: $global-clr-soft-gray !important;
-    background-color: transparentize($global-clr-soft-gray, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    color: $global-clr-dark-gray !important;
+    background-color: $global-clr-soft-gray !important;
+    border-color: $global-border-light-gray !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
         &::after{
-          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+          background-color: $global-clr-soft-gray !important;
         }
       }
     }
