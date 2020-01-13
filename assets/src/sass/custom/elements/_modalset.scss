@@ -94,7 +94,7 @@
       }
 
       &-body{
-        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
+        border: 1px solid $global-clr-soft-gray;
         margin-top: -2px;
         padding: 0;
       }
@@ -124,7 +124,7 @@
       }
 
       &-graybg{
-        background-color: $global-clr-light-gray;
+        background-color: $global-clr-dark-gray;
         padding: 15px;
         margin: 15px 3px 3px;
 
@@ -136,7 +136,7 @@
 
       &-table{
         margin-top: -5px;
-        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        border-bottom: 1px solid $global-clr-soft-gray;
       }
     }
 

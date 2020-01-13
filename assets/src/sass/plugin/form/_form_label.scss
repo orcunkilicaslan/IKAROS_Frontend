@@ -2,7 +2,8 @@
 .formuilabel{
 
   .labelanimation{
-    position:relative;
+    position: relative;
+    z-index: 0;
 
     label{
       font-size: $global-font-size;
@@ -10,7 +11,7 @@
       top: 8px;
       left: 0;
       margin: 0;
-      //z-index: -1;
+      z-index: -1;
       @include transition(all, 0.3s, ease-in-out);
     }
 

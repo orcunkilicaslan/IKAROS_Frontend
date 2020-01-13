@@ -172,11 +172,11 @@
 
           tr{
             &:hover{
-              background-color: lighten($global-clr-soft-gray, 15%) !important;
+              background-color: $global-clr-soft-gray !important;
             }
 
             &.selectedweek{
-              background-color: lighten($global-clr-soft-gray, 10%) !important;
+              background-color: $global-clr-soft-gray !important;
             }
 
             td{

@@ -5,15 +5,17 @@ $global-font-size: 16px;
 
 /* Color Settings */
 $global-clr-white: #FFFFFF;
-$global-clr-black: #000000;
 $global-clr-green: #39BD22;
-$global-clr-red: #E92E18;
-$global-clr-orange: #ff9900;
-$global-clr-soft-blue: #0D78C4;
+$global-clr-red: #CE2029;
+$global-clr-orange: #FF5800;
+$global-clr-dark-black: #000000;
+$global-clr-soft-black: #232323;
 $global-clr-dark-blue: #12407D;
-$global-clr-soft-gray: #f3f7fa;
-$global-clr-light-gray: #F1F7FC;
-$global-clr-dark-black: #232323;
+$global-clr-soft-blue: #0D78C4;
+$global-clr-dark-turq: #6397be;
+$global-clr-soft-turq: lighten($global-clr-dark-turq, 20%);
+$global-clr-dark-gray: $global-clr-dark-turq;
+$global-clr-soft-gray: lighten($global-clr-dark-turq, 40%);
 /* Color Settings */
 
 /* Text Color Settings */
@@ -27,7 +29,7 @@ $global-sitebg-darkblue02: #002960;
 /* Site Background Color */
 
 /* Site Border Color */
-$global-border-light-gray: #bebebe;
+$global-border-light-gray: lighten($global-clr-dark-turq, 35%);
 /* Site Border Color */
 
 /* Site Gradient Background Color */
@@ -53,4 +55,5 @@ $footerclassname: ".footer";
 $formclassname: ".form";
 $forminputclassname: ".input";
 $formcustomclassname: ".custom";
+$btnclassname: ".btn";
 /* Site Class */

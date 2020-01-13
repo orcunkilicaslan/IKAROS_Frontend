@@ -2,6 +2,7 @@
 
 #### Web Public Area Frontend List
  - [01_Ikaros_Home_Page](https://orcunkilicaslan.github.io/IKAROS_Frontend/01_Ikaros_Home_Page.html)
+ - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
 # NodeJS Kurulumu

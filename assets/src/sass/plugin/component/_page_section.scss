@@ -15,9 +15,9 @@
     }
 
     &-content{
-      border: 1px solid lighten($global-border-light-gray, 15%);
-      padding: 25px 30px 30px;
-      margin-bottom: 20px;
+      border: 1px solid $global-border-light-gray;
+      padding: 30px;
+      margin-bottom: 40px;
     }
   }
 

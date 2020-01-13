@@ -9,6 +9,10 @@
     <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
     <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
     <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 </head>
 <body class="dfn-megamenu homepage">
 
@@ -110,28 +114,28 @@
                         <div class="form-row">
                             <div class="form-group col">
                                 <label>DEFAULT</label>
-                                <input type="text" class="form-control" placeholder="22,430.000">
+                                <input type="text" class="form-control" placeholder="Default Input">
                             </div>
                             <div class="form-group colorsetred col">
                                 <label>COLORSETRED</label>
-                                <input type="text" class="form-control" placeholder="22,430.000">
+                                <input type="text" class="form-control" placeholder="Red Input Value">
                             </div>
                             <div class="form-group colorsetdisabled col">
                                 <label>READONLY [INPUT]</label>
-                                <input type="text" class="form-control" value="22,430.000" placeholder="22,430.000" readonly>
+                                <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
                             </div>
                             <div class="form-group colorsetdisabled col">
                                 <label>DISABLED [DIV]</label>
-                                <div class="form-control">22,430.000</div>
+                                <div class="form-control">Disabled DIV</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col">
                                 <label>DEFAULT</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="22,430.000">
+                                    <input type="text" class="form-control" placeholder="Default Input">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">TRY</span>
+                                        <span class="input-group-text">TEXT</span>
                                     </div>
                                 </div>
                                 <ul class="input-message input-message-list">
@@ -141,27 +145,27 @@
                             <div class="form-group colorsetred col">
                                 <label>COLORSETRED</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="22,430.000">
+                                    <input type="text" class="form-control" placeholder="Red Input Value">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">TRY</span>
+                                        <span class="input-group-text">TEXT</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group colorsetdisabled col">
                                 <label>READONLY [INPUT]</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="22,430.000" placeholder="22,430.000" readonly>
+                                    <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
                                     <div class="input-group-append">
-                                        <span class="input-group-text">TRY</span>
+                                        <span class="input-group-text">TEXT</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group colorsetdisabled col">
                                 <label>DISABLED [DIV]</label>
                                 <div class="input-group">
-                                    <div class="form-control">22,430.000</div>
+                                    <div class="form-control">Disabled DIV</div>
                                     <div class="input-group-append">
-                                        <span class="input-group-text">TRY</span>
+                                        <span class="input-group-text">TEXT</span>
                                     </div>
                                 </div>
                             </div>
@@ -209,15 +213,15 @@
                                 <textarea class="form-control" rows="3" readonly></textarea>
                             </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row form-row-small">
                             <div class="form-group col-auto">
                                 <input type="text" readonly class="form-control-plaintext" value="email@example.com">
                             </div>
                             <div class="form-group col-auto">
-                                <input type="text" class="form-control" value="22,430.000" placeholder="22,430.000">
+                                <input type="text" class="form-control" value="Password" placeholder="Password">
                             </div>
                             <div class="form-group col-auto">
-                                <button type="submit" class="btn btn-primary">Confirm identity</button>
+                                <button type="submit" class="btn btn-primary">BUTTON</button>
                             </div>
                         </div>
                     </form>
@@ -308,7 +312,7 @@
                             <div class="form-group col-auto custom-control-group-horizontal">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                    <label class="custom-control-label" for="customCheck11">Check this custom checkbox</label>
                                 </div>
                             </div>
                             <div class="form-group col-auto custom-control-group-horizontal">
@@ -355,11 +359,11 @@
                     <h3>DATAPICKER AND WEEKPICKER INPUT/DIV (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
                 </div>
                 <div class="sitecomponents-box-content formuinew">
-                    <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-                    <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-                    <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
-                    <script id="script-momentjs" src="../assets/vendor/moment/min/moment.min.js"></script>
-                    <script id="script-momentjs-locale" src="../assets/vendor/moment/min/locales.min.js"></script>
+                    <link id="css-bootstrap-datepicker" rel="stylesheet" href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+                    <script id="script-bootstrap-datepicker" src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                    <script id="script-bootstrap-datepicker-lang" src="assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+                    <script id="script-momentjs" src="assets/vendor/moment/min/moment.min.js"></script>
+                    <script id="script-momentjs-locale" src="assets/vendor/moment/min/locales.min.js"></script>
                     <form autocomplete="off" novalidate>
                         <div class="form-row">
                             <div class="form-group col-md-6 colorsetdarkblue datepickercontainerlight bootstrap-datepicker-custom datepickerlight">
@@ -520,11 +524,11 @@
                                     </div>
                                 </div>
                                 <div style="text-transform: uppercase">
-                                    <div id="output"></div>
-                                    <div id="output2"></div>
-                                    <div id="output3"></div>
-                                    <div id="output4"></div>
-                                    <div id="output5"></div>
+                                    <small id="output1" class="d-block"></small>
+                                    <small id="output2" class="d-block"></small>
+                                    <small id="output3" class="d-block"></small>
+                                    <small id="output4" class="d-block"></small>
+                                    <small id="output5" class="d-block"></small>
                                 </div>
                                 <script>
                                     $(window).on("load",function(){
@@ -555,7 +559,7 @@
                                         }).on("changeDate", function(e) {
                                             var kk = $(".bootstrapweekpickerdivlight").val();
 
-                                            $("#output").html(
+                                            $("#output1").html(
                                                 "HAFTA NUMARASI: " + moment(kk, "DD.MM.YYYY").week()
                                             );
                                             $("#output2").html(
@@ -584,6 +588,244 @@
             </div>
             <!-- Datapicker and Weekpicker Input and Div End -->
 
+            <!-- Buttons Default Start -->
+            <div class="sitecomponents-box">
+                <div class="sitecomponents-box-headtitle">
+                    <h3>BUTTONS (DEFAULT - FONT 14PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="sitecomponents-box-content formuinew">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-danger">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-link">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-primary btn-rounded">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-secondary btn-rounded">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-dark btn-rounded">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-light btn-rounded">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-info btn-rounded">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-success btn-rounded">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-warning btn-rounded">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-danger btn-rounded">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-link btn-rounded">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-primary btn-rounded">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-secondary btn-rounded">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-dark btn-rounded">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-light btn-rounded">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-info btn-rounded">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-success btn-rounded">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-warning btn-rounded">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-danger btn-rounded">DANGER</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Buttons Default End -->
+
+            <!-- Buttons Large Start -->
+            <div class="sitecomponents-box">
+                <div class="sitecomponents-box-headtitle">
+                    <h3>BUTTONS (LARGE - FONT 16PX - HEIGHT 50PX)</h3>
+                </div>
+                <div class="sitecomponents-box-content formuinew">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-primary btn-rounded">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-secondary btn-rounded">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-dark btn-rounded">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-light btn-rounded">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-info btn-rounded">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-success btn-rounded">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-warning btn-rounded">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-danger btn-rounded">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-primary btn-rounded">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-secondary btn-rounded">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-dark btn-rounded">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-light btn-rounded">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-info btn-rounded">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-success btn-rounded">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-warning btn-rounded">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-danger btn-rounded">DANGER</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Buttons Default End -->
+
         </div>
     </div>
     <!-- Form UI Soft End -->
@@ -597,10 +839,6 @@
 <!-- Footer End -->
 
 <!-- JavaScript Start -->
-<script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 <script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
 <script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 <script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>

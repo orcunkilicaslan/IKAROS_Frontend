@@ -23,7 +23,7 @@
     thead tr th, tbody tr td{
       width: auto !important;
       display: table-cell !important;
-      border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+      border-bottom:1px solid $global-clr-soft-gray !important;
       position: inherit !important;
       font-weight: normal !important;
 
