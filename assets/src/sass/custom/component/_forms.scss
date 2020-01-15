@@ -14,7 +14,7 @@
       height:20px;
       overflow: hidden;
       margin-right: 6px;
-      border: 1px solid $global-border-light-gray;
+      border: 1px solid $global-input-border-light;
       @include border-radius(3px);
 
       .g-recaptcha{

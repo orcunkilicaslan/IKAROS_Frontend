@@ -1,5 +1,6 @@
 // Global Variables
 @import "../../plugin/option/variables";
+@import "../../plugin/option/variables_bootstrap";
 
 // Global Mixin
 @import "../../plugin/option/mixin";
@@ -74,7 +75,7 @@
     padding: 0;
     width: 24px;
     height: 24px;
-    border:1px solid $global-border-light-gray;
+    border: 1px solid $global-input-border-light;
     position: relative;
 
     &::after{
