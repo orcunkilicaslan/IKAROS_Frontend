@@ -2,10 +2,25 @@
 .sitecomponents{
   padding: 70px 0;
 
-  .compbgsoft{background-color: $global-clr-white;}
-  .compbgdark{background-color: $global-clr-dark-blue;}
+  &.compbgsoft{
+    background-color: $global-clr-white;
 
-  &-box{
+    .componentsbox{
+      &-headtitle h3{color: $global-clr-text-dark;}
+      &-content{border-color: $global-border-light-gray;}
+    }
+
+  }
+  &.compbgdark{
+    background-color: $global-sitebg-darkblue01;
+
+    .componentsbox{
+      &-headtitle h3{color: $global-clr-text-light;}
+      &-content{border-color: transparentize($global-clr-white, 0.9);}
+    }
+  }
+
+  .componentsbox{
 
     &-headtitle{
       margin-bottom: 5px;
@@ -15,14 +30,12 @@
     }
 
     &-content{
-      border: 1px solid $global-border-light-gray;
+      border: 1px solid transparent;
       padding: 30px;
       margin-bottom: 40px;
     }
-  }
 
-
-  &-formui{
+    &-formui{}
 
   }
 
