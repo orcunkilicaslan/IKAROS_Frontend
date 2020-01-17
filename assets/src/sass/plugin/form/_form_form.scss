@@ -117,6 +117,7 @@
         background-color: transparent;
         font-size: $global-font-size;
         border: none;
+        line-height: 1;
       }
 
       #{$formclassname}-control{
@@ -167,7 +168,7 @@
       &-group{
         &-vertical{
           #{$formcustomclassname}-control{
-            margin-bottom: 5px;
+            margin-bottom: 10px;
 
             &:last-child{margin-bottom: 0}
           }
