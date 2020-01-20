@@ -61,10 +61,10 @@
     }
 
     #{$formclassname}-control{
-      background-color: transparent;
-      border-top-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
+      background-color: transparent !important;
+      border-top-color: transparent !important;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
       width: 100%;
       padding-left: 0;
       display: block;
@@ -175,6 +175,18 @@
 
   // Dark Bg
   &.formuidarkbg{
+
+    #{$formclassname}control{
+      border-bottom-color: $global-clr-soft-blue !important;
+    }
+
+    .autofill{
+      &.disabled,
+      &:disabled,
+      &[readonly] {
+        background-color: transparent;
+      }
+    }
 
   }
 

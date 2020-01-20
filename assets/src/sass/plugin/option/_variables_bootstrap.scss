@@ -175,10 +175,10 @@ $bootstrap-custom-control-indicator-checked-border-color:               $bootstr
 $bootstrap-custom-control-indicator-focus-box-shadow:                   $bootstrap-input-focus-box-shadow;
 $bootstrap-custom-control-indicator-focus-border-color:                 $bootstrap-input-focus-border-color;
 $bootstrap-custom-control-indicator-active-color:                       $bootstrap-white;
-$bootstrap-custom-control-indicator-active-bg:                          lighten($bootstrap-component-active-bg, 35%);
+$bootstrap-custom-control-indicator-active-bg:                          transparent;
 $bootstrap-custom-control-indicator-active-box-shadow:                  none;
 $bootstrap-custom-control-indicator-active-border-color:                $bootstrap-custom-control-indicator-active-bg;
-$bootstrap-custom-checkbox-indicator-border-radius:                     $bootstrap-border-radius;
+$bootstrap-custom-checkbox-indicator-border-radius:                     2px;
 $bootstrap-custom-checkbox-indicator-indeterminate-bg:                  $bootstrap-component-active-bg;
 $bootstrap-custom-checkbox-indicator-indeterminate-color:               $bootstrap-component-active-bg;
 $bootstrap-custom-checkbox-indicator-indeterminate-box-shadow:          none;

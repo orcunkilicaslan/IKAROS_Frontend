@@ -16,11 +16,17 @@
 
     .componentsbox{
       &-headtitle h3{color: $global-clr-text-light;}
-      &-content{border-color: transparentize($global-clr-white, 0.9);}
+      &-content{border-color: transparentize($global-clr-soft-blue, 0.50);}
     }
   }
 
   .componentsbox{
+
+    &-wrapper{
+      .componentsbox:last-child{
+        .componentsbox-content{margin-bottom: 0;}
+      }
+    }
 
     &-headtitle{
       margin-bottom: 5px;

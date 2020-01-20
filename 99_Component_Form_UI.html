@@ -108,7 +108,7 @@
     <!-- Script -->
 
     <!-- Form UI Soft Start -->
-    <div class="componentsbox-formui">
+    <div class="componentsbox-wrapper componentsbox-formui">
         <div class="container">
 
 
@@ -128,7 +128,7 @@
                                 <label>COLORSETRED</label>
                                 <input type="text" class="form-control" placeholder="Red Input Value">
                             </div>
-                            <div class="form-group colorsetdisabled col">
+                            <div class="form-group col">
                                 <label>READONLY [INPUT]</label>
                                 <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
                             </div>
@@ -237,6 +237,36 @@
             </div>
             <!-- Form Controls Default End -->
 
+            <!-- Form Controls Autofill Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (AUTOFILL) (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Autofill End -->
+
             <!-- Form Controls Label Start -->
             <div class="componentsbox">
                 <div class="componentsbox-headtitle">
@@ -250,28 +280,22 @@
                                 <span class="inputbottombar"></span>
                                 <label>Adınız</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Soyadınız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Soyadınız</label>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>E-Posta Adresiniz</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>E-Posta Adresiniz</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Telefon Numaranız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Telefon Numaranız</label>
                             </div>
                         </div>
                     </form>
@@ -594,7 +618,7 @@
             <!-- Buttons Small Start -->
             <div class="componentsbox">
                 <div class="componentsbox-headtitle">
-                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 40PX)</h3>
+                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 30PX)</h3>
                 </div>
                 <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
@@ -962,7 +986,7 @@
 <section class="sitecomponents compbgdark">
 
     <!-- Form UI Dark Start -->
-    <div class="componentsbox-formui">
+    <div class="componentsbox-wrapper componentsbox-formui">
         <div class="container">
 
 
@@ -982,7 +1006,7 @@
                                 <label>COLORSETRED</label>
                                 <input type="text" class="form-control" placeholder="Red Input Value">
                             </div>
-                            <div class="form-group colorsetdisabled col">
+                            <div class="form-group col">
                                 <label>READONLY [INPUT]</label>
                                 <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
                             </div>
@@ -1091,6 +1115,36 @@
             </div>
             <!-- Form Controls Default End -->
 
+            <!-- Form Controls Autofill Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (AUTOFILL) (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Autofill End -->
+
             <!-- Form Controls Label Start -->
             <div class="componentsbox">
                 <div class="componentsbox-headtitle">
@@ -1104,28 +1158,22 @@
                                 <span class="inputbottombar"></span>
                                 <label>Adınız</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Soyadınız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Soyadınız</label>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>E-Posta Adresiniz</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>E-Posta Adresiniz</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Telefon Numaranız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Telefon Numaranız</label>
                             </div>
                         </div>
                     </form>
@@ -1218,7 +1266,7 @@
             <!-- Buttons Small Start -->
             <div class="componentsbox">
                 <div class="componentsbox-headtitle">
-                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 40PX)</h3>
+                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 30PX)</h3>
                 </div>
                 <div class="componentsbox-content siteformui formuidarkbg">
                     <form autocomplete="off" novalidate>
@@ -1584,7 +1632,7 @@
 
 
 <!-- Footer Start -->
-<footer class="footer"></footer>
+<footer class="footer" style="min-height: auto; margin-top: auto;"></footer>
 <!-- Footer End -->
 
 <!-- JavaScript Start -->
