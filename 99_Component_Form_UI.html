@@ -3,8 +3,8 @@
 <head>
     <title>IKAROS</title>
     <meta charset="utf-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-    <meta name="viewport" content="width=1440">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=1440">-->
     <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
     <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
     <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
@@ -97,19 +97,27 @@
 <!-- Header Slogan End -->
 
 <!-- Component Start -->
-<section class="sitecomponents">
+<section class="sitecomponents compbgsoft">
+
+    <!-- Script -->
+    <link id="css-bootstrap-datepicker" rel="stylesheet" href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <script id="script-bootstrap-datepicker" src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script id="script-bootstrap-datepicker-lang" src="assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+    <script id="script-momentjs" src="assets/vendor/moment/min/moment.min.js"></script>
+    <script id="script-momentjs-locale" src="assets/vendor/moment/min/locales.min.js"></script>
+    <!-- Script -->
 
     <!-- Form UI Soft Start -->
-    <div class="sitecomponents-formui compbgsoft">
+    <div class="componentsbox-wrapper componentsbox-formui">
         <div class="container">
 
 
             <!-- Form Controls Default Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>FORM CONTROLS (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row">
                             <div class="form-group col">
@@ -120,7 +128,7 @@
                                 <label>COLORSETRED</label>
                                 <input type="text" class="form-control" placeholder="Red Input Value">
                             </div>
-                            <div class="form-group colorsetdisabled col">
+                            <div class="form-group col">
                                 <label>READONLY [INPUT]</label>
                                 <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
                             </div>
@@ -138,7 +146,7 @@
                                         <span class="input-group-text">TEXT</span>
                                     </div>
                                 </div>
-                                <ul class="input-message input-message-list">
+                                <ul class="input-info input-info-list">
                                     <li>Mattis aliquam faucibus purus</li>
                                 </ul>
                             </div>
@@ -229,12 +237,42 @@
             </div>
             <!-- Form Controls Default End -->
 
+            <!-- Form Controls Autofill Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (AUTOFILL) (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Autofill End -->
+
             <!-- Form Controls Label Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>FORM CONTROLS (LABEL - FONT 16PX - HEIGHT 40PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui siteformuilabel">
+                <div class="componentsbox-content siteformui siteformuilabel">
                     <form autocomplete="off" novalidate>
                         <div class="form-row">
                             <div class="form-group labelanimation col">
@@ -242,28 +280,22 @@
                                 <span class="inputbottombar"></span>
                                 <label>Adınız</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Soyadınız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Soyadınız</label>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>E-Posta Adresiniz</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>E-Posta Adresiniz</label>
                             </div>
-                            <div class="form-group col">
-                                <div class="labelanimation input-group">
-                                    <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
-                                    <span class="inputbottombar"></span>
-                                    <label>Telefon Numaranız</label>
-                                </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Telefon Numaranız</label>
                             </div>
                         </div>
                     </form>
@@ -272,11 +304,11 @@
             <!-- Form Controls Label End -->
 
             <!-- Custom Checkboxs and Radios Default Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>CUSTOM CHECKBOXS AND RADIOS (DEFAULT - FONT 16PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row">
                             <div class="form-group col custom-control-group-vertical">
@@ -354,16 +386,11 @@
             <!-- Custom Checkboxs and Radios Default End -->
 
             <!-- Datapicker and Weekpicker Input and Div Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>DATAPICKER AND WEEKPICKER INPUT/DIV (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
-                    <link id="css-bootstrap-datepicker" rel="stylesheet" href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-                    <script id="script-bootstrap-datepicker" src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-                    <script id="script-bootstrap-datepicker-lang" src="assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
-                    <script id="script-momentjs" src="assets/vendor/moment/min/moment.min.js"></script>
-                    <script id="script-momentjs-locale" src="assets/vendor/moment/min/locales.min.js"></script>
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row">
                             <div class="form-group col-md-6 colorsetdarkblue datepickercontainerlight bootstrap-datepicker-custom datepickerlight">
@@ -589,11 +616,11 @@
             <!-- Datapicker and Weekpicker Input and Div End -->
 
             <!-- Buttons Small Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
-                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 40PX)</h3>
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 30PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row form-row-small">
                             <div class="form-group col-md-auto">
@@ -711,11 +738,11 @@
             <!-- Buttons Small End -->
 
             <!-- Buttons Default Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>BUTTONS (DEFAULT - FONT 14PX - HEIGHT 40PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row form-row-small">
                             <div class="form-group col-md-auto">
@@ -833,11 +860,11 @@
             <!-- Buttons Default End -->
 
             <!-- Buttons Large Start -->
-            <div class="sitecomponents-box">
-                <div class="sitecomponents-box-headtitle">
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
                     <h3>BUTTONS (LARGE - FONT 16PX - HEIGHT 50PX)</h3>
                 </div>
-                <div class="sitecomponents-box-content siteformui">
+                <div class="componentsbox-content siteformui">
                     <form autocomplete="off" novalidate>
                         <div class="form-row form-row-small">
                             <div class="form-group col-md-auto">
@@ -955,9 +982,657 @@
 </section>
 <!-- Component End -->
 
+<!-- Component Start -->
+<section class="sitecomponents compbgdark">
+
+    <!-- Form UI Dark Start -->
+    <div class="componentsbox-wrapper componentsbox-formui">
+        <div class="container">
+
+
+            <!-- Form Controls Default Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control" placeholder="Default Input">
+                            </div>
+                            <div class="form-group colorsetred col">
+                                <label>COLORSETRED</label>
+                                <input type="text" class="form-control" placeholder="Red Input Value">
+                            </div>
+                            <div class="form-group col">
+                                <label>READONLY [INPUT]</label>
+                                <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
+                            </div>
+                            <div class="form-group colorsetdisabled col">
+                                <label>DISABLED [DIV]</label>
+                                <div class="form-control">Disabled DIV</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Default Input">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">TEXT</span>
+                                    </div>
+                                </div>
+                                <ul class="input-info input-info-list">
+                                    <li>Mattis aliquam faucibus purus</li>
+                                </ul>
+                            </div>
+                            <div class="form-group colorsetred col">
+                                <label>COLORSETRED</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Red Input Value">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">TEXT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorsetdisabled col">
+                                <label>READONLY [INPUT]</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="Readonly Value" placeholder="Readonly Value" readonly>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">TEXT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorsetdisabled col">
+                                <label>DISABLED [DIV]</label>
+                                <div class="input-group">
+                                    <div class="form-control">Disabled DIV</div>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">TEXT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <select class="form-control custom-select">
+                                    <option selected>Lorem Ipsum Dolor</option>
+                                    <option value="1">Volutpat Est Velit</option>
+                                    <option value="2">Praesent Tristique Magna</option>
+                                    <option value="3">Rhoncus Est Pellentesque</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetred col">
+                                <label>COLORSETRED</label>
+                                <select class="form-control custom-select">
+                                    <option selected>Lorem Ipsum Dolor</option>
+                                    <option value="1">Volutpat Est Velit</option>
+                                    <option value="2">Praesent Tristique Magna</option>
+                                    <option value="3">Rhoncus Est Pellentesque</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetdisabled col">
+                                <label>READONLY [SELECT]</label>
+                                <select class="form-control custom-select" disabled>
+                                    <option selected>Lorem Ipsum Dolor</option>
+                                    <option value="1">Volutpat Est Velit</option>
+                                    <option value="2">Praesent Tristique Magna</option>
+                                    <option value="3">Rhoncus Est Pellentesque</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="form-group colorsetred col">
+                                <label>COLORSETRED</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="form-group colorsetdisabled col">
+                                <label>READONLY [TEXTAREA]</label>
+                                <textarea class="form-control" rows="3" readonly></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-auto">
+                                <input type="text" readonly class="form-control-plaintext" value="email@example.com">
+                            </div>
+                            <div class="form-group col-auto">
+                                <input type="text" class="form-control" value="Password" placeholder="Password">
+                            </div>
+                            <div class="form-group col-auto">
+                                <button type="submit" class="btn btn-primary">BUTTON</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Default End -->
+
+            <!-- Form Controls Autofill Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (AUTOFILL) (DEFAULT - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                            <div class="form-group col">
+                                <label>DEFAULT</label>
+                                <input type="text" class="form-control autofill" placeholder="Default Input" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Autofill End -->
+
+            <!-- Form Controls Label Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>FORM CONTROLS (LABEL - FONT 16PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui siteformuilabel formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Adınız</label>
+                            </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control autofill" pattern=".{0}|.{2,}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Soyadınız</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group labelanimation col">
+                                <input type="email" class="form-control autofill" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>E-Posta Adresiniz</label>
+                            </div>
+                            <div class="form-group labelanimation col">
+                                <input type="text" class="form-control inputphonemask autofill" pattern=".{0}|.{14}" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required />
+                                <span class="inputbottombar"></span>
+                                <label>Telefon Numaranız</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Controls Label End -->
+
+            <!-- Custom Checkboxs and Radios Default Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>CUSTOM CHECKBOXS AND RADIOS (DEFAULT - FONT 16PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck51">
+                                    <label class="custom-control-label" for="customCheck51">Check this custom checkbox</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck52">
+                                    <label class="custom-control-label" for="customCheck52">Check this custom checkbox</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled51" disabled>
+                                    <label class="custom-control-label" for="customCheckDisabled51">Check this custom checkbox</label>
+                                </div>
+                            </div>
+                            <div class="form-group col custom-control-group-vertical">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio51" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio51">Toggle this custom radio</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio52" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio52">Or toggle this other custom radio</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radioDisabled" id="customRadioDisabled51" class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadioDisabled51">Toggle this custom radio</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck61">
+                                    <label class="custom-control-label" for="customCheck61">Check this custom checkbox</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck62">
+                                    <label class="custom-control-label" for="customCheck62">Check this custom checkbox</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled61" disabled>
+                                    <label class="custom-control-label" for="customCheckDisabled61">Check this custom checkbox</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio61" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio61">Toggle this custom radio</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio62" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio62">Or toggle this other custom radio</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-auto custom-control-group-horizontal">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radioDisabled" id="customRadioDisabled62" class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadioDisabled62">Toggle this custom radio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Custom Checkboxs and Radios Default End -->
+
+            <!-- Buttons Small Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>BUTTONS (SMALL - FONT 12PX - HEIGHT 30PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-danger">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-link">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-danger rounded-pill">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-link rounded-pill">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill">DANGER</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Buttons Small End -->
+
+            <!-- Buttons Default Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>BUTTONS (DEFAULT - FONT 14PX - HEIGHT 40PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-danger">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-link">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-danger rounded-pill">DANGER</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-link rounded-pill">LINK</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-outline-danger rounded-pill">DANGER</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Buttons Default End -->
+
+            <!-- Buttons Large Start -->
+            <div class="componentsbox">
+                <div class="componentsbox-headtitle">
+                    <h3>BUTTONS (LARGE - FONT 16PX - HEIGHT 50PX)</h3>
+                </div>
+                <div class="componentsbox-content siteformui formuidarkbg">
+                    <form autocomplete="off" novalidate>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-primary">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-secondary">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-dark">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-light">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-info">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-success">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-warning">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-danger rounded-pill">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="form-row form-row-small">
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-primary rounded-pill">PRIMARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-secondary rounded-pill">SECONDARY</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-dark rounded-pill">DARK</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-light rounded-pill">LIGHT</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-info rounded-pill">INFO</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-success rounded-pill">SUCCESS</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-warning rounded-pill">WARNING</button>
+                            </div>
+                            <div class="form-group col-md-auto">
+                                <button type="submit" class="btn btn-lg btn-outline-danger rounded-pill">DANGER</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Buttons Default End -->
+
+        </div>
+    </div>
+    <!-- Form UI Dark End -->
+
+</section>
+<!-- Component End -->
+
 
 <!-- Footer Start -->
-<footer class="footer"></footer>
+<footer class="footer" style="min-height: auto; margin-top: auto;"></footer>
 <!-- Footer End -->
 
 <!-- JavaScript Start -->
