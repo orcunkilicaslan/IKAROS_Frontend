@@ -6,6 +6,7 @@ const translateObject = {
         'SurnameAlert':'En Az 2 Karakter',
         'PhoneAlert':'Hatalı Format',
         'EmailAlert':'Hatalı Format',
+        'Min10Character':'En Az 10 Karakter',
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
     },
@@ -14,6 +15,7 @@ const translateObject = {
         'SurnameAlert':'En Az 2 Karakter',
         'PhoneAlert':'Hatalı Format',
         'EmailAlert':'Hatalı Format',
+        'Min10Character':'En Az 10 Karakter',
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
     }
@@ -118,6 +120,18 @@ class GeneralValidForm {
                 }
                 break;
 
+            case "inputMin10CharacterProcess":
+                if(val.length < 10){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','Min10Character'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector,"", "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check", "error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
             case "inputMessageProcess":
                 if(val.length < 10){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'), "error", "check");
@@ -174,6 +188,18 @@ class GeneralValidForm {
                 if(val.length===0){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'), "error", "check");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"error","check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "inputMin10CharacterProcess":
+                if(val.length < 10){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','Min10Character'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error","check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr',''), "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check","error");
                     this.setGeneralValidFormErrorInput(inputIdSelector);
                 }
                 break;

@@ -112,7 +112,7 @@
       }
     }
 
-    &-message{
+    &-info{
       color: $global-clr-text-dark;
       font-size: $global-font-size * 0.750;
       font-weight: normal;
@@ -211,7 +211,7 @@
     }
   }
 
-  .inputerrormessage{
+  .msginput{
     display: none;
     position: absolute;
     top: 9px;
@@ -297,7 +297,7 @@
         &-text{color: $global-clr-white;}
       }
 
-      &-message{
+      &-info{
         color: transparentize($global-clr-white, 0.50);
 
         &-list{}

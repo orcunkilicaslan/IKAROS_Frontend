@@ -96,8 +96,8 @@
         background: $global-clr-green;
       }
 
-      &:focus ~ .inputerrormessage,
-      &:valid ~ .inputerrormessage{
+      &:focus ~ .msginput,
+      &:valid ~ .msginput{
         top: -10px;
         right: 0;
         font-size: $global-font-size * 0.750;
@@ -128,8 +128,8 @@
     &.textarea{
 
       #{$formclassname}-control{
-        &:focus ~ .inputerrormessage,
-        &:valid ~ .inputerrormessage,
+        &:focus ~ .msginput,
+        &:valid ~ .msginput,
         &:invalid ~ label{
           top: -15px;
         }
@@ -140,7 +140,7 @@
         left: 15px;
       }
 
-      .inputerrormessage.error{
+      .msginput.error{
         top: -15px;
       }
 
@@ -176,9 +176,7 @@
   // Dark Bg
   &.formuidarkbg{
 
-    #{$formclassname}control{
-      border-bottom-color: $global-clr-soft-blue !important;
-    }
+    #{$formclassname}-control{border-bottom-color: $global-clr-soft-blue !important;}
 
     .autofill{
       &.disabled,
