@@ -24,12 +24,14 @@
 
   &-register{
     background-color: $global-clr-soft-gray;
-    height: 615px;
     position: relative;
 
     > .container{
-      height: 100%;
-      .row{height: 100%;}
+      min-height: 615px;
+      @include flexbox-display-flex();
+      @include flexbox-flex-direction(row);
+
+      .row{@include flexbox-flex(1);}
     }
 
     .bgandicon{
@@ -56,8 +58,12 @@
     }
 
     &-titlearea{
-      padding-top: 160px;
+      @include flexbox-display-flex();
+      @include flexbox-flex-direction(column);
+      @include flexbox-justify-content(center);
+      width: 100%;
       max-width: 480px;
+      height: calc(100% - 20px);
 
       &-btngroup{
         @include flexbox-display-flex();
@@ -86,34 +92,24 @@
       position: relative;
     }
 
-    .siteformbox{
+    .sitemodalformbox{
       background-color: $global-clr-dark-blue;
       width: 100%;
       min-height: 700px;
-      padding: 40px;
       position: absolute;
       top: -40px;
-      @include border-radius(14px);
-
-      &-head{
-        @include flexbox-display-flex();
-        @include flexbox-flex-direction(row);
-        @include flexbox-justify-content(space-between);
-
-        .sitetitle{margin: 0;}
-        i[class*="icons"]{
-          @include svg-filter(0%, 1, 0, 100%);
-        }
-      }
 
       &-form{
-        margin-top: 30px;
-        position: relative;
-        z-index: 1;
+        #{$formclassname}-control{
+          &[rows]{height: 140px;}
+        }
       }
-
     }
+  }
 
+  &-consultancy{
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
 
 }

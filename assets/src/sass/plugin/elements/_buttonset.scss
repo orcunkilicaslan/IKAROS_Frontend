@@ -2,21 +2,20 @@
   height: 40px;
 
   &-sm{height: 30px;}
-  &-lg{height: 50px;}
+  &-lg{height: 50px; letter-spacing: -0.18px; font-weight: 500;}
 
   &:focus{@include box-shadow-none-imp();}
   &:hover{@include box-shadow-none-imp();}
   &:not(:disabled):not(.disabled).active:focus,
   &:not(:disabled):not(.disabled):active:focus{@include box-shadow-none-imp();}
 
-  &[class*="outline"]{
-    //background-color: transparent !important;
+  i{@include svg-filter(0%, 1, 0, 100%);}
 
+  &[class*="outline"]{
+    i{@include svg-filter(100%, 0, 0, 100%);}
     &:hover,
     &.active{
-      i{
-        @include svg-filter(0%, 1, 0, 100%);
-      }
+      i{@include svg-filter(0%, 1, 0, 100%);}
     }
   }
 }

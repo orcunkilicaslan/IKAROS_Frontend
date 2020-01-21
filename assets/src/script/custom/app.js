@@ -1,206 +1,32 @@
 
-/* Technology Box */
-$('#technologyboxowl').owlCarousel({
-    loop:false,
+/* Footer Brand Logos Box */
+$('#footbrandlogosowl').owlCarousel({
+    loop:true,
     nav:false,
     dots:false,
     autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:false,
     //items:3,
-    margin:30,
-    autoWidth:false,
+    margin:65,
+    autoWidth:true,
     responsiveClass:true,
     responsive:{
         0:{
             items:1
         },
         480:{
-            items:1
-        },
-        992:{
             items:2
         },
+        992:{
+            items:4
+        },
         1200:{
-            items:3
+            items:7
         }
     }
 });
-/* Technology Box */
-
-/* Instruments Box */
-$('#instrumentsboxowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Instruments Box */
-
-/* Contact Us Box */
-$('#contactusboxowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Contact Us Box */
-
-/* Our Company Box */
-$('#ourcompanyboxowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Our Company Box */
-
-/* Company List Box */
-$('#companylistboxowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Company List Box */
-
-/* Foot Liquidity Providers Box */
-$('#footliquidityprovidersowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Foot Liquidity Providers Box */
-
-/* Foot Technology Box */
-$('#foottechnologysowl').owlCarousel({
-    loop:false,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    //items:3,
-    margin:30,
-    autoWidth:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:1
-        },
-        992:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-});
-/* Foot Technology Box */
+/* Footer Brand Logos Box */
 
 /* Loading Info */
 // console.log("Custom App Javascript Loading Successful");

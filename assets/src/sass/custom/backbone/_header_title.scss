@@ -67,7 +67,7 @@
     }
 
     &-bg{
-      background-image: url(#{$global-img-path-slider}/home-slider-01.jpg);
+      background-image: url(#{$global-img-path-slider}/home_slider_01.jpg);
       background-position: top center;
       background-repeat: no-repeat;
       width: 100%;
@@ -78,7 +78,7 @@
     }
 
     &-scroll{
-      background-image: url(#{$global-img-path-svg}/headtitle-scroll-bg.svg);
+      background-image: url(#{$global-img-path-svg}/headtitle_scroll_bg.svg);
       background-repeat: no-repeat;
       background-position: center bottom;
       width: 88px;

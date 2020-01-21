@@ -28,12 +28,8 @@
       width: 12px;
       height: 12px;
 
-      &.icons-blue-plus{
-        background-position: 0 0;
-      }
-      &.icons-blue-arrow{
-        background-position: -12px 0;
-      }
+      &.icons-blue-plus{background-position: 0 0;}
+      &.icons-blue-arrow{background-position: -12px 0;}
     }
 
     &.sprite-20-dark{
@@ -42,12 +38,9 @@
       width: 20px;
       height: 20px;
 
-      &.icons-green-password{
-        background-position: 0 0;
-      }
-      &.icons-blue-enter{
-        background-position: -20px 0;
-      }
+      &.icons-green-password{background-position: 0 0;}
+      &.icons-blue-enter{background-position: -20px 0;}
+      &.icons-green-refer{background-position: -40px 0;}
     }
 
     &.sprite-60-dark{
@@ -56,12 +49,22 @@
       width: 60px;
       height: 60px;
 
-      &.icons-blue-building{
-        background-position: 0 0;
-      }
-      &.icons-blue-employee{
-        background-position: -60px 0;
-      }
+      &.icons-blue-building{background-position: 0 0;}
+      &.icons-blue-employee{background-position: -60px 0;}
+    }
+
+    &.sprite-home-consultancy{
+      background-image: url(#{$global-img-path-icons}/icons_spite_consultancy_70.svg);
+      background-position: 0 0;
+      width: 70px;
+      height: 70px;
+
+      &.icons-managment{background-position: 0 0;}
+      &.icons-grant{background-position: -70px 0;}
+      &.icons-kosgeb{background-position: -140px 0;}
+      &.icons-payroll{background-position: -210px 0;}
+      &.icons-capital{background-position: -280px 0;}
+      &.icons-callcenter{background-position: -350px 0;}
     }
 
   }

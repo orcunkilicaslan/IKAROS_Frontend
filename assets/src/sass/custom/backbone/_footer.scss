@@ -1,6 +1,170 @@
 
 .footer{
   background-color: $global-sitebg-darkblue01;
-  min-height: 400px;
-  margin-top: 1000px;
+  min-height: 200px;
+
+  &-brand{
+    background-color: $global-clr-soft-gray;
+    height: 140px;
+    padding: 40px 0;
+    position: relative;
+
+    &-list li{
+      @include flexbox-display-flex();
+      height: 60px;
+      margin: auto;
+    }
+
+    &-scroll{
+      background-color: $global-sitebg-darkblue01;
+      background-image: url(#{$global-img-path-svg}/footer_scroll_bg.svg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      width: 88px;
+      height: 34px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      @include translateX(-50%);
+      z-index: 1;overflow: hidden;
+
+
+      &::before,
+      &::after{
+        content: "";
+        background-color: $global-clr-soft-gray;
+        position: absolute;
+        width: 5000px;
+        height: 100%;
+        bottom: 0;
+      }
+      &::before{
+        left: -4999px;
+      }
+      &::after{
+        right: -4999px;
+      }
+
+      &-arrow{
+        overflow: hidden;
+        display: block;
+        width: 50px;
+        height: calc(100% + 5px);
+        position: relative;
+        bottom: 0;
+        margin: auto;
+        cursor: pointer;
+
+        &::before,
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          border-top: 3px solid white;
+          border-right: 3px solid white;
+          @include border-radius(14px);
+          left: calc(50% - 7px);
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          animation-name: bottomTopScroll;
+        }
+
+        &::before{bottom: 6px;}
+        &::after{bottom: -2px;}
+
+        @-webkit-keyframes bottomTopScroll {
+          0% {
+            //@include translateY(0);
+            @include transform-multiple(translateY(0) rotate(-45deg));
+            opacity: 0;
+          }
+          100% {
+            //@include translateY(-20px);
+            @include transform-multiple(translateY(-5px) rotate(-45deg));
+            opacity: 1;
+          }
+        }
+
+        @keyframes bottomTopScroll {
+          0% {
+            //@include translateY(0);
+            @include transform-multiple(translateY(0) rotate(-45deg));
+            opacity: 0;
+          }
+          100% {
+            //@include translateY(-20px);
+            @include transform-multiple(translateY(-5px) rotate(-45deg));
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom{
+    color: #57799c;
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: -0.16px;
+    padding: 40px 0 60px;
+
+    a{color: #57799c;}
+
+    &-logo{}
+
+    &-address{
+      margin-top: 20px;
+
+      &-contact{
+        margin-top: 10px;
+
+        li{
+          padding-left: 25px;
+          margin: 5px 0;
+          position: relative;
+
+          &::before{
+            content: "";
+            background-image: url(#{$global-img-path-icons}/icons_spite_footer_16.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 50%;
+            @include translateY(-50%);
+          }
+
+          &.iconsphone::before{background-position: 0 0;}
+          &.iconsfax::before{background-position: -16px 0;}
+          &.iconsemail::before{background-position: -32px 0;}
+
+        }
+      }
+    }
+
+    &-links{
+
+      h4{
+        color: $global-clr-white;
+        font-size: 20px;
+        line-height: 0.8;
+        letter-spacing: -0.2px;
+        margin-top: 40px;
+        padding-bottom: 10px;
+      }
+
+      &-nav{
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+        margin-top: 13px;
+      }
+
+    }
+  }
+
 }
