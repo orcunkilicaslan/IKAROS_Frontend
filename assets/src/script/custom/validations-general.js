@@ -7,6 +7,7 @@ const translateObject = {
         'PhoneAlert':'Hatalı Format',
         'EmailAlert':'Hatalı Format',
         'Min10Character':'En Az 10 Karakter',
+        'PleaseChoose':'Lütfen Seçiniz',
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
     },
@@ -16,6 +17,7 @@ const translateObject = {
         'PhoneAlert':'Hatalı Format',
         'EmailAlert':'Hatalı Format',
         'Min10Character':'En Az 10 Karakter',
+        'PleaseChoose':'Lütfen Seçiniz',
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
     }
@@ -132,7 +134,19 @@ class GeneralValidForm {
                 }
                 break;
 
-            case "inputMessageProcess":
+            case "selectPleaseChoose":
+                if(val === ""){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PleaseChoose'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector,"", "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check", "error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "textareaMessageProcess":
                 if(val.length < 10){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'), "error", "check");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
@@ -204,7 +218,19 @@ class GeneralValidForm {
                 }
                 break;
 
-            case "inputMessageProcess":
+            case "selectPleaseChoose":
+                if(val === ""){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PleaseChoose'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error","check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr',''), "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check","error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "textareaMessageProcess":
                 if(val.length < 10){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'), "error", "check");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"error","check");

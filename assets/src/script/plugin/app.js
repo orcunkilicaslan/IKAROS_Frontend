@@ -122,16 +122,35 @@ jQuery(function($) {
 });
 /* Site Table Horizantal TH Span */
 
+/* Scroll to Top Button */
+jQuery(document).ready(function() {
+    var duration = 300;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 250) {
+            jQuery('.bottomtotopbutton').fadeIn(duration);
+        } else {
+            jQuery('.bottomtotopbutton').fadeOut(duration);
+        }
+    });
+
+    jQuery('.bottomtotopbutton').click(function(event) {
+        event.preventDefault();
+        jQuery('html,body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+/* Scroll to Top Button */
+
 /* Input Mask */
 $(document).ready(function(){
-    $('.inputgsmphonemask').inputmask({
-        mask: '0599 999 99 99',
+    $('.inputphonemask').inputmask({
+        mask: '+99{1,99}',
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false
     });
-    $('.inputphonemask').inputmask({
-        mask: '+99{1,99}',
+    $('.inputgsmphonemask').inputmask({
+        mask: '0599 999 99 99',
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false

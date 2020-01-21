@@ -16,6 +16,7 @@
 
     &[class*="col"]{
       label{left: 10px;}
+      .msginput{right: 10px;}
     }
 
     #{$forminputclassname}-group{
@@ -36,27 +37,19 @@
       }
 
       i.icons-check,
-      i.icons-error{
-        display: none;
-      }
+      i.icons-error{display: none;}
 
       .error,
       .check{
-        i.icons-edit{
-          display: none;
-        }
+        i.icons-edit{display: none;}
       }
 
       .error{
-        i.icons-error{
-          display: block;
-        }
+        i.icons-error{display: block;}
       }
 
       .check{
-        i.icons-check{
-          display: block;
-        }
+        i.icons-check{display: block;}
       }
     }
 
@@ -99,7 +92,6 @@
       &:focus ~ .msginput,
       &:valid ~ .msginput{
         top: -10px;
-        right: 0;
         font-size: $global-font-size * 0.750;
         display: block;
       }
@@ -125,31 +117,16 @@
       }
     }
 
-    &.textarea{
+    textarea#{$formclassname}-control[readonly="readonly"]{
+      padding-left: 15px;
+      padding-right: 15px;
+      border-top-color: transparentize($global-clr-soft-blue, 0.75) !important;
+      border-left-color: transparentize($global-clr-soft-blue, 0.75) !important;
+      border-right-color: transparentize($global-clr-soft-blue, 0.75) !important;
 
-      #{$formclassname}-control{
-        &:focus ~ .msginput,
-        &:valid ~ .msginput,
-        &:invalid ~ label{
-          top: -15px;
-        }
-      }
-
-      label{
-        top: 15px;
-        left: 15px;
-      }
-
-      .msginput.error{
-        top: -15px;
-      }
-
-      #{$forminputclassname}-group{
-        &-append{
-          height: auto;
-          top: 10px;
-          right: 10px;
-        }
+      ~ label{
+        top: 11px;
+        left: 25px;
       }
     }
   }
@@ -170,6 +147,25 @@
     }
     &::before{left:50%;}
     &::after{right:50%;}
+  }
+
+  .custom{
+    &-control{
+      &-input{
+        &:valid{
+          ~ .custom-control-label::before{border-color: $global-clr-green;}
+        }
+        &:invalid{
+          ~ .custom-control-label::before{border-color: $global-clr-red;}
+        }
+      }
+    }
+  }
+
+  .msginput{
+    &.error{
+      top: -6px;
+    }
   }
 
 

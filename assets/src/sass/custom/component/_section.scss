@@ -6,6 +6,37 @@
     padding: 70px 0;
   }
 
-  &-register{}
+  &-consultancy{
+    background-color: $global-clr-white;
+    padding: 70px 0;
+
+    .consultancy{
+      &-list{
+        @include flexbox-display-flex();
+        @include flexbox-flex-direction(row);
+        @include flexbox-flex-wrap(wrap);
+        max-width: 1150px;
+        margin: auto;
+      }
+
+      &-items{
+        width: 100%;
+        @include flexbox-flex(0 0 calc(100% / 3));
+        max-width: calc(100% / 3);
+        padding: 60px 30px 0;
+      }
+
+      &-icons{
+        @include flexbox-display-flex();
+        background-color: $global-clr-soft-gray;
+        width: 130px;
+        height: 130px;
+        margin: 0 auto 20px;
+        @include border-radius(70px);
+
+        i[class*="icons"]{display: block; margin: auto;}
+      }
+    }
+  }
 
 }

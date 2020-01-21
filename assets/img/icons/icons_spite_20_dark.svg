@@ -1,4 +1,4 @@
-<svg id="icons_spite_20_dark" xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 40 20">
+<svg id="icons_spite_20_dark" xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20">
   <g id="password" transform="translate(0 -12)">
     <rect id="Rectangle_1" data-name="Rectangle 1" width="20" height="20" transform="translate(0 12)" fill="#eee" opacity="0"/>
     <g id="password-2" data-name="password" transform="translate(-31 12)">
@@ -16,5 +16,9 @@
       <path id="Path_679" data-name="Path 679" d="M224.688,142.294a.684.684,0,0,1-.483-1.168l3.164-3.164L224.2,134.8a.684.684,0,0,1,.968-.968l3.648,3.648a.684.684,0,0,1,0,.967l-3.648,3.648A.679.679,0,0,1,224.688,142.294Zm0,0" transform="translate(-213.442 -127.629)" fill="#0d78c4"/>
       <path id="Path_680" data-name="Path 680" d="M45.847,20.333a9.969,9.969,0,0,1-9.327-6.342.683.683,0,0,1,1.272-.5,8.636,8.636,0,1,0,0-6.32.683.683,0,0,1-1.272-.5,10.017,10.017,0,1,1,9.327,13.658Zm0,0" transform="translate(-34.868)" fill="#0d78c4"/>
     </g>
+  </g>
+  <g id="refer" transform="translate(40 -12)">
+    <rect id="Rectangle_1-3" data-name="Rectangle 1" width="20" height="20" transform="translate(0 12)" fill="#eee" opacity="0"/>
+    <path id="refer-2" data-name="refer" d="M15.772,5.781a5.778,5.778,0,1,0-9.047,4.764A10.014,10.014,0,0,0,0,20H1.561a8.445,8.445,0,0,1,8.433-8.437,5.786,5.786,0,0,0,5.778-5.781ZM9.994,10A4.219,4.219,0,1,1,14.21,5.781,4.222,4.222,0,0,1,9.994,10ZM20,14.375l-3.675,3.677-1.1-1.1,1.829-1.83H15.695a3.4,3.4,0,0,0-3.4,3.4V20H10.736V18.51a4.966,4.966,0,0,1,4.958-4.956h1.276L15.22,11.8l1.1-1.1Zm0,0" transform="translate(0 12)" fill="#7be269"/>
   </g>
 </svg>

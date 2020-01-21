@@ -109,7 +109,7 @@
                     <p data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1200">Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf!</p>
                 </div>
                 <div class="headtitle-home-slogan-btn" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="1800">
-                    <a class="btn btn-outline-info btn-rounded btn-lg" href="#" title="Daha Detaylı Bilgi" rel="bookmark"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> Daha Detaylı Bilgi</a>
+                    <a class="btn btn-lg btn-outline-info rounded-pill" href="#" title="Daha Detaylı Bilgi" rel="bookmark"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> Daha Detaylı Bilgi</a>
                 </div>
             </div>
             <div class="headtitle-home-bg headtitle-bgmask"></div>
@@ -143,8 +143,8 @@
 </section>
 <!-- Section Big Title End -->
 
-<!-- Section Register Start -->
-<section class="homepage-register section-register">
+<!-- Homepage Register Start -->
+<section class="homepage-register">
     <div class="bgandicon"></div>
     <div class="container">
         <div class="row">
@@ -158,8 +158,8 @@
                         <p data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1200">Kariyer sitelerinde ilan verip aday beklemekten sıkılan, ne istediğini bilen işverenlere zor işe alım süreçlerinde destek. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
                     </div>
                     <div class="homepage-register-titlearea-btngroup nav" role="tablist" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="1800">
-                        <a class="btn btn-outline-info btn-rounded btn-lg active" href="#register-isveren" title="İşveren Başvurusu" data-toggle="pill" role="tab" aria-selected="true"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> İşveren Başvurusu</a>
-                        <a class="btn btn-outline-info btn-rounded btn-lg" href="#register-aday" title="Aday Başvurusu" data-toggle="pill" role="tab" aria-selected="false"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> Aday Başvurusu</a>
+                        <a class="btn btn-lg btn-outline-info rounded-pill active" href="#register-isveren" title="İşveren Başvurusu" data-toggle="pill" role="tab" aria-selected="true"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> İşveren Başvurusu</a>
+                        <a class="btn btn-lg btn-outline-info rounded-pill" href="#register-aday" title="Aday Başvurusu" data-toggle="pill" role="tab" aria-selected="false"><i class="icons-sprite sprite-20-dark icons-blue-enter"></i> Aday Başvurusu</a>
                     </div>
                 </div>
             </div>
@@ -168,11 +168,11 @@
             <!-- Forms Tab -->
             <div class="col-md-6">
                 <div class="homepage-register-formarea">
-                    <div class="siteformbox siteformui siteformuilabel formuidarkbg tab-content">
+                    <div class="sitemodalformbox siteformui siteformuilabel formuidarkbg tab-content">
 
                         <!-- Isveren Tab Start -->
                         <div id="register-isveren" class="tab-pane fade show active" role="tabpanel">
-                            <div class="siteformbox-head">
+                            <div class="sitemodalformbox-head">
                                 <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left">
                                     <h3>
                                         <small>İşveren</small>
@@ -181,7 +181,7 @@
                                 </div>
                                 <i class="icons-sprite sprite-60-dark icons-blue-building"></i>
                             </div>
-                            <form class="siteformbox-form" action="" autocomplete="off" novalidate>
+                            <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
                                         <input id="inputNameId" class="form-control autofill" type="text" name="name" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
@@ -207,7 +207,7 @@
                                         <div id="iconEmailId"></div>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <input id="inputPhoneId" class="form-control inputphonemask autofill" type="text" name="phone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <input id="inputPhoneId" class="form-control inputphonemasktr autofill" type="text" name="phone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgPhoneId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Telefon Numaranız</label>
@@ -225,48 +225,54 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select class="form-control custom-select">
-                                            <option selected>Şehir Seçiniz</option>
+                                        <select id="selectCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Şehir Seçiniz</option>
                                             <option value="1">İstanbul</option>
                                             <option value="2">Ankara</option>
                                             <option value="3">İzmir</option>
                                         </select>
+                                        <span id="msgCityId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Şehir Seçiniz</label>
+                                        <div id="iconCityId"></div>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <select class="form-control custom-select">
-                                            <option selected>İlçe Seçiniz</option>
+                                        <select id="selectDistrictId" class="form-control autofill custom-select" name="district" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">İlçe Seçiniz</option>
                                             <option value="1">Beşiktaş</option>
                                             <option value="2">Üsküdar</option>
                                             <option value="3">Sarıyer</option>
                                         </select>
+                                        <span id="msgDistrictId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>İlçe Seçiniz</label>
+                                        <div id="iconDistrictId"></div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <textarea class="form-control" rows="3" minlength="10" maxlength="2000" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required></textarea>
+                                        <textarea id="textareaJobDesc" class="form-control autofill" name="jobdesc" rows="3" minlength="10" maxlength="2000" oninput="generalvalidform.verifyContent('textareaMessageProcess','textareaJobDesc','msgJobDesc','iconJobDesc')" onfocusout="generalvalidform.verifyContentErrorDelete('textareaMessageProcess','textareaJobDesc','msgJobDesc','iconJobDesc')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required></textarea>
+                                        <span id="msgJobDesc" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Kısaca İş Tanımızı Yazınız</label>
+                                        <div id="iconJobDesc"></div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col custom-control-group-vertical">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="RegisterCompanyTerms">
+                                            <input id="RegisterCompanyTerms" class="custom-control-input" type="checkbox" name="companyterms" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                             <label class="custom-control-label" for="RegisterCompanyTerms">Kullanıcı Sözleşmesini okudum, onaylıyorum.</label>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="RegisterCompanyGDPA">
+                                            <input id="RegisterCompanyGDPA" class="custom-control-input" type="checkbox" name="companygdpa" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                             <label class="custom-control-label" for="RegisterCompanyGDPA">KVKK kapsamında bilgilerimi sizinle paylaşıyorum.</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col">
-                                        <button type="submit" class="btn btn-lg btn-success rounded-pill minwidthper100">İŞVEREN BAŞVURUSU YAPIN</button>
+                                        <button type="submit" class="btn btn-lg btn-success rounded-pill minwidthper100"><i class="icons-sprite sprite-20-dark icons-green-refer"></i> İŞVEREN BAŞVURUSU YAPIN</button>
                                     </div>
                                 </div>
                             </form>
@@ -275,7 +281,7 @@
 
                         <!-- Aday Tab Start -->
                         <div id="register-aday" class="tab-pane fade" role="tabpanel">
-                            <div class="siteformbox-head">
+                            <div class="sitemodalformbox-head">
                                 <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left">
                                     <h3>
                                         <small>Aday</small>
@@ -295,10 +301,159 @@
         </div>
     </div>
 </section>
-<!-- Section Register End -->
+<!-- Homepage Register End -->
+
+<!-- Section Consultancy Start -->
+<section class="homepage-consultancy section-consultancy">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width800">
+            <small data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="100">İkaros & Partners</small>
+            <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="500">Danışmanlık</h1>
+            <p data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1200">İkaros & Partners, sektöründeki uzman kadrosu ile size bir çok alanda eğitim, planlama ve yönetim danışmanlığı hizmeti de vermektedir.</p>
+        </div>
+        <!-- Title -->
+
+        <!-- Consultancy List -->
+        <ul class="consultancy-list">
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1400">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-managment"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>Yönetim Danışmanlığı</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-grant"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>Hibe ve Teşvik</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1600">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-kosgeb"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>KOSGEB Danışmanlığı</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1700">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-payroll"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>Bordrolama</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1800">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-capital"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>Sermaye Piyasaları ve <br />Menkul Değerler</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+            <li class="consultancy-items" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1900">
+                <div class="consultancy-icons">
+                    <i class="icons-sprite sprite-home-consultancy icons-callcenter"></i>
+                </div>
+                <div class="consultancy-title sitetitle sitetitle-sm sitetitle-dark sitetitle-center">
+                    <h3>Çağrı Merkezi Kurulumu</h3>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </li>
+        </ul>
+        <!-- Consultancy List -->
+
+    </div>
+</section>
+<!-- Section Consultancy End -->
 
 <!-- Footer Start -->
-<footer class="footer"></footer>
+<footer class="footer">
+
+    <!-- Brand Logos Start -->
+    <div class="footer-brand">
+        <div class="container">
+            <ul id="footbrandlogosowl" class="footer-brand-list owl-carousel owl-theme">
+                <li><img src="assets/img/svg/footer_brand_logos_airliquide.svg" width="127" height="29" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_coca.svg" width="97" height="32" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_iwc.svg" width="74" height="28" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_johnson.svg" width="170" height="30" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_maif.svg" width="55" height="50" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_universal.svg" width="101" height="49" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_veolia.svg" width="97" height="24" alt="Brand" /></li>
+            </ul>
+        </div>
+        <div class="footer-brand-scroll">
+            <i class="footer-brand-scroll-arrow bottomtotopbutton"></i>
+        </div>
+    </div>
+    <!-- Brand Logos End -->
+
+    <!-- Footer Links Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="footer-bottom-left col-md-4">
+                    <a class="footer-bottom-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                    <div class="footer-bottom-address">
+                        <p>Maslak Mahallesi Maslak <br />Meydan Sokak Spring Giz Plaza <br />No: 5/57 Sarıyer / İstanbul</p>
+                        <ul class="footer-bottom-address-contact">
+                            <li class="iconsphone">+90 212 915 28 58</li>
+                            <li class="iconsfax">+90 212 915 28 68</li>
+                            <li class="iconsemail">info@ikarosandpartners.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Address -->
+
+                <!-- Links -->
+                <div class="footer-bottom-links col-md-3">
+                    <h4>Adaylar</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                        <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                        <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                        <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-3">
+                    <h4>İşverenler</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                        <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                        <li><a href="#" title="KOSGEB, Hibe ve Teşvik" rel="category">KOSGEB, Hibe ve Teşvik</a></li>
+                        <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                        <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-2">
+                    <h4>Bizi Takip Edin</h4>
+                </div>
+                <!-- Links -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer Links End -->
+
+</footer>
 <!-- Footer End -->
 
 <!-- JavaScript Start -->
