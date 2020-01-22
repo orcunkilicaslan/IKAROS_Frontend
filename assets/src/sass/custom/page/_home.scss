@@ -24,7 +24,6 @@
 
   &-register{
     background-color: $global-clr-soft-gray;
-    position: relative;
 
     > .container{
       min-height: 615px;
@@ -57,53 +56,12 @@
       }
     }
 
-    &-titlearea{
-      @include flexbox-display-flex();
-      @include flexbox-flex-direction(column);
-      @include flexbox-justify-content(center);
-      width: 100%;
-      max-width: 480px;
-      height: calc(100% - 20px);
-
-      &-btngroup{
-        @include flexbox-display-flex();
-        @include flexbox-flex-wrap(wrap);
-        margin-top: 30px;
-
-        .btn{
-          @include flexbox-flex-basis(0);
-          @include flexbox-flex-grow(1);
-          max-width: 100%;
-          margin: 0 5px;
-          text-align: left;
-          display: block;
-
-          &:first-child{
-            margin-left: 0;
-          }
-          &:last-child{
-            margin-right: 0;
-          }
-        }
-      }
-    }
-
-    &-formarea{
-      position: relative;
-    }
-
     .sitemodalformbox{
       background-color: $global-clr-dark-blue;
       width: 100%;
       min-height: 700px;
       position: absolute;
       top: -40px;
-
-      &-form{
-        #{$formclassname}-control{
-          &[rows]{height: 140px;}
-        }
-      }
     }
   }
 

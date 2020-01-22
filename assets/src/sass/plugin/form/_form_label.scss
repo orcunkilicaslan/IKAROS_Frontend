@@ -105,16 +105,6 @@
       &:valid ~ i[class*="icons-"]{
         display: none;
       }
-
-      &.textarea{
-        height: 350px;
-        padding: 15px 30px 15px 15px;
-
-        &:focus ~ label,
-        &:valid ~ label{
-          top: -15px;
-        }
-      }
     }
 
     textarea#{$formclassname}-control[readonly="readonly"]{
@@ -139,7 +129,7 @@
     &::before,
     &::after {
       content: "";
-      height: 2px;
+      height: 1px;
       width: 0;
       bottom: 0;
       position: absolute;
@@ -149,16 +139,12 @@
     &::after{right:50%;}
   }
 
-  .custom{
-    &-control{
-      &-input{
-        &:valid{
-          ~ .custom-control-label::before{border-color: $global-clr-green;}
-        }
-        &:invalid{
-          ~ .custom-control-label::before{border-color: $global-clr-red;}
-        }
-      }
+  #{$formcustomclassname}-control-input{
+    &:valid{
+      ~ #{$formcustomclassname}-control-label::before{border-color: $global-clr-green;}
+    }
+    &:invalid{
+      ~ #{$formcustomclassname}-control-label::before{border-color: $global-clr-red;}
     }
   }
 
@@ -172,7 +158,27 @@
   // Dark Bg
   &.formuidarkbg{
 
-    #{$formclassname}-control{border-bottom-color: $global-clr-soft-blue !important;}
+    #{$formclassname}-control{
+      border-bottom-color: $global-clr-soft-blue !important;
+
+      &:focus ~ label,
+      &:valid ~ label,
+      &:invalid ~ label{color: lighten($global-clr-red, 25%);}
+      &:focus ~ .inputbottombar:before,
+      &:focus ~ .inputbottombar:after{background: lighten($global-clr-red, 25%);}
+      &:valid ~ .inputbottombar:before,
+      &:valid ~ .inputbottombar:after{background: lighten($global-clr-green, 15%);}
+      &:valid ~ label{color: lighten($global-clr-green, 15%);}
+    }
+
+    #{$formcustomclassname}-control-input{
+      &:valid{
+        ~ #{$formcustomclassname}-control-label::before{border-color: lighten($global-clr-green, 15%);}
+      }
+      &:invalid{
+        ~ #{$formcustomclassname}-control-label::before{border-color: lighten($global-clr-red, 25%);}
+      }
+    }
 
     .autofill{
       &.disabled,

@@ -105,57 +105,7 @@
         right: -4999px;
       }
 
-      &-mouse{
-        border: 2px solid $global-clr-white;
-        overflow: hidden;
-        display: block;
-        width: 28px;
-        height: 40px;
-        margin: 0 auto;
-        position: relative;
-        top: -22px;
-        @include border-radius(30px);
-
-        &::before{
-          content: "";
-          background-color: $global-clr-white;
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          display: block;
-          animation-duration: 1.5s;
-          animation-iteration-count: infinite;
-          animation-name: scroll;
-          top: 8px;
-          left: calc(50% - 3px);
-          @include translateX(-50%);
-          @include border-radius(6px);
-        }
-
-
-        @-webkit-keyframes scroll {
-          0% {
-            @include translateY(0);
-            opacity: 1;
-          }
-          100% {
-            @include translateY(20px);
-            opacity: 0;
-          }
-        }
-
-        @keyframes scroll {
-          0% {
-            @include translateY(0);
-            opacity: 1;
-          }
-          100% {
-            @include translateY(20px);
-            opacity: 0;
-          }
-        }
-
-      }
+      &-mouse{}
     }
 
   }

@@ -30,7 +30,7 @@ $(function(){
 });
 /* Head Blur Tab Page Title */
 
-/* Header Nav Fixed */
+/* Header Navbar Fixed */
 jQuery(function($) {
     if($(window).width() > 991){
 
@@ -58,9 +58,9 @@ jQuery(function($) {
         });
     }
 });
-/* Header Nav Fixed */
+/* Header Navbar Fixed */
 
-/* Navbar Menu */
+/* Header Mobile Navbar Menu */
 $(function() {
 
     // Mobile Menu
@@ -73,9 +73,9 @@ $(function() {
     // Mobile Menu
 
 });
-/* Navbar Menu */
+/* Header Mobile Navbar Menu */
 
-/* Navbar Menu Active Class */
+/* Header Navbar Menu Active Class */
 jQuery(function($) {
     if($(window).width() > 991){
 
@@ -109,20 +109,15 @@ jQuery(function($) {
 
     }
 });
-/* Navbar Menu Active Class */
+/* Header Navbar Menu Active Class */
 
-/* Site Table Horizantal TH Span */
-jQuery(function($) {
-    if($(window).width() > 991){
-        $(window).on("load resize scroll",function(e){
-            var tableHeight = $("table.sitetable.horizantal");
-            $("table.sitetable.horizantal > thead > tr > th > span.thbox").css("width", tableHeight.height() + "px").css("top", (tableHeight.height() - 20) + "px");
-        });
-    }
+/* Tooltip */
+$(function(){
+    $('[data-toggle="tooltip"]').tooltip()
 });
-/* Site Table Horizantal TH Span */
+/* Tooltip */
 
-/* Scroll to Top Button */
+/* Footer Scroll to Top Button */
 jQuery(document).ready(function() {
     var duration = 300;
     jQuery(window).scroll(function() {
@@ -139,9 +134,16 @@ jQuery(document).ready(function() {
         return false;
     })
 });
-/* Scroll to Top Button */
+/* Footer to Top Button */
 
-/* Input Mask */
+/* Site Forum UI Input Text Transform Capitalize */
+$('.siteformui input[type="text"]').keyup(function(evt){
+    var txt = $(this).val();
+    $(this).val(txt.replace(/^(.)|\s(.)/g, function($1){ return $1.toUpperCase( ); }));
+});
+/* Site Forum UI Input Text Transform Capitalize */
+
+/* Site Forum UI Input Mask */
 $(document).ready(function(){
     $('.inputphonemask').inputmask({
         mask: '+99{1,99}',
@@ -192,7 +194,7 @@ $(document).ready(function(){
         showMaskOnHover: false
     });
 });
-/* Input Mask */
+/* Site Forum UI Input Mask */
 
 /* Loading Info */
 // console.log("Plugin App Javascript Loading Successful");
