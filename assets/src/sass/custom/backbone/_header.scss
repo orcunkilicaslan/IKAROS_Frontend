@@ -38,31 +38,7 @@
     @include flexbox-align-items(center);
     width: 100%;
 
-    &-logo{
-
-      img{
-        @-webkit-keyframes rainbow {
-          from { -webkit-filter:hue-rotate(10deg); }
-          to { -webkit-filter:hue-rotate(360deg); }
-        }
-
-        @keyframes rainbow {
-          from {
-            -webkit-filter:hue-rotate(10deg);
-            filter:hue-rotate(10deg);
-          }
-          to {
-            -webkit-filter:hue-rotate(360deg);
-            filter:hue-rotate(360deg);
-          }
-        }
-
-        &:hover{
-          -webkit-animation: rainbow 4s steps(36) infinite;
-        }
-      }
-
-    }
+    &-logo{}
 
     &-navbar{
       @include flexbox-display-flex();

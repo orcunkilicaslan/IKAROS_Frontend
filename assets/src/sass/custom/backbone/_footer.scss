@@ -1,12 +1,22 @@
 
 .footer{
   background-color: $global-sitebg-darkblue01;
+  color: #57799c;
   min-height: 200px;
+
+  a{
+    color: #57799c;
+    @include transition-multiple(color 0.15s ease-in-out);
+
+    &:hover{
+      color: $global-clr-white;
+    }
+  }
 
   &-brand{
     background-color: $global-clr-soft-gray;
-    height: 140px;
-    padding: 40px 0;
+    height: 130px;
+    padding: 35px 0;
     position: relative;
 
     &-list li{
@@ -45,77 +55,35 @@
         right: -4999px;
       }
 
-      &-arrow{
-        overflow: hidden;
-        display: block;
-        width: 50px;
-        height: calc(100% + 5px);
-        position: relative;
-        bottom: 0;
-        margin: auto;
-        cursor: pointer;
-
-        &::before,
-        &::after{
-          content: "";
-          display: block;
-          position: absolute;
-          width: 14px;
-          height: 14px;
-          border-top: 3px solid white;
-          border-right: 3px solid white;
-          @include border-radius(14px);
-          left: calc(50% - 7px);
-          animation-duration: 1.5s;
-          animation-iteration-count: infinite;
-          animation-name: bottomTopScroll;
-        }
-
-        &::before{bottom: 6px;}
-        &::after{bottom: -2px;}
-
-        @-webkit-keyframes bottomTopScroll {
-          0% {
-            //@include translateY(0);
-            @include transform-multiple(translateY(0) rotate(-45deg));
-            opacity: 0;
-          }
-          100% {
-            //@include translateY(-20px);
-            @include transform-multiple(translateY(-5px) rotate(-45deg));
-            opacity: 1;
-          }
-        }
-
-        @keyframes bottomTopScroll {
-          0% {
-            //@include translateY(0);
-            @include transform-multiple(translateY(0) rotate(-45deg));
-            opacity: 0;
-          }
-          100% {
-            //@include translateY(-20px);
-            @include transform-multiple(translateY(-5px) rotate(-45deg));
-            opacity: 1;
-          }
-        }
-      }
+      &-arrow{}
     }
   }
 
   &-bottom{
-    color: #57799c;
     font-size: 16px;
     line-height: 1.13;
     letter-spacing: -0.16px;
-    padding: 40px 0 60px;
+    padding: 50px 0 30px;
+    position: relative;
 
-    a{color: #57799c;}
+    > .container .row{
+      position: relative;
+
+      &::before{
+        content: "";
+        background-color: transparentize($global-clr-soft-blue, 0.70);
+        position: absolute;
+        width: calc(100% - 30px);
+        height: 1px;
+        top: 75px;
+        left: 15px;
+      }
+    }
 
     &-logo{}
 
     &-address{
-      margin-top: 20px;
+      margin-top: 35px;
 
       &-contact{
         margin-top: 10px;
@@ -161,10 +129,126 @@
       &-nav{
         line-height: 1.5;
         letter-spacing: -0.16px;
-        margin-top: 13px;
+        margin-top: 28px;
+      }
+
+      &-social{
+        @include flexbox-display-flex();
+        @include flexbox-flex-direction(row);
+        @include flexbox-flex-wrap(wrap);
+        @include flexbox-justify-content(center);
+        margin-top: 28px;
+
+        li{
+          margin: 0 5px;
+          position: relative;
+
+          a.socialicons{
+            background-image: url(#{$global-img-path-icons}/icons_spite_footer_social_20.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            display: block;
+            width: 20px;
+            height: 20px;
+            @include transition-multiple(filter 0.15s ease-in-out);
+
+            &:hover{
+              @include svg-filter(0%, 1, 0, 100%);
+            }
+
+            &.iconsfacebook{background-position: 0 0;}
+            &.iconstwitter{background-position: -20px 0;}
+            &.iconsinstagram{background-position: -40px 0;}
+            &.iconslinkedin{background-position: -60px 0;}
+          }
+        }
+
+      }
+    }
+  }
+
+  &-legal{
+    @include flexbox-display-flex();
+    @include flexbox-flex-wrap(wrap);
+    @include flexbox-align-items(center);
+    padding: 20px;
+    border: 1px solid transparentize($global-clr-soft-blue, 0.70);
+    @include border-radius(6px);
+
+    &-logo{
+      @include flexbox-flex(0 0 auto);
+      width: auto;
+      max-width: 100%;
+      margin-right: 15px;
+
+      i{
+        background-image: url(#{$global-img-path-svg}/footer_legal_logo_iskur.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &-desc{
+      @include flexbox-flex-basis(0);
+      @include flexbox-flex-grow(1);
+      max-width: 100%;
+
+      h4, p{
+        font-size: 14px;
+        letter-spacing: -0.14px;
+      }
+      h4{
+        color: $global-clr-white;
+        line-height: 1.14;
+        margin-bottom: 3px;
+      }
+      p{
+        line-height: 1.29;
+      }
+    }
+  }
+
+  &-copyright{
+    @include flexbox-display-flex();
+    @include flexbox-flex-wrap(wrap);
+    @include flexbox-align-items(center);
+    @include flexbox-justify-content(space-between);
+    padding: 20px 0;
+
+    &-text{}
+
+    &-links{
+      @include flexbox-display-flex();
+      @include flexbox-flex-direction(row);
+      @include flexbox-flex-wrap(wrap);
+
+      > li{
+        margin: 0 10px;
+        position: relative;
+
+        &:first-child{
+          margin-left: 0;
+          &::before{display: none;}
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &::before{
+          content: "";
+          background-color: transparentize($global-clr-soft-blue, 0.70);
+          position: absolute;
+          width: 1px;
+          height: 80%;
+          left: -10px;
+          top: 10%;
+        }
       }
 
     }
   }
-
 }

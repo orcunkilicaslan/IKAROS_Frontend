@@ -1,0 +1,93 @@
+
+.animation{
+
+  &-rainbowbgcolor{
+    &:hover{animation: RainbowBgColor 4s steps(36) infinite; -webkit-animation: RainbowBgColor 4s steps(36) infinite;}
+
+    @-webkit-keyframes RainbowBgColor{
+      from {filter:hue-rotate(10deg); -webkit-filter:hue-rotate(10deg);}
+      to {filter:hue-rotate(360deg); -webkit-filter:hue-rotate(360deg);}
+    }
+    @keyframes RainbowBgColor{
+      from {filter:hue-rotate(10deg); -webkit-filter:hue-rotate(10deg);}
+      to {filter:hue-rotate(360deg); -webkit-filter:hue-rotate(360deg);}
+    }
+  }
+
+  &-mousescrolldown{
+    border: 2px solid $global-clr-white;
+    overflow: hidden;
+    display: block;
+    width: 28px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: -22px;
+    @include border-radius(30px);
+
+    &::before{
+      content: "";
+      background-color: $global-clr-white;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      display: block;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: MouseScrollDown;
+      top: 8px;
+      left: calc(50% - 3px);
+      @include translateX(-50%);
+      @include border-radius(6px);
+    }
+
+    @-webkit-keyframes MouseScrollDown {
+      0% {opacity: 1; @include translateY(0);}
+      100% {opacity: 0; @include translateY(20px);}
+    }
+    @keyframes MouseScrollDown {
+      0% {opacity: 1; @include translateY(0);}
+      100% {opacity: 0; @include translateY(20px);}
+    }
+  }
+
+  &-bottomtotop{
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    height: calc(100% + 5px);
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+
+    &::before,
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-top: 3px solid $global-clr-white;
+      border-right: 3px solid $global-clr-white;
+      @include border-radius(14px);
+      left: calc(50% - 7px);
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: bottomTopScroll;
+    }
+
+    &::before{bottom: 6px;}
+    &::after{bottom: -2px;}
+
+    @-webkit-keyframes bottomTopScroll {
+      0% {opacity: 0; @include transform-multiple(translateY(0) rotate(-45deg));}
+      100% {opacity: 1; @include transform-multiple(translateY(-5px) rotate(-45deg));}
+    }
+    @keyframes bottomTopScroll {
+      0% {opacity: 0; @include transform-multiple(translateY(0) rotate(-45deg));}
+      100% {opacity: 1; @include transform-multiple(translateY(-5px) rotate(-45deg));}
+    }
+  }
+
+}
