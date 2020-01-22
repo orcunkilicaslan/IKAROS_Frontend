@@ -1,16 +1,20 @@
 
-.homepage{
+.home{
 
   #{$headerclassname}{
 
     &-web{
       background-color: transparentize(darken($global-sitebg-darkblue01, 7%), 0.75);
       @include backdrop-filter-multiple(blur(5px));
+
+      &.activemenubar{
+        @include backdrop-filter-multiple(none);
+      }
     }
 
     &.navscroll{
       #{$headerclassname}-web{
-        @include backdrop-filter-multiple(blur(0px));
+        @include backdrop-filter-multiple(none);
       }
     }
 

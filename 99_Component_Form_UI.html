@@ -14,7 +14,7 @@
     <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 </head>
-<body class="dfn-megamenu homepage">
+<body class="dfn-megamenu">
 
 <!-- Header Start -->
 <header class="header">
@@ -33,6 +33,7 @@
     <!-- Web Header -->
     <div class="header-web">
         <div class="container">
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
             <!-- Navigation Start -->
             <div class="header-navigation">
@@ -45,28 +46,42 @@
                     <nav class="dfn-menu">
                         <ul class="dfn-mobil-alt dfn-menu-list">
                             <li class="dfn-menu-list-item">
-                                <a href="javascript:;" title="Adaylar" rel="category" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adaylar</a>
-                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="InstituionalDropdownMenu">
-                                    <ul class="dropdownsubmenu">
-                                        <li class="submainmenu"><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
-                                        <li class="submainmenu"><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
-                                        <li class="submainmenu"><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
-                                        <li class="submainmenu"><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
-                                        <li class="submainmenu"><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
-                                    </ul>
+                                <a href="javascript:;" title="Adaylar" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adaylar</a>
+                                <div class="dropdown-menu animated">
+                                    <div class="container megamenu">
+                                        <div class="megamenu-desc">
+                                            <h2 class="megamenu-desc-title">Adaylar</h2>
+                                        </div>
+                                        <div class="megamenu-nav">
+                                            <ul>
+                                                <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                                                <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                                                <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                                                <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                                                <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="dfn-menu-list-item">
-                                <a href="javascript:;" title="İşverenler" rel="category" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">İşverenler</a>
-                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="PlatformsDropdownMenu">
-                                    <ul class="dropdownsubmenu">
-                                        <li class="submainmenu"><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
-                                        <li class="submainmenu"><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
-                                        <li class="submainmenu"><a href="#" title="KOSGEB, Hibe ve TEŞVİK" rel="category">KOSGEB, Hibe ve TEŞVİK</a></li>
-                                        <li class="submainmenu"><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
-                                        <li class="submainmenu"><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
-                                        <li class="submainmenu"><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
-                                    </ul>
+                                <a href="javascript:;" title="İşverenler" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">İşverenler</a>
+                                <div class="dropdown-menu animated">
+                                    <div class="container megamenu">
+                                        <div class="megamenu-desc">
+                                            <h2 class="megamenu-desc-title">İşverenler</h2>
+                                        </div>
+                                        <div class="megamenu-nav">
+                                            <ul>
+                                                <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                                                <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                                                <li><a href="#" title="KOSGEB, Hibe ve TEŞVİK" rel="category">KOSGEB, Hibe ve TEŞVİK</a></li>
+                                                <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                                                <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                                                <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="dfn-menu-list-item"><a href="#" title="Partnerler" rel="category">Partnerler</a></li>
@@ -74,11 +89,11 @@
                         </ul>
                     </nav>
                     <div class="signindropdown dropdown show">
-                        <a class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" href="#" role="button" id="headSignInDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title=""><i class="icons-sprite sprite-20-dark icons-green-password"></i> Aday/İşveren Girişi</a>
-                        <div class="dropdown-menu" aria-labelledby="headSignInDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-password"></i> Aday/İşveren Girişi</a>
+                        <div class="dropdown-menu animated" style="width: 100%;">
+                            <div class="signindropdown-menu">
+                                ICERIK GELECEK
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -25,6 +25,11 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.3s ease-in-out, margin 0.3s ease-in-out);
 
+    &.activemenubar{
+      background-color: darken($global-sitebg-darkblue01, 7%) !important;
+      border-color: transparent;
+    }
+
     > .container{
       @include flexbox-display-flex();
       height: 100%;
@@ -38,7 +43,10 @@
     @include flexbox-align-items(center);
     width: 100%;
 
-    &-logo{}
+    &-logo{
+      position: relative;
+      z-index: 1;
+    }
 
     &-navbar{
       @include flexbox-display-flex();
@@ -47,9 +55,40 @@
       .signindropdown{
         margin-left: 10px;
 
+        .dropdown-menu{
+          background-color: darken($global-sitebg-darkblue01, 6%) !important;
+          transform: none !important;
+          top: -10px !important;
+          padding: 50px 0 0;
+          margin: 0;
+          border: none;
+          width: 100%;
+          min-height: 150px;
+          z-index: 0 !important;
+          -webkit-animation-duration: 0.75s !important;
+          animation-duration: 0.75s !important;
+          @include border-radius(25px);
+          border: 2px solid $global-clr-green;
+
+          &.show{}
+        }
+
         &-btn{
           color: $global-clr-white !important;
           font-weight: normal;
+
+          &[aria-expanded="true"]{
+            //background-color: $global-clr-green;
+            position: relative;
+            z-index: 1;
+            border-color: transparent;
+
+            i{@include svg-filter(0%, 1, 0, 100%);}
+
+            &:hover{
+              background-color: transparent;
+            }
+          }
 
           > i[class*="sprite-20"]{top: 3px !important;}
 
@@ -66,6 +105,13 @@
             @include svg-filter(0%, 1, 0, 100%);
           }
         }
+
+        &-menu{
+          color: $global-clr-white;
+          text-align: center;
+          padding: 20px;
+        }
+
       }
     }
 
