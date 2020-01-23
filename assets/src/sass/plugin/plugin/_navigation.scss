@@ -83,6 +83,7 @@
               @include flexbox-flex-grow(1);
               max-width: 100%;
               padding-right: 30px;
+              margin-top: -5px;
 
               &-title{
                 color: $global-clr-white;
