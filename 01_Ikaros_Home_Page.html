@@ -10,7 +10,6 @@
     <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
     <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
     <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
@@ -90,10 +89,44 @@
                         </ul>
                     </nav>
                     <div class="signindropdown dropdown show">
-                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-password"></i> Aday/İşveren Girişi</a>
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-password"></i> İşveren/Aday Girişi</a>
                         <div class="dropdown-menu animated" style="width: 100%;">
-                            <div class="signindropdown-menu">
-                                ICERIK GELECEK
+                            <div class="signindropdown-menu siteformui siteformuilabel formuidarkbg">
+                                <form action="" autocomplete="off" novalidate>
+                                    <div class="form-row">
+                                        <div class="form-group labelanimation col">
+                                            <input id="inputLoginEmailId" class="form-control autofill" type="email" name="email" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputLoginEmailId','msgLoginEmailId','iconLoginEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputLoginEmailId','msgLoginEmailId','iconLoginEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                            <span id="msgLoginEmailId" class="msginput"></span>
+                                            <span class="inputbottombar"></span>
+                                            <label>E-Posta Adresiniz</label>
+                                            <div id="iconLoginEmailId"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group labelanimation col">
+                                            <input id="inputLoginPassId" class="form-control autofill" type="password" name="password" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputLoginPassId','msgLoginPassId','iconLoginPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputLoginPassId','msgLoginPassId','iconLoginPassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                            <span id="msgLoginPassId" class="msginput"></span>
+                                            <span class="inputbottombar"></span>
+                                            <label>Parolanız</label>
+                                            <div id="iconLoginPassId"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col custom-control-group-vertical">
+                                            <div class="recaptcha-area">
+                                                <div class="recaptcha-check">
+                                                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                                                </div>
+                                                <label>I'm not Robot</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col">
+                                            <button type="submit" class="btn btn-success rounded-pill minwidthper100">GİRİŞ YAP</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
