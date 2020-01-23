@@ -158,7 +158,6 @@ $(document).ready(function(){
 });
 /* Header Web User Login Dropdown Menu */
 
-
 /* Tooltip */
 $(function(){
     $('[data-toggle="tooltip"]').tooltip()
