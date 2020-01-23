@@ -1,15 +1,5 @@
 
 .headtitle{
-  @include background-linear(darken($global-grdint-darkblue01, 1%), darken($global-grdint-darkblue02, 1%), -45);
-  width: 100%;
-  height: 100%;
-  position: relative;
-  color: $global-clr-white;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  padding-top: 150px;
-  overflow: hidden;
-  @include transition(padding, 0.3s, ease-in-out);
 
   &-owl{
     width: 100%;
