@@ -60,6 +60,11 @@
       height: 100%;
 
       &-btn{
+        display: none;
+
+        @include ReSassMaxWidthResponsive(992){
+          display: block;
+        }
 
         .btnicon{
           width: 30px;
