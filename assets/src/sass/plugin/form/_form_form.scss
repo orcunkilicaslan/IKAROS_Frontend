@@ -230,6 +230,36 @@
     }
   }
 
+  .recaptcha{
+
+    &-area{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+    }
+
+    &-check{
+      position:relative;
+      width: 1.4rem;
+      height: 1.4rem;
+      overflow: hidden;
+      margin-right: 8px;
+      border: 1px solid $global-input-border-light;
+      @include border-radius(2px);
+
+      .g-recaptcha{
+        position:absolute;
+        top: -26px;
+        left: -36px;
+        @include scale(0.85);
+      }
+    }
+
+    label{
+      &::before,
+      &::after{display: none;}
+    }
+  }
+
   // Dark Bg
   &.formuidarkbg{
     label{color: $global-clr-white;}
@@ -346,6 +376,15 @@
     }
 
     .msginput{color: lighten($global-clr-red, 25%);}
+
+    .recaptcha{
+      &-check{
+        border-color: $global-clr-soft-blue;
+        .g-recaptcha{
+          @include svg-filter(100%, 1, 0, 100%);
+        }
+      }
+    }
   }
 
 }

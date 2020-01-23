@@ -58,14 +58,16 @@
         .dropdown-menu{
           background-color: darken($global-sitebg-darkblue01, 6%) !important;
           transform: none !important;
+          position: fixed !important;
+          z-index: -1 !important;
           top: 120px !important;
           padding: 0;
           margin: 0;
           border: none;
           width: 100%;
-          z-index: 0 !important;
           -webkit-animation-duration: 0.75s !important;
           animation-duration: 0.75s !important;
+          @include transition-multiple(top 0.3s ease-in-out);
 
           a{color: white;}
 

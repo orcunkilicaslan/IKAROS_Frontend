@@ -90,13 +90,13 @@ jQuery(function($) {
 
         // Header Web ActiveMenuBar Class Added and Removed
         $(document).ready(function(e) {
-            $(".dfn-menu-list > li.dfn-menu-list-item > a").click(function(event) {
+            $('.dfn-menu-list > li.dfn-menu-list-item > a[data-toggle="dropdown"]').click(function(event) {
                 $(this).parent().parent().parent().parent().parent().parent().parent().addClass('activemenubar');
                 //event.stopPropagation();
             });
             $(document).click(function(event) {
                 if (!$(event.target).hasClass('active')) {
-                    $(".header-web").removeClass("activemenubar");
+                    $(".header-web").removeClass('activemenubar');
                     $(".header-web li.dfn-menu-list-item").removeClass("active");
                 }
             });
@@ -111,11 +111,15 @@ jQuery(function($) {
 $(document).ready(function(){
     $(".dfn-menu-list-item")
         .on("show.bs.dropdown", function(){
-        $(this).find('.dropdown-menu').addClass('fadeInDown').removeClass('fadeOutUp');
+        $(this).find('.dropdown-menu').addClass('fadeInDown d-block').removeClass('fadeOutUp');
     })
         .on("hide.bs.dropdown", function(){
         $(this).find('.dropdown-menu').removeClass('fadeInDown').addClass('fadeOutUp');
+            setTimeout(function () {
+                $(".dfn-menu-list-item").find('.dropdown-menu').removeClass("d-block");
+            },750);
     });
+
 
     if($(window).width() > 991){
         $(window).on("load resize",function(e){
@@ -128,13 +132,29 @@ $(document).ready(function(){
 
 /* Header Web User Login Dropdown Menu */
 $(document).ready(function(){
-    $(".signindropdown")
-        .on("show.bs.dropdown", function(){
-            $(this).find('.dropdown-menu').addClass('fadeIn').removeClass('fadeOut');
+    $('.signindropdown')
+        .on('show.bs.dropdown', function(){
+            $(this).find('.dropdown-menu').addClass('fadeIn d-block').removeClass('fadeOut');
         })
-        .on("hide.bs.dropdown", function(){
+        .on('hide.bs.dropdown', function(){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
+            setTimeout(function () {
+                $(".signindropdown").find('.dropdown-menu').removeClass("d-block");
+            },750);
         });
+
+    // Header Web ActiveMenuBar Class Added and Removed
+    $('.signindropdown > a[data-toggle="dropdown"]').click(function(event) {
+        $(this).parent().parent().parent().parent().parent().addClass('activemenubar');
+        //event.stopPropagation();
+    });
+    $(document).click(function(event) {
+        if (!$(event.target).hasClass('active')) {
+            $(".header-web").removeClass("activemenubar");
+            $(".header-web li.dfn-menu-list-item").removeClass("active");
+        }
+    });
+    // Header Web ActiveMenuBar Class Added and Removed
 });
 /* Header Web User Login Dropdown Menu */
 

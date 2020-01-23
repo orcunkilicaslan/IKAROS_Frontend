@@ -9,7 +9,9 @@ const translateObject = {
         'Min10Character':'En Az 10 Karakter',
         'PleaseChoose':'Lütfen Seçiniz',
         'MessageAlert':'En Az 10 Karakter',
-        'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
+        'MessageCharacterOutAlert':'En Fazla 2000 Karakter',
+        'PasswordAlert':'En Az 8 Karakter',
+        'RePasswordAlert':'Şifreler Uyuşmuyor'
     },
     'en':{
         'NameAlert':'En Az 2 Karakter',
@@ -19,7 +21,9 @@ const translateObject = {
         'Min10Character':'En Az 10 Karakter',
         'PleaseChoose':'Lütfen Seçiniz',
         'MessageAlert':'En Az 10 Karakter',
-        'MessageCharacterOutAlert':'En Fazla 2000 Karakter'
+        'MessageCharacterOutAlert':'En Fazla 2000 Karakter',
+        'PasswordAlert':'En Az 8 Karakter',
+        'RePasswordAlert':'Şifreler Uyuşmuyor'
     }
 };
 
@@ -161,6 +165,18 @@ class GeneralValidForm {
                     this.setGeneralValidFormErrorInput(inputIdSelector);
                 }
                 break;
+
+            case "inputPasswordProcess":
+                if(val.length < 8){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PasswordAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector,"", "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check", "error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
         }
     }
 
@@ -242,6 +258,14 @@ class GeneralValidForm {
                 }else{
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr',''), "check", "error");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"check","error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "inputPasswordProcess":
+                if(val.length===0){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PasswordAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
                     this.setGeneralValidFormErrorInput(inputIdSelector);
                 }
                 break;
