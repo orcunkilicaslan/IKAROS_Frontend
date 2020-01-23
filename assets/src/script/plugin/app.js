@@ -57,19 +57,14 @@ jQuery(function($) {
             var headerHeight = $("header.header");
 
             if (scroll > headerHeight.height()) {
-                //headerHeight.css("top", 0);
                 headerHeight.addClass("navscroll");
             } else {
-                //headerHeight.css("top", "-" + headerHeight.height() + "px");
                 headerHeight.removeClass("navscroll");
             }
 
         }).on("load resize",function(e){
-
             var headerHeight = $("header.header");
-            $(".headtitle-bg").css("padding-top", headerHeight.height() + "px");
-            $(".headtitle").css("min-height", headerHeight.height() + "px");
-
+            $("header + section").css("min-height", headerHeight.height() + "px").css("padding-top", headerHeight.height() + "px");
         });
     }
 });

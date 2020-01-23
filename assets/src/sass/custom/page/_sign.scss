@@ -1,0 +1,14 @@
+
+.sign{
+
+  #{$headerclassname}-web{border-color: transparent;}
+  #{$footerclassname}-brand{display: none;}
+
+  &-section{
+    > .container{
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
+  }
+
+}

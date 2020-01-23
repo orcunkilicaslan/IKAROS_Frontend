@@ -66,6 +66,7 @@
       min-height: 700px;
       position: absolute;
       top: -40px;
+      @include box-shadow-none-imp();
     }
   }
 

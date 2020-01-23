@@ -4,8 +4,10 @@
 }
 
 .sitemodalformbox{
+  background-color: transparentize($global-clr-soft-blue, 0.85);
   padding: 40px;
   @include border-radius(14px);
+  @include box-shadow(0, 0, 20px, transparentize($global-clr-dark-black, 0.95));
 
   &-head{
     @include flexbox-display-flex();
@@ -29,9 +31,6 @@
       }
     }
 
-    .btn-lg{
-      height: 54px;
-      margin-top: 10px;
-    }
+    .btn-lg{margin-top: 10px;}
   }
 }
