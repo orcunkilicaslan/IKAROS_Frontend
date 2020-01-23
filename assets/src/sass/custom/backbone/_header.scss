@@ -27,7 +27,7 @@
     margin: 30px 0;
     border-top: 1px solid transparentize($global-clr-white, 0.85);
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
-    @include transition-multiple(background-color 0.3s ease-in-out, margin 0.3s ease-in-out);
+    @include transition-multiple(background-color 0.15s ease-in-out, margin 0.3s ease-in-out);
 
     &.activemenubar{
       background-color: darken($global-sitebg-darkblue01, 7%) !important;

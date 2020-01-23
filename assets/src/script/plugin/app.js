@@ -105,13 +105,11 @@ $(document).ready(function(){
     $('.signindropdown')
         .on('show.bs.dropdown', function(){
             $(this).find('.dropdown-menu').addClass('fadeIn d-block').removeClass('fadeOut');
-            $('.header-web').addClass('activemenubar');
         })
         .on('hide.bs.dropdown', function(){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
             setTimeout(function () {
                 $(".signindropdown").find('.dropdown-menu').removeClass("d-block");
-                $('.header-web').removeClass('activemenubar');
             },750);
         });
 });
