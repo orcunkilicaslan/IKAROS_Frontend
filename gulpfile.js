@@ -119,7 +119,8 @@ gulp.task('sass-custom', () => {
 gulp.task('script-custom', () => {
     return gulp.src([
         folder_src_main + 'script/custom/**/app.js',
-        folder_src_main + 'script/custom/**/validations-general.js'
+        folder_src_main + 'script/custom/**/validations-general.js',
+        folder_src_main + 'script/custom/**/input-placeholder-search.js'
     ])
         .pipe(plumber())
         .pipe(webpack({

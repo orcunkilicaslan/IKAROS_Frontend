@@ -56,7 +56,7 @@ jQuery(function($) {
             var scroll = $(window).scrollTop();
             var headerHeight = $("header.header");
 
-            if (scroll > headerHeight.height()) {
+            if (scroll > (headerHeight.height() / 3)) {
                 headerHeight.addClass("navscroll");
             } else {
                 headerHeight.removeClass("navscroll");
@@ -91,13 +91,13 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
 
     $(".dfn-menu-list-item")
         .on("show.bs.dropdown", function(){
-            $(this).find('.dropdown-menu').addClass('fadeInDown d-block').removeClass('fadeOutUp');
+            $(this).find('.dropdown-menu').addClass('fadeIn d-block');
             $('.header-web').addClass('activemenubar');
         })
         .on("hide.bs.dropdown", function(){
-            $(this).find('.dropdown-menu').removeClass('fadeInDown').addClass('fadeOutUp');
+            $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
             setTimeout(function () {
-                $(".dfn-menu-list-item").find('.dropdown-menu').removeClass("d-block");
+                $(".dfn-menu-list-item").find('.dropdown-menu').removeClass("fadeOut d-block");
                 //$('.header-web').removeClass('activemenubar');
             },750);
         });
@@ -109,12 +109,12 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
 $(document).ready(function(){
     $('.signindropdown')
         .on('show.bs.dropdown', function(){
-            $(this).find('.dropdown-menu').addClass('fadeIn d-block').removeClass('fadeOut');
+            $(this).find('.dropdown-menu').addClass('fadeIn d-block');
         })
         .on('hide.bs.dropdown', function(){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
             setTimeout(function () {
-                $(".signindropdown").find('.dropdown-menu').removeClass("d-block");
+                $(".signindropdown").find('.dropdown-menu').removeClass("fadeOut d-block");
             },750);
         });
 });
