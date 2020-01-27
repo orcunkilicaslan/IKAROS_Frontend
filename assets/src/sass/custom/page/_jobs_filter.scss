@@ -4,6 +4,34 @@
   &-filter{
     width: 100%;
     max-width: 350px;
+
+    &-box{
+      background-color: $global-clr-soft-gray;
+      padding: 20px;
+      @include border-radius(4px);
+
+      &-title{
+
+        a{
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.22;
+          letter-spacing: -0.54px;
+        }
+
+        p{
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.14;
+          letter-spacing: -0.42px;
+        }
+
+      }
+
+      &-form{}
+
+    }
+
   }
 
 }
