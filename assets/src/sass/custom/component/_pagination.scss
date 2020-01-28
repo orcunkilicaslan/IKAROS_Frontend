@@ -27,6 +27,7 @@
             &.next{
               i{
                 @include svg-filter(0%, 50%, 0, 100%);
+                opacity: 0.25;
               }
 
               &:hover{
