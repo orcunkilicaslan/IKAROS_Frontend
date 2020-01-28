@@ -5,6 +5,9 @@
   #{$footerclassname}-brand{display: none;}
 
   &-section{
+    padding-top: 150px;
+    min-height: 150px;
+
     > .container{
       padding-top: 30px;
       padding-bottom: 70px;

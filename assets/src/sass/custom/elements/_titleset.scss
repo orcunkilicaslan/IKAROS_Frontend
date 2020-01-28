@@ -26,7 +26,7 @@
   }
 
   &-lg{
-    h1,h2,h3,h4,h5,h6{font-size: 28px; font-weight: 500; line-height: 1.15; letter-spacing: -0.84px;}
+    h1,h2,h3,h4,h5,h6{font-size: 28px; font-weight: 500; line-height: 1; letter-spacing: -0.84px;}
     small{font-size: 24px; letter-spacing: -0.72px;}
     h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
     p{font-size: 18px; font-weight: normal; line-height: 1.11; letter-spacing: -0.45px;}
@@ -135,7 +135,7 @@
 
   &-soft{
     h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
-    small{color: $global-clr-white;}
+    small{color: $global-clr-soft-blue;}
     p{color: $global-clr-white;}
   }
 

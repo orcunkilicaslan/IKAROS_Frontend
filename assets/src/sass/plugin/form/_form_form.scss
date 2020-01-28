@@ -3,6 +3,8 @@
 
   form{
     position: relative;
+    z-index: 0;
+
     > *:last-child{margin-bottom: 0;}
   }
 
@@ -141,6 +143,8 @@
       }
 
       &-input{
+        height: auto;
+
         &:checked{
           ~ #{$formcustomclassname}-control-label{
             &::after{
