@@ -1,5 +1,5 @@
 
-.jobs{
+.job{
 
   &-filter{
     width: 100%;
@@ -17,7 +17,7 @@
 
       &-title{
         a{
-          color: $global-clr-soft-blue;
+          color: $global-clr-text-light;
           font-size: 18px;
           font-weight: normal;
           line-height: 1.22;

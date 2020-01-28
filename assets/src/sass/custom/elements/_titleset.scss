@@ -128,6 +128,12 @@
     }
   }
 
+  &-flex{
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(space-between);
+    @include flexbox-align-items(flex-end);
+  }
+
   &-dark{
     h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark;}
     small{color: $global-clr-text-light;}
@@ -135,7 +141,7 @@
 
   &-soft{
     h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
-    small{color: $global-clr-soft-blue;}
+    small{color: $global-clr-text-light;}
     p{color: $global-clr-white;}
   }
 
