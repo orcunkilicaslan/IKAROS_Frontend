@@ -5,33 +5,94 @@
     width: 100%;
     max-width: 350px;
 
-    &-box{
-      background-color: $global-clr-soft-gray;
+    &-fieldset{
+      background-color: transparentize($global-clr-soft-blue, 0.93);
       padding: 20px;
+      margin-bottom: 15px;
       @include border-radius(4px);
 
-      &-title{
+      &:last-child{
+        margin-bottom: 0;
+      }
 
+      &-title{
         a{
+          color: $global-clr-soft-blue;
           font-size: 18px;
           font-weight: normal;
           line-height: 1.22;
           letter-spacing: -0.54px;
-        }
+          display: block;
+          position: relative;
 
+          &::before{
+            content: "";
+            background-color: $global-clr-white;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5LjU1MSIgaGVpZ2h0PSI1LjU3MSIgdmlld0JveD0iMCAwIDkuNTUxIDUuNTcxIj4NCiAgPGcgaWQ9IkFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEwMi43MSkgcm90YXRlKC05MCkiPg0KICAgIDxwYXRoIGlkPSJQYXRoXzY5MiIgZGF0YS1uYW1lPSJQYXRoIDY5MiIgZD0iTTEwMi41MDksNS4yNDhsLTQuMiw0LjEwN2EuNy43LDAsMCwxLS45NjgsMCwuNjU4LjY1OCwwLDAsMSwwLS45NDZsMy43MTktMy42MzRMOTcuMzM5LDEuMTQyYS42NTguNjU4LDAsMCwxLDAtLjk0Ni43LjcsMCwwLDEsLjk2OCwwbDQuMiw0LjEwN2EuNjU4LjY1OCwwLDAsMSwwLC45NDZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOTkuODQ4IDkuNTUpIHJvdGF0ZSgxODApIiBmaWxsPSIjMGQ3OGM0Ii8+DQogIDwvZz4NCjwvc3ZnPg0K");
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 0;
+            top: -1px;
+            @include border-radius(50%);
+            @include transition-multiple(transform 0.15s ease-in-out);
+          }
+
+          &[aria-expanded="false"]::before{
+            background-position-x: 7px;
+            background-position-y: 9px;
+            @include rotate(-180);
+          }
+          &[aria-expanded="true"]::before{
+            background-position-x: 8px;
+            background-position-y: 10px;
+            @include rotate(0);
+          }
+
+        }
         p{
+          width: calc(100% - 35px);
           font-size: 14px;
           font-weight: normal;
           line-height: 1.14;
           letter-spacing: -0.42px;
+          margin-top: 5px;
         }
-
       }
 
-      &-form{}
-
+      &-form{
+        .form-group{
+          &:first-child{margin-top: 15px;}
+          &:last-child{margin-bottom: 0;}
+        }
+      }
     }
 
-  }
+    &.siteformui{
 
+      hr{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-color: $global-clr-white;
+      }
+
+      .form-group{
+        .btn[data-toggle="collapse"]{
+          margin-top: 5px;
+        }
+      }
+
+      .form-control{
+        @include border-radius(4px);
+      }
+
+      .custom-control-group-vertical{
+        .custom-control{
+          margin-bottom: 7px !important;
+          &:last-child{margin-bottom: 0}
+        }
+      }
+    }
+  }
 }

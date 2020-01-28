@@ -143,6 +143,8 @@
       }
 
       &-input{
+        height: auto;
+
         &:checked{
           ~ #{$formcustomclassname}-control-label{
             &::after{

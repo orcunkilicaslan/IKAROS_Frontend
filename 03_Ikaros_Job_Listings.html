@@ -176,20 +176,259 @@
         <div class="row">
 
             <!-- Jobs Filter Start -->
-            <div id="jobfilteracc" class="jobs-filter col-auto">
+            <div id="jobfilteracc" class="jobs-filter siteformui col-auto">
+                <form autocomplete="off" novalidate>
 
-                <!-- Keyword -->
-                <div class="jobs-filter-box">
-                    <div class="jobs-filter-box-title">
-                        <a href="#collapseOne" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Anahtar Kelime</a>
-                        <p>Anahtar kelime yazarak daha doğru ilanlara ulaşabilirsin.</p>
-                    </div>
-                    <div id="collapseOne" class="jobs-filter-box-form collapse show">
-                        FORM
-                    </div>
-                </div>
-                <!-- Keyword -->
+                    <!-- Keyword -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterKeyword" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Anahtar Kelime</a>
+                            <p>Anahtar kelime yazarak daha doğru ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterKeyword" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Anahtar Kelime">
+                            </div>
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordSearchAllAd" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordSearchAllAd">Tüm İlanda Ara</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordOnlyTitle" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordOnlyTitle">Sadece İlan Başlığında Ara</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordOnlyCompanyName" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordOnlyCompanyName">Sadece Firma Adında Ara</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Keyword -->
+                    <!-- Career Choice -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterCareerChoise" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Meslek Seçimi</a>
+                            <p>Aradığın mesleği seçerek daha uygun ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterCareerChoise" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Örn. Backend Developer">
+                            </div>
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="careerChoiseAdDesc" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="careerChoiseAdDesc">İlan Açıklamasına Dahil Et</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Career Choice -->
+                    <!-- Search Options -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterSearchOptions" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Arama Seçenekleri</a>
+                        </div>
+                        <div id="jobFilterSearchOptions" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptSuitableForMe" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptSuitableForMe">Bana Uygun İlanlar</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptCompaniesIFollow" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptCompaniesIFollow">Takip ettiğim firmaların ilanları</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptISaved" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptISaved">Kaydettiğim ilanlar</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptIExamined" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptIExamined">İncelediğim İlanlar</label>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="searchOptDontShowRecourse" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="searchOptDontShowRecourse">Başvurduğum ilanları gösterme</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="searchOptDontShowExamine" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="searchOptDontShowExamine">İncelediğim ilanları gösterme</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Search Options -->
+                    <!-- Advert Location -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterAdvertLocation" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">İlan Konumu</a>
+                            <p>Şehir seçerek daha doğru ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterAdvertLocation" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Konum Yazın...">
+                            </div>
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocIstAvr" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocIstAvr">İstanbul Avrupa Yakası (3454)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocIstAnd" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocIstAnd">İstanbul Anadolu Yakası (1928)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocAnk" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocAnk">Ankara (866)</label>
+                                </div>
+                            </div>
+                            <div id="jobFilterAdvertLocMore" class="collapse">
+                                <div class="form-group custom-control-group-vertical mt-0">
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocIzm" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocIzm">İzmir (34)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocBur" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocBur">Bursa (19)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocEdr" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocEdr">Edirne (8)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info minwidthper100" type="button" data-toggle="collapse" data-target="#jobFilterAdvertLocMore">Daha Fazla Görüntüle</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Advert Location -->
+                    <!-- Company Sector -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterCompanySector" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Firma Sektörü</a>
+                        </div>
+                        <div id="jobFilterCompanySector" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Sektör Yazın...">
+                            </div>
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecEducation" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecEducation">Eğitim (2561)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecTourism" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecTourism">Turizm - Otelcilik (838)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecHealth" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecHealth">Sağlık-Tıp (552)</label>
+                                </div>
+                            </div>
+                            <div id="jobFilterCompanySecMore" class="collapse">
+                                <div class="form-group custom-control-group-vertical mt-0">
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="CompanySecRetail" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="CompanySecRetail">Perakende (326)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="CompanySecProduction" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="CompanySecProduction">Üretim - Endüstriyel Ürünler(288)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info minwidthper100" type="button" data-toggle="collapse" data-target="#jobFilterCompanySecMore">Daha Fazla Görüntüle</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Company Sector -->
+                    <!-- Working Method -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterWorkingMethod" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Çalışma Şekli</a>
+                        </div>
+                        <div id="jobFilterWorkingMethod" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethPartTime" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethPartTime">Yarı Zamanlı / Part-Time</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethFullTime" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethFullTime">Tam zamanlı</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethPeriodic" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethPeriodic">Dönemsel</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethContracted" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethContracted">Sözleşmeli</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethIntern" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethIntern">Stajyer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Working Method -->
+                    <!-- Experience -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterExperience" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Deneyim</a>
+                        </div>
+                        <div id="jobFilterExperience" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-radio">
+                                    <input id="ExperienceExperienced" class="custom-control-input" type="radio" name="filterexperienceradio">
+                                    <label class="custom-control-label" for="ExperienceExperienced">Deneyimli</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="ExperienceInexperienced" class="custom-control-input" type="radio" name="filterexperienceradio">
+                                    <label class="custom-control-label" for="ExperienceInexperienced">Deneyimsiz</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Experience -->
+                    <!-- Listing Date -->
+                    <fieldset class="jobs-filter-fieldset">
+                        <div class="jobs-filter-fieldset-title">
+                            <a href="#jobFilterListingDate" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">İlan Tarihi</a>
+                        </div>
+                        <div id="jobFilterListingDate" class="jobs-filter-fieldset-form collapse show">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateToday" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateToday">Bugün Yayına Girenler</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateYesterday" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateYesterday">Dün Yayına Girenler</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateLastWeek" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateLastWeek">Son 1 Haftada Yayına Giren</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateLastMonth" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateLastMonth">Son 1 Ayda Yayına Giren</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Listing Date -->
 
+                </form>
             </div>
             <!-- Jobs Filter End -->
 
