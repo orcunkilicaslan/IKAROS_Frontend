@@ -1,6 +1,10 @@
 
 .siteformui{
-
+  form{
+    *, *::before, *::after {
+      letter-spacing: -.42px;
+    }
+  }
 }
 
 .sitemodalformbox{
