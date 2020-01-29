@@ -34,13 +34,15 @@
     min-height: 700px !important;
     padding-top: 0 !important;
 
-
-
     &-slogan{
       max-width: 720px;
       margin: 120px auto 70px;
       position: relative;
       z-index: 1;
+
+      .sitetitle *{
+        color: $global-clr-white;
+      }
 
       &-btn{
         margin-top: 50px;
