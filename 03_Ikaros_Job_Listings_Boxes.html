@@ -155,7 +155,7 @@
                 <form autocomplete="off" novalidate>
                     <div class="form-group">
                         <div class="input-group input-group-lg">
-                            <input class="form-control headtitlejobsearch" type="text" placeholder="Aradığınız Pozisyonu veya Sektörü Yazın...">
+                            <input class="form-control headtitlejobsearch autofill" type="text" placeholder="Aradığınız Pozisyonu veya Sektörü Yazın..." pattern=".{0}|.{1,}" onfocus="javascript:this.removeAttribute('readonly')" onfocusout="javascript:this.setAttribute('readonly', true)" readonly="true" required />
                             <div class="input-group-append">
                                 <button class="btn btn-search" type="submit" value="ARA"></button>
                             </div>
