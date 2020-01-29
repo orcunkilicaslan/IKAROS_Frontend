@@ -182,10 +182,10 @@
                     <!-- Keyword -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterKeyword" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Anahtar Kelime</a>
+                            <a href="#jobFilterKeyword" data-toggle="collapse">Anahtar Kelime</a>
                             <p>Anahtar kelime yazarak daha doğru ilanlara ulaşabilirsin.</p>
                         </div>
-                        <div id="jobFilterKeyword" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterKeyword" class="job-filter-fieldset-form collapse show" data-parent="#jobfilteracc">
                             <div class="form-group">
                                 <input class="form-control" type="text" placeholder="Anahtar Kelime">
                             </div>
@@ -209,10 +209,10 @@
                     <!-- Career Choice -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterCareerChoise" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Meslek Seçimi</a>
+                            <a class="collapsed" href="#jobFilterCareerChoise" data-toggle="collapse">Meslek Seçimi</a>
                             <p>Aradığın mesleği seçerek daha uygun ilanlara ulaşabilirsin.</p>
                         </div>
-                        <div id="jobFilterCareerChoise" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterCareerChoise" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group">
                                 <input class="form-control" type="text" placeholder="Örn. Backend Developer">
                             </div>
@@ -228,9 +228,9 @@
                     <!-- Search Options -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterSearchOptions" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Arama Seçenekleri</a>
+                            <a class="collapsed" href="#jobFilterSearchOptions" data-toggle="collapse">Arama Seçenekleri</a>
                         </div>
-                        <div id="jobFilterSearchOptions" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterSearchOptions" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group custom-control-group-vertical">
                                 <div class="custom-control custom-radio">
                                     <input id="searchOptSuitableForMe" class="custom-control-input" type="radio" name="filtersearchoptionradio">
@@ -266,10 +266,10 @@
                     <!-- Advert Location -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterAdvertLocation" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">İlan Konumu</a>
+                            <a class="collapsed" href="#jobFilterAdvertLocation" data-toggle="collapse">İlan Konumu</a>
                             <p>Şehir seçerek daha doğru ilanlara ulaşabilirsin.</p>
                         </div>
-                        <div id="jobFilterAdvertLocation" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterAdvertLocation" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group">
                                 <input class="form-control" type="text" placeholder="Konum Yazın...">
                             </div>
@@ -312,9 +312,9 @@
                     <!-- Company Sector -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterCompanySector" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Firma Sektörü</a>
+                            <a class="collapsed" href="#jobFilterCompanySector" data-toggle="collapse">Firma Sektörü</a>
                         </div>
-                        <div id="jobFilterCompanySector" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterCompanySector" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group">
                                 <input class="form-control" type="text" placeholder="Sektör Yazın...">
                             </div>
@@ -353,9 +353,9 @@
                     <!-- Working Method -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterWorkingMethod" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Çalışma Şekli</a>
+                            <a class="collapsed" href="#jobFilterWorkingMethod" data-toggle="collapse">Çalışma Şekli</a>
                         </div>
-                        <div id="jobFilterWorkingMethod" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterWorkingMethod" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group custom-control-group-vertical mb-0">
                                 <div class="custom-control custom-checkbox">
                                     <input id="WorkingMethPartTime" class="custom-control-input" type="checkbox">
@@ -384,9 +384,9 @@
                     <!-- Experience -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterExperience" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">Deneyim</a>
+                            <a class="collapsed" href="#jobFilterExperience" data-toggle="collapse">Deneyim</a>
                         </div>
-                        <div id="jobFilterExperience" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterExperience" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group custom-control-group-vertical mb-0">
                                 <div class="custom-control custom-radio">
                                     <input id="ExperienceExperienced" class="custom-control-input" type="radio" name="filterexperienceradio">
@@ -403,9 +403,9 @@
                     <!-- Listing Date -->
                     <fieldset class="job-filter-fieldset">
                         <div class="job-filter-fieldset-title">
-                            <a href="#jobFilterListingDate" data-parent="#jobfilteracc" data-toggle="collapse" aria-expanded="true">İlan Tarihi</a>
+                            <a class="collapsed" href="#jobFilterListingDate" data-toggle="collapse">İlan Tarihi</a>
                         </div>
-                        <div id="jobFilterListingDate" class="job-filter-fieldset-form collapse show">
+                        <div id="jobFilterListingDate" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
                             <div class="form-group custom-control-group-vertical mb-0">
                                 <div class="custom-control custom-checkbox">
                                     <input id="ListingDateToday" class="custom-control-input" type="checkbox">
@@ -457,19 +457,25 @@
                 <script>
                     $(document).ready(function(){
                         $('ul.job-list-headfilter-icons li.selectlistingvertical').click(function() {
-                            $('ul.joblistings').removeClass('listboxes');
+                            $('ul.joblistings').removeClass('fadeIn');
+                            setTimeout(function () {
+                                $('ul.joblistings').removeClass('listboxes').addClass('fadeIn');
+                            },50);
                         });
                         $('ul.job-list-headfilter-icons li.selectlistingboxes').click(function() {
-                            $('ul.joblistings').addClass('listboxes');
+                            $('ul.joblistings').removeClass('fadeIn');
+                            setTimeout(function () {
+                                $('ul.joblistings').addClass('listboxes animated fadeIn');
+                            },50);
                         });
                     });
                 </script>
                 <!-- Head Filter -->
                 <!-- Job Listings Start -->
                 <div class="job-list-listings">
-                    <ul class="joblistings listboxes">
+                    <ul class="joblistings">
 
-                        <!-- İtem -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -486,8 +492,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -504,8 +510,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -522,8 +528,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -540,8 +546,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -558,8 +564,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -576,8 +582,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -594,8 +600,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -612,8 +618,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -630,8 +636,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -648,8 +654,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -666,8 +672,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -684,8 +690,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -702,8 +708,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -720,8 +726,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -738,8 +744,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -756,8 +762,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -774,8 +780,8 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
-                        <!-- İtem -->
+                        <!-- Item -->
+                        <!-- Item -->
                         <li class="joblistings-item">
                             <div class="joblistings-item-companyinfo">
                                 <a class="companylogo" href="#" title="Title" rel="bookmark">
@@ -792,7 +798,7 @@
                                 <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
                             </div>
                         </li>
-                        <!-- İtem -->
+                        <!-- Item -->
 
                     </ul>
                 </div>
@@ -833,7 +839,6 @@
     </div>
 </section>
 <!-- Job End -->
-
 
 <!-- Footer Start -->
 <footer class="footer">
