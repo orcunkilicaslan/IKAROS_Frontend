@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>IKAROS</title>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=1440">
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
+    <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
+    <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
+</head>
+<body class="dfn-megamenu job">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Mask -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <!-- Mobile Mask -->
+
+    <!-- Web Header -->
+    <div class="header-web">
+        <div class="container">
+
+            <!-- Navigation Start -->
+            <div class="header-navigation">
+                <div class="header-navigation-logo">
+                    <a id="dfn-navtggle" class="header-navigation-logo-btn dfn-mobilemenu-btn">
+                        <div class="btnicon"><span></span></div>
+                        <div class="btntext d-none"><small>MENÜ</small></div>
+                    </a>
+                    <a class="header-navigation-logo-link" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                </div>
+                <div class="header-navigation-navbar dfn-nav dfn-headnav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-menu-list-item">
+                                <a href="javascript:;" title="Adaylar" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adaylar</a>
+                                <div class="dropdown-menu animated">
+                                    <div class="container megamenu">
+                                        <div class="megamenu-desc">
+                                            <h2 class="megamenu-desc-title">Adaylar</h2>
+                                        </div>
+                                        <div class="megamenu-nav">
+                                            <ul>
+                                                <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                                                <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                                                <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                                                <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                                                <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dfn-menu-list-item">
+                                <a href="javascript:;" title="İşverenler" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">İşverenler</a>
+                                <div class="dropdown-menu animated">
+                                    <div class="container megamenu">
+                                        <div class="megamenu-desc">
+                                            <h2 class="megamenu-desc-title">İşverenler</h2>
+                                        </div>
+                                        <div class="megamenu-nav">
+                                            <ul>
+                                                <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                                                <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                                                <li><a href="#" title="KOSGEB, Hibe ve TEŞVİK" rel="category">KOSGEB, Hibe ve TEŞVİK</a></li>
+                                                <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                                                <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                                                <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Partnerler" rel="category">Partnerler</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Şirket" rel="category">Şirket</a></li>
+                        </ul>
+                    </nav>
+                    <div class="signindropdown dropdown show">
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-password"></i> İşveren/Aday Girişi</a>
+                        <div class="dropdown-menu animated" style="width: 100%;">
+                            <div class="signindropdown-menu siteformui siteformuilabel formuidarkbg">
+                                <form action="" autocomplete="off" novalidate>
+                                    <div class="form-row">
+                                        <div class="form-group labelanimation col">
+                                            <input id="inputHeaderLoginEmailId" class="form-control autofill" type="email" name="email" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputHeaderLoginEmailId','msgHeaderLoginEmailId','iconHeaderLoginEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputHeaderLoginEmailId','msgHeaderLoginEmailId','iconHeaderLoginEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                            <span id="msgHeaderLoginEmailId" class="msginput"></span>
+                                            <span class="inputbottombar"></span>
+                                            <label>E-Posta Adresiniz</label>
+                                            <div id="iconHeaderLoginEmailId"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group labelanimation col">
+                                            <input id="inputHeaderLoginPassId" class="form-control autofill" type="password" name="password" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputHeaderLoginPassId','msgHeaderLoginPassId','iconHeaderLoginPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputHeaderLoginPassId','msgHeaderLoginPassId','iconHeaderLoginPassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                            <span id="msgHeaderLoginPassId" class="msginput"></span>
+                                            <span class="inputbottombar"></span>
+                                            <label>Parolanız</label>
+                                            <div id="iconHeaderLoginPassId"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col custom-control-group-vertical">
+                                            <div class="recaptcha-area">
+                                                <div class="recaptcha-check">
+                                                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                                                </div>
+                                                <label>I'm not Robot</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col">
+                                            <button class="btn btn-success rounded-pill minwidthper100" type="submit">GİRİŞ YAP</button>
+                                            <a class="btn btn-outline-info rounded-pill minwidthper100 mt-2 sitecolorwhite" href="02_Ikaros_Sign_Up.html">KAYIT OL</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation End -->
+
+        </div>
+    </div>
+    <!-- Web Header -->
+
+</header>
+<!-- Header End -->
+
+<!-- Header Title Start -->
+<section class="headtitle headtitle-content component-gradientbg">
+    <div class="container">
+        <div class="row">
+
+            <!-- Title -->
+            <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left col">
+                <small data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="100">İş Bulma Sihirbazı</small>
+                <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="300">Kendinize Uygun İş İlanları</h1>
+            </div>
+            <!-- Title -->
+
+            <!-- Search -->
+            <div class="headsearch siteformui col-auto">
+                <form autocomplete="off" novalidate>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <input class="form-control headtitlejobsearch" type="text" placeholder="Aradığınız Pozisyonu veya Sektörü Yazın...">
+                            <div class="input-group-append">
+                                <button class="btn btn-search" type="submit" value="ARA"></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Search -->
+
+        </div>
+    </div>
+</section>
+<!-- Header Title End -->
+
+<!-- Job Start -->
+<section class="job-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Job Search Filter Start -->
+            <div id="jobfilteracc" class="job-filter siteformui col-auto">
+                <form autocomplete="off" novalidate>
+
+                    <!-- Keyword -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a href="#jobFilterKeyword" data-toggle="collapse">Anahtar Kelime</a>
+                            <p>Anahtar kelime yazarak daha doğru ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterKeyword" class="job-filter-fieldset-form collapse show" data-parent="#jobfilteracc">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Anahtar Kelime">
+                            </div>
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordSearchAllAd" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordSearchAllAd">Tüm İlanda Ara</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordOnlyTitle" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordOnlyTitle">Sadece İlan Başlığında Ara</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="keywordOnlyCompanyName" class="custom-control-input" type="radio" name="filterkeywordradio">
+                                    <label class="custom-control-label" for="keywordOnlyCompanyName">Sadece Firma Adında Ara</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Keyword -->
+                    <!-- Career Choice -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterCareerChoise" data-toggle="collapse">Meslek Seçimi</a>
+                            <p>Aradığın mesleği seçerek daha uygun ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterCareerChoise" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Örn. Backend Developer">
+                            </div>
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="careerChoiseAdDesc" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="careerChoiseAdDesc">İlan Açıklamasına Dahil Et</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Career Choice -->
+                    <!-- Search Options -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterSearchOptions" data-toggle="collapse">Arama Seçenekleri</a>
+                        </div>
+                        <div id="jobFilterSearchOptions" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptSuitableForMe" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptSuitableForMe">Bana Uygun İlanlar</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptCompaniesIFollow" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptCompaniesIFollow">Takip ettiğim firmaların ilanları</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptISaved" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptISaved">Kaydettiğim ilanlar</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="searchOptIExamined" class="custom-control-input" type="radio" name="filtersearchoptionradio">
+                                    <label class="custom-control-label" for="searchOptIExamined">İncelediğim İlanlar</label>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="searchOptDontShowRecourse" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="searchOptDontShowRecourse">Başvurduğum ilanları gösterme</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="searchOptDontShowExamine" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="searchOptDontShowExamine">İncelediğim ilanları gösterme</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Search Options -->
+                    <!-- Advert Location -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterAdvertLocation" data-toggle="collapse">İlan Konumu</a>
+                            <p>Şehir seçerek daha doğru ilanlara ulaşabilirsin.</p>
+                        </div>
+                        <div id="jobFilterAdvertLocation" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Konum Yazın...">
+                            </div>
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocIstAvr" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocIstAvr">İstanbul Avrupa Yakası (3454)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocIstAnd" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocIstAnd">İstanbul Anadolu Yakası (1928)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="advertLocAnk" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="advertLocAnk">Ankara (866)</label>
+                                </div>
+                            </div>
+                            <div id="jobFilterAdvertLocMore" class="collapse">
+                                <div class="form-group custom-control-group-vertical mt-0">
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocIzm" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocIzm">İzmir (34)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocBur" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocBur">Bursa (19)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="advertLocEdr" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="advertLocEdr">Edirne (8)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info minwidthper100" type="button" data-toggle="collapse" data-target="#jobFilterAdvertLocMore">Daha Fazla Görüntüle</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Advert Location -->
+                    <!-- Company Sector -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterCompanySector" data-toggle="collapse">Firma Sektörü</a>
+                        </div>
+                        <div id="jobFilterCompanySector" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Sektör Yazın...">
+                            </div>
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecEducation" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecEducation">Eğitim (2561)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecTourism" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecTourism">Turizm - Otelcilik (838)</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="CompanySecHealth" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="CompanySecHealth">Sağlık-Tıp (552)</label>
+                                </div>
+                            </div>
+                            <div id="jobFilterCompanySecMore" class="collapse">
+                                <div class="form-group custom-control-group-vertical mt-0">
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="CompanySecRetail" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="CompanySecRetail">Perakende (326)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="CompanySecProduction" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="CompanySecProduction">Üretim - Endüstriyel Ürünler(288)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info minwidthper100" type="button" data-toggle="collapse" data-target="#jobFilterCompanySecMore">Daha Fazla Görüntüle</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Company Sector -->
+                    <!-- Working Method -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterWorkingMethod" data-toggle="collapse">Çalışma Şekli</a>
+                        </div>
+                        <div id="jobFilterWorkingMethod" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethPartTime" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethPartTime">Yarı Zamanlı / Part-Time</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethFullTime" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethFullTime">Tam zamanlı</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethPeriodic" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethPeriodic">Dönemsel</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethContracted" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethContracted">Sözleşmeli</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="WorkingMethIntern" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="WorkingMethIntern">Stajyer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Working Method -->
+                    <!-- Experience -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterExperience" data-toggle="collapse">Deneyim</a>
+                        </div>
+                        <div id="jobFilterExperience" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-radio">
+                                    <input id="ExperienceExperienced" class="custom-control-input" type="radio" name="filterexperienceradio">
+                                    <label class="custom-control-label" for="ExperienceExperienced">Deneyimli</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="ExperienceInexperienced" class="custom-control-input" type="radio" name="filterexperienceradio">
+                                    <label class="custom-control-label" for="ExperienceInexperienced">Deneyimsiz</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Experience -->
+                    <!-- Listing Date -->
+                    <fieldset class="job-filter-fieldset">
+                        <div class="job-filter-fieldset-title">
+                            <a class="collapsed" href="#jobFilterListingDate" data-toggle="collapse">İlan Tarihi</a>
+                        </div>
+                        <div id="jobFilterListingDate" class="job-filter-fieldset-form collapse" data-parent="#jobfilteracc">
+                            <div class="form-group custom-control-group-vertical mb-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateToday" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateToday">Bugün Yayına Girenler</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateYesterday" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateYesterday">Dün Yayına Girenler</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateLastWeek" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateLastWeek">Son 1 Haftada Yayına Giren</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input id="ListingDateLastMonth" class="custom-control-input" type="checkbox">
+                                    <label class="custom-control-label" for="ListingDateLastMonth">Son 1 Ayda Yayına Giren</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Listing Date -->
+
+                </form>
+            </div>
+            <!-- Job Search Filter End -->
+
+            <!-- Job Listing Start -->
+            <div class="job-list sitecontent col">
+
+                <!-- Title -->
+                <div class="sitetitle sitetitle-lg sitetitle-dark sitetitle-left sitetitle-flex">
+                    <h2>İş İlanları</h2>
+                    <span>Arama Kriterlerinize Uyan <strong>45</strong> İlan</span>
+                </div>
+                <!-- Title -->
+                <!-- Head Filter -->
+                <div class="job-list-headfilter siteformui">
+                    <ul class="job-list-headfilter-icons">
+                        <li class="selectlistingvertical"></li>
+                        <li class="selectlistingboxes"></li>
+                    </ul>
+                    <select class="job-list-headfilter-select form-control custom-select maxwidth250">
+                        <option selected>Bana En Uygun İlanlar</option>
+                        <option value="1">Bu Günün İlanları</option>
+                        <option value="2">Son 7 Günün İlanları</option>
+                        <option value="3">Son 30 Günün İlanları</option>
+                    </select>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('ul.job-list-headfilter-icons li.selectlistingvertical').click(function() {
+                            $('ul.joblistings').removeClass('fadeIn');
+                            setTimeout(function () {
+                                $('ul.joblistings').removeClass('listboxes').addClass('fadeIn');
+                            },50);
+                        });
+                        $('ul.job-list-headfilter-icons li.selectlistingboxes').click(function() {
+                            $('ul.joblistings').removeClass('fadeIn');
+                            setTimeout(function () {
+                                $('ul.joblistings').addClass('listboxes animated fadeIn');
+                            },50);
+                        });
+                    });
+                </script>
+                <!-- Head Filter -->
+                <!-- Job Listings Start -->
+                <div class="job-list-listings">
+                    <ul class="joblistings">
+
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_oztek.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Öztek Etiket San. Ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.) (Güngören)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_eib.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Urge Proje Uzmanı (Tekstil / Endüstri Mühendisi)</a>
+                                    <span class="jobinfo-companyname">Ege İhracatçı Birlikleri</span>
+                                    <small class="jobinfo-location">İzmir</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_ers.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Ers Örme Tekstil San.ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_liman.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Gümrük Müşavirliğinde İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">LİMAN GÜMRÜK MÜŞAVİRLİĞİ LTD. ŞTİ.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_nippon.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Mühendislik Sigortaları (Teknik) Uzmanı</a>
+                                    <span class="jobinfo-companyname">Türk Nippon Sigorta A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Asya)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_softtech.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Business Analyst - Capital Markets & Treasury</a>
+                                    <span class="jobinfo-companyname">Softtech Yazılım Teknolojileri Araştırma Geliştirme</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_oztek.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Öztek Etiket San. Ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.) (Güngören)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_eib.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Urge Proje Uzmanı (Tekstil / Endüstri Mühendisi)</a>
+                                    <span class="jobinfo-companyname">Ege İhracatçı Birlikleri</span>
+                                    <small class="jobinfo-location">İzmir</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_ers.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Ers Örme Tekstil San.ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_liman.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Gümrük Müşavirliğinde İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">LİMAN GÜMRÜK MÜŞAVİRLİĞİ LTD. ŞTİ.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_nippon.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Mühendislik Sigortaları (Teknik) Uzmanı</a>
+                                    <span class="jobinfo-companyname">Türk Nippon Sigorta A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Asya)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_softtech.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Business Analyst - Capital Markets & Treasury</a>
+                                    <span class="jobinfo-companyname">Softtech Yazılım Teknolojileri Araştırma Geliştirme</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_oztek.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Öztek Etiket San. Ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.) (Güngören)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_eib.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Urge Proje Uzmanı (Tekstil / Endüstri Mühendisi)</a>
+                                    <span class="jobinfo-companyname">Ege İhracatçı Birlikleri</span>
+                                    <small class="jobinfo-location">İzmir</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_ers.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">Ers Örme Tekstil San.ve Tic. A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_liman.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Gümrük Müşavirliğinde İhracat Müşteri Temsilcisi</a>
+                                    <span class="jobinfo-companyname">LİMAN GÜMRÜK MÜŞAVİRLİĞİ LTD. ŞTİ.</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_nippon.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Mühendislik Sigortaları (Teknik) Uzmanı</a>
+                                    <span class="jobinfo-companyname">Türk Nippon Sigorta A.Ş.</span>
+                                    <small class="jobinfo-location">İstanbul (Asya)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+                        <!-- Item -->
+                        <li class="joblistings-item">
+                            <div class="joblistings-item-companyinfo">
+                                <a class="companylogo" href="#" title="Title" rel="bookmark">
+                                    <img src="assets/upload/job_listings_logo_softtech.jpg" alt="Logo" width="" height="" />
+                                </a>
+                                <div class="jobinfo">
+                                    <a class="jobinfo-jobtitle" href="#" title="Title" rel="bookmark">Business Analyst - Capital Markets & Treasury</a>
+                                    <span class="jobinfo-companyname">Softtech Yazılım Teknolojileri Araştırma Geliştirme</span>
+                                    <small class="jobinfo-location">İstanbul (Avr.)</small>
+                                    <span class="jobinfo-date">17 Aralık 2019</span>
+                                </div>
+                            </div>
+                            <div class="joblistings-item-advinfo">
+                                <span class="joblistings-item-advinfo-date">17 Aralık 2019</span>
+                            </div>
+                        </li>
+                        <!-- Item -->
+
+                    </ul>
+                </div>
+                <!-- Job Listings End -->
+
+                <!-- Pagination Start -->
+                <div class="sitepagination">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link prev" href="#" title="Previous" rel="bookmark"><i></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" title="Page" rel="bookmark">1</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#" title="Page" rel="bookmark">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" title="Page" rel="bookmark">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" title="Page" rel="bookmark">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" title="Page" rel="bookmark">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#" title="Next" rel="bookmark"><i></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Pagination End -->
+
+            </div>
+            <!-- Job Listing End -->
+
+        </div>
+    </div>
+</section>
+<!-- Job End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+
+    <!-- Brand Logos Start -->
+    <div class="footer-brand">
+        <div class="container">
+            <ul id="footbrandlogosowl" class="footer-brand-list owl-carousel owl-theme">
+                <li><img src="assets/img/svg/footer_brand_logos_airliquide.svg" width="127" height="29" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_coca.svg" width="97" height="32" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_iwc.svg" width="74" height="28" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_johnson.svg" width="170" height="30" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_maif.svg" width="55" height="50" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_universal.svg" width="101" height="49" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_veolia.svg" width="97" height="24" alt="Brand" /></li>
+            </ul>
+        </div>
+        <div class="footer-brand-scroll">
+            <i class="footer-brand-scroll-arrow animation-bottomtotop bottomtotopbutton"></i>
+        </div>
+    </div>
+    <!-- Brand Logos End -->
+
+    <!-- Footer Links Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="footer-bottom-left col-md-4">
+                    <a class="footer-bottom-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                    <div class="footer-bottom-address">
+                        <p>Maslak Mahallesi Maslak <br />Meydan Sokak Spring Giz Plaza <br />No: 5/57 Sarıyer / İstanbul</p>
+                        <ul class="footer-bottom-address-contact">
+                            <li class="iconsphone">+90 212 915 28 58</li>
+                            <li class="iconsfax">+90 212 915 28 68</li>
+                            <li class="iconsemail">info@ikarosandpartners.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Address -->
+
+                <!-- Links -->
+                <div class="footer-bottom-links col-md-3">
+                    <h4>Adaylar</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                        <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                        <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                        <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-3">
+                    <h4>İşverenler</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                        <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                        <li><a href="#" title="KOSGEB, Hibe ve Teşvik" rel="category">KOSGEB, Hibe ve Teşvik</a></li>
+                        <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                        <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-2">
+                    <h4 class="text-md-center">Bizi Takip Edin</h4>
+                    <ul class="footer-bottom-links-social">
+                        <li><a href="#" class="socialicons iconsfacebook" data-toggle="tooltip" data-placement="bottom" title="Facebook'ta Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconstwitter" data-toggle="tooltip" data-placement="bottom" title="Twitter'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconsinstagram" data-toggle="tooltip" data-placement="bottom" title="Instagram'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconslinkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin'de Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <!-- Links -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer Links End -->
+
+    <!-- Footer Legal And Copyright Start -->
+    <div class="container">
+        <div class="footer-legal">
+            <div class="footer-legal-logo">
+                <i class=""></i>
+            </div>
+            <div class="footer-legal-desc">
+                <h4>İKAROS AND PARTNERS İNSAN KAYNAKLARI VE EĞİTİM DANIŞMANLIĞI A.Ş.</h4>
+                <p>Özel İstihdam Bürosu Olarak 06.05.2019 – 05.05.2022 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 03.05.2019 tarih ve 1844396 sayılı karar uyarınca 1077 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. <br />İstanbul Çalışma ve İş Kurumu İl Müdürlüğü: 0212 249 29 87 İstanbul Çalışma ve İş Kurumu İl Müdürlüğü Şişli Hizmet Merkezi : 02122910925</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright-text">Tüm Hakları Saklıdır © 2018-2019 - İkaros and Partners</p>
+            <ul class="footer-copyright-links">
+                <li><a href="#" title="Gizlilik Sözleşmesi" rel="bookmark">Gizlilik Sözleşmesi</a></li>
+                <li><a href="#" title="Yasal" rel="bookmark">Yasal</a></li>
+                <li><a href="#" title="KKVK" rel="bookmark">KKVK</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer Legal And Copyright End -->
+
+</footer>
+<!-- Footer End -->
+
+<!-- JavaScript Start -->
+<script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>
+<script id="script-plugin-app" src="assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="assets/dist/js/custom-app.js"></script>
+<!-- JavaScript End -->
+
+</body>
+</html>

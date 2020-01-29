@@ -44,6 +44,8 @@
       margin-top: 15px;
 
       .joblistings{
+        -webkit-animation-duration: 0.5s !important;
+        animation-duration: 0.5s !important;
 
         &-item{
           @include flexbox-display-flex();

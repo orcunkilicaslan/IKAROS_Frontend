@@ -4,11 +4,7 @@
   &-rainbowbgcolor{
     &:hover{animation: RainbowBgColor 4s steps(36) infinite; -webkit-animation: RainbowBgColor 4s steps(36) infinite;}
 
-    @-webkit-keyframes RainbowBgColor{
-      from {filter:hue-rotate(10deg); -webkit-filter:hue-rotate(10deg);}
-      to {filter:hue-rotate(360deg); -webkit-filter:hue-rotate(360deg);}
-    }
-    @keyframes RainbowBgColor{
+    @include keyframes(RainbowBgColor){
       from {filter:hue-rotate(10deg); -webkit-filter:hue-rotate(10deg);}
       to {filter:hue-rotate(360deg); -webkit-filter:hue-rotate(360deg);}
     }
@@ -41,11 +37,7 @@
       @include border-radius(6px);
     }
 
-    @-webkit-keyframes MouseScrollDown {
-      0% {opacity: 1; @include translateY(0);}
-      100% {opacity: 0; @include translateY(20px);}
-    }
-    @keyframes MouseScrollDown {
+    @include keyframes(MouseScrollDown){
       0% {opacity: 1; @include translateY(0);}
       100% {opacity: 0; @include translateY(20px);}
     }
@@ -80,11 +72,7 @@
     &::before{bottom: 6px;}
     &::after{bottom: -2px;}
 
-    @-webkit-keyframes bottomTopScroll {
-      0% {opacity: 0; @include transform-multiple(translateY(0) rotate(-45deg));}
-      100% {opacity: 1; @include transform-multiple(translateY(-5px) rotate(-45deg));}
-    }
-    @keyframes bottomTopScroll {
+    @include keyframes(bottomTopScroll){
       0% {opacity: 0; @include transform-multiple(translateY(0) rotate(-45deg));}
       100% {opacity: 1; @include transform-multiple(translateY(-5px) rotate(-45deg));}
     }

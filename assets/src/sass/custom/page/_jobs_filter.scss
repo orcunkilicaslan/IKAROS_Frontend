@@ -30,12 +30,15 @@
             background-color: $global-clr-white;
             background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5LjU1MSIgaGVpZ2h0PSI1LjU3MSIgdmlld0JveD0iMCAwIDkuNTUxIDUuNTcxIj4NCiAgPGcgaWQ9IkFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEwMi43MSkgcm90YXRlKC05MCkiPg0KICAgIDxwYXRoIGlkPSJQYXRoXzY5MiIgZGF0YS1uYW1lPSJQYXRoIDY5MiIgZD0iTTEwMi41MDksNS4yNDhsLTQuMiw0LjEwN2EuNy43LDAsMCwxLS45NjgsMCwuNjU4LjY1OCwwLDAsMSwwLS45NDZsMy43MTktMy42MzRMOTcuMzM5LDEuMTQyYS42NTguNjU4LDAsMCwxLDAtLjk0Ni43LjcsMCwwLDEsLjk2OCwwbDQuMiw0LjEwN2EuNjU4LjY1OCwwLDAsMSwwLC45NDZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOTkuODQ4IDkuNTUpIHJvdGF0ZSgxODApIiBmaWxsPSIjMGQ3OGM0Ii8+DQogIDwvZz4NCjwvc3ZnPg0K");
             background-repeat: no-repeat;
+            background-position-x: 8px;
+            background-position-y: 10px;
             width: 24px;
             height: 24px;
             position: absolute;
             right: 0;
             top: -1px;
             @include border-radius(50%);
+            @include rotate(0);
             @include transition-multiple(transform 0.15s ease-in-out);
           }
 
@@ -44,12 +47,6 @@
             background-position-y: 9px;
             @include rotate(-180);
           }
-          &[aria-expanded="true"]::before{
-            background-position-x: 8px;
-            background-position-y: 10px;
-            @include rotate(0);
-          }
-
         }
         p{
           width: calc(100% - 35px);
