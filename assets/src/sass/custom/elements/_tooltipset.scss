@@ -6,7 +6,7 @@
 
   &-inner{
     color: $global-clr-white;
-    background-color: transparentize($global-clr-dark-blue, 0.6);
+    background-color: $global-clr-dark-blue;
     font-family: $global-font-family-default;
     @include border-radius(3px);
 
@@ -26,7 +26,7 @@
     bottom: 4px;
     &::before {
       //border-width: 6px 6px 0;
-      border-top-color: transparentize($global-clr-dark-blue, 0.6);
+      border-top-color: $global-clr-dark-blue;
     }
   }
 }
@@ -36,7 +36,7 @@
   .arrow{
     left: 4px;
     &::before {
-      border-right-color: transparentize($global-clr-dark-blue, 0.6);
+      border-right-color: $global-clr-dark-blue;
     }
   }
 }
@@ -46,7 +46,7 @@
   .arrow{
     top: 4px;
     &::before {
-      border-bottom-color: transparentize($global-clr-dark-blue, 0.6);
+      border-bottom-color: $global-clr-dark-blue;
     }
   }
 }
@@ -56,7 +56,7 @@
   .arrow{
     right: 4px;
     &::before {
-      border-left-color: transparentize($global-clr-dark-blue, 0.6);
+      border-left-color: $global-clr-dark-blue;
     }
   }
 }
