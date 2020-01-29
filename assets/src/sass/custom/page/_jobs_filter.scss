@@ -6,7 +6,7 @@
     max-width: 350px;
 
     &-fieldset{
-      background-color: transparentize($global-clr-soft-blue, 0.93);
+      background-color: $global-clr-soft-gray;
       padding: 20px;
       margin-bottom: 15px;
       @include border-radius(4px);

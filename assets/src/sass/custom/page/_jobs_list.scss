@@ -128,8 +128,8 @@
           @include flexbox-display-flex();
           @include flexbox-flex-direction(row);
           @include flexbox-flex-wrap(wrap);
-          margin-left: -15px;
-          margin-right: -15px;
+          margin-left: -5px;
+          margin-right: -5px;
 
           .joblistings-item{
             display: block !important;
@@ -137,25 +137,37 @@
             @include flexbox-flex(0 0 calc(100% / 3));
             max-width: calc(100% / 3);
             border: none;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 5px;
 
             &-companyinfo{
               display: block !important;
+              position: relative;
               min-height: 250px;
               padding: 15px;
               text-align: center;
               border: 1px solid $global-border-light-gray;
               @include border-radius(4px);
+              @include transition-multiple(border 0.15s ease-in-out);
+
+              &:hover{
+                border-color: $global-border-light-gray-focus;
+              }
 
               .companylogo{
                 border: none;
-                margin: 0 auto 10px;
+                margin: 0 auto;
               }
 
               .jobinfo{
+                &-companyname{
+                  margin-top: 10px;
+                }
                 &-date{
                   display: block;
+                  position: absolute;
+                  width: 100%;
+                  left: 0;
+                  bottom: 15px;
                 }
               }
             }
