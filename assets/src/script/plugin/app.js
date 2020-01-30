@@ -106,18 +106,20 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
 /* Header Web Navbar Dropdown Menu */
 
 /* Header Web User Login Dropdown Menu */
-$(document).ready(function(){
-    $('.signindropdown')
-        .on('show.bs.dropdown', function(){
+$(window).on("load resize",function(e){if($(window).width() > 767){
+
+    $(".signindropdown")
+        .on("show.bs.dropdown", function(){
             $(this).find('.dropdown-menu').addClass('fadeIn d-block');
         })
-        .on('hide.bs.dropdown', function(){
+        .on("hide.bs.dropdown", function(){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
             setTimeout(function () {
                 $(".signindropdown").find('.dropdown-menu').removeClass("fadeOut d-block");
             },750);
         });
-});
+
+}});
 /* Header Web User Login Dropdown Menu */
 
 /* Tooltip */
