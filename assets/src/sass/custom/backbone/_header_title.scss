@@ -188,6 +188,42 @@
         }
       }
     }
+
+    .headbtn{
+
+      .btn{
+        width: 250px;
+
+        &-icons{
+          @include flexbox-display-flex();
+          @include flexbox-align-items(center);
+          padding-left: 10px;
+
+          .icons{
+            width: 36px;
+            height: 36px;
+            background-color: transparentize($global-clr-white, 0.90);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            display: inline-block;
+            margin-right: 10px;
+            @include border-radius(36px);
+
+            &-check{
+              background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMzYgMzYiPg0KICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzQ5IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA0OSIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiByeD0iMTgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAiLz4NCiAgPHBhdGggaWQ9IkNoZWNrX0ljb24iIGQ9Ik01LjYsMTMuNjYxLDEwLjQxNiwxOC45LDIxLjYsNi45IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjIxNiA1LjYwNikiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=");
+            }
+          }
+        }
+      }
+    }
+
   }
+
+}
+
+@media print{
+
+  .headtitle .headbtn{display: none}
 
 }

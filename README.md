@@ -7,6 +7,8 @@
  - [03_Ikaros_Job_Listings](https://orcunkilicaslan.github.io/IKAROS_Frontend/03_Ikaros_Job_Listings.html)
  - [03_Ikaros_Job_Listings_Boxes](https://orcunkilicaslan.github.io/IKAROS_Frontend/03_Ikaros_Job_Listings_Boxes.html)
  - [03_Ikaros_Job_Listings_JobFilter](https://orcunkilicaslan.github.io/IKAROS_Frontend/03_Ikaros_Job_Listings_JobFilter.html)
+ - [04_Ikaros_Job_Detail](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail.html)
+ - [04_Ikaros_Job_Detail_Refer](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
