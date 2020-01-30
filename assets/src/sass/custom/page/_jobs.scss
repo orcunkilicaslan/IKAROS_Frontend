@@ -8,3 +8,10 @@
     }
   }
 }
+
+@media print{
+
+  .job-detail-sidebar,
+  .job-detail-joblist{display: none}
+
+}
