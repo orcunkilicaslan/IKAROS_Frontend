@@ -55,11 +55,6 @@
     &-formarea{position: relative;}
 
     .sitemodalformbox{
-
-      &-head{
-        * {color: $global-clr-white;}
-      }
-
       &-form{
         #{$formclassname}-control{
           &[rows]{height: 140px;}

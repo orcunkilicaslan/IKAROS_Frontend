@@ -1,4 +1,4 @@
-<svg id="icons_spite_20_dark" xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20">
+<svg id="icons_spite_20_dark" xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20">
   <g id="password" transform="translate(0 -12)">
     <rect id="Rectangle_1" data-name="Rectangle 1" width="20" height="20" transform="translate(0 12)" fill="#eee" opacity="0"/>
     <g id="password-2" data-name="password" transform="translate(-31 12)">
@@ -20,5 +20,13 @@
   <g id="refer" transform="translate(40 -12)">
     <rect id="Rectangle_1-3" data-name="Rectangle 1" width="20" height="20" transform="translate(0 12)" fill="#eee" opacity="0"/>
     <path id="refer-2" data-name="refer" d="M15.772,5.781a5.778,5.778,0,1,0-9.047,4.764A10.014,10.014,0,0,0,0,20H1.561a8.445,8.445,0,0,1,8.433-8.437,5.786,5.786,0,0,0,5.778-5.781ZM9.994,10A4.219,4.219,0,1,1,14.21,5.781,4.222,4.222,0,0,1,9.994,10ZM20,14.375l-3.675,3.677-1.1-1.1,1.829-1.83H15.695a3.4,3.4,0,0,0-3.4,3.4V20H10.736V18.51a4.966,4.966,0,0,1,4.958-4.956h1.276L15.22,11.8l1.1-1.1Zm0,0" transform="translate(0 12)" fill="#7be269"/>
+  </g>
+  <g id="user" transform="translate(60 -12)">
+    <rect id="Rectangle_1-4" data-name="Rectangle 1" width="20" height="20" transform="translate(0 12)" fill="#eee" opacity="0"/>
+    <g id="user-2" data-name="user" transform="translate(0 12)">
+      <g id="Group_120" data-name="Group 120" transform="translate(0)">
+        <path id="Path_728" data-name="Path 728" d="M17.071,12.929a9.962,9.962,0,0,0-3.8-2.383,5.781,5.781,0,1,0-6.542,0A10.016,10.016,0,0,0,0,20H1.562a8.437,8.437,0,1,1,16.875,0H20A9.935,9.935,0,0,0,17.071,12.929ZM10,10a4.219,4.219,0,1,1,4.219-4.219A4.223,4.223,0,0,1,10,10Z" transform="translate(0)" fill="#7be269"/>
+      </g>
+    </g>
   </g>
 </svg>
