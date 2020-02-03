@@ -113,8 +113,7 @@
           top: -10px !important;
           transform: none !important;
           z-index: 0 !important;
-          -webkit-animation-duration: 0.75s !important;
-          animation-duration: 0.75s !important;
+          @include animation-duration(0.75s);
           @include border-radius(14px);
 
           &.show{}

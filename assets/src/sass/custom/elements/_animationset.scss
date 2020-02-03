@@ -2,11 +2,11 @@
 .animation{
 
   &-rainbowbgcolor{
-    &:hover{animation: RainbowBgColor 4s steps(36) infinite; -webkit-animation: RainbowBgColor 4s steps(36) infinite;}
+    &:hover{@include animation-multi(RainbowBgColor 4s steps(36) infinite);}
 
     @include keyframes(RainbowBgColor){
-      from {filter:hue-rotate(10deg); -webkit-filter:hue-rotate(10deg);}
-      to {filter:hue-rotate(360deg); -webkit-filter:hue-rotate(360deg);}
+      from {@include filter-multiple(hue-rotate(10deg));}
+      to {@include filter-multiple(hue-rotate(360deg));}
     }
   }
 
@@ -28,11 +28,11 @@
       width: 6px;
       height: 6px;
       display: block;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-name: MouseScrollDown;
       top: 8px;
       left: calc(50% - 3px);
+      @include animation-duration(1.5s);
+      @include animation-iterationcount(infinite);
+      @include animation-name(MouseScrollDown);
       @include translateX(-50%);
       @include border-radius(6px);
     }
@@ -62,11 +62,11 @@
       height: 14px;
       border-top: 3px solid $global-clr-white;
       border-right: 3px solid $global-clr-white;
-      @include border-radius(14px);
       left: calc(50% - 7px);
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-name: bottomTopScroll;
+      @include border-radius(14px);
+      @include animation-duration(1.5s);
+      @include animation-iterationcount(infinite);
+      @include animation-name(bottomTopScroll);
     }
 
     &::before{bottom: 6px;}
