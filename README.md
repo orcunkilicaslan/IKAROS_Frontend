@@ -13,6 +13,7 @@
  - [04_Ikaros_Job_Detail_Refer_Warning](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer_Warning.html)
  - [04_Ikaros_Job_Detail_Refer_Error](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer_Error.html)
  - [05_Ikaros_Account_Settings](https://orcunkilicaslan.github.io/IKAROS_Frontend/05_Ikaros_Account_Settings.html)
+ - [05_Ikaros_Account_Resume](https://orcunkilicaslan.github.io/IKAROS_Frontend/05_Ikaros_Account_Resume.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
