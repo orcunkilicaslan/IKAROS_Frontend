@@ -1,0 +1,74 @@
+
+.sidebar{
+
+  &-filter{
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &-menu{
+    width: 100%;
+    max-width: 275px;
+
+    ul{
+      li{
+        margin-bottom: 10px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        a{
+          color: $global-clr-text-light;
+          background-color: $global-clr-soft-gray;
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.22;
+          letter-spacing: -0.54px;
+          padding: 20px 50px 20px 20px ;
+          display: block;
+          position: relative;
+          white-space: nowrap;
+          @include border-radius(4px);
+          @include transition-multiple(background-color 0.15s ease-in-out);
+
+          &::before{
+            content: "";
+            background-color: $global-clr-white;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5LjU1MSIgaGVpZ2h0PSI1LjU3MSIgdmlld0JveD0iMCAwIDkuNTUxIDUuNTcxIj4NCiAgPGcgaWQ9IkFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEwMi43MSkgcm90YXRlKC05MCkiPg0KICAgIDxwYXRoIGlkPSJQYXRoXzY5MiIgZGF0YS1uYW1lPSJQYXRoIDY5MiIgZD0iTTEwMi41MDksNS4yNDhsLTQuMiw0LjEwN2EuNy43LDAsMCwxLS45NjgsMCwuNjU4LjY1OCwwLDAsMSwwLS45NDZsMy43MTktMy42MzRMOTcuMzM5LDEuMTQyYS42NTguNjU4LDAsMCwxLDAtLjk0Ni43LjcsMCwwLDEsLjk2OCwwbDQuMiw0LjEwN2EuNjU4LjY1OCwwLDAsMSwwLC45NDZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOTkuODQ4IDkuNTUpIHJvdGF0ZSgxODApIiBmaWxsPSIjMGQ3OGM0Ii8+DQogIDwvZz4NCjwvc3ZnPg0K");
+            background-repeat: no-repeat;
+            background-position-x: 8px;
+            background-position-y: 10px;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            @include border-radius(50%);
+            @include transform-multiple(rotate(-90deg) translateX(50%));
+            @include transition-multiple(background-color 0.15s ease-in-out);
+          }
+
+          &:hover{
+            background-color: $global-border-light-gray;
+
+            &::before{
+              background-color: transparentize($global-clr-white, 0.25);
+            }
+          }
+
+          &.active{
+            color: $global-clr-white;
+            background-color: $global-clr-soft-blue;
+
+            &::before{
+              background-color: transparentize($global-clr-white, 0.85);
+              @include svg-filter(0%, 1, 0, 100%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
