@@ -63,8 +63,7 @@
           margin: 0;
           border: none;
           width: 100%;
-          -webkit-animation-duration: 0.75s !important;
-          animation-duration: 0.75s !important;
+          @include animation-duration(0.75s);
           @include transition-multiple(top 0.3s ease-in-out);
 
           a{color: white;}

@@ -15,7 +15,9 @@
 
       &-item{
 
-        > a{}
+        > a{
+          letter-spacing: -0.16px;
+        }
 
         > a[data-toggle="dropdown"]{
           &::before{
