@@ -110,7 +110,7 @@ $(window).on("load resize",function(e){if($(window).width() > 767){
 
     $(".signindropdown")
         .on("show.bs.dropdown", function(){
-            $(this).find('.dropdown-menu').addClass('fadeIn d-block');
+            $(this).find('.dropdown-menu').removeClass('fadeOut').addClass('fadeIn d-block');
         })
         .on("hide.bs.dropdown", function(){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
