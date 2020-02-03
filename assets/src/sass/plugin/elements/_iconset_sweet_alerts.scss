@@ -1,357 +1,164 @@
-.alert-icon{
-  background-color: $global-clr-white;
-  width: 140px;
-  height: 140px;
-  padding: 26px;
+.animation-alert-icons{
+  background-color: transparent;
+  width: 90px;
+  height: 90px;
+  padding: 0;
 
-  &-success {
-    background-color: $global-clr-white;
+  .alert-icons{
+    background-color: transparent;
     width: 80px;
     height: 80px;
     padding: 0;
-    border: 4px solid $global-clr-green;
     position: relative;
     box-sizing: content-box;
+    border: 4px solid transparent;
     @include border-radius(50%);
 
-    &:after, &:before {
-      content: '';
-      background: $global-clr-white;
-      width: 60px;
-      height: 120px;
-      position: absolute;
-      transform: rotate(45deg);
-    }
-    &:before {
-      width: 26px;
-      height: 80px;
-      top: -17px;
-      left: 5px;
-      transform-origin: 60px 60px;
-      transform: rotate(-45deg);
-      @include border-radii(40px,0,0,40px);
-    }
-    &:after {
-      left: 30px;
-      top: -11px;
-      animation: rotatePlaceholder 4.25s ease-in;
-      transform-origin: 0 60px;
-      transform: rotate(-45deg);
-      @include border-radii(0,120px,120px,0);
-    }
-    &-placeholder {
-      width: 80px;
-      height: 80px;
-      border: 4px solid transparentize($global-clr-green, 0.75);
-      position: absolute;
-      left: -4px;
-      top: -4px;
-      z-index: 2;
-      box-sizing: content-box;
-      @include border-radius(50%);
-    }
-    &-fix {
-      background-color: $global-clr-white;
-      width: 5px;
-      height: 90px;
-      position: absolute;
-      left: 28px;
-      top: 8px;
-      z-index: 1;
-      transform: rotate(-45deg);
-    }
-    &-tip, &-long {
-      background-color: $global-clr-green;
-      height: 5px;
-      position: absolute;
-      z-index: 2;
-      @include border-radius(2px);
-    }
-    &-tip {
-      width: 25px;
-      left: 14px;
-      top: 46px;
-      animation: animateSuccessTip .75s;
-      transform: rotate(45deg);
-    }
-    &-long {
-      width: 47px;
-      right: 8px;
-      top: 38px;
-      animation: animateSuccessLong .75s;
-      transform: rotate(-45deg);
-    }
-    @keyframes animateSuccessTip {
-      0%, 54% {
-        width: 0;
-        left: 1px;
-        top: 19px;
+    &-success {
+      border-color: $global-clr-green;
+
+      &-tip, &-long {
+        background-color: $global-clr-green;
+        height: 5px;
+        position: absolute;
+        z-index: 2;
+        @include border-radius(2px);
       }
-      70% {
-        width: 50px;
-        left: -8px;
-        top: 37px;
-      }
-      84% {
-        width: 17px;
-        left: 21px;
-        top: 48px;
-      }
-      100% {
+      &-tip {
         width: 25px;
         left: 14px;
-        top: 45px;
+        top: 46px;
+        @include animation-multi(SuccessAnimateTip .75s);
+        @include rotate(45);
       }
-    }
-    @keyframes animateSuccessLong {
-      0%, 65% {
-        width: 0;
-        right: 46px;
-        top: 54px;
-      }
-      84% {
-        width: 55px;
-        right: 0;
-        top: 35px;
-      }
-      100% {
+      &-long {
         width: 47px;
         right: 8px;
         top: 38px;
+        @include animation-multi(SuccessAnimateLong .75s);
+        @include rotate(-45);
       }
-    }
-    @keyframes rotatePlaceholder {
-      0%, 5% {
-        transform: rotate(-45deg);
-      }
-      100%, 12% {
-        transform: rotate(-405deg);
-      }
-    }
-  }
 
-  &-warning {
-    background-color: $global-clr-white;
-    width: 80px;
-    height: 80px;
-    padding: 0;
-    border: 4px solid lighten($global-clr-orange, 15%);
-    position: relative;
-    box-sizing: content-box;
-    animation: scaleWarning 0.75s infinite alternate;
-    @include border-radius(50%);
+      @include keyframes(SuccessAnimateTip){
+        0%, 54%   {width: 0; left: 1px; top: 19px;}
+        70%       {width: 50px; left: -8px; top: 37px;}
+        84%       {width: 17px; left: 21px; top: 48px;}
+        100%      {width: 25px; left: 14px; top: 45px;}
+      }
+      @include keyframes(SuccessAnimateLong){
+        0%, 65%   {width: 0; right: 46px; top: 54px;}
+        84%       {width: 55px; right: 0; top: 35px;}
+        100%      {width: 47px; right: 8px; top: 38px;}
+      }
+    }
 
-    &:after, &:before {
-      background: $global-clr-white;
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      @include border-radius(50%);
-    }
-    &:before {
-      display: inline-block;
-      opacity: 0;
-      animation: pulseWarning 2s linear infinite;
-    }
-    &:after {
-      display: block;
-      z-index: 1;
-    }
-    &-body {
-      background-color: lighten($global-clr-orange, 15%);
-      width: 5px;
-      height: 47px;
-      margin-left: -2px;
-      position: absolute;
-      left: 50%;
-      top: 10px;
-      z-index: 2;
-      animation: pulseWarningIns 0.75s infinite alternate;
-      @include border-radius(2px);
-    }
-    &-dot {
-      background-color: lighten($global-clr-orange, 15%);
-      width: 7px;
-      height: 7px;
-      margin-left: -3px;
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      z-index: 2;
-      animation: pulseWarningIns 0.75s infinite alternate;
-      @include border-radius(50%);
-    }
-    @keyframes scaleWarning {
-      0% {
-        transform: scale(1);
+    &-warning {
+      background-color: transparentize($global-clr-orange, 0.98);
+      border-color: $global-clr-orange;
+      @include animation-multi(WarningScale 0.75s infinite alternate);
+
+      &:after, &:before {
+        background: transparent;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include border-radius(50%);
       }
-      30% {
-        transform: scale(1.02);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-    @keyframes pulseWarning {
-      0% {
-        background-color: $global-clr-white;
-        opacity: 0.5;
-        transform: scale(1);
-      }
-      30% {
-        background-color: $global-clr-white;
-        opacity: 0.5;
-        transform: scale(1);
-      }
-      100% {
-        background-color: lighten($global-clr-orange, 15%);
+      &:before {
+        display: inline-block;
         opacity: 0;
-        transform: scale(2);
+        @include animation-multi(WarningPulse 2s linear infinite);
       }
-    }
-    @keyframes pulseWarningIns {
-      0% {
-        background-color: lighten($global-clr-orange, 20%);
+      &:after {
+        display: block;
+        z-index: 1;
       }
-      100% {
-        background-color: lighten($global-clr-orange, 15%);
+      &-body {
+        background-color: $global-clr-orange;
+        width: 5px;
+        height: 47px;
+        margin-left: -2px;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        z-index: 2;
+        @include animation-multi(WarningPulseIns 0.75s infinite alternate);
+        @include border-radius(2px);
       }
-    }
-  }
+      &-dot {
+        background-color: $global-clr-orange;
+        width: 7px;
+        height: 7px;
+        margin-left: -3px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 2;
+        @include animation-multi(WarningPulseIns 0.75s infinite alternate);
+        @include border-radius(50%);
+      }
 
-  &-error {
-    background-color: $global-clr-white;
-    width: 80px;
-    height: 80px;
-    padding: 0;
-    border: 4px solid $global-clr-red;
-    position: relative;
-    box-sizing: content-box;
-    animation: animateErrorIcon .5s;
-    @include border-radius(50%);
+      @include keyframes(WarningScale){
+        0%   {@include scale(1);}
+        30%  {@include scale(1.02);}
+        100% {@include scale(1);}
+      }
+      @include keyframes(WarningPulse){
+        0%   {background-color: transparentize($global-clr-orange, 0.98); opacity: 0; @include scale(1);}
+        30%  {background-color: transparentize($global-clr-orange, 0.90); opacity: 0.8; @include scale(1);}
+        100% {background-color: $global-clr-orange; opacity: 0; @include scale(2);}
+      }
+      @include keyframes(WarningPulseIns){
+        0%   {background-color: $global-clr-orange;}
+        100% {background-color: $global-clr-orange;}
+      }
+    }
 
-    &:after, &:before {
-      background: $global-clr-white;
-      content: '';
-      width: 60px;
-      height: 120px;
-      position: absolute;
-      transform: rotate(45deg);
-    }
-    &:before {
-      width: 26px;
-      height: 80px;
-      top: -17px;
-      left: 5px;
-      transform-origin: 60px 60px;
-      transform: rotate(-45deg);
-      @include border-radii(40px,0,0,40px);
-    }
-    &:after {
-      left: 30px;
-      top: -11px;
-      animation: rotatePlaceholder 4.25s ease-in;
-      transform-origin: 0 60px;
-      transform: rotate(-45deg);
-      @include border-radii(0,120px,120px,0);
-    }
-    &-x {
-      display: block;
-      position: relative;
-      z-index: 2;
-    }
-    &-placeholder {
-      width: 80px;
-      height: 80px;
-      border: 4px solid transparentize($global-clr-red, 0.75);
-      position: absolute;
-      left: -4px;
-      top: -4px;
-      z-index: 2;
-      box-sizing: content-box;
-      @include border-radius(50%);
-    }
-    &-fix {
-      background-color: $global-clr-white;
-      width: 5px;
-      height: 90px;
-      position: absolute;
-      left: 28px;
-      top: 8px;
-      z-index: 1;
-      transform: rotate(-45deg);
-    }
-    &-left, &-right {
-      background-color: $global-clr-red;
-      width: 47px;
-      height: 5px;
-      display: block;
-      position: absolute;
-      top: 37px;
-      z-index: 2;
-      @include border-radius(2px);
-    }
-    &-left {
-      left: 17px;
-      animation: animateXLeft .75s;
-      transform: rotate(45deg);
-    }
-    &-right {
-      right: 16px;
-      animation: animateXRight .75s;
-      transform: rotate(-45deg);
-    }
-    @keyframes rotatePlaceholder {
-      0%, 5% {
-        transform: rotate(-45deg);
+    &-error {
+      border-color: $global-clr-red;
+      @include animation-multi(ErrorAnimateIcon .5s);
+
+      &-x {
+        display: block;
+        position: relative;
+        z-index: 2;
+
+        &-left, &-right {
+          background-color: $global-clr-red;
+          width: 47px;
+          height: 5px;
+          display: block;
+          position: absolute;
+          top: 37px;
+          z-index: 2;
+          @include border-radius(2px);
+        }
+        &-left {
+          left: 17px;
+          @include animation-multi(ErrorAnimateXLeft .75s);
+          @include rotate(45);
+        }
+        &-right {
+          right: 16px;
+          @include animation-multi(ErrorAnimateXRight .75s);
+          @include rotate(-45);
+        }
       }
-      100%,12% {
-        transform: rotate(-405deg);
+
+      @include keyframes(ErrorAnimateIcon){
+        0%        {opacity: 0; @include rotateX(100);}
+        100%      {opacity: 1; @include rotateX(0);}
       }
-    }
-    @keyframes animateErrorIcon {
-      0% {
-        opacity: 0;
-        transform: rotateX(100deg);
+      @include keyframes(ErrorAnimateXLeft){
+        0%, 65%   {left: 82px; top: 95px; width: 0;}
+        84%       {width: 47px; left: 14px; top: 33px;}
+        100%      {width: 47px; left: 17px; top: 37px;}
       }
-      100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-      }
-    }
-    @keyframes animateXLeft {
-      0%, 65% {
-        left: 82px;
-        top: 95px;
-        width: 0;
-      }
-      84% {
-        width: 47px;
-        left: 14px;
-        top: 33px;
-      }
-      100% {
-        width: 47px;
-        left: 17px;
-        top: 37px;
-      }
-    }
-    @keyframes animateXRight {
-      0%, 65% {
-        width: 0;
-        right: 82px;
-        top: 95px;
-      }
-      84% {
-        width: 47px;
-        right: 14px;
-        top: 33px;
-      }
-      100% {
-        width: 47px;
-        right: 16px;
-        top: 37px;
+      @include keyframes(ErrorAnimateXRight){
+        0%, 65%   {width: 0; right: 82px; top: 95px;}
+        84%       {width: 47px; right: 14px; top: 33px;}
+        100%      {width: 47px; right: 16px; top: 37px;}
       }
     }
   }
