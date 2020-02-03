@@ -9,6 +9,9 @@
  - [03_Ikaros_Job_Listings_JobFilter](https://orcunkilicaslan.github.io/IKAROS_Frontend/03_Ikaros_Job_Listings_JobFilter.html)
  - [04_Ikaros_Job_Detail](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail.html)
  - [04_Ikaros_Job_Detail_Refer](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer.html)
+ - [04_Ikaros_Job_Detail_Refer_Success](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer_Success.html)
+ - [04_Ikaros_Job_Detail_Refer_Warning](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer_Warning.html)
+ - [04_Ikaros_Job_Detail_Refer_Error](https://orcunkilicaslan.github.io/IKAROS_Frontend/04_Ikaros_Job_Detail_Refer_Error.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
