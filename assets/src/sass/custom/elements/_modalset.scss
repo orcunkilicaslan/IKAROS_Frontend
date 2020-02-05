@@ -40,6 +40,26 @@
     }
 
   }
+
+  &-noclose{
+    padding-right: 0 !important;
+    .modal{
+      &-dialog{
+        max-width: 100%;
+        margin: 0;
+      }
+      &-content{
+        height: 100vh;
+      }
+    }
+
+    &-content{
+      position: relative;
+      max-width: 540px;
+      margin: 80px auto;
+    }
+  }
+
 }
 
 .modal-open{
