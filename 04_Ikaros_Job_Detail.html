@@ -47,17 +47,17 @@
                             <li class="dfn-menu-list-item"><a href="#" title="İş Yaşamı" rel="category">İş Yaşamı</a></li>
                         </ul>
                     </nav>
-                    <div class="signindropdown dropdown show">
-                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-user"></i> <span>Orçun KILIÇASLAN</span></a>
-                        <div class="dropdown-menu animated" style="width: 100%;">
+                    <div class="signindropdown sitedropdown dropdown">
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill sitedropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-user"></i> <span>Orçun KILIÇASLAN</span></a>
+                        <div class="sitedropdown-menu dropdown-menu animated">
                             <div class="signindropdown-menu">
-                                <ul class="dropdownusermenu">
-                                    <li class="dropdownusermenu-item"><a href="#" title="Profilim" rel="category">Hesap Ayarlarım</a></li>
-                                    <li class="dropdownusermenu-item"><a href="#" title="Özgeçmişim" rel="category">Özgeçmişlerim</a></li>
-                                    <li class="dropdownusermenu-item"><a href="#" title="Mesajlarım" rel="category">Mesajlarım</a></li>
-                                    <li class="dropdownusermenu-item"><a href="#" title="Başvurularım" rel="category">Başvurularım</a></li>
-                                    <li class="dropdownusermenu-item"><a href="#" title="Ön Yazılarım" rel="category">Ön Yazılarım</a></li>
-                                    <li class="dropdownusermenu-item"><a href="#" title="Favorilerim" rel="category">Favorilerim</a></li>
+                                <ul class="dropdownusermenu dropdownmenu">
+                                    <li class="dropdownmenu-item"><a href="#" title="Profilim" rel="category">Hesap Ayarlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Özgeçmişim" rel="category">Özgeçmişlerim</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Mesajlarım" rel="category">Mesajlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Başvurularım" rel="category">Başvurularım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Ön Yazılarım" rel="category">Ön Yazılarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Favorilerim" rel="category">Favorilerim</a></li>
                                 </ul>
                                 <a class="btn btn-outline-info rounded-pill minwidthper100 mt-2 sitecolorwhite" href="01_Ikaros_Home_Page.html">ÇIKIŞ YAP</a>
                             </div>
@@ -88,7 +88,7 @@
 
             <!-- Search -->
             <div class="headbtn siteformui col-auto">
-                <a href="#" class="btn btn-lg btn-success btn-icons rounded-pill" title="BU İLANA BAŞVUR"data-toggle="modal" data-target="#modalJobApplication"><i class="icons icons-check"></i> BU İLANA BAŞVUR</a>
+                <a href="#" class="btn btn-lg btn-success btn-icons rounded-pill" title="BU İLANA BAŞVUR" data-toggle="modal" data-target="#modalJobApplication"><i class="icons icons-check"></i> BU İLANA BAŞVUR</a>
             </div>
             <!-- Search -->
 
@@ -98,71 +98,73 @@
 <!-- Header Title End -->
 
 <!-- Job Application Modal Start -->
-<div class="sitemodal sitemodal-default modal fade" id="modalJobApplication" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="sitemodal sitemodal-default sitemodal-noclose modal fade" id="modalJobApplication" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="mr-1">PENCEREYİ KAPAT</span> <i class="iconsclose"></i></button>
-            <div class="sitemodalformbox siteformui siteformuilabel formuidarkbg">
-                <div class="sitemodalformbox-head">
-                    <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left">
-                        <h3>
-                            <small>Başvurunuzu</small>
-                            <span>Şimdi Tamamlayın</span>
-                        </h3>
+            <div class="sitemodal-noclose-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="mr-1">PENCEREYİ KAPAT</span> <i class="iconsclose"></i></button>
+                <div class="sitemodalformbox siteformui siteformuilabel formuidarkbg">
+                    <div class="sitemodalformbox-head">
+                        <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left">
+                            <h3>
+                                <small>Başvurunuzu</small>
+                                <span>Şimdi Tamamlayın</span>
+                            </h3>
+                        </div>
+                        <i class="icons-sprite sprite-60-dark icons-blue-resume"></i>
                     </div>
-                    <i class="icons-sprite sprite-60-dark icons-blue-resume"></i>
-                </div>
-                <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
-                    <div class="form-group labelanimation">
-                        <select id="selectSavedResumeId" class="form-control autofill custom-select" name="savedresume" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
-                            <option value="">Kayıtlı Özgeçmişinizi Seçiniz</option>
-                            <option value="1">İstanbul</option>
-                            <option value="2">Ankara</option>
-                            <option value="3">İzmir</option>
-                        </select>
-                        <span id="msgSavedResumeId" class="msginput"></span>
-                        <span class="inputbottombar"></span>
-                        <label>Kayıtlı Özgeçmişinizi Seçiniz</label>
-                        <div id="iconSavedResumeId"></div>
-                        <ul class="input-info input-info-list">
-                            <li><a class="input-info-iconflex" href="#"><i class="infoicons infoicons-iconsplus"></i> Yeni Özgeçmiş Oluşturun</a></li>
-                        </ul>
-                    </div>
-                    <div class="form-group labelanimation">
-                        <select id="selectSavedLetterId" class="form-control autofill custom-select" name="savedletter" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
-                            <option value="">Kayıtlı Önyazı Seçiniz</option>
-                            <option value="1">Beşiktaş</option>
-                            <option value="2">Üsküdar</option>
-                            <option value="3">Sarıyer</option>
-                        </select>
-                        <span id="msgSavedLetterId" class="msginput"></span>
-                        <span class="inputbottombar"></span>
-                        <label>Kayıtlı Önyazı Seçiniz</label>
-                        <div id="iconSavedLetterId"></div>
-                        <ul class="input-info input-info-list">
-                            <li><a class="input-info-iconflex" href="#"><i class="infoicons infoicons-iconsplus"></i> Yeni Önyazı Oluşturun</a></li>
-                        </ul>
-                    </div>
-                    <div class="form-group">
-                        <ul class="input-info input-info-list">
-                            <li class="input-info-fontsize16 font-weight-bold input-info-iconflex sitecolorwhite"><i class="infoicons infoicons-iconsinfo"></i> Lütfen dikkat!</li>
-                            <li class="input-info-fontsize14 sitecolorwhite">Başvuru yaptığınız şirket, sizden kişisel verilerinizi paylaşmanızı isteyebilir. Kişisel verilerinizi paylaştığınızda sorumluluk size ve işverene aittir.</li>
-                        </ul>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col custom-control-group-vertical">
-                            <div class="custom-control custom-checkbox">
-                                <input id="JobApplicationIRead" class="custom-control-input" type="checkbox" name="jobapplicationiread" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
-                                <label class="custom-control-label" for="JobApplicationIRead">Okudum bilgilerimi paylaşıyorum.</label>
+                    <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
+                        <div class="form-group labelanimation">
+                            <select id="selectSavedResumeId" class="form-control autofill custom-select" name="savedresume" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                <option value="">Kayıtlı Özgeçmişinizi Seçiniz</option>
+                                <option value="1">İstanbul</option>
+                                <option value="2">Ankara</option>
+                                <option value="3">İzmir</option>
+                            </select>
+                            <span id="msgSavedResumeId" class="msginput"></span>
+                            <span class="inputbottombar"></span>
+                            <label>Kayıtlı Özgeçmişinizi Seçiniz</label>
+                            <div id="iconSavedResumeId"></div>
+                            <ul class="input-info input-info-list">
+                                <li><a class="input-info-iconflex" href="#"><i class="infoicons infoicons-iconsplus"></i> Yeni Özgeçmiş Oluşturun</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group labelanimation">
+                            <select id="selectSavedLetterId" class="form-control autofill custom-select" name="savedletter" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                <option value="">Kayıtlı Önyazı Seçiniz</option>
+                                <option value="1">Beşiktaş</option>
+                                <option value="2">Üsküdar</option>
+                                <option value="3">Sarıyer</option>
+                            </select>
+                            <span id="msgSavedLetterId" class="msginput"></span>
+                            <span class="inputbottombar"></span>
+                            <label>Kayıtlı Önyazı Seçiniz</label>
+                            <div id="iconSavedLetterId"></div>
+                            <ul class="input-info input-info-list">
+                                <li><a class="input-info-iconflex" href="#"><i class="infoicons infoicons-iconsplus"></i> Yeni Önyazı Oluşturun</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <ul class="input-info input-info-list">
+                                <li class="input-info-fontsize16 font-weight-bold input-info-iconflex sitecolorwhite"><i class="infoicons infoicons-iconsinfo"></i> Lütfen dikkat!</li>
+                                <li class="input-info-fontsize14 sitecolorwhite">Başvuru yaptığınız şirket, sizden kişisel verilerinizi paylaşmanızı isteyebilir. Kişisel verilerinizi paylaştığınızda sorumluluk size ve işverene aittir.</li>
+                            </ul>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col custom-control-group-vertical">
+                                <div class="custom-control custom-checkbox">
+                                    <input id="JobApplicationIRead" class="custom-control-input" type="checkbox" name="jobapplicationiread" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                    <label class="custom-control-label" for="JobApplicationIRead">Okudum bilgilerimi paylaşıyorum.</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <button class="btn btn-lg btn-success rounded-pill minwidthper100" type="submit">BAŞVURUYU TAMALAYIN</button>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <button class="btn btn-lg btn-success rounded-pill minwidthper100" type="submit">BAŞVURUYU TAMALAYIN</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

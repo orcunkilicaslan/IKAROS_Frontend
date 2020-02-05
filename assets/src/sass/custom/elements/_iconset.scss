@@ -15,7 +15,15 @@
     overflow: hidden;
     display: inline-block;
     position: relative;
+
+    &-update{
+      width: 16px;
+      height: 16px;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4NCiAgPGcgaWQ9InVwZGF0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMC4xMDgpIj4NCiAgICA8ZyBpZD0iR3JvdXBfMTAyIiBkYXRhLW5hbWU9Ikdyb3VwIDEwMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjEwOCkiPg0KICAgICAgPGcgaWQ9Ikdyb3VwXzEwMSIgZGF0YS1uYW1lPSJHcm91cCAxMDEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF82MjgiIGRhdGEtbmFtZT0iUGF0aCA2MjgiIGQ9Ik0xNiw1Ljg5NVYuNTc1TDEzLjg4OCwyLjY4OGwtLjIzNy0uMjM3YTgsOCwwLDEsMCwyLjM0Miw1LjY1N0gxNC40NDZhNi40NSw2LjQ1LDAsMSwxLTEuODg5LTQuNTYybC4yMzcuMjM3TDEwLjY4Miw1LjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0wLjEwOCkiIGZpbGw9IiMwZDc4YzQiLz4NCiAgICAgIDwvZz4NCiAgICA8L2c+DQogICAgPGcgaWQ9Ikdyb3VwXzEwNCIgZGF0YS1uYW1lPSJHcm91cCAxMDQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNDE1IDUuMjQzKSI+DQogICAgICA8ZyBpZD0iR3JvdXBfMTAzIiBkYXRhLW5hbWU9Ikdyb3VwIDEwMyI+DQogICAgICAgIDxwYXRoIGlkPSJQYXRoXzYyOSIgZGF0YS1uYW1lPSJQYXRoIDYyOSIgZD0iTTIwNy45MzQsMTY4LjA3NlYxNjUuMmgtMS41Njl2NC40NDZoNC40NDZ2LTEuNTY5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNi4zNjUgLTE2NS4xOTkpIiBmaWxsPSIjMGQ3OGM0Ii8+DQogICAgICA8L2c+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==");
+    }
   }
+
+
 
   &-sprite{
     background-repeat: no-repeat;
@@ -42,6 +50,7 @@
       &.icons-blue-enter{background-position: -20px 0;}
       &.icons-green-refer{background-position: -40px 0;}
       &.icons-green-user{background-position: -60px 0;}
+      &.icons-orange-settings{background-position: -80px 0;}
     }
 
     &.sprite-60-dark{

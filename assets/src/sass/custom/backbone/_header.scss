@@ -120,56 +120,24 @@
         }
 
         .dropdownusermenu{
-          color: $global-clr-white;
           padding: 0 10px 7px;
           margin-top: -5px;
-
-          &-item{
-            font-size: 16px;
-            letter-spacing: -0.16px;
-            padding: 2px 0;
-
-            > a{
-              color: $global-clr-white;
-              display: block;
-            }
-          }
         }
 
         &-btn{
           width: 250px;
           color: $global-clr-white !important;
+          background-color: transparent !important;
           font-weight: normal;
           letter-spacing: -0.16px;
 
           &[aria-expanded="true"]{
-            //background-color: $global-clr-green;
-            position: relative;
-            z-index: 1;
             border-color: transparent;
-
-            i{@include svg-filter(0%, 1, 0, 100%);}
-
-            &:hover{
-              background-color: transparent;
-            }
-            &::after{
-              @include rotate(-180);
-            }
           }
 
           > i[class*="sprite-20"]{top: 3px !important;}
 
           &::after{
-            content: "";
-            border: none;
-            vertical-align: unset;
-            display: inline-block;
-            margin-left: 7px;
-            background-image: url(#{$global-img-path-icons}/icons_spite_12_dark.svg);
-            background-position: 12px 0;
-            width: 12px;
-            height: 12px;
             @include svg-filter(0%, 1, 0, 100%);
           }
         }

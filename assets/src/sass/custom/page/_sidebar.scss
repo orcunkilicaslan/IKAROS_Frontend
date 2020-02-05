@@ -65,6 +65,10 @@
               background-color: transparentize($global-clr-white, 0.85);
               @include svg-filter(0%, 1, 0, 100%);
             }
+
+            &:hover{
+              background-color: darken($global-clr-soft-blue, 3%);
+            }
           }
         }
       }

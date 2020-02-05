@@ -40,6 +40,26 @@
     }
 
   }
+
+  &-noclose{
+    padding-right: 0 !important;
+    .modal{
+      &-dialog{
+        max-width: 100%;
+        margin: 0;
+      }
+      &-content{
+        height: 100vh;
+      }
+    }
+
+    &-content{
+      position: relative;
+      max-width: 540px;
+      margin: 80px auto;
+    }
+  }
+
 }
 
 .modal-open{
@@ -50,6 +70,6 @@
 .modal-backdrop{
   @include background-linear(darken($global-grdint-darkblue01, 1%), darken($global-grdint-darkblue02, 1%), -45);
   &.show{
-    opacity: 0.98;
+    opacity: 0.99;
   }
 }

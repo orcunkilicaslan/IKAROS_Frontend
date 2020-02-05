@@ -68,6 +68,10 @@
           border-top: 1px solid $global-border-light-gray;
           padding: 15px 0;
 
+          &:last-child{
+            padding-bottom: 0;
+          }
+
           &-companyinfo{
             @include flexbox-display-flex();
             @include flexbox-align-items(center);
