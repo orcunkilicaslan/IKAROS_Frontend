@@ -116,7 +116,7 @@ $(window).on("load resize",function(e){if($(window).width() > 767){
             $(this).find('.dropdown-menu').removeClass('fadeIn').addClass('fadeOut');
             setTimeout(function () {
                 $(".sitedropdown").find('.dropdown-menu').removeClass("fadeOut d-block");
-            },750);
+            },500);
         });
 
 }});

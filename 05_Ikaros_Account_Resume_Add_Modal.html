@@ -14,7 +14,7 @@
     <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 </head>
-<body class="dfn-megamenu account">
+<body class="dfn-megamenu account modal-open">
 
 <!-- Header Start -->
 <header class="header">
@@ -129,7 +129,7 @@
                 <!-- Create New Resume Box -->
 
                 <!-- Create New Resume Modal Start -->
-                <div class="sitemodal sitemodal-default sitemodal-noclose modal fade" id="modalCreateNewResume" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="sitemodal sitemodal-default sitemodal-noclose modal fade show" id="modalCreateNewResume" tabindex="-1" role="dialog" style="padding-right: 17px; display: block;">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="sitemodal-noclose-content">
@@ -441,5 +441,6 @@
 <script id="script-mainpage-app" src="assets/dist/js/custom-app.js"></script>
 <!-- JavaScript End -->
 
+<div class="modal-backdrop fade show"></div>
 </body>
 </html>

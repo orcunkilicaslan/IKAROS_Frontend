@@ -119,7 +119,7 @@
       color: $global-clr-text-dark;
       font-size: $global-font-size * 0.875;
       font-weight: normal;
-      margin-top: 2px;
+      margin-top: 4px;
       margin-bottom: 0;
 
       &-fontsize{
@@ -149,6 +149,13 @@
           height: 12px;
           background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0icGx1cy1zaWduIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4NCiAgPHBhdGggaWQ9IlBhdGhfNjgxIiBkYXRhLW5hbWU9IlBhdGggNjgxIiBkPSJNMTEuMDYyLDUuMDYySDYuOTM3Vi45MzhhLjkzOC45MzgsMCwxLDAtMS44NzUsMFY1LjA2MkguOTM3YS45MzguOTM4LDAsMCwwLDAsMS44NzVINS4wNjJ2NC4xMjVhLjkzOC45MzgsMCwwLDAsMS44NzUsMFY2LjkzOGg0LjEyNWEuOTM4LjkzOCwwLDEsMCwwLTEuODc1WiIgZmlsbD0iIzM5YmQyMiIvPg0KPC9zdmc+DQo=");
           top: -1px;
+        }
+        &-iconsinfogreen{
+          width: 12px;
+          height: 12px;
+          background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iaW5mb3JtYXRpb24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiB2aWV3Qm94PSIwIDAgMTIgMTIiPg0KICA8cGF0aCBpZD0iUGF0aF82MTUiIGRhdGEtbmFtZT0iUGF0aCA2MTUiIGQ9Ik02LDBhNiw2LDAsMSwwLDYsNkE2LjAwNyw2LjAwNywwLDAsMCw2LDBaTTYsMTAuOTA5QTQuOTA5LDQuOTA5LDAsMSwxLDEwLjkwOSw2LDQuOTE1LDQuOTE1LDAsMCwxLDYsMTAuOTA5WiIgZmlsbD0iIzM5YmQyMiIvPg0KICA8cGF0aCBpZD0iUGF0aF82MTYiIGRhdGEtbmFtZT0iUGF0aCA2MTYiIGQ9Ik0xNDUuNzI5LDcwYS43MjcuNzI3LDAsMSwwLC43MjcuNzI4QS43MjguNzI4LDAsMCwwLDE0NS43MjksNzBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM5LjcyOSAtNjcuNDU1KSIgZmlsbD0iIzM5YmQyMiIvPg0KICA8cGF0aCBpZD0iUGF0aF82MTciIGRhdGEtbmFtZT0iUGF0aCA2MTciIGQ9Ik0xNTAuNTQ1LDE0MGEuNTQ1LjU0NSwwLDAsMC0uNTQ1LjU0NXYzLjI3M2EuNTQ1LjU0NSwwLDAsMCwxLjA5MSwwdi0zLjI3M0EuNTQ1LjU0NSwwLDAsMCwxNTAuNTQ1LDE0MFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNDQuNTQ1IC0xMzQuOTA5KSIgZmlsbD0iIzM5YmQyMiIvPg0KPC9zdmc+DQo=");
+          top: -1px;
+          margin-right: 4px;
         }
         &-iconsinfo{
           width: 16px;
@@ -193,7 +200,7 @@
       &-group{
         &-vertical{
           #{$formcustomclassname}-control{
-            margin-bottom: 15px;
+            margin-bottom: 10px;
 
             &:last-child{margin-bottom: 0}
           }

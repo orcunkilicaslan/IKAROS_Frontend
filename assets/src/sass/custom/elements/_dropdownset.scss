@@ -42,7 +42,9 @@
       height: 12px;
     }
 
-    > i[class*="sprite-20"]{top: 3px !important;}
+    > i[class*="sprite-20"]{
+      //top: 3px !important;
+    }
   }
 
   &-menu{
@@ -57,7 +59,7 @@
     top: -5px !important;
     transform: none !important;
     z-index: 0 !important;
-    @include animation-duration(0.75s);
+    @include animation-duration(0.5s);
     @include border-radius(14px);
 
     &.show{}
