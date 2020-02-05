@@ -120,20 +120,8 @@
         }
 
         .dropdownusermenu{
-          color: $global-clr-white;
           padding: 0 10px 7px;
           margin-top: -5px;
-
-          &-item{
-            font-size: 16px;
-            letter-spacing: -0.16px;
-            padding: 2px 0;
-
-            > a{
-              color: $global-clr-white;
-              display: block;
-            }
-          }
         }
 
         &-btn{

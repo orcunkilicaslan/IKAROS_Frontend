@@ -1,4 +1,4 @@
-.dropdown{
+.sitedropdown{
 
   &-toggle{
 
@@ -8,7 +8,7 @@
       @include transition-multiple(background 0.15s ease-in-out);
 
       &:hover{
-        i{@include svg-filter(0%, 0, 0, 100%);}
+        i{@include svg-filter(100%, 0, 0, 100%);}
       }
     }
 
@@ -23,6 +23,10 @@
       &::after{
         @include rotate(-180);
         @include svg-filter(0%, 1, 0, 100%);
+      }
+
+      &:hover{
+        i{@include svg-filter(0%, 1, 0, 100%);}
       }
     }
 
@@ -50,13 +54,29 @@
     width: 100% !important;
     min-width: auto;
     left: 0 !important;
-    top: -10px !important;
+    top: -5px !important;
     transform: none !important;
     z-index: 0 !important;
     @include animation-duration(0.75s);
     @include border-radius(14px);
 
     &.show{}
+
+    .dropdownmenu{
+      color: $global-clr-white;
+      padding: 10px 30px 20px;
+
+      &-item{
+        font-size: 16px;
+        letter-spacing: -0.16px;
+        padding: 2px 0;
+
+        > a{
+          color: $global-clr-white;
+          display: block;
+        }
+      }
+    }
   }
 
 }
