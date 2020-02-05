@@ -58,6 +58,8 @@
 
       &-form{
         .form-group{
+          margin-bottom: 10px;
+
           &:first-child{margin-top: 15px;}
           &:last-child{margin-bottom: 0;}
         }
