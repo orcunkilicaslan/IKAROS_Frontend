@@ -10,10 +10,13 @@
     h2{font-size: 36px;}
     h2{font-size: 22px;}
     h3{font-size: 18px;}
-    h4{font-size: 18px;}
-    h5{font-size: 18px;}
+    h4{font-size: 16px;}
+    h5{font-size: 16px;}
     h6{font-size: 18px;}
-    h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,h1+ul,h2+ul,h3+ul,h4+ul,h5+ul,h6+ul{margin-top: 10px;}
+    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 10px;}
+    h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 5px;}
+
+    p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
     p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
     p+p,p+ul{margin-top: 10px;}
     p{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
