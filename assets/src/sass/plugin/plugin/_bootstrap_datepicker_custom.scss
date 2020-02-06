@@ -1,9 +1,10 @@
 .bootstrap-datepicker-custom{
   position: relative;
+  z-index: 1 !important;
 
   .form-control{
-    text-align: center !important;
-    text-transform: uppercase !important;
+    //text-align: center !important;
+    //text-transform: uppercase !important;
   }
 
   .input-group{

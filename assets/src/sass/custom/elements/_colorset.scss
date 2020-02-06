@@ -5,6 +5,9 @@
     &white{
       background-color: $global-clr-white !important;
     }
+    &darkblack{
+      background-color: $global-clr-dark-black !important;
+    }
     &orange{
       background-color: $global-clr-orange !important;
     }
@@ -38,6 +41,9 @@
 
     &white{
       color: $global-clr-white !important;
+    }
+    &darkblack{
+      color: $global-clr-dark-black !important;
     }
     &orange{
       color: $global-clr-orange !important;
