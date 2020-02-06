@@ -8,7 +8,7 @@
 
   &-menu{
     width: 100%;
-    max-width: 275px;
+    max-width: 285px;
 
     ul{
       li{
@@ -73,6 +73,28 @@
         }
       }
     }
+
+    &.smalltagmenu{
+      ul{
+        li{
+          a{
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            small{
+              color: $global-clr-text-dark;
+              display: block;
+              font-size: 14px;
+            }
+
+            &.active{
+              small{color: $global-clr-white;}
+            }
+          }
+        }
+      }
+    }
+
   }
 
 }

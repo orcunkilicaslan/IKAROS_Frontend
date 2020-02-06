@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>IKAROS</title>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=1440">
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
+    <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
+    <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
+</head>
+<body class="dfn-megamenu account">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Mask -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <!-- Mobile Mask -->
+
+    <!-- Web Header -->
+    <div class="header-web">
+        <div class="container">
+
+            <!-- Navigation Start -->
+            <div class="header-navigation">
+                <div class="header-navigation-logo">
+                    <a id="dfn-navtggle" class="header-navigation-logo-btn dfn-mobilemenu-btn">
+                        <div class="btnicon"><span></span></div>
+                        <div class="btntext d-none"><small>MENÜ</small></div>
+                    </a>
+                    <a class="header-navigation-logo-link" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                </div>
+                <div class="header-navigation-navbar dfn-nav dfn-headnav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-menu-list-item"><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Bana Uygun İlanlar" rel="category">Bana Uygun İlanlar</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Özgeçmişler" rel="category">Özgeçmişler</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="İş Yaşamı" rel="category">İş Yaşamı</a></li>
+                        </ul>
+                    </nav>
+                    <div class="signindropdown sitedropdown dropdown">
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill sitedropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-user"></i> <span>Orçun KILIÇASLAN</span></a>
+                        <div class="sitedropdown-menu dropdown-menu animated">
+                            <div class="signindropdown-menu">
+                                <ul class="dropdownusermenu dropdownmenu">
+                                    <li class="dropdownmenu-item"><a href="#" title="Profilim" rel="category">Hesap Ayarlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Özgeçmişim" rel="category">Özgeçmişlerim</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Mesajlarım" rel="category">Mesajlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Başvurularım" rel="category">Başvurularım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Ön Yazılarım" rel="category">Ön Yazılarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Favorilerim" rel="category">Favorilerim</a></li>
+                                </ul>
+                                <a class="btn btn-outline-info rounded-pill minwidthper100 mt-2 sitecolorwhite" href="01_Ikaros_Home_Page.html">ÇIKIŞ YAP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation End -->
+
+        </div>
+    </div>
+    <!-- Web Header -->
+
+</header>
+<!-- Header End -->
+
+<!-- Header Title Start -->
+<section class="headtitle headtitle-content component-gradientbg">
+    <div class="container">
+        <div class="row">
+
+            <!-- Title -->
+            <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left col">
+                <small data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="100">Özgeçmiş Oluştur</small>
+                <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="300">Arayüz Tasarım ve Geliştirici</h1>
+            </div>
+            <!-- Title -->
+
+        </div>
+    </div>
+</section>
+<!-- Header Title End -->
+
+<!-- Account Start -->
+<section class="account-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar Navigasyon Menu Start -->
+            <nav class="sidebar sidebar-menu smalltagmenu col-auto">
+                <ul>
+                    <li><a class="active" href="#" title="Kişisel ve İletişim Bilgileri" rel="category">Adım 01 <small>Kişisel ve İletişim Bilgileri</small></a></li>
+                    <li><a href="#" title="Özgeçmiş Özet Bilgi" rel="category">Adım 02 <small>Özgeçmiş Özet Bilgi</small></a></li>
+                    <li><a href="#" title="Eğitim Bilgileri" rel="category">Adım 03 <small>Eğitim Bilgileri</small></a></li>
+                    <li><a href="#" title="İş Deneyimleri" rel="category">Adım 04 <small>İş Deneyimleri</small></a></li>
+                    <li><a href="#" title="Yabancı Dil" rel="category">Adım 05 <small>Yabancı Dil</small></a></li>
+                    <li><a href="#" title="Yetenekler" rel="category">Adım 06 <small>Yetenekler</small></a></li>
+                    <li><a href="#" title="Seminerler ve Kurslar" rel="category">Adım 07 <small>Seminerler ve Kurslar</small></a></li>
+                    <li><a href="#" title="Sertifikalar" rel="category">Adım 08 <small>Sertifikalar</small></a></li>
+                    <li><a href="#" title="Hobi ve İlgi Alanları" rel="category">Adım 09 <small>Hobi ve İlgi Alanları</small></a></li>
+                    <li><a href="#" title="Referanslar" rel="category">Adım 10 <small>Referanslar</small></a></li>
+                    <li><a href="#" title="Dosyalarım" rel="category">Adım 11 <small>Dosyalarım</small></a></li>
+                </ul>
+            </nav>
+            <!-- Sidebar Navigasyon Menu End -->
+
+            <!-- Create Resume Steps Start -->
+            <div class="account-wrapper account-createresume sitecontent col">
+
+                <!-- Title -->
+                <div class="sitetitle sitetitle-md sitetitle-dark sitetitle-left">
+                    <h2>Kişisel ve İletişim Bilgileri</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+                <!-- Title -->
+
+                <!-- Personal and Contact Information Box -->
+                <form action="" autocomplete="off" novalidate>
+                    <link id="css-bootstrap-datepicker" rel="stylesheet" href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+                    <script id="script-bootstrap-datepicker" src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                    <script id="script-bootstrap-datepicker-lang" src="assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+                    <script id="script-momentjs" src="assets/vendor/moment/min/moment.min.js"></script>
+                    <script id="script-momentjs-locale" src="assets/vendor/moment/min/locales.min.js"></script>
+                    <div class="account-createresume-personal sitecontent-borderbox siteformui bootstrap-datepicker-custom datepickerdark">
+                        <div class="row">
+                            <div class="account-createresume-personal-avatar col-auto">
+                                <img src="assets/upload/elements-profile-vcard-image-400x400-01.jpg" alt="Avatar" width="" height="" />
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input d-none" id="ResumeAvatarFileInput" aria-describedby="ResumeAvatarFileInput">
+                                    <label class="custom-file-label" for="ResumeAvatarFileInput" data-title="FOTOĞRAFI DEĞİŞTİR"><span class="filename"></span></label>
+                                    <script>
+                                        $(document).ready(function(){
+                                            $('#ResumeAvatarFileInput').change(function(e){
+                                                var resumeFileName = e.target.files[0].name;
+                                                $('.custom-file-label span').text(resumeFileName);
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="account-createresume-personal-form siteformuilabel col">
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateNameId" class="form-control autofill" type="text" name="name" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputResumeCreateNameId','msgResumeCreateNameId','iconResumeCreateNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputResumeCreateNameId','msgResumeCreateNameId','iconResumeCreateNameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateNameId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Adınız</label>
+                                        <div id="iconResumeCreateNameId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateSurnameId" class="form-control autofill" type="text" name="surname" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputResumeCreateSurnameId','msgResumeCreateSurnameId','iconResumeCreateSurnameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputResumeCreateSurnameId','msgResumeCreateSurnameId','iconResumeCreateSurnameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateSurnameId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Soyadınız</label>
+                                        <div id="iconResumeCreateSurnameId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group labelanimation">
+                                    <input id="inputResumeCreateTitleId" class="form-control autofill" type="text" name="title" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputResumeCreateTitleId','msgResumeCreateTitleId','iconResumeCreateTitleId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputResumeCreateTitleId','msgResumeCreateTitleId','iconResumeCreateTitleId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                    <span id="msgResumeCreateTitleId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>Ünvanınız</label>
+                                    <div id="iconResumeCreateTitleId"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateEmailId" class="form-control autofill" type="email" name="email" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputResumeCreateEmailId','msgResumeCreateEmailId','iconResumeCreateEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputResumeCreateEmailId','msgResumeCreateEmailId','iconResumeCreateEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateEmailId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>E-Posta Adresiniz</label>
+                                        <div id="iconResumeCreateEmailId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreatePhoneId" class="form-control inputphonemasktr autofill" type="text" name="phone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputResumeCreatePhoneId','msgResumeCreatePhoneId','iconResumeCreatePhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputResumeCreatePhoneId','msgResumeCreatePhoneId','iconResumeCreatePhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreatePhoneId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Telefon Numaranız</label>
+                                        <div id="iconResumeCreatePhoneId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateNationalityId" class="form-control autofill custom-select" name="nationality" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Uyruğunuz</option>
+                                            <option value="1">Türkiye Cumhuriyeti</option>
+                                            <option value="2">Yabancı</option>
+                                        </select>
+                                        <span id="msgResumeCreateNationalityId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Uyruğunuz</label>
+                                        <div id="iconResumeCreateNationalityId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateIdentityNoId" class="form-control inputidentitymask autofill" type="text" name="identity" pattern=".{0}|.{11,}" oninput="generalvalidform.verifyContent('inputIdentityProcess','inputResumeCreateIdentityNoId','msgResumeCreateIdentityNoId','iconResumeCreateIdentityNoId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputIdentityProcess','inputResumeCreateIdentityNoId','msgResumeCreateIdentityNoId','iconResumeCreateIdentityNoId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateIdentityNoId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>T.C. Kimlik Numaranız</label>
+                                        <div id="iconResumeCreateIdentityNoId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Yaşadığınız İl</option>
+                                            <option value="1">İstanbul</option>
+                                            <option value="2">Ankara</option>
+                                            <option value="3">İzmir</option>
+                                        </select>
+                                        <span id="msgResumeCreateCityId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Yaşadığınız İl</label>
+                                        <div id="iconResumeCreateCityId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateTownId" class="form-control autofill custom-select" name="town" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Yaşadığınız İlçe</option>
+                                            <option value="1">Beşiktaş</option>
+                                            <option value="2">Üsküdar</option>
+                                            <option value="3">Sarıyer</option>
+                                        </select>
+                                        <span id="msgResumeCreateTownId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Yaşadığınız İlçe</label>
+                                        <div id="iconResumeCreateTownId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateDateBirthId" class="form-control text-left autofill" type="text" name="datebirth" pattern=".{0}|.{10,}" oninput="generalvalidform.verifyContent('inputDateSelectProcess','inputResumeCreateDateBirthId','msgResumeCreateDateBirthId','iconResumeCreateDateBirthId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputDateSelectProcess','inputResumeCreateDateBirthId','msgResumeCreateDateBirthId','iconResumeCreateDateBirthId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateDateBirthId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Doğum Tarihiniz</label>
+                                        <div id="iconResumeCreateDateBirthId"></div>
+                                        <script>
+                                            $(window).on("load",function(){
+                                                $('#inputResumeCreateDateBirthId').datepicker({
+                                                    container: '.bootstrap-datepicker-custom',
+                                                    format: "dd.mm.yyyy",
+                                                    weekStart: 1,
+                                                    language: "tr",
+                                                    orientation: "bottom left",
+                                                    autoclose: true,
+                                                    forceParse: false,
+                                                    todayHighlight: true,
+                                                    toggleActive: true
+                                                }).on("changeDate",function(event){
+                                                    $('#msgResumeCreateDateBirthId').text('');
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateSmokingId" class="form-control autofill custom-select" name="smoking" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Sigara Kullanımı</option>
+                                            <option value="1">Hayır</option>
+                                            <option value="2">Evet</option>
+                                            <option value="3">Bazen</option>
+                                        </select>
+                                        <span id="msgResumeCreateSmokingId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Sigara Kullanımı</label>
+                                        <div id="iconResumeCreateSmokingId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateGenderId" class="form-control autofill custom-select" name="gender" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Cinsiyetiniz</option>
+                                            <option value="1">Erkek</option>
+                                            <option value="2">Kadın</option>
+                                        </select>
+                                        <span id="msgResumeCreateGenderId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Cinsiyetiniz</label>
+                                        <div id="iconResumeCreateGenderId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateMaritalId" class="form-control autofill custom-select" name="marital" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Medeni Durumunuz</option>
+                                            <option value="1">Bekar</option>
+                                            <option value="2">Evli</option>
+                                        </select>
+                                        <span id="msgResumeCreateMaritalId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Medeni Durumunuz</label>
+                                        <div id="iconResumeCreateMaritalId"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateMilitaryId" class="form-control autofill custom-select" name="militarystatus" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Askerlik Durumunuz</option>
+                                            <option value="1">Yapıldı</option>
+                                            <option value="2">Yapılmadı</option>
+                                            <option value="3">Tecilli</option>
+                                        </select>
+                                        <span id="msgResumeCreateMilitaryId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Askerlik Durumunuz</label>
+                                        <div id="iconResumeCreateMilitaryId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <input id="inputResumeCreateDefermentId" class="form-control text-left autofill" type="text" name="militarydeferment" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputDateSelectProcess','inputResumeCreateDefermentId','msgResumeCreateDefermentId','iconResumeCreateDefermentId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputDateSelectProcess','inputResumeCreateDefermentId','msgResumeCreateDefermentId','iconResumeCreateDefermentId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                        <span id="msgResumeCreateDefermentId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Tecil Tarihi</label>
+                                        <div id="iconResumeCreateDefermentId"></div>
+                                        <script>
+                                            $(window).on("load",function(){
+                                                $('#inputResumeCreateDefermentId').datepicker({
+                                                    container: '.bootstrap-datepicker-custom',
+                                                    format: "dd.mm.yyyy",
+                                                    weekStart: 1,
+                                                    language: "tr",
+                                                    orientation: "bottom left",
+                                                    autoclose: true,
+                                                    forceParse: false,
+                                                    todayHighlight: true,
+                                                    toggleActive: true
+                                                }).on("changeDate",function(event){
+                                                    $('#msgResumeCreateDefermentId').text('');
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateDriverId" class="form-control autofill custom-select" name="drivinglicense" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Sürücü Belgeniz</option>
+                                            <option value="1">Var</option>
+                                            <option value="2">Yok</option>
+                                        </select>
+                                        <span id="msgResumeCreateDriverId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Sürücü Belgeniz</label>
+                                        <div id="iconResumeCreateDriverId"></div>
+                                    </div>
+                                    <div class="form-group labelanimation col">
+                                        <select id="selectResumeCreateDriverClassId" class="form-control autofill custom-select" name="driverclass" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                            <option value="">Sürücü Belge Sınıfı</option>
+                                            <option value="1">A</option>
+                                            <option value="2">B</option>
+                                        </select>
+                                        <span id="msgResumeCreateDriverClassId" class="msginput"></span>
+                                        <span class="inputbottombar"></span>
+                                        <label>Sürücü Belge Sınıfı</label>
+                                        <div id="iconResumeCreateDriverClassId"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-createresume-personal-disability sitecontent-borderbox">
+                            <div class="form-group mb-0">
+                                <label class="sitefontsize16">Engellilik Durumu</label>
+                                <p class="sitecolordarkblack">Engelliyseniz lütfen bunu belirtin. Böylece size sağlanan ayrıcalıklı istihdam olanaklarından faydalanabilirsiniz.</p>
+                                <div class="form-row mt-2">
+                                    <div class="col-auto custom-control-group-horizontal">
+                                        <div class="custom-control custom-radio">
+                                            <input id="DisabilityNo" class="custom-control-input" name="disabilitystatus" type="radio">
+                                            <label class="custom-control-label" for="DisabilityNo">Engelim Yok</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto custom-control-group-horizontal">
+                                        <div class="custom-control custom-radio">
+                                            <input id="DisabilityYes" class="custom-control-input" name="disabilitystatus" type="radio" checked="checked">
+                                            <label class="custom-control-label" for="DisabilityYes">Engelim Var</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-createresume-personal-disability-form">
+                                <div class="form-group">
+                                    <label>Engellilik Durum Bilgileriniz</label>
+                                    <p class="sitecolordarkblack">Lütfen aşağıdaki bilgileri doldurunuz.</p>
+                                    <div class="form-row mt-2">
+                                        <div class="form-group col">
+                                            <select class="form-control custom-select">
+                                                <option value="">Kategorisi</option>
+                                                <option value="1">Volutpat Est Velit</option>
+                                                <option value="2">Praesent Tristique Magna</option>
+                                                <option value="3">Rhoncus Est Pellentesque</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col">
+                                            <select class="form-control custom-select">
+                                                <option value="">Yüzdesi</option>
+                                                <option value="1">Volutpat Est Velit</option>
+                                                <option value="2">Praesent Tristique Magna</option>
+                                                <option value="3">Rhoncus Est Pellentesque</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" placeholder="Açıklaması"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Sağlık raporunuz var mı?</label>
+                                    <div class="form-row mt-2">
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="HealthReportNo" class="custom-control-input" name="healthreportstatus" type="radio" checked="checked">
+                                                <label class="custom-control-label" for="HealthReportNo">Hayır</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="HealthReportYes" class="custom-control-input" name="healthreportstatus" type="radio">
+                                                <label class="custom-control-label" for="HealthReportYes">Evet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Devamlı kullanılan bir ilaç var mı?</label>
+                                    <div class="form-row mt-2 mb-1">
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="DrugUseNo" class="custom-control-input" name="drugusestatus" type="radio" checked="checked">
+                                                <label class="custom-control-label" for="DrugUseNo">Hayır</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="DrugUseYes" class="custom-control-input" name="drugusestatus" type="radio">
+                                                <label class="custom-control-label" for="DrugUseYes">Evet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="text" class="form-control" placeholder="Açıklaması">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Belli bazı işleri yapmasına engel kronik bir rahatsızlık var mı?</label>
+                                    <div class="form-row mt-2 mb-1">
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="ChronicDiscomfortNo" class="custom-control-input" name="chronicdiscomfortstatus" type="radio" checked="checked">
+                                                <label class="custom-control-label" for="ChronicDiscomfortNo">Hayır</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="ChronicDiscomfortYes" class="custom-control-input" name="chronicdiscomfortstatus" type="radio">
+                                                <label class="custom-control-label" for="ChronicDiscomfortYes">Evet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="text" class="form-control" placeholder="Açıklaması">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Arada bilinç kaybına sebep olacak bir durumu oluyor mu?</label>
+                                    <div class="form-row mt-2 mb-1">
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="LossOfConsciousnessNo" class="custom-control-input" name="lossofconsciousnessstatus" type="radio" checked="checked">
+                                                <label class="custom-control-label" for="LossOfConsciousnessNo">Hayır</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="LossOfConsciousnessYes" class="custom-control-input" name="lossofconsciousnessstatus" type="radio">
+                                                <label class="custom-control-label" for="LossOfConsciousnessYes">Evet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="text" class="form-control" placeholder="Açıklaması">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Bulaşıcı bir hastalık var mı?</label>
+                                    <div class="form-row mt-2 mb-1">
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="InfectiousDiseaseNo" class="custom-control-input" name="infectiousdiseasestatus" type="radio" checked="checked">
+                                                <label class="custom-control-label" for="InfectiousDiseaseNo">Hayır</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto custom-control-group-horizontal">
+                                            <div class="custom-control custom-radio">
+                                                <input id="InfectiousDiseaseYes" class="custom-control-input" name="infectiousdiseasestatus" type="radio">
+                                                <label class="custom-control-label" for="InfectiousDiseaseYes">Evet</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="text" class="form-control" placeholder="Açıklaması">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-createresume-bottombtn">
+                        <button class="btn btn-lg btn-success rounded-pill sitefontsize14" type="submit"><i class="icons-sprite sprite-20-dark icons-green-checked"></i> KAYDET VE SONRAKİ ADIMA GEÇ</button>
+                    </div>
+                </form>
+                <!-- Personal and Contact Information Box -->
+
+            </div>
+            <!-- Create Resume Steps End -->
+
+        </div>
+    </div>
+</section>
+<!-- Account End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+
+    <!-- Brand Logos Start -->
+    <div class="footer-brand">
+        <div class="container">
+            <ul id="footbrandlogosowl" class="footer-brand-list owl-carousel owl-theme">
+                <li><img src="assets/img/svg/footer_brand_logos_airliquide.svg" width="127" height="29" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_coca.svg" width="97" height="32" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_iwc.svg" width="74" height="28" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_johnson.svg" width="170" height="30" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_maif.svg" width="55" height="50" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_universal.svg" width="101" height="49" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_veolia.svg" width="97" height="24" alt="Brand" /></li>
+            </ul>
+        </div>
+        <div class="footer-brand-scroll">
+            <i class="footer-brand-scroll-arrow animation-bottomtotop bottomtotopbutton"></i>
+        </div>
+    </div>
+    <!-- Brand Logos End -->
+
+    <!-- Footer Links Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="footer-bottom-left col-md-4">
+                    <a class="footer-bottom-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                    <div class="footer-bottom-address">
+                        <p>Maslak Mahallesi Maslak <br />Meydan Sokak Spring Giz Plaza <br />No: 5/57 Sarıyer / İstanbul</p>
+                        <ul class="footer-bottom-address-contact">
+                            <li class="iconsphone">+90 212 915 28 58</li>
+                            <li class="iconsfax">+90 212 915 28 68</li>
+                            <li class="iconsemail">info@ikarosandpartners.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Address -->
+
+                <!-- Links -->
+                <div class="footer-bottom-links col-md-3">
+                    <h4>Adaylar</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                        <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                        <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                        <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-3">
+                    <h4>İşverenler</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                        <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                        <li><a href="#" title="KOSGEB, Hibe ve Teşvik" rel="category">KOSGEB, Hibe ve Teşvik</a></li>
+                        <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                        <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-2">
+                    <h4 class="text-md-center">Bizi Takip Edin</h4>
+                    <ul class="footer-bottom-links-social">
+                        <li><a href="#" class="socialicons iconsfacebook" data-toggle="tooltip" data-placement="bottom" title="Facebook'ta Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconstwitter" data-toggle="tooltip" data-placement="bottom" title="Twitter'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconsinstagram" data-toggle="tooltip" data-placement="bottom" title="Instagram'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconslinkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin'de Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <!-- Links -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer Links End -->
+
+    <!-- Footer Legal And Copyright Start -->
+    <div class="container">
+        <div class="footer-legal">
+            <div class="footer-legal-logo">
+                <i class=""></i>
+            </div>
+            <div class="footer-legal-desc">
+                <h4>İKAROS AND PARTNERS İNSAN KAYNAKLARI VE EĞİTİM DANIŞMANLIĞI A.Ş.</h4>
+                <p>Özel İstihdam Bürosu Olarak 06.05.2019 – 05.05.2022 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 03.05.2019 tarih ve 1844396 sayılı karar uyarınca 1077 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. <br />İstanbul Çalışma ve İş Kurumu İl Müdürlüğü: 0212 249 29 87 İstanbul Çalışma ve İş Kurumu İl Müdürlüğü Şişli Hizmet Merkezi : 02122910925</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright-text">Tüm Hakları Saklıdır © 2018-2019 - İkaros and Partners</p>
+            <ul class="footer-copyright-links">
+                <li><a href="#" title="Gizlilik Sözleşmesi" rel="bookmark">Gizlilik Sözleşmesi</a></li>
+                <li><a href="#" title="Yasal" rel="bookmark">Yasal</a></li>
+                <li><a href="#" title="KKVK" rel="bookmark">KKVK</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer Legal And Copyright End -->
+
+</footer>
+<!-- Footer End -->
+
+<!-- JavaScript Start -->
+<script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>
+<script id="script-plugin-app" src="assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="assets/dist/js/custom-app.js"></script>
+<!-- JavaScript End -->
+
+</body>
+</html>

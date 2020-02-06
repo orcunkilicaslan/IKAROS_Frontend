@@ -11,7 +11,9 @@ const translateObject = {
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter',
         'PasswordAlert':'En Az 8 Karakter',
-        'RePasswordAlert':'Şifreler Uyuşmuyor'
+        'RePasswordAlert':'Şifreler Uyuşmuyor',
+        'IdentityNoAlert':'11 Karakter Giriniz',
+        'DateSelectAlert':'Tarih Seçiniz'
     },
     'en':{
         'NameAlert':'En Az 2 Karakter',
@@ -23,7 +25,9 @@ const translateObject = {
         'MessageAlert':'En Az 10 Karakter',
         'MessageCharacterOutAlert':'En Fazla 2000 Karakter',
         'PasswordAlert':'En Az 8 Karakter',
-        'RePasswordAlert':'Şifreler Uyuşmuyor'
+        'RePasswordAlert':'Şifreler Uyuşmuyor',
+        'IdentityNoAlert':'11 Karakter Giriniz',
+        'DateSelectAlert':'Tarih Seçiniz'
     }
 };
 
@@ -138,6 +142,30 @@ class GeneralValidForm {
                 }
                 break;
 
+            case "inputIdentityProcess":
+                if(val.length < 11){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','IdentityNoAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector,"", "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check", "error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "inputDateSelectProcess":
+                if(val.length < 10){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','DateSelectAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }else{
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector,"", "check", "error");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"check", "error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
             case "selectPleaseChoose":
                 if(val === ""){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PleaseChoose'), "error", "check");
@@ -230,6 +258,22 @@ class GeneralValidForm {
                 }else{
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr',''), "check", "error");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"check","error");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "inputIdentityProcess":
+                if(val.length===0){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','IdentityNoAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
+                    this.setGeneralValidFormErrorInput(inputIdSelector);
+                }
+                break;
+
+            case "inputDateSelectProcess":
+                if(val.length===0){
+                    this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','DateSelectAlert'), "error", "check");
+                    this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
                     this.setGeneralValidFormErrorInput(inputIdSelector);
                 }
                 break;

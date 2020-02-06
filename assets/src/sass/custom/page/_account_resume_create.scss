@@ -1,0 +1,76 @@
+
+.account{
+
+  &-createresume{
+
+    &-personal{
+
+      &-avatar{
+        width: 210px;
+
+        img{
+          @include border-radii(4px,4px,0,0);
+          display: block;
+        }
+
+        .custom-file{
+          position: relative;
+          top: -42px;
+
+          &-label{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            span.filename{
+              color: $global-clr-white;
+              font-size: 12px;
+              text-align: center;
+              display: block;
+              //white-space: nowrap;
+              overflow: hidden !important;
+              text-overflow: ellipsis;
+              line-height: 1.2;
+              padding: 0 3px;
+            }
+
+            &::after{
+              content: attr(data-title);
+              color: $global-clr-white;
+              background-color: $global-clr-soft-blue;
+              font-size: 12px;
+              font-weight: 500;
+              letter-spacing: -.10px;
+              text-align: center;
+              width: 100%;
+              right: 0;
+              top: 42px;
+              border: none;
+              @include border-radii(0,0,4px,4px);
+            }
+          }
+        }
+      }
+
+      &-form{}
+
+      &-disability{
+        background-color: lighten($global-clr-soft-gray, 3%);
+        margin-top: 30px;
+
+        &-form{
+          padding-top: 20px;
+          margin-top: 25px;
+          border-top: 1px solid $global-border-light-gray;
+
+          .form-control{@include border-radius(4px)}
+        }
+      }
+    }
+
+    &-bottombtn{
+      @include flexbox-display-flex();
+      @include flexbox-justify-content(center);
+    }
+  }
+}
