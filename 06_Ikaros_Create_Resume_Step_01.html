@@ -190,11 +190,12 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateNationalityId" class="form-control autofill custom-select" name="nationality" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateNationalityId" class="form-control autofill custom-select" name="nationality" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateNationalityId','msgResumeCreateNationalityId','iconResumeCreateNationalityId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Uyruğunuz</option>
                                             <option value="1">Türkiye Cumhuriyeti</option>
                                             <option value="2">Yabancı</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateNationalityId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Uyruğunuz</label>
@@ -210,24 +211,26 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateCityId','msgResumeCreateCityId','iconResumeCreateCityId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Yaşadığınız İl</option>
                                             <option value="1">İstanbul</option>
                                             <option value="2">Ankara</option>
                                             <option value="3">İzmir</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateCityId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Yaşadığınız İl</label>
                                         <div id="iconResumeCreateCityId"></div>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateTownId" class="form-control autofill custom-select" name="town" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateTownId" class="form-control autofill custom-select" name="town" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateTownId','msgResumeCreateTownId','iconResumeCreateTownId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Yaşadığınız İlçe</option>
                                             <option value="1">Beşiktaş</option>
                                             <option value="2">Üsküdar</option>
                                             <option value="3">Sarıyer</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateTownId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Yaşadığınız İlçe</label>
@@ -260,12 +263,13 @@
                                         </script>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateSmokingId" class="form-control autofill custom-select" name="smoking" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateSmokingId" class="form-control autofill custom-select" name="smoking" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateSmokingId','msgResumeCreateSmokingId','iconResumeCreateSmokingId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Sigara Kullanımı</option>
                                             <option value="1">Hayır</option>
                                             <option value="2">Evet</option>
                                             <option value="3">Bazen</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateSmokingId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Sigara Kullanımı</label>
@@ -274,22 +278,24 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateGenderId" class="form-control autofill custom-select" name="gender" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateGenderId" class="form-control autofill custom-select" name="gender" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateGenderId','msgResumeCreateGenderId','iconResumeCreateGenderId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Cinsiyetiniz</option>
                                             <option value="1">Erkek</option>
                                             <option value="2">Kadın</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateGenderId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Cinsiyetiniz</label>
                                         <div id="iconResumeCreateGenderId"></div>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateMaritalId" class="form-control autofill custom-select" name="marital" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateMaritalId" class="form-control autofill custom-select" name="marital" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMaritalId','msgResumeCreateMaritalId','iconResumeCreateMaritalId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Medeni Durumunuz</option>
                                             <option value="1">Bekar</option>
                                             <option value="2">Evli</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateMaritalId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Medeni Durumunuz</label>
@@ -298,12 +304,13 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateMilitaryId" class="form-control autofill custom-select" name="militarystatus" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateMilitaryId" class="form-control autofill custom-select" name="militarystatus" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateMilitaryId','msgResumeCreateMilitaryId','iconResumeCreateMilitaryId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Askerlik Durumunuz</option>
                                             <option value="1">Yapıldı</option>
                                             <option value="2">Yapılmadı</option>
                                             <option value="3">Tecilli</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateMilitaryId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Askerlik Durumunuz</label>
@@ -336,22 +343,24 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateDriverId" class="form-control autofill custom-select" name="drivinglicense" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateDriverId" class="form-control autofill custom-select" name="drivinglicense" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverId','msgResumeCreateDriverId','iconResumeCreateDriverId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Sürücü Belgeniz</option>
                                             <option value="1">Var</option>
                                             <option value="2">Yok</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateDriverId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Sürücü Belgeniz</label>
                                         <div id="iconResumeCreateDriverId"></div>
                                     </div>
                                     <div class="form-group labelanimation col">
-                                        <select id="selectResumeCreateDriverClassId" class="form-control autofill custom-select" name="driverclass" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                        <select id="selectResumeCreateDriverClassId" class="form-control autofill custom-select" name="driverclass" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectResumeCreateDriverClassId','msgResumeCreateDriverClassId','iconResumeCreateDriverClassId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Sürücü Belge Sınıfı</option>
                                             <option value="1">A</option>
                                             <option value="2">B</option>
                                         </select>
+                                        <div class="selectclickjsblur"></div>
                                         <span id="msgResumeCreateDriverClassId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Sürücü Belge Sınıfı</label>

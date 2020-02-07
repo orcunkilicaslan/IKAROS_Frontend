@@ -1741,24 +1741,26 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group labelanimation col">
-                                <select id="selectCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                <select id="selectCityId" class="form-control autofill custom-select" name="city" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectCityId','msgCityId','iconCityId')" disabled="disabled" aria-required="true" required>
                                     <option value="">Şehir Seçiniz</option>
                                     <option value="1">İstanbul</option>
                                     <option value="2">Ankara</option>
                                     <option value="3">İzmir</option>
                                 </select>
+                                <div class="selectclickjsblur"></div>
                                 <span id="msgCityId" class="msginput"></span>
                                 <span class="inputbottombar"></span>
                                 <label>Şehir Seçiniz</label>
                                 <div id="iconCityId"></div>
                             </div>
                             <div class="form-group labelanimation col">
-                                <select id="selectDistrictId" class="form-control autofill custom-select" name="district" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                                <select id="selectDistrictId" class="form-control autofill custom-select" name="district" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectDistrictId','msgDistrictId','iconDistrictId')" disabled="disabled" aria-required="true" required>
                                     <option value="">İlçe Seçiniz</option>
                                     <option value="1">Beşiktaş</option>
                                     <option value="2">Üsküdar</option>
                                     <option value="3">Sarıyer</option>
                                 </select>
+                                <div class="selectclickjsblur"></div>
                                 <span id="msgDistrictId" class="msginput"></span>
                                 <span class="inputbottombar"></span>
                                 <label>İlçe Seçiniz</label>
@@ -1794,7 +1796,7 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col">
-                                <button type="submit" class="btn btn-lg btn-success rounded-pill minwidthper100"><i class="icons-sprite sprite-20-dark icons-green-refer"></i> BAŞVURU YAPIN</button>
+                                <button type="button" class="btn btn-lg btn-success rounded-pill minwidthper100"><i class="icons-sprite sprite-20-dark icons-green-refer"></i> BAŞVURU YAPIN</button>
                             </div>
                         </div>
                     </form>

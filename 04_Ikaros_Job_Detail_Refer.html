@@ -115,12 +115,13 @@
                     </div>
                     <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
                         <div class="form-group labelanimation">
-                            <select id="selectSavedResumeId" class="form-control autofill custom-select" name="savedresume" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                            <select id="selectSavedResumeId" class="form-control autofill custom-select" name="savedresume" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedResumeId','msgSavedResumeId','iconSavedResumeId')" disabled="disabled" aria-required="true" required>
                                 <option value="">Kayıtlı Özgeçmişinizi Seçiniz</option>
-                                <option value="1">İstanbul</option>
-                                <option value="2">Ankara</option>
-                                <option value="3">İzmir</option>
+                                <option value="1">İngilizce</option>
+                                <option value="2">Türkçe</option>
+                                <option value="3">Frontend Developer</option>
                             </select>
+                            <div class="selectclickjsblur"></div>
                             <span id="msgSavedResumeId" class="msginput"></span>
                             <span class="inputbottombar"></span>
                             <label>Kayıtlı Özgeçmişinizi Seçiniz</label>
@@ -130,12 +131,12 @@
                             </ul>
                         </div>
                         <div class="form-group labelanimation">
-                            <select id="selectSavedLetterId" class="form-control autofill custom-select" name="savedletter" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" aria-required="true" required>
+                            <select id="selectSavedLetterId" class="form-control autofill custom-select" name="savedletter" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectSavedLetterId','msgSavedLetterId','iconSavedLetterId')" disabled="disabled" aria-required="true" required>
                                 <option value="">Kayıtlı Önyazı Seçiniz</option>
-                                <option value="1">Beşiktaş</option>
-                                <option value="2">Üsküdar</option>
-                                <option value="3">Sarıyer</option>
+                                <option value="1">İş Başvuru</option>
+                                <option value="2">Kısa Özet</option>
                             </select>
+                            <div class="selectclickjsblur"></div>
                             <span id="msgSavedLetterId" class="msginput"></span>
                             <span class="inputbottombar"></span>
                             <label>Kayıtlı Önyazı Seçiniz</label>

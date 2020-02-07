@@ -154,6 +154,15 @@ $('.siteformui input[type="text"]').keyup(function(evt){
 });
 /* Site Forum UI Input Text Transform Capitalize */
 
+/* Site Forum UI Label Animation Select Disabled */
+jQuery(document).ready(function() {
+    $(".siteformuilabel .labelanimation > .selectclickjsblur").click(function (evt) {
+        evt.preventDefault();
+        $(this).hide().prev("select.autofill").prop("disabled", false);
+    });
+});
+/* Site Forum UI Label Animation Select Disabled */
+
 /* Site Forum UI Input Mask */
 $(document).ready(function(){
     $('.inputphonemask').inputmask({
