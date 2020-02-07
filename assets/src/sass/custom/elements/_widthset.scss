@@ -1,12 +1,14 @@
 
 .maxwidth{
-  &100{max-width: 100px}
-  &250{max-width: 250px}
-  &300{max-width: 300px}
+  &100{width: 100%; max-width: 100px}
+  &250{width: 100%; max-width: 250px}
+  &300{width: 100%; max-width: 300px}
+  &400{width: 100%; max-width: 400px}
 }
 
 .minwidth{
   &100{min-width: 100px}
   &225{min-width: 225px}
+  &250{min-width: 250px}
   &per100{min-width: 100%}
 }

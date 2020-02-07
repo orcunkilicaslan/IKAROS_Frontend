@@ -25,6 +25,33 @@
     padding-top: 55px !important;
     padding-bottom: 45px !important;
 
-    .btn{margin-top: 10px;}
+    .btn{
+      margin-top: 10px;
+    }
+  }
+
+  &-entered{
+    margin-top: 20px;
+
+    > .row{
+      margin-top: 20px;
+
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+
+    &-feature{
+      min-width: calc(100%/4);
+
+      .enteredtitle{
+        color: $global-clr-text-light;
+        font-size: 14px;
+      }
+      .enteredfield{
+        color: $global-clr-text-dark;
+        font-size: 16px;
+      }
+    }
   }
 }

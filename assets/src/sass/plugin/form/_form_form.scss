@@ -107,6 +107,10 @@
         font-size: $global-font-size;
         border: none;
         line-height: 1;
+
+        i{
+          margin-right: 10px;
+        }
       }
 
       #{$formclassname}-control{
@@ -398,7 +402,13 @@
           border-color: transparentize($global-clr-soft-blue, 0.75);
         }
 
-        &-text{color: $global-clr-white;}
+        &-text{
+          color: $global-clr-white;
+
+          i{
+            @include svg-filter(0%, 1, 0, 100%);
+          }
+        }
       }
 
       &-info{
