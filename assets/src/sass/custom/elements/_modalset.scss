@@ -3,6 +3,11 @@
   &-default{
 
     .modal{
+
+      &-lg{
+        max-width: 870px;
+      }
+
       &-dialog{
         max-width: 540px;
         margin: 80px auto;
@@ -55,6 +60,7 @@
 
     &-content{
       position: relative;
+      width: 100%;
       max-width: 540px;
       margin: 80px auto;
     }

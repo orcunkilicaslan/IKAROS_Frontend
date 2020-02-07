@@ -70,9 +70,17 @@
 
     &-summary{}
 
+    &-education{}
+
     &-bottombtn{
       @include flexbox-display-flex();
       @include flexbox-justify-content(center);
+
+      .btn{
+        &.sitefontsize14[href]{
+          line-height: 2.3 !important;
+        }
+      }
     }
   }
 }
