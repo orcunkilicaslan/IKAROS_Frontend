@@ -76,6 +76,8 @@
 
     &-language{}
 
+    &-skill{}
+
     &-bottombtn{
       @include flexbox-display-flex();
       @include flexbox-justify-content(center);
