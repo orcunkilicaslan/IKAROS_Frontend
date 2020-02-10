@@ -19,6 +19,8 @@
  - [06_Ikaros_Create_Resume_Step_02](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_02.html)
  - [06_Ikaros_Create_Resume_Step_03](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_03.html)
  - [06_Ikaros_Create_Resume_Step_03_Add_Modal](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_03_Add_Modal.html)
+ - [06_Ikaros_Create_Resume_Step_03](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_04.html)
+ - [06_Ikaros_Create_Resume_Step_04_Add_Modal](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_04_Add_Modal.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
