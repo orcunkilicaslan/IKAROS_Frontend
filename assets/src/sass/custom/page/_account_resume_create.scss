@@ -78,6 +78,8 @@
 
     &-skill{}
 
+    &-seminar{}
+
     &-bottombtn{
       @include flexbox-display-flex();
       @include flexbox-justify-content(center);
