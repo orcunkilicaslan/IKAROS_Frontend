@@ -15,6 +15,7 @@
  - [05_Ikaros_Account_Settings](https://orcunkilicaslan.github.io/IKAROS_Frontend/05_Ikaros_Account_Settings.html)
  - [05_Ikaros_Account_Resume](https://orcunkilicaslan.github.io/IKAROS_Frontend/05_Ikaros_Account_Resume.html)
  - [05_Ikaros_Account_Resume_Add_Modal](https://orcunkilicaslan.github.io/IKAROS_Frontend/05_Ikaros_Account_Resume_Add_Modal.html)
+ - [06_Ikaros_Create_Resume_Step_00](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_00.html)
  - [06_Ikaros_Create_Resume_Step_01](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_01.html)
  - [06_Ikaros_Create_Resume_Step_02](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_02.html)
  - [06_Ikaros_Create_Resume_Step_03](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_03.html)
