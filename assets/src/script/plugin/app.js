@@ -75,6 +75,7 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
 
     var dfnNavMenuWidth = $("header.header .dfn-headnav");
     $("header.header .dfn-headnav .megamenu-nav").css("width", dfnNavMenuWidth.width() + "px");
+    $("header.header .dfn-headnav .megamultimenu > .megamultimenu-row").css("width", dfnNavMenuWidth.width() + "px");
 
     $('.dfn-menu-list-item > a[data-toggle="dropdown"]').click(function() {
         $('.header-web').addClass('activemenubar');
