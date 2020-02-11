@@ -1,8 +1,8 @@
 /* DropZone JS */
-Dropzone.autoDiscover = false;
-
 jQuery(function($) {
     if($('div').hasClass('sitedropzone')){
+
+        Dropzone.autoDiscover = false;
 
         /*$(".dropzone").dropzone({
             maxFiles: 1,
