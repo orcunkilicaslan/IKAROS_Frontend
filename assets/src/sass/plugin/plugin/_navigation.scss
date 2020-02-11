@@ -70,17 +70,55 @@
 
           &.show{}
 
+          .menunav{
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: -.16px;
+
+            ul{
+              li{
+                position: relative;
+                padding-left: 15px;
+
+                &:hover::after{
+                  border-color: white;
+                }
+
+                &::before {
+                  visibility: hidden;
+                  position: absolute;
+                  left: 0;
+                  display: inline-block;
+                }
+
+                &::after{
+                  content:"";
+                  position:absolute;
+                  width: 8px;
+                  height: 8px;
+                  top: 10px;
+                  left: 0;
+                  border-top:2px solid white;
+                  border-right:2px solid white;
+                  @include rotate(45);
+                  @include transition-multiple(border 0.15s ease-in-out);
+                }
+              }
+            }
+          }
+
           .megamenu{
             @include flexbox-display-flex();
             @include flexbox-flex-wrap(wrap);
             @include flexbox-align-items(center);
+            min-height: 200px;
 
             &-desc{
               @include flexbox-flex-basis(0);
               @include flexbox-flex-grow(1);
               max-width: 100%;
               padding-right: 30px;
-              margin-top: -5px;
+              margin-top: -10px;
 
               &-title{
                 color: white;
@@ -96,43 +134,44 @@
               @include flexbox-flex(0 0 auto);
               width: auto;
               max-width: 100%;
-              padding: 30px 15px;
-              font-size: 16px;
-              line-height: 1.8;
-              letter-spacing: -.16px;
-
-              ul{
-                li{
-                  position: relative;
-                  padding-left: 15px;
-
-                  &:hover::after{
-                    border-color: white;
-                  }
-
-                  &::before {
-                    visibility: hidden;
-                    position: absolute;
-                    left: 0;
-                    display: inline-block;
-                  }
-
-                  &::after{
-                    content:"";
-                    position:absolute;
-                    width: 8px;
-                    height: 8px;
-                    top: 10px;
-                    left: 0;
-                    border-top:2px solid white;
-                    border-right:2px solid white;
-                    @include rotate(45);
-                    @include transition-multiple(border 0.15s ease-in-out);
-                  }
-                }
-              }
+              padding: 25px 15px 30px;
             }
           }
+
+          .megamultimenu{
+            @include flexbox-display-flex();
+            @include flexbox-flex-wrap(wrap);
+            @include flexbox-align-items(center);
+
+            &-row{
+              @include flexbox-display-flex();
+              @include flexbox-flex-wrap(wrap);
+              margin-left: auto;
+            }
+
+            &-col{
+              @include flexbox-flex(0 0 auto);
+              width: auto;
+              max-width: 100%;
+              min-width: 200px;
+              padding-right: 75px;
+            }
+
+            &-desc{
+              margin-bottom: 10px;
+              &-title{
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.15;
+                letter-spacing: -1.14px;
+                text-align: left;
+              }
+            }
+
+            &-nav{}
+          }
+
         }
       }
     }
