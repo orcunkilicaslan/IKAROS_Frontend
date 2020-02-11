@@ -66,3 +66,16 @@ assets/vendor/moment/moment.js
 assets/vendor/moment/package.js
 assets/vendor/moment/package.json
 assets/vendor/moment/README.md
+
+assets/vendor/dropzone/dist/basic.css
+assets/vendor/dropzone/dist/dropzone.css
+assets/vendor/dropzone/dist/dropzone-amd-module.js
+assets/vendor/dropzone/dist/min/
+assets/vendor/dropzone/dist/readme.md
+assets/vendor/dropzone/bower.json
+assets/vendor/dropzone/component.json
+assets/vendor/dropzone/composer.json
+assets/vendor/dropzone/CONTRIBUTING.md
+assets/vendor/dropzone/index.js
+assets/vendor/dropzone/package.json
+assets/vendor/dropzone/README.md
