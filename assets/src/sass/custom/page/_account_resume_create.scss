@@ -84,6 +84,8 @@
 
     &-hobby{}
 
+    &-reference{}
+
     &-bottombtn{
       @include flexbox-display-flex();
       @include flexbox-justify-content(center);

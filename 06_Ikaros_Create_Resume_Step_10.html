@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>IKAROS</title>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=1440">
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
+    <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
+    <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
+</head>
+<body class="dfn-megamenu account">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Mask -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <!-- Mobile Mask -->
+
+    <!-- Web Header -->
+    <div class="header-web">
+        <div class="container">
+
+            <!-- Navigation Start -->
+            <div class="header-navigation">
+                <div class="header-navigation-logo">
+                    <a id="dfn-navtggle" class="header-navigation-logo-btn dfn-mobilemenu-btn">
+                        <div class="btnicon"><span></span></div>
+                        <div class="btntext d-none"><small>MENÜ</small></div>
+                    </a>
+                    <a class="header-navigation-logo-link" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                </div>
+                <div class="header-navigation-navbar dfn-nav dfn-headnav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-menu-list-item"><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Bana Uygun İlanlar" rel="category">Bana Uygun İlanlar</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="Özgeçmişler" rel="category">Özgeçmişler</a></li>
+                            <li class="dfn-menu-list-item"><a href="#" title="İş Yaşamı" rel="category">İş Yaşamı</a></li>
+                        </ul>
+                    </nav>
+                    <div class="signindropdown sitedropdown dropdown">
+                        <a href="javascript:;" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill sitedropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-green-user"></i> <span>Orçun KILIÇASLAN</span></a>
+                        <div class="sitedropdown-menu dropdown-menu animated">
+                            <div class="signindropdown-menu">
+                                <ul class="dropdownusermenu dropdownmenu">
+                                    <li class="dropdownmenu-item"><a href="#" title="Profilim" rel="category">Hesap Ayarlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Özgeçmişim" rel="category">Özgeçmişlerim</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Mesajlarım" rel="category">Mesajlarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Başvurularım" rel="category">Başvurularım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Ön Yazılarım" rel="category">Ön Yazılarım</a></li>
+                                    <li class="dropdownmenu-item"><a href="#" title="Favorilerim" rel="category">Favorilerim</a></li>
+                                </ul>
+                                <a class="btn btn-outline-info rounded-pill minwidthper100 mt-2 sitecolorwhite" href="01_Ikaros_Home_Page.html">ÇIKIŞ YAP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation End -->
+
+        </div>
+    </div>
+    <!-- Web Header -->
+
+</header>
+<!-- Header End -->
+
+<!-- Header Title Start -->
+<section class="headtitle headtitle-content component-gradientbg">
+    <div class="container">
+        <div class="row">
+
+            <!-- Title -->
+            <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left col">
+                <small data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="100">Özgeçmiş Oluştur</small>
+                <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="300">Arayüz Tasarım ve Geliştirici</h1>
+            </div>
+            <!-- Title -->
+
+        </div>
+    </div>
+</section>
+<!-- Header Title End -->
+
+<!-- Account Start -->
+<section class="account-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar Navigasyon Menu Start -->
+            <nav class="sidebar sidebar-menu smalltagmenu col-auto">
+                <ul>
+                    <li><a href="#" title="Kişisel ve İletişim Bilgileri" rel="category">Adım 01 <small>Kişisel ve İletişim Bilgileri</small></a></li>
+                    <li><a href="#" title="Özgeçmiş Özet Bilgi" rel="category">Adım 02 <small>Özgeçmiş Özet Bilgi</small></a></li>
+                    <li><a href="#" title="Eğitim Bilgileri" rel="category">Adım 03 <small>Eğitim Bilgileri</small></a></li>
+                    <li><a href="#" title="İş Deneyimleri" rel="category">Adım 04 <small>İş Deneyimleri</small></a></li>
+                    <li><a href="#" title="Yabancı Dil" rel="category">Adım 05 <small>Yabancı Dil</small></a></li>
+                    <li><a href="#" title="Yetenekler" rel="category">Adım 06 <small>Yetenekler</small></a></li>
+                    <li><a href="#" title="Seminerler ve Kurslar" rel="category">Adım 07 <small>Seminerler ve Kurslar</small></a></li>
+                    <li><a href="#" title="Sertifikalar" rel="category">Adım 08 <small>Sertifikalar</small></a></li>
+                    <li><a href="#" title="Hobi ve İlgi Alanları" rel="category">Adım 09 <small>Hobi ve İlgi Alanları</small></a></li>
+                    <li><a class="active" href="#" title="Referanslar" rel="category">Adım 10 <small>Referanslar</small></a></li>
+                    <li><a href="#" title="Dosyalarım" rel="category">Adım 11 <small>Dosyalarım</small></a></li>
+                </ul>
+            </nav>
+            <!-- Sidebar Navigasyon Menu End -->
+
+            <!-- Create Resume Steps Start -->
+            <div class="account-wrapper account-createresume sitecontent col">
+
+                <!-- Title -->
+                <div class="sitetitle sitetitle-md sitetitle-dark sitetitle-left">
+                    <h2>Referanslar</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+                <!-- Title -->
+
+                <!-- Adding New Box -->
+                <div class="account-resume-createbox account-addmodalbox sitecontent-borderbox">
+                    <div class="sitetitle sitetitle-sm sitetitle-dark sitetitle-center sitetitle-width500">
+                        <h3>Yeni Referans Ekleyin</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                        <a class="btn btn-lg btn-success rounded-pill" href="#" title="YENİ REFERANS EKLE" data-toggle="modal" data-target="#modalAddingNew"><i class="icons-sprite sprite-12-dark icons-blue-plus"></i> YENİ REFERANS EKLE</a>
+                    </div>
+                </div>
+                <!-- Adding New Box -->
+
+                <!-- Adding New Modal Start -->
+                <div class="sitemodal sitemodal-default sitemodal-noclose modal fade" id="modalAddingNew" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="sitemodal-noclose-content modal-lg">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="mr-1">PENCEREYİ KAPAT</span> <i class="iconsclose"></i></button>
+                                <link id="css-bootstrap-datepicker" rel="stylesheet" href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+                                <script id="script-bootstrap-datepicker" src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                                <script id="script-bootstrap-datepicker-lang" src="assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+                                <script id="script-momentjs" src="assets/vendor/moment/min/moment.min.js"></script>
+                                <script id="script-momentjs-locale" src="assets/vendor/moment/min/locales.min.js"></script>
+                                <div class="sitemodalformbox siteformui siteformuilabel bootstrap-datepicker-custom datepickerlight formuidarkbg">
+                                    <div class="sitemodalformbox-head">
+                                        <div class="sitetitle sitetitle-lg sitetitle-soft sitetitle-left">
+                                            <h3>
+                                                <small>Referans</small>
+                                                <span>Ekleyin</span>
+                                            </h3>
+                                        </div>
+                                        <i class="icons-sprite sprite-60-dark icons-blue-reference"></i>
+                                    </div>
+                                    <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
+                                        <div class="form-row">
+                                            <div class="form-group labelanimation col">
+                                                <input id="inputModalReferenceNameId" class="form-control autofill" type="text" name="certificatename" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputModalReferenceNameId','msgModalReferenceNameId','iconModalReferenceNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputModalReferenceNameId','msgModalReferenceNameId','iconModalReferenceNameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferenceNameId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Referans Adı</label>
+                                                <div id="iconModalReferenceNameId"></div>
+                                            </div>
+                                            <div class="form-group labelanimation col">
+                                                <input id="inputModalReferenceSurnameId" class="form-control autofill" type="text" name="certificateinstitution" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputModalReferenceSurnameId','msgModalReferenceSurnameId','iconModalReferenceSurnameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputModalReferenceSurnameId','msgModalReferenceSurnameId','iconModalReferenceSurnameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferenceSurnameId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Referans Soyadı</label>
+                                                <div id="iconModalReferenceSurnameId"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group labelanimation col">
+                                                <input id="inputModalReferenceCompanyId" class="form-control autofill" type="text" name="certificatename" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputModalReferenceCompanyId','msgModalReferenceCompanyId','iconModalReferenceCompanyId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputModalReferenceCompanyId','msgModalReferenceCompanyId','iconModalReferenceCompanyId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferenceCompanyId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Çalıştığı Firmanın Adı</label>
+                                                <div id="iconModalReferenceCompanyId"></div>
+                                            </div>
+                                            <div class="form-group labelanimation col">
+                                                <input id="inputModalReferenceDutyId" class="form-control autofill" type="text" name="certificateinstitution" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputModalReferenceDutyId','msgModalReferenceDutyId','iconModalReferenceDutyId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputModalReferenceDutyId','msgModalReferenceDutyId','iconModalReferenceDutyId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferenceDutyId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Firmadaki Görevi</label>
+                                                <div id="iconModalReferenceDutyId"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group labelanimation col-md-4">
+                                                <input id="inputModalReferencePhoneId" class="form-control inputphonemasktr autofill" type="text" name="phone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputModalReferencePhoneId','msgModalReferencePhoneId','iconModalReferencePhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputModalReferencePhoneId','msgModalReferencePhoneId','iconModalReferencePhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferencePhoneId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Telefon Numarası</label>
+                                                <div id="iconModalReferencePhoneId"></div>
+                                            </div>
+                                            <div class="form-group labelanimation col-md-4">
+                                                <input id="inputModalReferenceEmailId" class="form-control autofill" type="email" name="email" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputModalReferenceEmailId','msgModalReferenceEmailId','iconModalReferenceEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputModalReferenceEmailId','msgModalReferenceEmailId','iconModalReferenceEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
+                                                <span id="msgModalReferenceEmailId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>E-Posta Adresi</label>
+                                                <div id="iconModalReferenceEmailId"></div>
+                                            </div>
+                                            <div class="form-group labelanimation col-md-4">
+                                                <select id="selectModalReferenceTypeId" class="form-control autofill custom-select" name="companysector" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectModalReferenceTypeId','msgModalReferenceTypeId','iconModalReferenceTypeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectModalReferenceTypeId','msgModalReferenceTypeId','iconModalReferenceTypeId')" disabled="disabled" aria-required="true" required>
+                                                    <option value="">Referans Tipi</option>
+                                                    <option value="1">Kişisel</option>
+                                                    <option value="2">Profesyonel</option>
+                                                </select>
+                                                <div class="selectclickjsblur"></div>
+                                                <span id="msgModalReferenceTypeId" class="msginput"></span>
+                                                <span class="inputbottombar"></span>
+                                                <label>Referans Tipi</label>
+                                                <div id="iconModalReferenceTypeId"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-auto maxwidth400">
+                                                <button class="btn btn-lg btn-success rounded-pill minwidthper100" type="submit">REFERANS EKLEYİN</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding New Modal End -->
+
+                <!-- Reference Information Box -->
+                <div class="account-createresume-reference sitecontent-borderbox">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="sitetitle sitetitle-xs sitetitle-dark sitetitle-left">
+                                <h3>Tezcan Turasan</h3>
+                                <span class="mt-1">ICRYPEX</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="sitedropdown dropdown">
+                                <a href="javascript:;" class="btn btn-lg btn-outline-warning rounded-pill sitedropdown sitedropdown-toggle dropdown-toggle font-weight-normal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-orange-settings"></i> <span>Referans Seçenekleri</span></a>
+                                <div class="sitedropdown-menu dropdown-menu animated">
+                                    <ul class="dropdownmenu">
+                                        <li class="dropdownmenu-item"><a href="#" title="Düzenle">Düzenle</a></li>
+                                        <li class="dropdownmenu-item"><a href="#" title="Sil">Sil</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-boxtitlecell">
+                        <div class="account-boxtitlecell-twocell row">
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Çalıştığı Firmanın Adı</h6>
+                                <p class="enteredfield">ICRYPEX</p>
+                            </div>
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Firmadaki Pozisyon</h6>
+                                <p class="enteredfield">Chief Technology Officer</p>
+                            </div>
+                        </div>
+                        <div class="account-boxtitlecell-twocell row">
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Telefon Numarası</h6>
+                                <p class="enteredfield">05422191612</p>
+                            </div>
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">E-Posta Adresi</h6>
+                                <p class="enteredfield">turasantezcan@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reference Information Box -->
+
+                <!-- Reference Information Box -->
+                <div class="account-createresume-reference sitecontent-borderbox">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="sitetitle sitetitle-xs sitetitle-dark sitetitle-left">
+                                <h3>Orçun KILIÇASLAN</h3>
+                                <span class="mt-1">Icrypex Bilişim A.Ş.</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="sitedropdown dropdown">
+                                <a href="javascript:;" class="btn btn-lg btn-outline-warning rounded-pill sitedropdown sitedropdown-toggle dropdown-toggle font-weight-normal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icons-sprite sprite-20-dark icons-orange-settings"></i> <span>Referans Seçenekleri</span></a>
+                                <div class="sitedropdown-menu dropdown-menu animated">
+                                    <ul class="dropdownmenu">
+                                        <li class="dropdownmenu-item"><a href="#" title="Düzenle">Düzenle</a></li>
+                                        <li class="dropdownmenu-item"><a href="#" title="Sil">Sil</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-boxtitlecell">
+                        <div class="account-boxtitlecell-twocell row">
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Çalıştığı Firmanın Adı</h6>
+                                <p class="enteredfield">Icrypex Bilişim A.Ş.</p>
+                            </div>
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Firmadaki Pozisyon</h6>
+                                <p class="enteredfield">Frontend Developer</p>
+                            </div>
+                        </div>
+                        <div class="account-boxtitlecell-twocell row">
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">Telefon Numarası</h6>
+                                <p class="enteredfield">05322281477</p>
+                            </div>
+                            <div class="account-boxtitlecell-feature col-auto">
+                                <h6 class="enteredtitle">E-Posta Adresi</h6>
+                                <p class="enteredfield">orcunk@outlook.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reference Information Box -->
+
+                <!-- Save And Go To Next Step Button -->
+                <div class="account-createresume-bottombtn">
+                    <a href="#" class="btn btn-lg btn-success rounded-pill sitefontsize14"><i class="icons-sprite sprite-20-dark icons-green-checked"></i> KAYDET VE SONRAKİ ADIMA GEÇ</a>
+                </div>
+                <!-- Save And Go To Next Step Button -->
+
+            </div>
+            <!-- Create Resume Steps End -->
+
+        </div>
+    </div>
+</section>
+<!-- Account End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+
+    <!-- Brand Logos Start -->
+    <div class="footer-brand">
+        <div class="container">
+            <ul id="footbrandlogosowl" class="footer-brand-list owl-carousel owl-theme">
+                <li><img src="assets/img/svg/footer_brand_logos_airliquide.svg" width="127" height="29" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_coca.svg" width="97" height="32" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_iwc.svg" width="74" height="28" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_johnson.svg" width="170" height="30" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_maif.svg" width="55" height="50" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_universal.svg" width="101" height="49" alt="Brand" /></li>
+                <li><img src="assets/img/svg/footer_brand_logos_veolia.svg" width="97" height="24" alt="Brand" /></li>
+            </ul>
+        </div>
+        <div class="footer-brand-scroll">
+            <i class="footer-brand-scroll-arrow animation-bottomtotop bottomtotopbutton"></i>
+        </div>
+    </div>
+    <!-- Brand Logos End -->
+
+    <!-- Footer Links Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="footer-bottom-left col-md-4">
+                    <a class="footer-bottom-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
+                        <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
+                    </a>
+                    <div class="footer-bottom-address">
+                        <p>Maslak Mahallesi Maslak <br />Meydan Sokak Spring Giz Plaza <br />No: 5/57 Sarıyer / İstanbul</p>
+                        <ul class="footer-bottom-address-contact">
+                            <li class="iconsphone">+90 212 915 28 58</li>
+                            <li class="iconsfax">+90 212 915 28 68</li>
+                            <li class="iconsemail">info@ikarosandpartners.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Address -->
+
+                <!-- Links -->
+                <div class="footer-bottom-links col-md-3">
+                    <h4>Adaylar</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
+                        <li><a href="#" title="Özgeçmiş Hazırla" rel="category">Özgeçmiş Hazırla</a></li>
+                        <li><a href="#" title="Mülakat" rel="category">Mülakat</a></li>
+                        <li><a href="#" title="İstatistikler" rel="category">İstatistikler</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-3">
+                    <h4>İşverenler</h4>
+                    <ul class="footer-bottom-links-nav">
+                        <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
+                        <li><a href="#" title="Sektörlerimiz" rel="category">Sektörlerimiz</a></li>
+                        <li><a href="#" title="KOSGEB, Hibe ve Teşvik" rel="category">KOSGEB, Hibe ve Teşvik</a></li>
+                        <li><a href="#" title="Yönetim Danışmanlığı" rel="category">Yönetim Danışmanlığı</a></li>
+                        <li><a href="#" title="Bütçe / Finansman Danışmanlığı" rel="category">Bütçe / Finansman Danışmanlığı</a></li>
+                        <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-links col-md-2">
+                    <h4 class="text-md-center">Bizi Takip Edin</h4>
+                    <ul class="footer-bottom-links-social">
+                        <li><a href="#" class="socialicons iconsfacebook" data-toggle="tooltip" data-placement="bottom" title="Facebook'ta Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconstwitter" data-toggle="tooltip" data-placement="bottom" title="Twitter'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconsinstagram" data-toggle="tooltip" data-placement="bottom" title="Instagram'da Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                        <li><a href="#" class="socialicons iconslinkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin'de Takip Edin" rel="external nofollow" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <!-- Links -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer Links End -->
+
+    <!-- Footer Legal And Copyright Start -->
+    <div class="container">
+        <div class="footer-legal">
+            <div class="footer-legal-logo">
+                <i class=""></i>
+            </div>
+            <div class="footer-legal-desc">
+                <h4>İKAROS AND PARTNERS İNSAN KAYNAKLARI VE EĞİTİM DANIŞMANLIĞI A.Ş.</h4>
+                <p>Özel İstihdam Bürosu Olarak 06.05.2019 – 05.05.2022 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 03.05.2019 tarih ve 1844396 sayılı karar uyarınca 1077 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. <br />İstanbul Çalışma ve İş Kurumu İl Müdürlüğü: 0212 249 29 87 İstanbul Çalışma ve İş Kurumu İl Müdürlüğü Şişli Hizmet Merkezi : 02122910925</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright-text">Tüm Hakları Saklıdır © 2018-2019 - İkaros and Partners</p>
+            <ul class="footer-copyright-links">
+                <li><a href="#" title="Gizlilik Sözleşmesi" rel="bookmark">Gizlilik Sözleşmesi</a></li>
+                <li><a href="#" title="Yasal" rel="bookmark">Yasal</a></li>
+                <li><a href="#" title="KKVK" rel="bookmark">KKVK</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer Legal And Copyright End -->
+
+</footer>
+<!-- Footer End -->
+
+<!-- JavaScript Start -->
+<script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>
+<script id="script-plugin-app" src="assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="assets/dist/js/custom-app.js"></script>
+<!-- JavaScript End -->
+
+</body>
+</html>
