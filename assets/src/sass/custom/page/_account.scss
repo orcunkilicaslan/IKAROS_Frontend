@@ -41,6 +41,18 @@
       }
     }
 
+    &-twocell{}
+
+    &-threecell{}
+
+    &-fourcell{
+      &.smallcell{
+        div[class*="col-auto"]{
+          min-width: auto;
+        }
+      }
+    }
+
     &-feature{
       min-width: calc(100%/4);
 
