@@ -205,7 +205,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-row">
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-4 col-sm">
                                                     <div class="labelanimation input-group">
                                                         <input id="inputModalUniversityStartId" class="form-control text-left autofill" type="text" name="universitystart" pattern=".{0}|.{10,}" oninput="generalvalidform.verifyContent('inputDateSelectProcess','inputModalUniversityStartId','msgModalUniversityStartId','iconModalUniversityStartId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputDateSelectProcess','inputModalUniversityStartId','msgModalUniversityStartId','iconModalUniversityStartId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                                         <span id="msgModalUniversityStartId" class="msginput"></span>
@@ -235,7 +235,7 @@
                                                         });
                                                     </script>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-4 col-sm">
                                                     <div class="labelanimation input-group">
                                                         <input id="inputModalUniversityFinishId" class="form-control text-left autofill" type="text" name="universityfinish" pattern=".{0}|.{10,}" oninput="generalvalidform.verifyContent('inputDateSelectProcess','inputModalUniversityFinishId','msgModalUniversityFinishId','iconModalUniversityFinishId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputDateSelectProcess','inputModalUniversityFinishId','msgModalUniversityFinishId','iconModalUniversityFinishId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                                         <span id="msgModalUniversityFinishId" class="msginput"></span>
@@ -265,7 +265,7 @@
                                                         });
                                                     </script>
                                                 </div>
-                                                <div class="form-group custom-control-group-horizontal col-md-4 d-flex align-items-center">
+                                                <div class="form-group custom-control-group-horizontal col-md-4 col-sm-auto d-flex align-items-center">
                                                     <div class="custom-control custom-checkbox">
                                                         <input id="inputModalUniversityContinuesId" class="custom-control-input" type="checkbox" name="universitycontinues" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required>
                                                         <label class="custom-control-label" for="inputModalUniversityContinuesId">Devam Ediyorum</label>
@@ -273,7 +273,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-row">
-                                                <div class="form-group labelanimation col-md-4">
+                                                <div class="form-group labelanimation col-md-4 col-sm">
                                                     <select id="selectModalUniversityBranchId" class="form-control autofill custom-select" name="universitybranch" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectModalUniversityBranchId','msgModalUniversityBranchId','iconModalUniversityBranchId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectModalUniversityBranchId','msgModalUniversityBranchId','iconModalUniversityBranchId')" disabled="disabled" aria-required="true" required>
                                                         <option value="">Bölüm Seçiniz</option>
                                                         <option value="1">Aaa</option>
@@ -286,7 +286,7 @@
                                                     <label>Bölüm Seçiniz</label>
                                                     <div id="iconModalUniversityBranchId"></div>
                                                 </div>
-                                                <div class="form-group labelanimation col-md-4">
+                                                <div class="form-group labelanimation col-md-4 col-sm">
                                                     <select id="selectModalUniversityEduTypeId" class="form-control autofill custom-select" name="universityedutype" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectModalUniversityEduTypeId','msgModalUniversityEduTypeId','iconModalUniversityEduTypeId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectModalUniversityEduTypeId','msgModalUniversityEduTypeId','iconModalUniversityEduTypeId')" disabled="disabled" aria-required="true" required>
                                                         <option value="">Öğrenim Türü</option>
                                                         <option value="1">Aaa</option>
@@ -299,7 +299,7 @@
                                                     <label>Öğrenim Türü</label>
                                                     <div id="iconModalUniversityEduTypeId"></div>
                                                 </div>
-                                                <div class="form-group labelanimation col-md-4">
+                                                <div class="form-group labelanimation col-md-4 col-sm">
                                                     <select id="selectModalUniversityEduLangId" class="form-control autofill custom-select" name="universityedulang" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectModalUniversityEduLangId','msgModalUniversityEduLangId','iconModalUniversityEduLangId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectModalUniversityEduLangId','msgModalUniversityEduLangId','iconModalUniversityEduLangId')" disabled="disabled" aria-required="true" required>
                                                         <option value="">Eğitim Dili</option>
                                                         <option value="1">Aaa</option>
@@ -328,10 +328,10 @@
                                                 </div>
                                             </div>
                                             <div class="form-group labelanimation mt-2">
-                                                <textarea id="textareaModalUniversityDescId" class="form-control autofill" name="jobdesc" rows="3" minlength="10" maxlength="2000" oninput="generalvalidform.verifyContent('textareaMessageProcess','textareaModalUniversityDescId','msgModalUniversityDescId','iconModalUniversityDescId')" onfocusout="generalvalidform.verifyContentErrorDelete('textareaMessageProcess','textareaModalUniversityDescId','msgModalUniversityDescId','iconModalUniversityDescId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required></textarea>
+                                                <textarea id="textareaModalUniversityDescId" class="form-control autofill" name="jobdesc" rows="3" minlength="0" maxlength="2000" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly"></textarea>
                                                 <span id="msgModalUniversityDescId" class="msginput"></span>
                                                 <span class="inputbottombar"></span>
-                                                <label>Açıklama Giriniz...</label>
+                                                <label>Açıklama (Opsiyonel)</label>
                                                 <div id="iconModalUniversityDescId"></div>
                                             </div>
                                         </div>
