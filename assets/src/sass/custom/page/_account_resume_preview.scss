@@ -1,0 +1,182 @@
+
+.account{
+
+  &-previewresume{
+    padding: 35px 40px;
+
+    &-row{
+
+      &-side{
+        width: 100%;
+        max-width: 210px;
+        position: relative;
+        padding-top: 40px;
+
+        &::before{
+          content: "";
+          width: 2px;
+          height: 100%;
+          background-color: $global-border-light-gray;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          @include translateX(-50%);
+          z-index: -1;
+        }
+
+      }
+
+      &-cont{
+        padding-top: 70px;
+      }
+    }
+
+    > div{
+      &:first-child{
+        div[class*="row-side"]{padding-top: 0 !important;}
+        div[class*="row-cont"]{padding-top: 0 !important;}
+      }
+      &:last-child{
+        div[class*="row-side"]::before{height: 50px}
+      }
+    }
+
+    &-sideicons{
+      width: 80px;
+      height: 80px;
+      background-color: $global-clr-white;
+      @include flexbox-display-flex();
+      margin: auto;
+      border: 2px solid $global-border-light-gray;
+      @include border-radius(50%);
+
+      .resumeicons{
+        width: 60px;
+        height: 60px;
+        background-image: url(#{$global-img-path-icons}/icons_spite_resume_preview_60.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin: auto;
+
+        &-summary{background-position: 0 0;}
+        &-company{background-position: -60px 0;}
+        &-education{background-position: -120px 0;}
+        &-language{background-position: -180px 0;}
+        &-skill{background-position: -240px 0;}
+        &-seminar{background-position: -300px 0;}
+        &-certificate{background-position: -360px 0;}
+        &-hobby{background-position: -420px 0;}
+        &-reference{background-position: -480px 0;}
+      }
+    }
+
+    &-contlist{
+      margin-top: 20px;
+
+      &-item{
+        padding-left: 20px;
+        margin-top: 20px;
+        position: relative;
+
+        &:first-child{margin-top: 0;}
+
+        &::before{
+          content: "";
+          width: 10px;
+          height: 100%;
+          background-color: $global-border-light-gray;
+          opacity: 0.5;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      &-title{
+        margin-top: 20px;
+      }
+
+      &-desc{
+        margin-top: 20px;
+      }
+
+    }
+
+    &-personal{
+
+      &-avatar{
+        width: 180px;
+        img{
+          @include border-radius(50%);
+          display: block;
+        }
+      }
+
+      &-info{
+        .infocontact{
+          margin-top: 10px;
+
+          &.contactinline{
+            @include flexbox-display-flex();
+
+            li{margin-top: 0; margin-bottom: 0; margin-right: 15px;}
+          }
+
+          li{
+            padding-left: 25px;
+            margin: 5px 0;
+            position: relative;
+
+            &:first-child{margin-top: 0;}
+            &:last-child{margin-bottom: 0;}
+
+            &::before{
+              content: "";
+              background-image: url(#{$global-img-path-icons}/icons_spite_resume_preview_18.svg);
+              background-position: 0 0;
+              background-repeat: no-repeat;
+              display: block;
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              left: 0;
+              top: 50%;
+              @include translateY(-50%);
+            }
+
+            &.iconsphone::before{background-position: 0 0;}
+            &.iconsemail::before{background-position: -18px 0;}
+            &.iconswebsite::before{background-position: -36px 0;}
+            &.iconslinkedin::before{background-position: -54px 0;}
+
+          }
+        }
+      }
+
+    }
+
+    &-summary{}
+
+    &-job{}
+
+    &-education{}
+
+    &-language{}
+
+    &-skill{}
+
+    &-seminar{}
+
+    &-certificate{}
+
+    &-hobby{}
+
+    &-reference{}
+
+    &-myfiles{}
+
+  }
+}
