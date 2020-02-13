@@ -2,13 +2,13 @@
 .account{
 
   &-previewresume{
-    padding: 35px 40px;
+    padding: 40px 40px;
 
     &-row{
 
       &-side{
         width: 100%;
-        max-width: 210px;
+        max-width: 250px;
         position: relative;
         padding-top: 40px;
 
@@ -23,7 +23,6 @@
           @include translateX(-50%);
           z-index: -1;
         }
-
       }
 
       &-cont{
@@ -37,6 +36,7 @@
         div[class*="row-cont"]{padding-top: 0 !important;}
       }
       &:last-child{
+        margin-bottom: 40px;
         div[class*="row-side"]::before{height: 50px}
       }
     }
@@ -74,11 +74,11 @@
     }
 
     &-contlist{
-      margin-top: 20px;
+      margin-top: 25px;
 
       &-item{
-        padding-left: 20px;
-        margin-top: 20px;
+        padding: 10px 0 10px 20px;
+        margin-top: 25px;
         position: relative;
 
         &:first-child{margin-top: 0;}
@@ -96,21 +96,27 @@
       }
 
       &-title{
-        margin-top: 20px;
+        .sitetitle-sm{
+          h1,h2,h3,h4,h5,h6{font-size: 18px;}
+        }
       }
 
       &-desc{
-        margin-top: 20px;
+        margin-top: 15px;
       }
-
     }
 
     &-personal{
 
       &-avatar{
         width: 180px;
+        height: 180px;
+        margin: auto;
+        overflow: hidden;
+        border: 2px solid $global-border-light-gray;
+        @include border-radius(50%);
+
         img{
-          @include border-radius(50%);
           display: block;
         }
       }
@@ -155,7 +161,6 @@
           }
         }
       }
-
     }
 
     &-summary{}
@@ -178,5 +183,10 @@
 
     &-myfiles{}
 
+    &-updatedate{
+      font-size: 16px;
+      text-align: right;
+      margin-top: 20px;
+    }
   }
 }
