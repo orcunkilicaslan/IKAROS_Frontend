@@ -33,6 +33,7 @@
  - [06_Ikaros_Create_Resume_Step_10](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_10.html)
  - [06_Ikaros_Create_Resume_Step_10_Add_Modal](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_10.html)
  - [06_Ikaros_Create_Resume_Step_11](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_11.html)
+ - [07_Ikaros_Create_Resume_Preview](https://orcunkilicaslan.github.io/IKAROS_Frontend/07_Ikaros_Create_Resume_Preview.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
 
