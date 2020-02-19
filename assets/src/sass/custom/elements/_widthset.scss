@@ -1,4 +1,8 @@
 
+.width{
+  &per100{width: 100% !important;}
+}
+
 .maxwidth{
   &100{width: 100%; max-width: 100px}
   &250{width: 100%; max-width: 250px}
