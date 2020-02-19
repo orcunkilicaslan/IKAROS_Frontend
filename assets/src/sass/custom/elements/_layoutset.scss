@@ -40,7 +40,10 @@
     }
 
     &-img{
-      background-color: darken($global-clr-soft-gray, 10%);
+      @include flexbox-display-flex();
+      @include flexbox-flex-direction(column);
+      @include flexbox-justify-content(center);
+      background-color: darken($global-clr-soft-gray, 2%);
       width: 600px;
       height: 100%;
       text-align: right;
@@ -54,7 +57,6 @@
         height: 380px;
         border: 5px solid $global-clr-soft-gray;
         position: absolute;
-        bottom: -50px;
         z-index: -1;
         @include border-radius(50%);
       }
