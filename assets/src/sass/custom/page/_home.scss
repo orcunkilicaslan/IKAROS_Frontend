@@ -30,7 +30,7 @@
     background-color: $global-clr-soft-gray;
 
     > .container{
-      min-height: 615px;
+      min-height: 655px;
       @include flexbox-display-flex();
       @include flexbox-flex-direction(row);
 

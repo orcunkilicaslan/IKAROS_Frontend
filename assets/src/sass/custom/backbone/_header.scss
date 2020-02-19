@@ -140,6 +140,11 @@
           &::after{
             @include svg-filter(0%, 1, 0, 100%);
           }
+
+          &.widthper100{
+            padding-right: 30px;
+          }
+
         }
 
         &-menu{

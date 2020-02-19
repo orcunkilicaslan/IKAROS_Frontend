@@ -1,0 +1,77 @@
+.sitelayout{
+
+  &-layout01{
+    &-row{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &-left{
+      div[class*="-text"]{
+        padding-right: 50px;
+      }
+
+      div[class*="-img"]{
+        &::after{
+          display: block !important;
+          right: -40px;
+        }
+      }
+    }
+
+    &-right{
+      div[class*="-text"]{
+        padding-left: 50px;
+      }
+
+      div[class*="-img"]{
+        &::after{
+          display: block !important;
+          left: -40px;
+        }
+      }
+    }
+
+    &-text{
+      @include flexbox-display-flex();
+      @include flexbox-flex-direction(column);
+      @include flexbox-justify-content(center);
+      height: 100%;
+    }
+
+    &-img{
+      background-color: darken($global-clr-soft-gray, 10%);
+      width: 600px;
+      height: 100%;
+      text-align: right;
+      position: relative;
+      @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
+
+      &::after{
+        display: none;
+        content: "";
+        width: 380px;
+        height: 380px;
+        border: 5px solid $global-clr-soft-gray;
+        position: absolute;
+        bottom: -50px;
+        z-index: -1;
+        @include border-radius(50%);
+      }
+
+      &.imgcirclegreen::after{border-color: $site-aux-clr-circle-green;}
+      &.imgcirclepink::after{border-color: $site-aux-clr-circle-pink;}
+      &.imgcircleorange::after{border-color: $site-aux-clr-circle-orange;}
+      &.imgcircleturquoise::after{border-color: $site-aux-clr-circle-turquoise;}
+
+
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 0 0 auto;
+      }
+    }
+  }
+
+}
