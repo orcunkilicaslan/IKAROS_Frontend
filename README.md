@@ -38,6 +38,8 @@
  - [51_Ikaros_HR_Interview](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Interview.html)
  - [51_Ikaros_HR_Statistics](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Statistics.html)
  - [51_Ikaros_HR_FAQ_Employees](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_FAQ_Employees.html)
+ - [51_Ikaros_HR_FAQ_Company](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_FAQ_Company.html)
+ - [51_Ikaros_HR_Our_Sectors](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Our_Sectors.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
    
