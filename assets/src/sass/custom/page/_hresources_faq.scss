@@ -2,8 +2,32 @@
 .hresources{
 
   &-faq{
-    padding-top: 70px;
-    padding-bottom: 70px;
+
+    &-listbox{
+      background-color: lighten($global-clr-soft-gray, 2%);
+      padding: 50px;
+      margin-top: 50px;
+      @include border-radius(4px);
+
+      .ssslist{
+        &-item{
+          padding: 5px 0 5px 20px;
+          margin-bottom: 25px;
+          position: relative;
+
+          &::before{
+            content: "";
+            background-color: $global-clr-soft-blue;
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+
   }
 
 }
