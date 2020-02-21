@@ -2,40 +2,12 @@
 .hresources{
 
   &-interview{
-    padding-top: 70px;
-    padding-bottom: 70px;
 
     &-listbox{
-      background-color: lighten($global-clr-soft-gray, 2%);
-      padding: 45px 50px 50px;
-      margin-top: 50px;
-      @include border-radius(4px);
+      margin-top: 40px;
 
       .preparation{
         margin-top: 30px;
-
-        h3{font-size: 22px}
-
-        &-item{
-          padding: 5px 0 5px 20px;
-          margin-bottom: 25px;
-          position: relative;
-
-          &::before{
-            content: "";
-            background-color: $global-clr-soft-blue;
-            width: 2px;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-          }
-
-          .ullist{
-            margin-top: 10px;
-            li{margin-bottom: 5px;}
-          }
-        }
       }
     }
   }

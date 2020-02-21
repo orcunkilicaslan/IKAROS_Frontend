@@ -4,9 +4,6 @@
   &-oursectors{
 
     &-listbox{
-      background-color: lighten($global-clr-soft-gray, 2%);
-      padding: 50px;
-      @include border-radius(4px);
     }
 
   }
