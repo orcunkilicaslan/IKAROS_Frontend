@@ -316,6 +316,7 @@
     }
 
     &-bg{
+      background-image: url(#{$global-img-path}/headbg/headtitle_content_default_bg.jpg);
       background-position: center bottom 65px;
       background-repeat: no-repeat;
       width: 100%;
