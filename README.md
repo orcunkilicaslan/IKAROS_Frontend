@@ -34,12 +34,12 @@
  - [06_Ikaros_Create_Resume_Step_10_Add_Modal](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_10.html)
  - [06_Ikaros_Create_Resume_Step_11](https://orcunkilicaslan.github.io/IKAROS_Frontend/06_Ikaros_Create_Resume_Step_11.html)
  - [07_Ikaros_Create_Resume_Preview](https://orcunkilicaslan.github.io/IKAROS_Frontend/07_Ikaros_Create_Resume_Preview.html)
- - [51_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_Company_About_Us.html)
  - [51_Ikaros_HR_Interview](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Interview.html)
  - [51_Ikaros_HR_Statistics](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Statistics.html)
  - [51_Ikaros_HR_FAQ_Employees](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_FAQ_Employees.html)
  - [51_Ikaros_HR_FAQ_Company](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_FAQ_Company.html)
  - [51_Ikaros_HR_Our_Sectors](https://orcunkilicaslan.github.io/IKAROS_Frontend/51_Ikaros_HR_Our_Sectors.html)
+ - [54_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/54_Ikaros_Company_About_Us.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
    
    
