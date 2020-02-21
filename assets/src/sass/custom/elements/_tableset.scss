@@ -2,6 +2,27 @@
   color: $global-clr-text-dark;
   margin: 0;
 
+  &.theadsoftdark{
+    thead{
+      tr{
+        th{
+          background-color: transparentize($global-border-light-gray, 0.50);
+        }
+      }
+    }
+  }
+
+  &.tbodyodd{
+    tbody{
+      tr{
+        &:nth-child(even){
+          background-color: transparentize($global-border-light-gray, 0.75);
+        }
+        td{}
+      }
+    }
+  }
+
   thead tr th, tbody tr td{
     border-color: $global-border-light-gray;
     vertical-align: middle;
@@ -36,7 +57,9 @@
     thead{
       tr{
         th{
-          font-size: 16px;
+          font-size: 14px;
+          padding-top: 9px;
+          padding-bottom: 9px;
         }
       }
     }
@@ -44,7 +67,9 @@
     tbody{
       tr{
         td{
-          font-size: 14px;
+          font-size: 12px;
+          padding-top: 7px;
+          padding-bottom: 7px;
         }
       }
     }

@@ -6,4 +6,32 @@
     padding-bottom: 70px;
   }
 
+  &-supporttables{
+
+    &-listbox{
+      margin: 25px 0 50px 35px;
+
+      &:last-child{margin-bottom: 0}
+    }
+
+    &-table{
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+      &:last-child{margin-bottom: 0}
+
+      table{
+        margin-bottom: 5px;
+      }
+
+      p{
+        margin-top: 5px;
+      }
+
+      .tableodddark{background-color: transparentize($global-border-light-gray, 0.65);}
+      .tableoddsoft{background-color: transparentize($global-border-light-gray, 0.75);}
+    }
+
+  }
+
 }
