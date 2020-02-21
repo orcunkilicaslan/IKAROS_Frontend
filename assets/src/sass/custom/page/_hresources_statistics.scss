@@ -2,16 +2,13 @@
 .hresources{
 
   &-statistics{
-    padding-top: 70px;
-    padding-bottom: 70px;
 
     &-employment{
-      margin-top: 70px;
+      margin-top: 40px;
       margin-bottom: 40px;
-      @include border-radius(4px);
 
       .table{
-        margin-top: 20px;
+        margin-top: 15px;
 
         thead{
           tr{
