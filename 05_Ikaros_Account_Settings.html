@@ -118,8 +118,88 @@
                 </div>
                 <!-- Title -->
                 <!-- Box -->
-                <div class="sitecontent-borderbox">
-                    Güncellenecek
+                <div class="account-settings-form sitecontent-borderbox siteformui siteformuilabel">
+                    <div class="settingsformcell contactinfo">
+                        <div class="sitecontent-desc">
+                            <h4>İletişim Bilgilerim</h4>
+                        </div>
+                        <form action="" autocomplete="off" novalidate>
+                            <div class="form-row">
+                                <div class="form-group labelanimation col-md-6">
+                                    <input id="inputAccountSettingsEmailId" class="form-control autofill" type="email" name="email" value="orcunk@outlook.com" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputAccountSettingsEmailId','msgAccountSettingsEmailId','iconAccountSettingsEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputAccountSettingsEmailId','msgAccountSettingsEmailId','iconAccountSettingsEmailId')" disabled required />
+                                    <span id="msgAccountSettingsEmailId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>E-Posta Adresiniz</label>
+                                    <div id="iconAccountSettingsEmailId"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <button type="button" class="btn btn-info rounded-pill minwidth150 updatebtn">GÜNCELLE</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="" autocomplete="off" novalidate>
+                            <div class="form-row">
+                                <div class="form-group labelanimation col-md-6">
+                                    <input id="inputAccountSettingsPhoneId" class="form-control inputphonemasktr autofill" type="text" name="phone" value="5322281477" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputAccountSettingsPhoneId','msgAccountSettingsPhoneId','iconAccountSettingsPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputAccountSettingsPhoneId','msgAccountSettingsPhoneId','iconAccountSettingsPhoneId')" disabled required />
+                                    <span id="msgAccountSettingsPhoneId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>Telefon Numaranız</label>
+                                    <div id="iconAccountSettingsPhoneId"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <button type="submit" class="btn btn-info rounded-pill minwidth150 updatebtn">GÜNCELLE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="settingsformcell passwordinfo">
+                        <div class="sitecontent-desc">
+                            <h4>Parola Bilgilerim</h4>
+                        </div>
+                        <form action="" autocomplete="off" novalidate>
+                            <div class="form-row">
+                                <div class="form-group labelanimation oldpassword col-md-6">
+                                    <input id="inputAccountSettingsOldPassId" class="form-control autofill" type="password" name="oldpass" value="********" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputAccountSettingsOldPassId','msgAccountSettingsOldPassId','iconAccountSettingsOldPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputAccountSettingsOldPassId','msgAccountSettingsOldPassId','iconAccountSettingsOldPassId')" disabled required />
+                                    <span id="msgAccountSettingsOldPassId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>Eski Parolanız</label>
+                                    <div id="iconAccountSettingsOldPassId"></div>
+                                </div>
+                                <div class="form-group col-md-6"></div>
+                                <div class="form-group labelanimation col-md-6">
+                                    <input id="inputAccountSettingsNewPassId" class="form-control autofill" type="password" name="newpass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputAccountSettingsNewPassId','msgAccountSettingsNewPassId','iconAccountSettingsNewPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputAccountSettingsNewPassId','msgAccountSettingsNewPassId','iconAccountSettingsNewPassId')" disabled required />
+                                    <span id="msgAccountSettingsNewPassId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label> Yeni Parolanız</label>
+                                    <div id="iconAccountSettingsNewPassId"></div>
+                                </div>
+                                <div class="form-group labelanimation col-md-6">
+                                    <input id="inputRegisterCompanyRePassId" class="form-control autofill" type="password" name="repass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputRegisterCompanyRePassId','msgRegisterCompanyRePassId','iconRegisterCompanyRePassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputRegisterCompanyRePassId','msgRegisterCompanyRePassId','iconRegisterCompanyRePassId')" disabled required />
+                                    <span id="msgRegisterCompanyRePassId" class="msginput"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>Yeni Parolanız (Tekrar)</label>
+                                    <div id="iconRegisterCompanyRePassId"></div>
+                                </div>
+                                <div class="form-group col-md-6 mb-0">
+                                    <button type="submit" class="btn btn-info rounded-pill minwidth225 updatebtn">PAROLAMI GÜNCELLE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        jQuery(document).ready(function() {
+                            $(".contactinfo").find(".updatebtn").click(function (evt) {
+                                evt.preventDefault();
+                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false);
+                                $(this).text('KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
+                            });
+                            $(".passwordinfo").find(".updatebtn").click(function (evt) {
+                                evt.preventDefault();
+                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false).val('');
+                                $(this).text('YENİ PAROLAMI KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
+                            });
+                        });
+                    </script>
                 </div>
                 <!-- Box -->
 

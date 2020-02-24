@@ -2,7 +2,38 @@
 .account{
 
   &-settings{
+    &-form{
+      .settingsformcell{
+        padding-bottom: 40px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid $global-border-light-gray;
 
-    .sitecontent-borderbox{min-height: 200px;}
+        &:last-child{
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .sitecontent-desc{margin-bottom: 20px;}
+
+        form+form{margin-top: 20px;}
+
+        .form-row{max-width: 600px;}
+
+        &.contactinfo{
+          .labelanimation label{
+            font-size: 10.5px;
+            top: -6px;
+          }
+        }
+        &.passwordinfo{
+          .oldpassword.labelanimation label{
+            font-size: 10.5px;
+            top: -6px;
+          }
+          .form-group{margin-bottom: 20px;}
+        }
+      }
+    }
   }
 }
