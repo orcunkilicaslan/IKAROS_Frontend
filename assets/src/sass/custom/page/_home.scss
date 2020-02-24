@@ -67,6 +67,8 @@
       position: absolute;
       top: -40px;
       @include box-shadow-none-imp();
+
+      a.btn{display: none}
     }
   }
 
