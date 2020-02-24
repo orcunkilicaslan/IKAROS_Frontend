@@ -119,6 +119,20 @@
                 <!-- Title -->
                 <!-- Box -->
                 <div class="account-settings-form sitecontent-borderbox siteformui siteformuilabel">
+                    <script>
+                        jQuery(document).ready(function() {
+                            $(".contactinfo").find(".updatebtn").click(function (evt) {
+                                evt.preventDefault();
+                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false);
+                                $(this).text('KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
+                            });
+                            $(".passwordinfo").find(".updatebtn").click(function (evt) {
+                                evt.preventDefault();
+                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false).val('');
+                                $(this).text('YENİ PAROLAMI KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
+                            });
+                        });
+                    </script>
                     <div class="settingsformcell contactinfo">
                         <div class="sitecontent-desc">
                             <h4>İletişim Bilgilerim</h4>
@@ -186,20 +200,6 @@
                             </div>
                         </form>
                     </div>
-                    <script>
-                        jQuery(document).ready(function() {
-                            $(".contactinfo").find(".updatebtn").click(function (evt) {
-                                evt.preventDefault();
-                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false);
-                                $(this).text('KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
-                            });
-                            $(".passwordinfo").find(".updatebtn").click(function (evt) {
-                                evt.preventDefault();
-                                $(this).parent().parent().find('.labelanimation input.autofill').prop("disabled", false).val('');
-                                $(this).text('YENİ PAROLAMI KAYDET').removeClass('btn-info').addClass('btn-success').prop("type", "sumbit");
-                            });
-                        });
-                    </script>
                 </div>
                 <!-- Box -->
 
