@@ -85,7 +85,7 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
                 setTimeout(function () {
                     $('.header-web').removeClass('activemenubar');
                     $(".dfn-menu-list-item").removeClass("active");
-                },750);
+                },500);
             }
         });
     });
