@@ -45,7 +45,7 @@
         }
 
         .dropdown-menu{
-          background-color: darken($global-sitebg-darkblue01, 6%) !important;
+          background-color: transparentize(darken($global-sitebg-darkblue01, 3%), 0.02) !important;
 
           a{color: $global-clr-white;}
 
