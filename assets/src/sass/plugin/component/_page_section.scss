@@ -43,7 +43,11 @@
 
     &-formui{}
 
-    &-alerts{}
+    &-alerts{
+      .componentsbox-content{
+        .alert:last-child{margin-bottom: 0;}
+      }
+    }
 
   }
 
