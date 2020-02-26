@@ -46,6 +46,7 @@
  - [53_Ikaros_Consultancy_Strategy](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Strategy.html)
  - [53_Ikaros_Consultancy_Financial](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Financial.html)
  - [54_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/54_Ikaros_Company_About_Us.html)
+ - [61_Ikaros_Legal_GDPA](https://orcunkilicaslan.github.io/IKAROS_Frontend/61_Ikaros_Legal_GDPA.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Alerts.html)
    

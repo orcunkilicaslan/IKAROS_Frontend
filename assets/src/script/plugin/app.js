@@ -3,8 +3,8 @@ $(function(){
     var $pageHeadTitleTag       = $('title');
     var $pageHeadTitleTagText   = $pageHeadTitleTag.text();
     var $headerSloganTitle      = $(".headtitle h1").text();
-    var $headerDefaultTitle     = "IKAROS";
-    var $headerBlurTitle        = "IKAROS";
+    var $headerDefaultTitle     = "İkaros & Partners";
+    var $headerBlurTitle        = "İkaros & Partners";
 
     if($('body').hasClass('home')){
         $(window).on("load", function(){

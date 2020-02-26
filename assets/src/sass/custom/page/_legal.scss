@@ -1,0 +1,56 @@
+
+.legal{
+
+  &-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  ol.termlist01{
+    list-style: none;
+    counter-reset: item;
+    margin-left: 0;
+
+    &-head{
+      > li{
+        margin-bottom: 20px !important;
+      }
+    }
+
+    > li{
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 10px;
+
+      &::before {
+        content: counters(item, ".") ". ";
+        counter-increment: item;
+        font-weight: 500;
+        width: 30px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        font-size: 22px;
+        line-height: 1.09;
+        letter-spacing: -.6px;
+      }
+    }
+
+    ol.nomatter{
+      margin-left: 0;
+      margin-top: 5px;
+
+      li.nomatter{
+        padding-left: 0 !important;
+
+        &::before {
+          visibility: hidden;
+          position: absolute;
+          left: 0;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}

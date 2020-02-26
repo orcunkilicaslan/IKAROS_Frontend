@@ -19,9 +19,10 @@
     p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
     p+p,p+ul{margin-top: 10px;}
     p{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
-    ul{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
-    ul > li{/*margin-bottom: 15px;*/}
-    ul > li:last-child{margin-bottom: 0;}
+    ul, ol{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
+    ul > li, ol > li{/*margin-bottom: 15px;*/}
+    ul > li:last-child, ol > li:last-child{margin-bottom: 0;}
+    strong,b{font-weight: 500;}
   }
 
   ul.ullist{
