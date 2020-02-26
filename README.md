@@ -48,6 +48,7 @@
  - [54_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/54_Ikaros_Company_About_Us.html)
  - [61_Ikaros_Legal_GDPA](https://orcunkilicaslan.github.io/IKAROS_Frontend/61_Ikaros_Legal_GDPA.html)
  - [61_Ikaros_Legal_Cookie](https://orcunkilicaslan.github.io/IKAROS_Frontend/61_Ikaros_Legal_Cookie.html)
+ - [61_Ikaros_Legal_Privacy](https://orcunkilicaslan.github.io/IKAROS_Frontend/61_Ikaros_Legal_Privacy.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Form_UI.html)
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IKAROS_Frontend/99_Component_Alerts.html)
    
