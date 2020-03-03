@@ -17,6 +17,10 @@
 
         > a{
           letter-spacing: -0.16px;
+
+          @include BootstrapMaxWidthResponsive(xl){
+            padding: 14px 10px;
+          }
         }
 
         > a[data-toggle="dropdown"]{
@@ -46,6 +50,10 @@
 
         .dropdown-menu{
           background-color: transparentize(darken($global-sitebg-darkblue01, 3%), 0.02) !important;
+
+          @include BootstrapMaxWidthResponsive(xl){
+            top: 103px !important;
+          }
 
           a{color: $global-clr-white;}
 

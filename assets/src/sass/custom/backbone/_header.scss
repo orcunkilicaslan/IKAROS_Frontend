@@ -17,6 +17,10 @@
 
     .dfn-menu-list-item .dropdown-menu{
       top: 90px !important;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        top: 78px !important;
+      }
     }
   }
 
@@ -29,6 +33,11 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, margin 0.3s ease-in-out);
 
+    @include BootstrapMaxWidthResponsive(xl){
+      max-height: 78px;
+      padding: 13px 0;
+      margin: 25px 0;
+    }
     @include BootstrapMaxWidthResponsive(lg){
       margin: 0;
       backdrop-filter: none !important;
@@ -89,8 +98,8 @@
       }
 
       &-link{
-        @include BootstrapMaxWidthResponsive(lg){
-          width: 120px;
+        @include BootstrapMaxWidthResponsive(xl){
+          max-width: 120px;
         }
       }
     }
@@ -101,6 +110,10 @@
 
       .signindropdown{
         margin-left: 30px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-left: 15px;
+        }
 
         .dropdown-menu{
           background-color: $global-sitebg-darkblue01 !important;

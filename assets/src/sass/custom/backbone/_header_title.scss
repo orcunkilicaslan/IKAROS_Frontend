@@ -42,6 +42,10 @@
     min-height: 700px !important;
     padding-top: 0 !important;
 
+    @include BootstrapMaxWidthResponsive(xl){
+      min-height: 640px !important;
+    }
+
     &-slogan{
       max-width: 720px;
       margin: 120px auto 70px;
