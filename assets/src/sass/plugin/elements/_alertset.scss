@@ -5,7 +5,7 @@
   @include border-radius(4px);
   $alertclassname: &;
 
-  @include ReSassMaxWidthResponsive(400){
+  @include BootstrapMaxWidthResponsive(xm){
     margin-bottom: 10px;
   }
 

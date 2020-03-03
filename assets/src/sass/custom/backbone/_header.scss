@@ -29,7 +29,7 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, margin 0.3s ease-in-out);
 
-    @include ReSassMaxWidthResponsive(992){
+    @include BootstrapMaxWidthResponsive(lg){
       margin: 0;
       backdrop-filter: none !important;
     }
@@ -62,7 +62,7 @@
       &-btn{
         display: none;
 
-        @include ReSassMaxWidthResponsive(992){
+        @include BootstrapMaxWidthResponsive(lg){
           display: block;
         }
 
@@ -81,7 +81,7 @@
           }
         }
 
-        @include ReSassMaxWidthResponsive(992){
+        @include BootstrapMaxWidthResponsive(lg){
           width: 30px;
           height: 100%;
           margin: 0 10px 0 0;
@@ -89,7 +89,7 @@
       }
 
       &-link{
-        @include ReSassMaxWidthResponsive(992){
+        @include BootstrapMaxWidthResponsive(lg){
           width: 120px;
         }
       }

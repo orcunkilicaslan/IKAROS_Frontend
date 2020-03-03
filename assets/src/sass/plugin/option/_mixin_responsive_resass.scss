@@ -10,12 +10,12 @@
 
 // Max Width Responsive
 @mixin ReSassMaxWidthResponsive($point){
-	@media (max-width: ($point - 1) + "px"){@content }
+	@media (max-width: $point + "px"){@content;}
 }
 
 // Max Height Responsive
 @mixin ReSassMaxHeightResponsive($point){
-	@media (max-height: ($point - 1) + "px"){@content;}
+	@media (max-height: $point + "px"){@content;}
 }
 
 // Min Width Responsive

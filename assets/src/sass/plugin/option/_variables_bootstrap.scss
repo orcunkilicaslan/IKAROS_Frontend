@@ -1,3 +1,26 @@
+/* Bootstrap Grid Columns Settings */
+$bootstrap-grid-columns:          12;
+$bootstrap-grid-gutter-width:     30px;
+$bootstrap-grid-row-columns:      6;
+$bootstrap-grid-breakpoints:(
+        xz: 0,
+        xm: 400px,
+        xs: 480px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        hd: 1600px
+);
+$bootstrap-container-max-widths:(
+        xs: 500px,
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        hd: 1300px
+);
+/* Bootstrap Grid Columns Settings */
 
 /* Bootstrap Variables Settings */
 $bootstrap-font-family-default:           $global-font-family-default;

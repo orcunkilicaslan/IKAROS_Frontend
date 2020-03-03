@@ -13,6 +13,12 @@
     opacity: 1;
   }
 
+  @include webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px $global-clr-white inset !important;
+    -webkit-text-fill-color: $global-clr-text-dark !important;
+    border-color: $global-border-light-gray !important;
+  }
+
   label{font-size: .875rem;}
 
   .form{
