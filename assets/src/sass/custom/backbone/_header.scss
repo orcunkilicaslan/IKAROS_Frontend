@@ -18,7 +18,7 @@
     .dfn-menu-list-item .dropdown-menu{
       top: 90px !important;
 
-      @include BootstrapMaxWidthResponsive(xl){
+      @include BootstrapMaxWidthResponsive(hd){
         top: 78px !important;
       }
     }
@@ -33,7 +33,7 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, margin 0.3s ease-in-out);
 
-    @include BootstrapMaxWidthResponsive(xl){
+    @include BootstrapMaxWidthResponsive(hd){
       max-height: 78px;
       padding: 13px 0;
       margin: 25px 0;
@@ -68,37 +68,10 @@
       z-index: 1;
       height: 100%;
 
-      &-btn{
-        display: none;
-
-        @include BootstrapMaxWidthResponsive(lg){
-          display: block;
-        }
-
-        .btnicon{
-          width: 30px;
-          height: 20px;
-          top: 12px;
-
-          span,
-          span::before,
-          span::after{
-            background-color: $global-clr-white;
-            width: 100%;
-            height: 4px;
-            @include border-radius(4px);
-          }
-        }
-
-        @include BootstrapMaxWidthResponsive(lg){
-          width: 30px;
-          height: 100%;
-          margin: 0 10px 0 0;
-        }
-      }
-
       &-link{
-        @include BootstrapMaxWidthResponsive(xl){
+        opacity: 1;
+
+        @include BootstrapMaxWidthResponsive(hd){
           max-width: 120px;
         }
       }

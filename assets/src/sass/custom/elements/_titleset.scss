@@ -51,9 +51,15 @@
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
 
-    @include BootstrapMaxWidthResponsive(xl){
+    @include BootstrapMaxWidthResponsive(hd){
       small{font-size: 20px;}
       h1,h2,h3,h4,h5,h6{font-size: 32px;}
+      h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 10px;}
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      small{font-size: 18px;}
+      h1,h2,h3,h4,h5,h6{font-size: 28px;}
+      p, ul{font-size: 14px;}
     }
   }
 
@@ -66,6 +72,12 @@
     h3+p,h4+p,h5+p,h6+p,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 10px;}
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
+
+    @include BootstrapMaxWidthResponsive(hd){
+      small{font-size: 20px;}
+      h1,h2,h3,h4,h5,h6{font-size: 24px;}
+      h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 10px;}
+    }
   }
 
   &-md{
@@ -89,6 +101,15 @@
     h3+p,h4+p,h5+p,h6+p,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 10px;}
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
+
+    @include BootstrapMaxWidthResponsive(hd){
+      h1,h2,h3,h4,h5,h6{font-size: 20px;}
+      h3+p,h4+p,h5+p,h6+p,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 5px;}
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      h1,h2,h3,h4,h5,h6{font-size: 18px;}
+      p, ul{font-size: 14px;}
+    }
   }
 
   &-xs{
@@ -119,6 +140,10 @@
     &#{$sitetitleclassname}-md{
       h1,h2,h3,h4,h5,h6{
         padding-bottom: 30px;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          padding-bottom: 25px;
+        }
 
         &::before{
           width: 232px;

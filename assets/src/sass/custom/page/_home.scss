@@ -24,6 +24,14 @@
     padding-bottom: 120px;
     position: relative;
     top: -1px;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-bottom: 100px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
   }
 
   &-register{
@@ -33,6 +41,10 @@
       min-height: 655px;
       @include flexbox-display-flex();
       @include flexbox-flex-direction(row);
+
+      @include BootstrapMaxWidthResponsive(lg){
+        min-height: inherit;
+      }
 
       .row{@include flexbox-flex(1);}
     }
@@ -44,6 +56,10 @@
       left: 0;
       top: 0;
       overflow: hidden;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        display: none;
+      }
 
       &::before{
         content: "";
@@ -60,6 +76,8 @@
       }
     }
 
+    &-formarea{}
+
     .sitemodalformbox{
       background-color: $global-clr-dark-blue;
       width: 100%;
@@ -68,6 +86,10 @@
       top: -40px;
       @include box-shadow-none-imp();
 
+      @include BootstrapMaxWidthResponsive(lg){
+        position: static;
+      }
+
       a.btn{display: none}
     }
   }
@@ -75,6 +97,19 @@
   &-consultancy{
     padding-top: 120px;
     padding-bottom: 100px;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
   }
 
 }

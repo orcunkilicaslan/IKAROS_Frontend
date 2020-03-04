@@ -66,6 +66,17 @@ jQuery(function($) {
             var headerHeight = $("header.header");
             $("header + section").css("min-height", headerHeight.height() + "px").css("padding-top", headerHeight.height() + "px");
         });
+    } else {
+        $(window).on("load resize scroll",function(e){
+            var scroll = $(window).scrollTop();
+            var headerHeight = $("header.header");
+
+            if (scroll > 10) {
+                headerHeight.addClass("navscroll");
+            } else {
+                headerHeight.removeClass("navscroll");
+            }
+        })
     }
 });
 /* Header Web Navbar Fixed */

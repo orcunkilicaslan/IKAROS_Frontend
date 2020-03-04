@@ -24,6 +24,10 @@
     }
     i[class*="icons"]{
       @include svg-filter(0%, 1, 0, 100%);
+
+      @include BootstrapMaxWidthResponsive(hd){
+        @include scale(0.9);
+      }
     }
   }
 

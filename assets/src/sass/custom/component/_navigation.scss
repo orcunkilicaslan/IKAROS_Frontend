@@ -1,5 +1,5 @@
 
-.dfn {
+.dfn{
   $dfnnavclassname: &;
 
   &-nav{
@@ -10,10 +10,18 @@
     font-size: 16px;
     letter-spacing: -0.16px;
 
+    @include BootstrapMaxWidthResponsive(lg){
+      background-color: darken($global-sitebg-darkblue01, 5%);
+    }
+
     &-list{
       min-height: 38px;
 
       &-item{
+
+        @include BootstrapMaxWidthResponsive(lg){
+          border-bottom: 1px solid $global-sitebg-darkblue01;
+        }
 
         > a{
           letter-spacing: -0.16px;
@@ -21,37 +29,49 @@
           @include BootstrapMaxWidthResponsive(xl){
             padding: 14px 10px;
           }
-        }
+          @include BootstrapMaxWidthResponsive(lg){
+            padding: 14px 15px;
+            font-size: 14px;
+          }
 
-        > a[data-toggle="dropdown"]{
-          &::before{
-            content: "";
-            display: inline-block;
-            background-image: url(#{$global-img-path-icons}/icons_spite_12_dark.svg);
-            background-position: 0 0;
-            width: 12px;
-            height: 12px;
-            margin-right: 3px;
-            position: relative;
-            @include transition-multiple(transform 0.3s ease-in-out, filter 0.3s ease-in-out);
-
-            @include BootstrapMaxWidthResponsive(lg){
-              background-image: none !important;
+          &[data-toggle="dropdown"]{
+            &::before{
+              @include BootstrapMinWidthResponsive(lg){
+                content: "";
+                display: inline-block;
+                background-image: url(#{$global-img-path-icons}/icons_spite_12_dark.svg);
+                background-position: 0 0;
+                width: 12px;
+                height: 12px;
+                margin-right: 3px;
+                position: relative;
+                @include transition-multiple(transform 0.3s ease-in-out, filter 0.3s ease-in-out);
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                border-right-color: $global-clr-soft-blue !important;
+                border-top-color: $global-clr-soft-blue !important;
+              }
             }
           }
-        }
 
-        > a[aria-expanded="true"]{
-          &::before{
-            @include rotate(90);
-            @include svg-filter(0%, 1, 0, 100%);
+          &[aria-expanded="true"]{
+            &::before{
+              @include BootstrapMinWidthResponsive(lg){
+                @include rotate(90);
+                @include svg-filter(0%, 1, 0, 100%);
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                border-right-color: $global-clr-soft-blue !important;
+                border-top-color: $global-clr-soft-blue !important;
+              }
+            }
           }
         }
 
         .dropdown-menu{
           background-color: transparentize(darken($global-sitebg-darkblue01, 3%), 0.02) !important;
 
-          @include BootstrapMaxWidthResponsive(xl){
+          @include BootstrapMaxWidthResponsive(hd){
             top: 103px !important;
           }
 
@@ -60,6 +80,11 @@
           &.show{}
 
           .menunav{
+
+            @include BootstrapMaxWidthResponsive(hd){
+              font-size: 14px;
+            }
+
             ul{
               li{
                 &:hover::after{
@@ -75,9 +100,24 @@
           }
 
           .megamenu{
+            &-nav{
+              @include BootstrapMaxWidthResponsive(hd){
+                padding: 20px 15px 20px;
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                padding: 15px;
+              }
+            }
             &-desc{
               &-title{
                 color: $global-clr-white;
+
+                @include BootstrapMaxWidthResponsive(hd){
+                  font-size: 32px;
+                }
+                @include BootstrapMaxWidthResponsive(xl){
+                  display: none;
+                }
               }
             }
           }
@@ -92,14 +132,6 @@
         }
       }
     }
-
-    &-mobilemenu{
-
-      &-header{}
-
-      &-btn{}
-
-    }
   }
 
   &-headnav{
@@ -111,8 +143,43 @@
   }
 
   &-mobilemenu{
+    &-logo{
+      padding: 15px 15px 10px;
+
+      img{
+        max-width: 110px;
+      }
+    }
+    &-btn{
+      .btntext{
+        color: $global-clr-white;
+        display: none;
+      }
+      .btnicon{
+        span,
+        span::before,
+        span::after{
+          background-color: $global-clr-white;
+        }
+      }
+    }
     &-mask{
-      background-color: $global-sitebg-darkblue01;
+      background-color: transparentize($global-sitebg-darkblue01, 0.5);
+      @include backdrop-filter-multiple(blur(5px));
+    }
+  }
+
+  &-canvaskapat{
+    #{$dfnnavclassname}-mobilemenu-btn{
+      .btnicon{
+        span{
+          &::before,
+          &::after{background-color: $global-clr-red;}
+        }
+      }
+    }
+    #{$headerclassname}-navigation-logo-link{
+      opacity: 0;
     }
   }
 }

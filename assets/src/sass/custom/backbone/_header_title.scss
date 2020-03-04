@@ -3,6 +3,10 @@
   padding-top: 150px;
   min-height: 150px;
 
+  @include BootstrapMaxWidthResponsive(lg){
+    height: auto;
+  }
+
   &-owl{
     width: 100%;
 
@@ -42,8 +46,11 @@
     min-height: 700px !important;
     padding-top: 0 !important;
 
-    @include BootstrapMaxWidthResponsive(xl){
-      min-height: 640px !important;
+    @include BootstrapMaxWidthResponsive(hd){
+      min-height: 600px !important;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      min-height: 500px !important;
     }
 
     &-slogan{
@@ -51,6 +58,14 @@
       margin: 120px auto 70px;
       position: relative;
       z-index: 1;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin: 100px auto 50px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        max-width: 540px;
+        margin: 75px auto 30px;
+      }
 
       .sitetitle *{
         color: $global-clr-white;
