@@ -48,7 +48,6 @@
       @include translateX(-50%);
       z-index: 1;overflow: hidden;
 
-
       &::before,
       &::after{
         content: "";
@@ -76,6 +75,17 @@
     padding: 50px 0 30px;
     position: relative;
 
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 15px;
+      padding: 40px 0 25px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding: 25px 0 20px;
+    }
+    @include BootstrapMaxWidthResponsive(xs){
+      padding: 20px 0 20px;
+    }
+
     > .container .row{
       position: relative;
 
@@ -87,13 +97,41 @@
         height: 1px;
         top: 75px;
         left: 15px;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          top: 65px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          top: 55px;
+        }
       }
     }
 
-    &-logo{}
+    &-logo{
+      @include BootstrapMaxWidthResponsive(hd){
+        max-width: 130px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        max-width: 100px;
+        position: relative;
+        top: 5px;
+      }
+    }
 
     &-address{
       margin-top: 35px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 30px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-bottom: 15px;
+        border-bottom: 1px solid transparentize($global-clr-soft-blue, 0.70);
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        padding-bottom: 0;
+        border-bottom: none;
+      }
 
       &-contact{
         margin-top: 10px;
@@ -127,6 +165,17 @@
 
     &-links{
 
+      &.socials{
+        @include BootstrapMaxWidthResponsive(lg){
+          position: absolute;
+          top: 15px;
+          right: 0;
+          max-width: 50%;
+
+          h4{display: none;}
+        }
+      }
+
       h4{
         color: $global-clr-white;
         font-size: 20px;
@@ -134,12 +183,31 @@
         letter-spacing: -0.2px;
         margin-top: 40px;
         padding-bottom: 10px;
+        white-space: nowrap;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 18px;
+          margin-top: 33px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          margin-top: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          display: none;
+        }
       }
 
       &-nav{
         line-height: 1.5;
         letter-spacing: -0.16px;
         margin-top: 28px;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          margin-top: 23px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          margin-top: 0;
+        }
       }
 
       &-social{
@@ -148,6 +216,11 @@
         @include flexbox-flex-wrap(wrap);
         @include flexbox-justify-content(center);
         margin-top: 28px;
+
+        @include BootstrapMaxWidthResponsive(lg){
+          margin-top: 0;
+          @include flexbox-justify-content(flex-end);
+        }
 
         li{
           margin: 0 5px;
@@ -185,11 +258,21 @@
     border: 1px solid transparentize($global-clr-soft-blue, 0.70);
     @include border-radius(6px);
 
+    @include BootstrapMaxWidthResponsive(md){
+      @include flexbox-flex-direction(column);
+      text-align: center;
+    }
+
     &-logo{
       @include flexbox-flex(0 0 auto);
       width: auto;
       max-width: 100%;
       margin-right: 15px;
+
+      @include BootstrapMaxWidthResponsive(md){
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
 
       i{
         background-image: url(#{$global-img-path-svg}/footer_legal_logo_iskur.svg);
@@ -199,6 +282,11 @@
         display: block;
         width: 100px;
         height: 100px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          width: 90px;
+          height: 90px;
+        }
       }
     }
 
@@ -210,11 +298,19 @@
       h4, p{
         font-size: 14px;
         letter-spacing: -0.14px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 13px;
+        }
       }
       h4{
         color: $global-clr-white;
         line-height: 1.14;
         margin-bottom: 3px;
+
+        @include BootstrapMaxWidthResponsive(md){
+          font-size: 14px;
+        }
       }
       p{
         line-height: 1.29;
@@ -229,16 +325,34 @@
     @include flexbox-justify-content(space-between);
     padding: 20px 0;
 
-    &-text{}
+    @include BootstrapMaxWidthResponsive(lg){
+      @include flexbox-flex-direction(column);
+      text-align: center;
+    }
+
+    &-text{
+      @include BootstrapMaxWidthResponsive(lg){
+        @include flexbox-flex-order(2);
+      }
+    }
 
     &-links{
       @include flexbox-display-flex();
       @include flexbox-flex-direction(row);
       @include flexbox-flex-wrap(wrap);
 
+      @include BootstrapMaxWidthResponsive(lg){
+        @include flexbox-flex-order(1);
+        margin-bottom: 10px;
+      }
+
       > li{
         margin: 0 10px;
         position: relative;
+
+        @include BootstrapMaxWidthResponsive(xm){
+          margin: 0 5px;
+        }
 
         &:first-child{
           margin-left: 0;
@@ -256,6 +370,10 @@
           height: 80%;
           left: -10px;
           top: 10%;
+
+          @include BootstrapMaxWidthResponsive(xm){
+            left: -5px;
+          }
         }
       }
 

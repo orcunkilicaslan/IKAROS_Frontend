@@ -21,6 +21,10 @@
     background-color: $global-clr-white;
     padding: 70px 0;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 50px 0;
+    }
+
     &.headcontbehind{
       padding-top: 50px;
     }
@@ -37,10 +41,49 @@
       max-width: 480px;
       height: calc(100% - 20px);
 
+      @include BootstrapMaxWidthResponsive(lg){
+        max-width: inherit;
+        height: inherit;
+      }
+
+      .sitetitle{
+        padding-top: 70px;
+
+        @include BootstrapMaxWidthResponsive(lg){
+          padding-top: 40px;
+          text-align: center;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          padding-top: 30px;
+        }
+      }
+
       &-btngroup{
         @include flexbox-display-flex();
         @include flexbox-flex-wrap(wrap);
-        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          @include flexbox-flex-direction(column);
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex-direction(row);
+          padding-bottom: 40px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          padding-top: 20px;
+          padding-bottom: 30px;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          padding-bottom: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          padding-bottom: 10px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          @include flexbox-flex-direction(column);
+        }
 
         .btn{
           @include flexbox-flex-basis(0);
@@ -56,16 +99,45 @@
           &:last-child{
             margin-right: 0;
           }
+
+          @include BootstrapMaxWidthResponsive(xl){
+            margin: 5px 0;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            margin: 0 5px;
+
+            &:first-child{
+              margin-left: 0;
+            }
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+          @include BootstrapMaxWidthResponsive(xm){
+            margin: 5px 0;
+          }
         }
       }
     }
 
-    &-formarea{position: relative;}
+    &-formarea{
+      position: relative;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-bottom: 45px;
+      }
+    }
 
     .sitemodalformbox{
       &-form{
         #{$formclassname}-control{
-          &[rows]{height: 140px;}
+          &[rows]{
+            height: 140px;
+
+            @include BootstrapMaxWidthResponsive(sm){
+              height: 100px;
+            }
+          }
         }
       }
     }
@@ -89,6 +161,21 @@
         @include flexbox-flex(0 0 calc(100% / 3));
         max-width: calc(100% / 3);
         padding: 60px 30px 0;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          padding: 45px 20px 0;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex(0 0 calc(100% / 2));
+          max-width: calc(100% / 2);
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          padding: 30px 15px 0;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          @include flexbox-flex(0 0 calc(100% / 1));
+          max-width: calc(100% / 1);
+        }
       }
 
       &-icons{
@@ -99,7 +186,34 @@
         margin: 0 auto 20px;
         @include border-radius(70px);
 
-        i[class*="icons"]{display: block; margin: auto;}
+        @include BootstrapMaxWidthResponsive(hd){
+          width: 110px;
+          height: 110px;
+          margin-bottom: 10px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          width: 100px;
+          height: 100px;
+        }
+        @include BootstrapMaxWidthResponsive(sm){
+          width: 80px;
+          height: 80px;
+        }
+
+        i[class*="icons"]{
+          display: block;
+          margin: auto;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            @include scale(0.8);
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            @include scale(0.7);
+          }
+          @include BootstrapMaxWidthResponsive(sm){
+            @include scale(0.6);
+          }
+        }
       }
     }
   }

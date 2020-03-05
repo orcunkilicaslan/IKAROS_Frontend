@@ -3,6 +3,10 @@
   padding-top: 150px;
   min-height: 150px;
 
+  @include BootstrapMaxWidthResponsive(lg){
+    height: auto;
+  }
+
   &-owl{
     width: 100%;
 
@@ -42,11 +46,33 @@
     min-height: 700px !important;
     padding-top: 0 !important;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      min-height: 600px !important;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      min-height: 500px !important;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      min-height: 360px !important;
+    }
+
     &-slogan{
       max-width: 720px;
       margin: 120px auto 70px;
       position: relative;
       z-index: 1;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin: 100px auto 50px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        max-width: 500px;
+        margin: 75px auto 30px;
+        padding: 0 20px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        margin: 115px auto 70px;
+      }
 
       .sitetitle *{
         color: $global-clr-white;
@@ -56,6 +82,10 @@
         margin-top: 50px;
         position: relative;
         text-align: center;
+
+        @include BootstrapMaxWidthResponsive(md){
+          margin-top: 30px;
+        }
 
         .btn{
           color: $global-clr-white !important;
@@ -70,13 +100,18 @@
 
     &-bg{
       background-image: url(#{$global-img-path-slider}/home_slider_01.jpg);
-      background-position: top center;
+      background-position: center right;
       background-repeat: no-repeat;
+      background-size: cover;
       width: 100%;
       height: 100%;
       position: absolute;
       left: 0;
       top: 0;
+
+      @include BootstrapMinWidthResponsive(2k){
+        background-position: center;
+      }
     }
 
     &-scroll{
@@ -90,6 +125,11 @@
       left: 50%;
       z-index: 1;
       @include translateX(-50%);
+
+      @include BootstrapMaxWidthResponsive(md){
+        @include transform-multiple(scale(0.8) translateX(-65%));
+        bottom: -5px;
+      }
 
       &::before,
       &::after{

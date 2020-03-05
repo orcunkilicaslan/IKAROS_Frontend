@@ -17,6 +17,10 @@
 
     .dfn-menu-list-item .dropdown-menu{
       top: 90px !important;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        top: 78px !important;
+      }
     }
   }
 
@@ -29,9 +33,19 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, margin 0.3s ease-in-out);
 
-    @include ReSassMaxWidthResponsive(992){
+    @include BootstrapMaxWidthResponsive(hd){
+      max-height: 78px;
+      padding: 13px 0;
+      margin: 25px 0;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      background-color: transparentize($global-sitebg-darkblue01, 0.75);
       margin: 0;
-      backdrop-filter: none !important;
+      @include backdrop-filter-multiple(none !important);
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      max-height: 64px;
+      padding: 10px 0;
     }
 
     &.activemenubar{
@@ -59,38 +73,16 @@
       z-index: 1;
       height: 100%;
 
-      &-btn{
-        display: none;
-
-        @include ReSassMaxWidthResponsive(992){
-          display: block;
-        }
-
-        .btnicon{
-          width: 30px;
-          height: 20px;
-          top: 12px;
-
-          span,
-          span::before,
-          span::after{
-            background-color: $global-clr-white;
-            width: 100%;
-            height: 4px;
-            @include border-radius(4px);
-          }
-        }
-
-        @include ReSassMaxWidthResponsive(992){
-          width: 30px;
-          height: 100%;
-          margin: 0 10px 0 0;
-        }
-      }
-
       &-link{
-        @include ReSassMaxWidthResponsive(992){
-          width: 120px;
+        opacity: 1;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          max-width: 120px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          max-width: 100px;
+          position: relative;
+          top: 2px;
         }
       }
     }
@@ -101,6 +93,13 @@
 
       .signindropdown{
         margin-left: 30px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-left: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          display: none;
+        }
 
         .dropdown-menu{
           background-color: $global-sitebg-darkblue01 !important;
@@ -143,6 +142,10 @@
 
           &.widthper100{
             padding-right: 30px;
+
+            @include BootstrapMaxWidthResponsive(md){
+              padding-right: 20px;
+            }
           }
 
         }

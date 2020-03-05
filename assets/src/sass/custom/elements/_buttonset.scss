@@ -1,6 +1,9 @@
 .btn{
 
   &-lg{
+    letter-spacing: -0.18px;
+    font-weight: 500;
+
     &[class*="rounded"]{
       > i[class*="sprite-20"]{
         top: 4px;
