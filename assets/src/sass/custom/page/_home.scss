@@ -7,6 +7,10 @@
       background-color: transparentize(darken($global-sitebg-darkblue01, 7%), 0.75);
       @include backdrop-filter-multiple(blur(5px));
 
+      @include BootstrapMaxWidthResponsive(lg){
+        background-color: transparentize(darken($global-sitebg-darkblue01, 7%), 0.50);
+      }
+
       &.activemenubar{
         @include backdrop-filter-multiple(none);
       }
@@ -31,6 +35,10 @@
     @include BootstrapMaxWidthResponsive(lg){
       padding-top: 30px;
       padding-bottom: 50px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding-top: 20px;
+      padding-bottom: 30px;
     }
   }
 
@@ -81,13 +89,14 @@
     .sitemodalformbox{
       background-color: $global-clr-dark-blue;
       width: 100%;
-      min-height: 700px;
+      min-height: 730px;
       position: absolute;
       top: -40px;
       @include box-shadow-none-imp();
 
       @include BootstrapMaxWidthResponsive(lg){
         position: static;
+        min-height: inherit;
       }
 
       a.btn{display: none}
@@ -109,6 +118,10 @@
     @include BootstrapMaxWidthResponsive(lg){
       padding-top: 40px;
       padding-bottom: 70px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding-top: 30px;
+      padding-bottom: 50px;
     }
   }
 

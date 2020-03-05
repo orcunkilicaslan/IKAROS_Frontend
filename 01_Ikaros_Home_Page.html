@@ -43,6 +43,9 @@
                         <a class="dfn-mobilemenu-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
                             <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
                         </a>
+                        <div class="dfn-mobilemenu-sign signindropdown sitedropdown dropdown">
+                            <a href="02_Ikaros_Sign_In.html" class="signindropdown-btn btn btn-lg btn-outline-success rounded-pill widthper100"><i class="icons-sprite sprite-20-dark icons-green-password"></i> İşveren/Aday Girişi</a>
+                        </div>
                         <ul class="dfn-mobil-alt dfn-menu-list">
                             <li class="dfn-menu-list-item">
                                 <a href="javascript:;" title="İnsan Kaynakları" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">İnsan Kaynakları</a>
@@ -245,14 +248,14 @@
                             </div>
                             <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanyNameId" class="form-control autofill" type="text" name="companyname" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputRegisterCompanyNameId','msgRegisterCompanyNameId','iconRegisterCompanyNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputRegisterCompanyNameId','msgRegisterCompanyNameId','iconRegisterCompanyNameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanyNameId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Adınız</label>
                                         <div id="iconRegisterCompanyNameId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanySurnameId" class="form-control autofill" type="text" name="companysurname" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputRegisterCompanySurnameId','msgRegisterCompanySurnameId','iconRegisterCompanySurnameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputRegisterCompanySurnameId','msgRegisterCompanySurnameId','iconRegisterCompanySurnameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanySurnameId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -261,14 +264,14 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanyEmailId" class="form-control autofill" type="email" name="companyemail" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputRegisterCompanyEmailId','msgRegisterCompanyEmailId','iconRegisterCompanyEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputRegisterCompanyEmailId','msgRegisterCompanyEmailId','iconRegisterCompanyEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanyEmailId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>E-Posta Adresiniz</label>
                                         <div id="iconRegisterCompanyEmailId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanyPhoneId" class="form-control inputphonemasktr autofill" type="text" name="companyphone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputRegisterCompanyPhoneId','msgRegisterCompanyPhoneId','iconRegisterCompanyPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputRegisterCompanyPhoneId','msgRegisterCompanyPhoneId','iconRegisterCompanyPhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanyPhoneId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -277,14 +280,14 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanyPassId" class="form-control autofill" type="password" name="companypass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputRegisterCompanyPassId','msgRegisterCompanyPassId','iconRegisterCompanyPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputRegisterCompanyPassId','msgRegisterCompanyPassId','iconRegisterCompanyPassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanyPassId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Parolanız</label>
                                         <div id="iconRegisterCompanyPassId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterCompanyRePassId" class="form-control autofill" type="password" name="companyrepass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputRegisterCompanyRePassId','msgRegisterCompanyRePassId','iconRegisterCompanyRePassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputRegisterCompanyRePassId','msgRegisterCompanyRePassId','iconRegisterCompanyRePassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterCompanyRePassId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -302,7 +305,7 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <select id="selectRegisterCompanyCityId" class="form-control autofill custom-select" name="companycity" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectRegisterCompanyCityId','msgRegisterCompanyCityId','iconRegisterCompanyCityId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectRegisterCompanyCityId','msgRegisterCompanyCityId','iconRegisterCompanyCityId')" disabled="disabled" aria-required="true" required>
                                             <option value="">Şehir Seçiniz</option>
                                             <option value="1">İstanbul</option>
@@ -315,7 +318,7 @@
                                         <label>Şehir Seçiniz</label>
                                         <div id="iconRegisterCompanyCityId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <select id="selectRegisterCompanyTownId" class="form-control autofill custom-select" name="companytown" oninput="generalvalidform.verifyContent('selectPleaseChoose','selectRegisterCompanyTownId','msgRegisterCompanyTownId','iconRegisterCompanyTownId')" onfocusout="generalvalidform.verifyContentErrorDelete('selectPleaseChoose','selectRegisterCompanyTownId','msgRegisterCompanyTownId','iconRegisterCompanyTownId')" disabled="disabled" aria-required="true" required>
                                             <option value="">İlçe Seçiniz</option>
                                             <option value="1">Beşiktaş</option>
@@ -371,16 +374,35 @@
                                 </div>
                                 <i class="icons-sprite sprite-60-dark icons-blue-employee"></i>
                             </div>
+                            <div id="error-form-register-employees" class="alert alert-bgdark alert-sweet alert-warning alert-dismissible fade show d-none" role="alert">
+                                <div class="alert-flex">
+                                    <div class="alert-icon">
+                                        <div class="animation-alert-icons">
+                                            <div class="alert-icons alert-icons-warning">
+                                                <div class="alert-icons-warning-body"></div>
+                                                <div class="alert-icons-warning-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="alert-desc">
+                                        <h6 class="alert-heading">Warning!</h6>
+                                        <p>Aww yeah, you successfully read this important alert message.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <form class="sitemodalformbox-form" action="" autocomplete="off" novalidate>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesNameId" class="form-control autofill" type="text" name="employeesname" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputRegisterEmployeesNameId','msgRegisterEmployeesNameId','iconRegisterEmployeesNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputRegisterEmployeesNameId','msgRegisterEmployeesNameId','iconRegisterEmployeesNameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesNameId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Adınız</label>
                                         <div id="iconRegisterEmployeesNameId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesSurnameId" class="form-control autofill" type="text" name="employeessurname" pattern=".{0}|.{2,}" oninput="generalvalidform.verifyContent('inputNameProcess','inputRegisterEmployeesSurnameId','msgRegisterEmployeesSurnameId','iconRegisterEmployeesSurnameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputRegisterEmployeesSurnameId','msgRegisterEmployeesSurnameId','iconRegisterEmployeesSurnameId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesSurnameId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -389,14 +411,14 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesEmailId" class="form-control autofill" type="email" name="employeesemail" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" oninput="generalvalidform.verifyContent('inputEmailProcess','inputRegisterEmployeesEmailId','msgRegisterEmployeesEmailId','iconRegisterEmployeesEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputRegisterEmployeesEmailId','msgRegisterEmployeesEmailId','iconRegisterEmployeesEmailId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesEmailId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>E-Posta Adresiniz</label>
                                         <div id="iconRegisterEmployeesEmailId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesPhoneId" class="form-control inputphonemasktr autofill" type="text" name="employeesphone" pattern=".{0}|.{14}" oninput="generalvalidform.verifyContent('inputPhoneProcess','inputRegisterEmployeesPhoneId','msgRegisterEmployeesPhoneId','iconRegisterEmployeesPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneProcess','inputRegisterEmployeesPhoneId','msgRegisterEmployeesPhoneId','iconRegisterEmployeesPhoneId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesPhoneId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -405,14 +427,14 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesPassId" class="form-control autofill" type="password" name="employeespass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputRegisterEmployeesPassId','msgRegisterEmployeesPassId','iconRegisterEmployeesPassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputRegisterEmployeesPassId','msgRegisterEmployeesPassId','iconRegisterEmployeesPassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesPassId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
                                         <label>Parolanız</label>
                                         <div id="iconRegisterEmployeesPassId"></div>
                                     </div>
-                                    <div class="form-group labelanimation col">
+                                    <div class="form-group labelanimation col-xs-6">
                                         <input id="inputRegisterEmployeesRePassId" class="form-control autofill" type="password" name="employeesrepass" pattern=".{0}|.{8,}" oninput="generalvalidform.verifyContent('inputPasswordProcess','inputRegisterEmployeesRePassId','msgRegisterEmployeesRePassId','iconRegisterEmployeesRePassId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputRegisterEmployeesRePassId','msgRegisterEmployeesRePassId','iconRegisterEmployeesRePassId')" onfocus="javascript:this.removeAttribute('readonly')" readonly="readonly" required />
                                         <span id="msgRegisterEmployeesRePassId" class="msginput"></span>
                                         <span class="inputbottombar"></span>
@@ -555,7 +577,7 @@
             <div class="row">
 
                 <!-- Address -->
-                <div class="footer-bottom-left col-md-4">
+                <div class="footer-bottom-left col-lg-4">
                     <a class="footer-bottom-logo" href="01_Ikaros_Home_Page.html" title="IKAROS AND PARTNERS" rel="bookmark">
                         <img src="assets/img/svg/ikaros_logo_bgdark.svg" alt="IKAROS AND PARTNERS">
                     </a>
@@ -571,7 +593,7 @@
                 <!-- Address -->
 
                 <!-- Links -->
-                <div class="footer-bottom-links col-md-3">
+                <div class="footer-bottom-links col-lg-3 col-sm-6 d-none d-md-block">
                     <h4>Adaylar</h4>
                     <ul class="footer-bottom-links-nav">
                         <li><a href="#" title="İş Arama" rel="category">İş Arama</a></li>
@@ -581,7 +603,7 @@
                         <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
                     </ul>
                 </div>
-                <div class="footer-bottom-links col-md-3">
+                <div class="footer-bottom-links col-lg-3 col-sm-6 d-none d-md-block">
                     <h4>İşverenler</h4>
                     <ul class="footer-bottom-links-nav">
                         <li><a href="#" title="İlan Paylaş" rel="category">İlan Paylaş</a></li>
@@ -592,7 +614,7 @@
                         <li><a href="#" title="Sıkça Sorulanlar" rel="category">Sıkça Sorulanlar</a></li>
                     </ul>
                 </div>
-                <div class="footer-bottom-links col-md-2">
+                <div class="footer-bottom-links socials col-lg-2">
                     <h4 class="text-md-center">Bizi Takip Edin</h4>
                     <ul class="footer-bottom-links-social">
                         <li><a href="#" class="socialicons iconsfacebook" data-toggle="tooltip" data-placement="bottom" title="Facebook'ta Takip Edin" rel="external nofollow" target="_blank"></a></li>

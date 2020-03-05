@@ -53,6 +53,9 @@
           padding-top: 40px;
           text-align: center;
         }
+        @include BootstrapMaxWidthResponsive(md){
+          padding-top: 30px;
+        }
       }
 
       &-btngroup{
@@ -67,6 +70,19 @@
         @include BootstrapMaxWidthResponsive(lg){
           @include flexbox-flex-direction(row);
           padding-bottom: 40px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          padding-top: 20px;
+          padding-bottom: 30px;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          padding-bottom: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          padding-bottom: 10px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          @include flexbox-flex-direction(column);
         }
 
         .btn{
@@ -97,6 +113,9 @@
               margin-right: 0;
             }
           }
+          @include BootstrapMaxWidthResponsive(xm){
+            margin: 5px 0;
+          }
         }
       }
     }
@@ -112,7 +131,13 @@
     .sitemodalformbox{
       &-form{
         #{$formclassname}-control{
-          &[rows]{height: 140px;}
+          &[rows]{
+            height: 140px;
+
+            @include BootstrapMaxWidthResponsive(sm){
+              height: 100px;
+            }
+          }
         }
       }
     }
@@ -144,6 +169,13 @@
           @include flexbox-flex(0 0 calc(100% / 2));
           max-width: calc(100% / 2);
         }
+        @include BootstrapMaxWidthResponsive(md){
+          padding: 30px 15px 0;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          @include flexbox-flex(0 0 calc(100% / 1));
+          max-width: calc(100% / 1);
+        }
       }
 
       &-icons{
@@ -163,6 +195,10 @@
           width: 100px;
           height: 100px;
         }
+        @include BootstrapMaxWidthResponsive(sm){
+          width: 80px;
+          height: 80px;
+        }
 
         i[class*="icons"]{
           display: block;
@@ -173,6 +209,9 @@
           }
           @include BootstrapMaxWidthResponsive(lg){
             @include scale(0.7);
+          }
+          @include BootstrapMaxWidthResponsive(sm){
+            @include scale(0.6);
           }
         }
       }

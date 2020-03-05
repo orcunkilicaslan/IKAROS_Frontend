@@ -141,7 +141,6 @@
       }
     }
   }
-
   &-mobilemenu{
     &-logo{
       padding: 15px 15px 10px;
@@ -166,6 +165,17 @@
     &-mask{
       background-color: transparentize($global-sitebg-darkblue01, 0.5);
       @include backdrop-filter-multiple(blur(5px));
+    }
+    &-sign{
+      display:none;
+
+      @include BootstrapMaxWidthResponsive(xm){
+        display: block !important;
+        margin: 0 !important;
+        padding: 10px 15px !important;
+        border-top: 1px solid $global-sitebg-darkblue01;
+        border-bottom: 1px solid $global-sitebg-darkblue01;
+      }
     }
   }
 

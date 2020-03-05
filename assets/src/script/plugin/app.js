@@ -118,7 +118,7 @@ $(window).on("load resize",function(e){if($(window).width() > 991){
 /* Header Web Navbar Dropdown Menu */
 
 /* Site Dropdown Menu */
-$(window).on("load resize",function(e){if($(window).width() > 767){
+$(window).on("load resize",function(e){if($(window).width() > 991){
 
     $(".sitedropdown")
         .on("show.bs.dropdown", function(){

@@ -13,10 +13,21 @@
   @include border-radius(14px);
   @include box-shadow(0, 0, 20px, transparentize($global-clr-dark-black, 0.95));
 
+  @include BootstrapMaxWidthResponsive(md){
+    padding: 30px;
+  }
+  @include BootstrapMaxWidthResponsive(sm){
+    padding: 25px;
+  }
+  @include BootstrapMaxWidthResponsive(xm){
+    padding: 20px;
+  }
+
   &-head{
     @include flexbox-display-flex();
     @include flexbox-flex-direction(row);
     @include flexbox-justify-content(space-between);
+    @include flexbox-align-items(center);
 
     .sitetitle{
       margin: 0;
@@ -28,14 +39,25 @@
       @include BootstrapMaxWidthResponsive(hd){
         @include scale(0.9);
       }
+      @include BootstrapMaxWidthResponsive(md){
+        @include scale(0.8);
+      }
     }
   }
 
   .alert{
     margin-top: 20px;
 
+    @include BootstrapMaxWidthResponsive(sm){
+      margin-top: 10px;
+    }
+
     & + form{
       margin-top: 20px;
+
+      @include BootstrapMaxWidthResponsive(sm){
+        margin-top: 10px;
+      }
     }
   }
 
@@ -43,6 +65,10 @@
     margin-top: 40px;
     position: relative;
     z-index: 1;
+
+    @include BootstrapMaxWidthResponsive(sm){
+      margin-top: 10px;
+    }
 
     #{$formclassname}-control{
       &[rows]{

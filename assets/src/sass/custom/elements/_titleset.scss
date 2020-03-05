@@ -61,6 +61,11 @@
       h1,h2,h3,h4,h5,h6{font-size: 28px;}
       p, ul{font-size: 14px;}
     }
+    @include BootstrapMaxWidthResponsive(md){
+      small{font-size: 16px;}
+      h1,h2,h3,h4,h5,h6{font-size: 24px;}
+      h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 5px;}
+    }
   }
 
   &-lg{
@@ -77,6 +82,10 @@
       small{font-size: 20px;}
       h1,h2,h3,h4,h5,h6{font-size: 24px;}
       h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 10px;}
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      small{font-size: 18px;}
+      h1,h2,h3,h4,h5,h6{font-size: 22px;}
     }
   }
 
@@ -131,6 +140,7 @@
         background-image: url(#{$global-img-path-svg}/site_titleset_darkline_center.svg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: contain;
         position: absolute;
         bottom: 0;
       }
@@ -144,10 +154,17 @@
         @include BootstrapMaxWidthResponsive(hd){
           padding-bottom: 25px;
         }
+        @include BootstrapMaxWidthResponsive(md){
+          padding-bottom: 20px;
+        }
 
         &::before{
           width: 232px;
           height: 18px;
+
+          @include BootstrapMaxWidthResponsive(md){
+            height: 14px;
+          }
         }
       }
     }

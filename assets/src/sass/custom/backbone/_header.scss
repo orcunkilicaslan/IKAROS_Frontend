@@ -39,8 +39,13 @@
       margin: 25px 0;
     }
     @include BootstrapMaxWidthResponsive(lg){
+      background-color: transparentize($global-sitebg-darkblue01, 0.75);
       margin: 0;
-      backdrop-filter: none !important;
+      @include backdrop-filter-multiple(none !important);
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      max-height: 64px;
+      padding: 10px 0;
     }
 
     &.activemenubar{
@@ -74,6 +79,11 @@
         @include BootstrapMaxWidthResponsive(hd){
           max-width: 120px;
         }
+        @include BootstrapMaxWidthResponsive(md){
+          max-width: 100px;
+          position: relative;
+          top: 2px;
+        }
       }
     }
 
@@ -86,6 +96,9 @@
 
         @include BootstrapMaxWidthResponsive(xl){
           margin-left: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xm){
+          display: none;
         }
 
         .dropdown-menu{
@@ -129,6 +142,10 @@
 
           &.widthper100{
             padding-right: 30px;
+
+            @include BootstrapMaxWidthResponsive(md){
+              padding-right: 20px;
+            }
           }
 
         }
