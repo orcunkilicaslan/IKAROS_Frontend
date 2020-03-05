@@ -8,9 +8,34 @@
     padding-top: 150px;
     min-height: 150px;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      min-height: 128px;
+      padding-top: 128px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      min-height: 78px;
+      padding-top: 78px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      min-height: 64px;
+      padding-top: 64px;
+    }
+
     > .container{
       padding-top: 30px;
       padding-bottom: 70px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-top: 0;
+        padding-bottom: 5px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        padding-bottom: 0;
+      }
     }
   }
 
