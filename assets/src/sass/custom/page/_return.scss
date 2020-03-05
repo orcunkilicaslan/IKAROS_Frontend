@@ -8,9 +8,30 @@
     padding-top: 150px;
     min-height: 150px;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      min-height: 128px;
+      padding-top: 128px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      min-height: 78px;
+      padding-top: 78px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      min-height: 64px;
+      padding-top: 64px;
+    }
+
     > .container{
       padding-top: 90px;
       padding-bottom: 130px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-top: 40px;
+        padding-bottom: 80px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-bottom: 50px;
+      }
     }
   }
 
@@ -19,6 +40,20 @@
     .animation-alert-icons{
       margin: 0 auto 40px;
       @include scale(1.2);
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-bottom: 20px;
+        @include scale(1);
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-bottom: 15px;
+        @include scale(0.9);
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        margin-bottom: 10px;
+        @include scale(0.8);
+      }
+
       .alert-icons{
         &-success{border-color: $global-clr-white;}
         &-warning{border-color: $global-clr-white;}
@@ -32,6 +67,10 @@
       max-width: 570px;
       margin: 30px auto 0;
 
+      @include BootstrapMaxWidthResponsive(xm){
+        @include flexbox-flex-direction(column);
+      }
+
       .btn{
         @include flexbox-flex-basis(0);
         @include flexbox-flex-grow(1);
@@ -39,6 +78,10 @@
         margin: 0 5px;
         text-align: left;
         display: block;
+
+        @include BootstrapMaxWidthResponsive(xm){
+          margin: 5px 0;
+        }
 
         &:first-child{
           margin-left: 0;
