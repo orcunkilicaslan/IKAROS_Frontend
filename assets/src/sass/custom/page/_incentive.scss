@@ -22,7 +22,7 @@
       margin-top: 10px;
       margin-bottom: 30px;
 
-      @include BootstrapMaxWidthResponsive(xs){
+      @include BootstrapMaxWidthResponsive(md){
         display: block;
         width: 100%;
         overflow-x: auto;
