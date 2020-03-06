@@ -13,6 +13,10 @@
     color: $global-clr-text-dark;
     margin-bottom: 15px;
     &:last-child{margin-bottom: 0;}
+
+    @include BootstrapMaxWidthResponsive(lg){
+      margin-bottom: 10px;
+    }
   }
 
   blockquote{
@@ -37,6 +41,29 @@
     small{
       font-size: 18px;
       font-weight: normal !important;
+    }
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-left: 45px;
+      padding-top: 10px;
+
+      p{font-size: 18px;}
+      small{font-size: 16px;}
+
+      &::before{
+        width: 30px;
+      }
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding-left: 35px;
+      padding-top: 12px;
+
+      p{font-size: 16px;}
+      small{font-size: 14px;}
+
+      &::before{
+        width: 25px;
+      }
     }
 
   }
