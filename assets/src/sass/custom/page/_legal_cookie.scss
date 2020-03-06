@@ -5,6 +5,13 @@
 
     &-list{
       margin-top: 30px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-top: 15px;
+      }
     }
   }
 }
