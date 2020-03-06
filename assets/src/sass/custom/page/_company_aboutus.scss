@@ -5,11 +5,27 @@
 
     &-bigtitle{
       padding-bottom: 30px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-bottom: 10px;
+      }
     }
 
     &-layout{
       padding-top: 30px;
       padding-bottom: 100px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-bottom: 70px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
     }
   }
 

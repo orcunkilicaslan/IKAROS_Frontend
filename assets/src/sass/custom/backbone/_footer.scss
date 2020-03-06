@@ -75,8 +75,10 @@
     padding: 50px 0 30px;
     position: relative;
 
-    @include BootstrapMaxWidthResponsive(xl){
+    @include BootstrapMaxWidthResponsive(hd){
       font-size: 15px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
       padding: 40px 0 25px;
     }
     @include BootstrapMaxWidthResponsive(md){

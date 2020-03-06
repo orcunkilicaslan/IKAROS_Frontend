@@ -4,30 +4,89 @@
     &-row{
       padding-top: 50px;
       padding-bottom: 50px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        @include flexbox-flex-direction(column);
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      > .col-auto{
+        @include BootstrapMaxWidthResponsive(lg){
+          width: 100%;
+          max-width: inherit;
+        }
+      }
     }
 
     &-left{
+
+      > .row{
+        @include BootstrapMaxWidthResponsive(lg){
+          .col-auto{@include flexbox-flex-order(1);}
+          .col{@include flexbox-flex-order(2);}
+        }
+      }
+
+
       div[class*="-text"]{
         padding-right: 50px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          padding-right: 30px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding-right: 20px;
+        }
       }
 
       div[class*="-img"]{
         &::after{
-          display: block !important;
+          display: block;
           right: -40px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            right: -30px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            right: -25px;
+          }
         }
       }
     }
 
     &-right{
+
       div[class*="-text"]{
         padding-left: 50px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          padding-left: 30px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding-left: 20px;
+        }
       }
 
       div[class*="-img"]{
         &::after{
-          display: block !important;
+          display: block;
           left: -40px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            left: -30px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            left: -25px;
+          }
         }
       }
     }
@@ -37,18 +96,41 @@
       @include flexbox-flex-direction(column);
       @include flexbox-justify-content(center);
       height: 100%;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        padding: 0 !important;
+        margin-bottom: 15px;
+
+        *{text-align: center;}
+      }
     }
 
     &-img{
       @include flexbox-display-flex();
       @include flexbox-flex-direction(column);
       @include flexbox-justify-content(center);
-      background-color: darken($global-clr-soft-gray, 2%);
+      //background-color: darken($global-clr-soft-gray, 2%);
       width: 600px;
       height: 100%;
       text-align: right;
       position: relative;
-      @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
+
+      img{
+        background-color: darken($global-clr-soft-gray, 2%);
+        @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
+      }
+
+      @include BootstrapMaxWidthResponsive(1k){
+        width: 560px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        width: 460px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        width: auto;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
 
       &::after{
         display: none;
@@ -59,6 +141,18 @@
         position: absolute;
         z-index: -1;
         @include border-radius(50%);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          width: 350px;
+          height: 350px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          width: 270px;
+          height: 270px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          display: none !important;
+        }
       }
 
       &.imgcirclegreen::after{border-color: $site-aux-clr-circle-green;}
