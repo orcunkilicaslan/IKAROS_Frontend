@@ -11,12 +11,24 @@
     &-listbox{
       margin: 25px 0 50px 35px;
 
+      @include BootstrapMaxWidthResponsive(md){
+        margin: 20px 0 40px 0;
+      }
+
       &:last-child{margin-bottom: 0}
     }
 
     &-table{
       margin-top: 10px;
       margin-bottom: 30px;
+
+      @include BootstrapMaxWidthResponsive(xs){
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 15px;
+      }
 
       &:last-child{margin-bottom: 0}
 
