@@ -4,6 +4,18 @@
   &-section{
     padding-top: 70px;
     padding-bottom: 70px;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 40px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
   }
 
   ol.termlist01{
@@ -14,6 +26,13 @@
     &-head{
       > li{
         margin-bottom: 20px !important;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          margin-bottom: 15px !important;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          margin-bottom: 10px !important;
+        }
       }
     }
 
@@ -21,6 +40,10 @@
       padding-left: 30px;
       position: relative;
       margin-bottom: 10px;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-left: 20px;
+      }
 
       &::before {
         content: counters(item, ".") ". ";
@@ -33,6 +56,16 @@
         font-size: 22px;
         line-height: 1.09;
         letter-spacing: -.6px;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          font-size: 18px;
+        }
+        @include BootstrapMaxWidthResponsive(md){
+          font-size: 16px;
+        }
       }
     }
 

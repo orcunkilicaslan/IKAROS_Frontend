@@ -473,7 +473,7 @@
           @include BootstrapMaxWidthResponsive(lg){
             height: auto;
           }
-          @include BootstrapMaxWidthResponsive(sm){
+          @include BootstrapMaxWidthResponsive(md){
             width: auto;
             max-width: inherit;
           }
