@@ -66,6 +66,13 @@
           height: 8px;
           background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPg0KICA8ZyBpZD0iQmFja2dyb3VuZCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGQ3OGM0IiBzdHJva2Utd2lkdGg9IjEiPg0KICAgIDxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSI0IiBzdHJva2U9Im5vbmUiLz4NCiAgICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjciIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0ibm9uZSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
           top: 7px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            top: 6px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            top: 5px;
+          }
         }
       }
     }
