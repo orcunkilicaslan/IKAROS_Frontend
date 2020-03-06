@@ -27,6 +27,13 @@
 
     &.headcontbehind{
       padding-top: 50px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-top: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        padding-top: 10px;
+      }
     }
   }
 
