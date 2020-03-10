@@ -233,16 +233,11 @@
       > li{
         @include flexbox-flex(0 0 calc(100%/3));
         max-width: calc(100%/3);
-        padding: 30px 0;
-
-        &:nth-of-type(even){
-          //padding-top: 100px;
-        }
 
         .teambox{
           background-color: $global-clr-white;
           color: $global-clr-text-dark;
-          padding: 35px;
+          padding: 35px 35px 25px;
           position: relative;
           z-index: 0;
           @include border-radii(0,0,0,0);
@@ -250,35 +245,83 @@
 
           &:hover{
             @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
-            @include border-radii(0,110px,0,0);
+            @include border-radii(0,110px,0,50px);
             z-index: 1;
 
+            .teamname{
+              &::after{
+                width: 30%;
+              }
+            }
+            .teamphoto{
+              img{
+                @include filter-multiple(grayscale(0));
+              }
+            }
             .teamdetail{
               opacity: 1;
             }
           }
         }
         .teamhead{
+          @include flexbox-display-flex();
           @include flexbox-align-items(center);
           margin-bottom: 15px;
-        }
-        .teamphoto{
-          width: 100%;
-          max-width: 160px;
-          height: auto;
-          display: block;
-          margin: 0 0 0 auto;
-          border: 5px solid $global-border-light-gray;
-          @include border-radius(50%);
+          position: relative;
         }
         .teamname{
-          color: $global-clr-text-dark;
-          font-size: 26px;
-          padding-bottom: 10px;
-          padding-top: 10px;
-          border-bottom: 2px solid $global-border-light-gray;
+          @include flexbox-flex-grow(1);
+          @include flexbox-flex-basis(0);
+          max-width: 100%;
+          //border-bottom: 2px solid $global-border-light-gray;
+          position: relative;
 
+          &::before,
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            @include transition-multiple(width 0.15s ease-in-out);
+          }
+
+          &::before{
+            background-color: $global-border-light-gray;
+            width: 100%;
+          }
+          &::after{
+            background-color: $global-clr-soft-blue;
+            width: 0;
+          }
+
+          h3{
+            color: $global-clr-text-dark;
+            font-size: 26px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+          }
           span{display: block;}
+        }
+        .teamphoto{
+          @include flexbox-flex(0 0 auto);
+          width: auto;
+          max-width: 100%;
+          margin-left: 20px;
+          border: 5px solid transparentize($global-border-light-gray, 0.25);
+          @include border-radius(50%);
+
+          img{
+            width: 100%;
+            max-width: 160px;
+            height: auto;
+            display: block;
+            margin: 0 0 0 auto;
+            @include border-radius(50%);
+            @include filter-multiple(grayscale(1));
+            @include transition-multiple(filter 0.15s ease-in-out);
+          }
+
         }
         .teaminfo{}
         .teamtitle{
