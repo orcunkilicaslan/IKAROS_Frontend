@@ -132,6 +132,92 @@
 }
 /* Flexbox End */
 
+/* Column Start */
+@mixin columns($columns) {
+  -moz-columns: $columns;
+  -webkit-columns: $columns;
+  columns: $columns;
+}
+
+@mixin column-count($columncount) {
+  -moz-column-count: $columncount;
+  -webkit-column-count: $columncount;
+  column-count: $columncount;
+}
+
+@mixin column-width($columnwidth) {
+  -moz-column-width: $columnwidth;
+  -webkit-column-width: $columnwidth;
+  column-width: $columnwidth;
+}
+
+@mixin column-fill($columnfill) {
+  -moz-column-fill: $columnfill;
+  -webkit-column-fill: $columnfill;
+  column-fill: $columnfill;
+}
+
+@mixin column-gap($columngap) {
+  -moz-column-gap: $columngap;
+  -webkit-column-gap: $columngap;
+  column-gap: $columngap;
+}
+
+@mixin column-span($columnspan) {
+  -moz-column-span: $columnspan;
+  -webkit-column-span: $columnspan;
+  column-span: $columnspan;
+}
+
+@mixin column-overflow($columnoverflow) {
+  -moz-column-overflow: $columnoverflow;
+  -webkit-column-overflow: $columnoverflow;
+  column-overflow: $columnoverflow;
+}
+
+@mixin column-rule($columnrule) {
+  -moz-column-rule: $columnrule;
+  -webkit-column-rule: $columnrule;
+  column-rule: $columnrule;
+}
+
+@mixin column-rule-color($columnrulecolor) {
+  -moz-column-rule-color: $columnrulecolor;
+  -webkit-column-rule-color: $columnrulecolor;
+  column-rule-color: $columnrulecolor;
+}
+
+@mixin column-rule-style($columnrulestyle) {
+  -moz-column-rule-style: $columnrulestyle;
+  -webkit-column-rule-style: $columnrulestyle;
+  column-rule-style: $columnrulestyle;
+}
+
+@mixin column-rule-width($columnrulewidth) {
+  -moz-column-rule-width: $columnrulewidth;
+  -webkit-column-rule-width: $columnrulewidth;
+  column-rule-width: $columnrulewidth;
+}
+
+@mixin break-before($columnbreakbefore) {
+  -moz-break-before: $columnbreakbefore;
+  -webkit-column-break-before: $columnbreakbefore;
+  break-before: $columnbreakbefore;
+}
+
+@mixin break-after($columnbreakafter) {
+  -moz-break-after: $columnbreakafter;
+  -webkit-column-break-after: $columnbreakafter;
+  break-after: $columnbreakafter;
+}
+
+@mixin break-inside($columnbreakinside) {
+  -moz-break-inside: $columnbreakinside;
+  -webkit-column-break-inside: $columnbreakinside;
+  break-inside: $columnbreakinside;
+}
+/* Column End */
+
 /* Border Start */
 @mixin border-radius($radius) {
   border-radius: $radius;

@@ -227,55 +227,72 @@
 
   &-team{
     &-list{
-      @include flexbox-display-flex();
-      @include flexbox-flex-wrap(wrap);
+      @include column-count(3);
+      @include column-gap(0);
 
       > li{
-        @include flexbox-flex(0 0 calc(100% / 4));
-        max-width: calc(100% / 4);
-        margin-top: 20px;
+        display: inline-block;
+        width: 100%;
+        padding: 30px 0;
 
-        &:nth-child(even){
-          margin-top: 100px;
-        }
-
-        .teamphoto{
-          width: 100%;
-          max-width: 200px;
-          height: auto;
-          display: block;
-          margin: 0 0 15px;
-          @include border-radius(50%);
+        &:nth-of-type(even){
+          //padding-top: 100px;
         }
 
         .teambox{
-          padding-left: 15px;
-          padding-right: 15px;
-          border: 1px solid red;
-        }
+          background-color: $global-clr-white;
+          color: $global-clr-text-dark;
+          padding: 35px;
+          position: relative;
+          z-index: 0;
+          @include border-radii(0,0,0,0);
+          @include transition-multiple(box-shadow 0.15s ease-in-out, z-index 0.15s ease-in-out, border-radius 0.15s ease-in-out);
 
-        .teaminfo{
-          padding: 0 30px 0 15px;
-        }
+          &:hover{
+            @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
+            @include border-radii(0,110px,0,0);
+            z-index: 1;
 
+            .teamdetail{
+              opacity: 1;
+            }
+          }
+        }
+        .teamhead{
+          @include flexbox-align-items(center);
+          margin-bottom: 15px;
+        }
+        .teamphoto{
+          width: 100%;
+          max-width: 160px;
+          height: auto;
+          display: block;
+          margin: 0 0 0 auto;
+          border: 5px solid $global-border-light-gray;
+          @include border-radius(50%);
+        }
         .teamname{
           color: $global-clr-text-dark;
           font-size: 26px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          border-bottom: 2px solid $global-border-light-gray;
 
           span{display: block;}
         }
+        .teaminfo{}
         .teamtitle{
           color: $global-clr-text-light;
-          margin-top: 10px;
-        }
-        .teamdesc{
-          margin-top: 10px;
+          margin-bottom: 10px;
         }
         .teamdetail{
           @include flexbox-display-flex-inline();
           @include flexbox-align-items(center);
           color: $global-clr-text-light;
           padding: 0;
+          text-decoration: none !important;
+          opacity: 0;
+          @include transition-multiple(opacity 0.15s ease-in-out);
 
           i{
             margin-right: 5px;
