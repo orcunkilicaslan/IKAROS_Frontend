@@ -227,12 +227,12 @@
 
   &-team{
     &-list{
-      @include column-count(3);
-      @include column-gap(0);
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
 
       > li{
-        display: inline-block;
-        width: 100%;
+        @include flexbox-flex(0 0 calc(100%/3));
+        max-width: calc(100%/3);
         padding: 30px 0;
 
         &:nth-of-type(even){
