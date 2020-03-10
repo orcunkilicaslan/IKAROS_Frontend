@@ -4,8 +4,43 @@
   &-education{
 
     &-listbox{
+
+      ul.ullist{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+        margin-top: 20px;
+
+        @include BootstrapMaxWidthResponsive(md){
+          margin-top: 15px;
+        }
+
+        > li{
+          @include flexbox-flex(0 0 calc(100% / 4));
+          max-width: calc(100% / 4);
+
+          @include BootstrapMaxWidthResponsive(1k){
+            @include flexbox-flex(0 0 calc(100% / 3));
+            max-width: calc(100% / 3);
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            @include flexbox-flex(0 0 calc(100% / 2));
+            max-width: calc(100% / 2);
+          }
+          @include BootstrapMaxWidthResponsive(md){
+            @include flexbox-flex(0 0 calc(100% / 1));
+            max-width: calc(100% / 1);
+          }
+        }
+      }
+
     }
 
-  }
+    &-educationalist{
+      margin-top: 70px;
 
+      &-list{
+        margin-top: 5px;
+      }
+    }
+  }
 }
