@@ -21,6 +21,9 @@
       @include BootstrapMaxWidthResponsive(hd){
         top: 78px !important;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        top: 0 !important;
+      }
     }
   }
 

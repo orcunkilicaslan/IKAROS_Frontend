@@ -234,6 +234,53 @@
         @include flexbox-flex(0 0 calc(100%/3));
         max-width: calc(100%/3);
 
+        @include BootstrapMaxWidthResponsive(xl){
+          @include flexbox-flex(0 0 calc(100%/2));
+          max-width: calc(100%/2);
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex(0 0 calc(100%/1));
+          max-width: calc(100%/1);
+          margin: 15px 0;
+
+          &:first-child{margin-top: 0;}
+          &:last-child{margin-bottom: 0;}
+        }
+
+        &:nth-of-type(odd){
+          @include BootstrapMaxWidthResponsive(lg){
+            .teambox{
+              @include border-radii(0,70px,0,20px);
+            }
+          }
+        }
+        &:nth-of-type(even){
+          @include BootstrapMaxWidthResponsive(lg){
+            .teambox{
+              @include border-radii(70px,0,20px,0);
+            }
+            .teamname{
+              @include flexbox-flex-order(2);
+
+              &::before,
+              &::after{
+                left: auto;
+                right: 0;
+              }
+
+              h3{text-align: right;}
+            }
+            .teamphoto{
+              @include flexbox-flex-order(1);
+              margin-left: 0;
+              margin-right: 20px;
+            }
+            .teaminfo{
+              text-align: right;
+            }
+          }
+        }
+
         .teambox{
           background-color: $global-clr-white;
           color: $global-clr-text-dark;
@@ -243,23 +290,42 @@
           @include border-radii(0,0,0,0);
           @include transition-multiple(box-shadow 0.15s ease-in-out, z-index 0.15s ease-in-out, border-radius 0.15s ease-in-out);
 
+          @include BootstrapMaxWidthResponsive(1k){
+            padding: 25px 25px 15px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.95));
+            padding: 20px 20px 10px;
+          }
+
           &:hover{
-            @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
-            @include border-radii(0,110px,0,50px);
-            z-index: 1;
+            @include BootstrapMinWidthResponsive(1k){
+              @include border-radii(0,110px,0,50px);
+            }
+            @include BootstrapMinWidthResponsive(lg){
+              @include box-shadow(0,0,20px,transparentize($global-clr-dark-black, 0.85));
+              @include border-radii(0,90px,0,30px);
+              z-index: 1;
+            }
 
             .teamname{
               &::after{
-                width: 30%;
+                @include BootstrapMinWidthResponsive(lg){
+                  width: 30%;
+                }
               }
             }
             .teamphoto{
               img{
-                @include filter-multiple(grayscale(0));
+                @include BootstrapMinWidthResponsive(lg){
+                  @include filter-multiple(grayscale(0));
+                }
               }
             }
             .teamdetail{
-              opacity: 1;
+              @include BootstrapMinWidthResponsive(lg){
+                opacity: 1;
+              }
             }
           }
         }
@@ -268,6 +334,13 @@
           @include flexbox-align-items(center);
           margin-bottom: 15px;
           position: relative;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            margin-bottom: 10px;
+          }
+          @include BootstrapMaxWidthResponsive(md){
+            margin-bottom: 5px;
+          }
         }
         .teamname{
           @include flexbox-flex-grow(1);
@@ -292,7 +365,11 @@
           }
           &::after{
             background-color: $global-clr-soft-blue;
-            width: 0;
+            width: 30%;
+
+            @include BootstrapMinWidthResponsive(lg){
+              width: 0;
+            }
           }
 
           h3{
@@ -300,6 +377,13 @@
             font-size: 26px;
             padding-bottom: 10px;
             padding-top: 10px;
+
+            @include BootstrapMaxWidthResponsive(hd){
+              font-size: 24px;
+            }
+            @include BootstrapMaxWidthResponsive(lg){
+              font-size: 22px;
+            }
           }
           span{display: block;}
         }
@@ -318,10 +402,21 @@
             display: block;
             margin: 0 0 0 auto;
             @include border-radius(50%);
-            @include filter-multiple(grayscale(1));
-            @include transition-multiple(filter 0.15s ease-in-out);
-          }
 
+            @include BootstrapMinWidthResponsive(lg){
+              @include filter-multiple(grayscale(1));
+              @include transition-multiple(filter 0.15s ease-in-out);
+            }
+            @include BootstrapMaxWidthResponsive(1k){
+              max-width: 120px;
+            }
+            @include BootstrapMaxWidthResponsive(hd){
+              max-width: 110px;
+            }
+            @include BootstrapMaxWidthResponsive(lg){
+              max-width: 90px;
+            }
+          }
         }
         .teaminfo{}
         .teamtitle{
@@ -334,8 +429,11 @@
           color: $global-clr-text-light;
           padding: 0;
           text-decoration: none !important;
-          opacity: 0;
           @include transition-multiple(opacity 0.15s ease-in-out);
+
+          @include BootstrapMinWidthResponsive(lg){
+            opacity: 0;
+          }
 
           i{
             margin-right: 5px;

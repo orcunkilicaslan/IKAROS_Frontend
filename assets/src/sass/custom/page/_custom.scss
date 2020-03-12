@@ -1,0 +1,6 @@
+
+.datahrefurl{
+  @include BootstrapMinWidthResponsive(lg){
+    cursor: pointer;
+  }
+}
