@@ -1,3 +1,12 @@
+/* Custom Data-Href URL */
+$(window).on("load resize",function(e){if($(window).width() > 991){
+
+    $('.datahrefurl[data-href]').on("click", function() {
+        document.location = $(this).data('href');
+    });
+
+}});
+/* Custom Data-Href URL */
 
 /* Footer Brand Logos Box */
 $('#footbrandlogosowl').owlCarousel({
