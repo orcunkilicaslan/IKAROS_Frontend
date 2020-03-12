@@ -71,6 +71,8 @@
   &-xl{
     h1,h2,h3,h4,h5,h6{font-size: 36px; font-weight: 500; line-height: 1.15; letter-spacing: -1.14px;}
     small{font-size: 22px; letter-spacing: -0.72px;}
+    span{}
+    h1+span,h2+span,h3+span{font-size: 20px; letter-spacing: -0.72px; display: block;}
     p{font-size: 16px; font-weight: normal; line-height: 1.25; letter-spacing: -0.16px;}
     ul{font-size: 16px; font-weight: normal; line-height: 1.25; letter-spacing: -0.16px;}
     h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 15px;}
