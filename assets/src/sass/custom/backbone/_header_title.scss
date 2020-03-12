@@ -472,9 +472,11 @@
 
           @include BootstrapMaxWidthResponsive(lg){
             height: auto;
+            @include filter-multiple(blur(3px));
+            @include scale(1.5);
           }
           @include BootstrapMaxWidthResponsive(md){
-            width: auto;
+            width: 100%;
             max-width: inherit;
           }
         }

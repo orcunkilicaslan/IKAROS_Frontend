@@ -1,0 +1,48 @@
+
+.consultancy{
+
+  &-educationalist{
+
+    &-row{
+      @include BootstrapMaxWidthResponsive(md){
+        @include flexbox-flex-direction(column);
+      }
+    }
+
+    &-avatar{
+      display: none;
+
+      img{
+        @include border-radius(50%);
+      }
+
+      @include BootstrapMaxWidthResponsive(lg){
+        display: block;
+        max-width: 220px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-detail{
+      margin-top: -50px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: -35px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-top: 0;
+      }
+    }
+
+    &-edulist{
+      margin-top: 40px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 30px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-top: 20px;
+      }
+    }
+  }
+}
