@@ -2,6 +2,26 @@
 .consultancy{
 
   &-educationalist{
+    padding-top: 0 !important;
+
+    &-wrapper{
+      margin-top: 70px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 40px;
+      }
+      @include BootstrapMaxWidthResponsive(md){
+        margin-top: 25px;
+      }
+    }
+
+    &-list{
+      margin-top: 40px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 30px;
+      }
+    }
 
     &-row{
       @include BootstrapMaxWidthResponsive(md){
@@ -23,16 +43,7 @@
       }
     }
 
-    &-detail{
-      margin-top: -50px;
-
-      @include BootstrapMaxWidthResponsive(hd){
-        margin-top: -35px;
-      }
-      @include BootstrapMaxWidthResponsive(lg){
-        margin-top: 0;
-      }
-    }
+    &-detail{}
 
     &-edulist{
       margin-top: 40px;
