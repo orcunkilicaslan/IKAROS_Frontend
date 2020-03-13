@@ -54,6 +54,7 @@
  - [53_Ikaros_Consultancy_Education_Detail_Ahmet_Deniz](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Ahmet_Deniz.html)
  - [53_Ikaros_Consultancy_Education_Detail_Ali_Turan_Barnic](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Ali_Turan_Barnic.html)
  - [53_Ikaros_Consultancy_Education_Detail_Atilla_Yildiztekin](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Atilla_Yildiztekin.html)
+ - [53_Ikaros_Consultancy_Education_Detail_Mehmet_Auf](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Mehmet_Auf.html)
  - [53_Ikaros_Consultancy_Strategy](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Strategy.html)
  - [53_Ikaros_Consultancy_Financial](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Financial.html)
  - [54_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/54_Ikaros_Company_About_Us.html)
