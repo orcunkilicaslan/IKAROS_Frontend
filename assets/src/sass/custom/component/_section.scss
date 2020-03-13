@@ -159,6 +159,7 @@
         @include flexbox-display-flex();
         @include flexbox-flex-direction(row);
         @include flexbox-flex-wrap(wrap);
+        @include flexbox-justify-content(center);
         max-width: 1150px;
         margin: auto;
       }
