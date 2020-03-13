@@ -44,6 +44,7 @@
  - [52_Ikaros_Incentive_Export](https://orcunkilicaslan.github.io/IKAROS_Frontend/52_Ikaros_Incentive_Export.html)
  - [53_Ikaros_Consultancy_Education](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education.html)
  - [53_Ikaros_Consultancy_Education_Detail_Engin_Erguden](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Engin_Erguden.html)
+ - [53_Ikaros_Consultancy_Education_Detail_Ender_Balci](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Education_Detail_Ender_Balci.html)
  - [53_Ikaros_Consultancy_Strategy](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Strategy.html)
  - [53_Ikaros_Consultancy_Financial](https://orcunkilicaslan.github.io/IKAROS_Frontend/53_Ikaros_Consultancy_Financial.html)
  - [54_Ikaros_Company_About_Us](https://orcunkilicaslan.github.io/IKAROS_Frontend/54_Ikaros_Company_About_Us.html)

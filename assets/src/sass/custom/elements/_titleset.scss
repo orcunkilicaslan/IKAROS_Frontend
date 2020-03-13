@@ -83,12 +83,14 @@
     @include BootstrapMaxWidthResponsive(hd){
       small{font-size: 20px;}
       h1,h2,h3,h4,h5,h6{font-size: 32px;}
+      h1+span,h2+span,h3+span{font-size: 18px;}
       p, ul{font-size: 15px;}
       h1+p,h2+p,p+h1,p+h2,ul+h1,ul+h2,p+h1,p+h2,ul+h1,ul+h2{margin-top: 10px;}
     }
     @include BootstrapMaxWidthResponsive(lg){
       small{font-size: 18px;}
       h1,h2,h3,h4,h5,h6{font-size: 28px;}
+      h1+span,h2+span,h3+span{font-size: 16px;}
       p, ul{font-size: 14px;}
     }
     @include BootstrapMaxWidthResponsive(md){
