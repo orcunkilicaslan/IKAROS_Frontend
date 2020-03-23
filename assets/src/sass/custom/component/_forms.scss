@@ -36,7 +36,7 @@
     i[class*="icons"]{
       @include svg-filter(0%, 1, 0, 100%);
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         @include scale(0.9);
       }
       @include BootstrapMaxWidthResponsive(md){

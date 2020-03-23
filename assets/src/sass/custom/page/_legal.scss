@@ -5,7 +5,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       padding-top: 40px;
     }
     @include BootstrapMaxWidthResponsive(lg){
@@ -27,7 +27,7 @@
       > li{
         margin-bottom: 20px !important;
 
-        @include BootstrapMaxWidthResponsive(hd){
+        @include BootstrapMaxWidthResponsive(1k){
           margin-bottom: 15px !important;
         }
         @include BootstrapMaxWidthResponsive(lg){
@@ -57,7 +57,7 @@
         line-height: 1.09;
         letter-spacing: -.6px;
 
-        @include BootstrapMaxWidthResponsive(hd){
+        @include BootstrapMaxWidthResponsive(1k){
           font-size: 20px;
         }
         @include BootstrapMaxWidthResponsive(lg){

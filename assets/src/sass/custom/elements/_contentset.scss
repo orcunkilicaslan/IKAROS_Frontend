@@ -25,7 +25,7 @@
     strong,b{font-weight: 500;}
     p a, li a{color: $global-clr-text-light; font-weight: 500;}
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       h2{font-size: 28px;}
       h3{font-size: 26px;}
       h4{font-size: 20px;}
@@ -71,7 +71,7 @@
           background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPg0KICA8ZyBpZD0iQmFja2dyb3VuZCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGQ3OGM0IiBzdHJva2Utd2lkdGg9IjEiPg0KICAgIDxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSI0IiBzdHJva2U9Im5vbmUiLz4NCiAgICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjciIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0ibm9uZSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
           top: 7px;
 
-          @include BootstrapMaxWidthResponsive(hd){
+          @include BootstrapMaxWidthResponsive(1k){
             top: 6px;
           }
           @include BootstrapMaxWidthResponsive(lg){
@@ -91,7 +91,7 @@
       > li{
         margin-bottom: 20px !important;
 
-        @include BootstrapMaxWidthResponsive(hd){
+        @include BootstrapMaxWidthResponsive(1k){
           margin-bottom: 15px !important;
         }
         @include BootstrapMaxWidthResponsive(lg){
@@ -183,7 +183,7 @@
     padding: 50px;
     @include border-radius(4px);
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       padding: 40px;
     }
     @include BootstrapMaxWidthResponsive(md){

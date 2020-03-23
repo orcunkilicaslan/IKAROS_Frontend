@@ -8,6 +8,7 @@ $bootstrap-container-max-widths:(
         md: 720px,
         lg: 960px,
         xl: 1140px,
+        hd: 1200px,
         1k: 1300px
 );
 $bootstrap-grid-breakpoints:(
@@ -17,10 +18,10 @@ $bootstrap-grid-breakpoints:(
         sm: 576px,
         md: 768px,
         lg: 992px,
-        xl: 1200px,
-        hd: 1400px,
-        1k: 1600px,
-        2k: 2200px
+        xl: 1400px,
+        hd: 1620px,
+        1k: 1940px,
+        2k: 2580px
 );
 /* Bootstrap Grid Columns Settings */
 

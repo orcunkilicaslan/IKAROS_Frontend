@@ -53,7 +53,7 @@
           display: block;
           right: -40px;
 
-          @include BootstrapMaxWidthResponsive(hd){
+          @include BootstrapMaxWidthResponsive(1k){
             right: -30px;
           }
           @include BootstrapMaxWidthResponsive(xl){
@@ -81,7 +81,7 @@
           display: block;
           left: -40px;
 
-          @include BootstrapMaxWidthResponsive(hd){
+          @include BootstrapMaxWidthResponsive(1k){
             left: -30px;
           }
           @include BootstrapMaxWidthResponsive(xl){

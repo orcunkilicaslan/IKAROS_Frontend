@@ -6,7 +6,7 @@
     &-bigtitle{
       padding-bottom: 30px;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         padding-bottom: 10px;
       }
     }
@@ -15,7 +15,7 @@
       padding-top: 30px;
       padding-bottom: 100px;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         padding-bottom: 70px;
       }
       @include BootstrapMaxWidthResponsive(xl){

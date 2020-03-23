@@ -18,7 +18,7 @@
     .dfn-menu-list-item .dropdown-menu{
       top: 90px !important;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         top: 78px !important;
       }
       @include BootstrapMaxWidthResponsive(lg){
@@ -36,7 +36,7 @@
     border-bottom: 1px solid transparentize($global-clr-white, 0.85);
     @include transition-multiple(background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, margin 0.3s ease-in-out);
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       max-height: 78px;
       padding: 13px 0;
       margin: 25px 0;
@@ -79,7 +79,7 @@
       &-link{
         opacity: 1;
 
-        @include BootstrapMaxWidthResponsive(hd){
+        @include BootstrapMaxWidthResponsive(1k){
           max-width: 120px;
         }
         @include BootstrapMaxWidthResponsive(md){
