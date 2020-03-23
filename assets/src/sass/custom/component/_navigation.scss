@@ -71,7 +71,7 @@
         .dropdown-menu{
           background-color: transparentize(darken($global-sitebg-darkblue01, 3%), 0.02) !important;
 
-          @include BootstrapMaxWidthResponsive(hd){
+          @include BootstrapMaxWidthResponsive(1k){
             top: 103px !important;
           }
 
@@ -81,7 +81,7 @@
 
           .menunav{
 
-            @include BootstrapMaxWidthResponsive(hd){
+            @include BootstrapMaxWidthResponsive(1k){
               font-size: 14px;
             }
 
@@ -101,7 +101,7 @@
 
           .megamenu{
             &-nav{
-              @include BootstrapMaxWidthResponsive(hd){
+              @include BootstrapMaxWidthResponsive(1k){
                 padding: 20px 15px 20px;
               }
               @include BootstrapMaxWidthResponsive(lg){
@@ -112,7 +112,7 @@
               &-title{
                 color: $global-clr-white;
 
-                @include BootstrapMaxWidthResponsive(hd){
+                @include BootstrapMaxWidthResponsive(1k){
                   font-size: 32px;
                 }
                 @include BootstrapMaxWidthResponsive(xl){

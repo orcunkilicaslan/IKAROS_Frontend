@@ -7,7 +7,7 @@
     &-wrapper{
       margin-top: 70px;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         margin-top: 40px;
       }
       @include BootstrapMaxWidthResponsive(md){
@@ -18,7 +18,7 @@
     &-list{
       margin-top: 40px;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         margin-top: 30px;
       }
     }
@@ -48,7 +48,7 @@
     &-edulist{
       margin-top: 40px;
 
-      @include BootstrapMaxWidthResponsive(hd){
+      @include BootstrapMaxWidthResponsive(1k){
         margin-top: 30px;
       }
       @include BootstrapMaxWidthResponsive(lg){

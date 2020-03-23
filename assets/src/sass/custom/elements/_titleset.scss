@@ -43,7 +43,7 @@
       font-weight: normal !important;
     }
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       padding-left: 45px;
       padding-top: 10px;
 
@@ -80,7 +80,7 @@
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       small{font-size: 20px;}
       h1,h2,h3,h4,h5,h6{font-size: 32px;}
       h1+span,h2+span,h3+span{font-size: 18px;}
@@ -110,7 +110,7 @@
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       small{font-size: 20px;}
       h1,h2,h3,h4,h5,h6{font-size: 24px;}
       p, ul{font-size: 15px;}
@@ -144,7 +144,7 @@
     ul > li{margin-bottom: 10px;}
     ul > li:last-child{margin-bottom: 0;}
 
-    @include BootstrapMaxWidthResponsive(hd){
+    @include BootstrapMaxWidthResponsive(1k){
       h1,h2,h3,h4,h5,h6{font-size: 20px;}
       p, ul{font-size: 15px;}
       h3+p,h4+p,h5+p,h6+p,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6,p+h3,p+h4,p+h5,p+h6,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 5px;}
@@ -185,7 +185,7 @@
       h1,h2,h3,h4,h5,h6{
         padding-bottom: 30px;
 
-        @include BootstrapMaxWidthResponsive(hd){
+        @include BootstrapMaxWidthResponsive(1k){
           padding-bottom: 25px;
         }
         @include BootstrapMaxWidthResponsive(md){
