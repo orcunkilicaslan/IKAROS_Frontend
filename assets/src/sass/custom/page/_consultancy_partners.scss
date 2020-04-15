@@ -1,0 +1,35 @@
+
+.consultancy{
+
+  &-partners{
+
+    &-list{
+      border: 1px solid $global-border-light-gray;
+      padding: 30px;
+      margin: 30px 0;
+
+      @include BootstrapMaxWidthResponsive(sm){
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      &:first-child{margin-top: 0;}
+      &:last-child{margin-bottom: 0;}
+
+      .brandcont{
+        @include BootstrapMaxWidthResponsive(md){
+          @include flexbox-flex-order(2);
+        }
+      }
+
+      .brandlogo{
+        @include BootstrapMaxWidthResponsive(md){
+          @include flexbox-flex-order(1);
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}
