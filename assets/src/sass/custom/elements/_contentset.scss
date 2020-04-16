@@ -87,19 +87,6 @@
     counter-reset: item;
     margin-left: 0;
 
-    &-head{
-      > li{
-        margin-bottom: 20px !important;
-
-        @include BootstrapMaxWidthResponsive(1k){
-          margin-bottom: 15px !important;
-        }
-        @include BootstrapMaxWidthResponsive(lg){
-          margin-bottom: 10px !important;
-        }
-      }
-    }
-
     > li{
       padding-left: 20px;
       position: relative;
@@ -123,6 +110,14 @@
       }
     }
 
+    > li.nomatter{
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
     ol.nomatter{
       margin-left: 0;
       margin-top: 5px;
@@ -138,6 +133,27 @@
         }
       }
     }
+
+    ol.leftline{
+      margin-left: 0;
+      margin-top: 5px;
+
+      li.leftline{
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $global-clr-soft-blue;
+          width: 10px;
+          height: 2px;
+          top: 10px;
+          left: 0;
+          display: inline-block;
+        }
+      }
+    }
+
+
   }
 
   &-alertboxinfo{
