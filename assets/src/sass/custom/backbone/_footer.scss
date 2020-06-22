@@ -228,6 +228,13 @@
           margin: 0 5px;
           position: relative;
 
+          @include BootstrapMaxWidthResponsive(xl){
+            margin: 0 3px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            margin: 0 5px;
+          }
+
           a.socialicons{
             background-image: url(#{$global-img-path-icons}/icons_spite_footer_social_20.svg);
             background-position: 0 0;
@@ -245,6 +252,7 @@
             &.iconstwitter{background-position: -20px 0;}
             &.iconsinstagram{background-position: -40px 0;}
             &.iconslinkedin{background-position: -60px 0;}
+            &.iconsyoutube{background-position: -80px 0;}
           }
         }
 
